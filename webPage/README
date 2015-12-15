@@ -1,0 +1,14 @@
+README
+------
+
+When starting sphinx from scratch the command:
+
+sphinx-quickstart
+
+will create a directory with the configuration file.
+I used "separate source and build" to have a nice separation.
+
+All this can be changed in the file conf.py
+
+
+
