@@ -1,74 +1,80 @@
 {#
-    magogo/layout.html
-    ~~~~~~~~~~~~~~~~~
-	 Adapted from Agogo style
+magogo/layout.html
+~~~~~~~~~~~~~~~~~
+Adapted from Agogo style
 #}
 {%- extends "basic/layout.html" %}
 
 {% block header %}
-    <div class="header-wrapper" role="banner">
-      <div class="header">
-        {%- if logo %}
-          <p class="logo"><a href="{{ pathto(master_doc) }}">
-            <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
-          </a></p>
-        {%- endif %}
-		  
-		  
-		  <div class="rel" role="navigation" aria-label="related navigation">
-			  {% block rootrellink %}
-			  <a href="{{ pathto('index') }}">home</a>|
-			  <a href="{{ pathto('doc') }}">doc</a>
-			  {% endblock %}
-        </div>
-		  
-		  
-       </div>
-    </div>
+<div class="header-wrapper" role="banner">
+	<div class="header">
+		
+		{%- block headertitle %}
+		<div class="headertitle"> {{_('GEMC') }} </div>
+		{%- endblock %}
+		<p class="logo">
+			<a href="{{ pathto(master_doc) }}">
+				<img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+			</a>
+		</p>
+		
+		<div class="rel" role="navigation" aria-label="related navigation">
+			{% block rootrellink %}
+			<a href="{{ pathto('index') }}">home</a>&nbsp;|
+			<a href="{{ pathto('doc') }}">documentation</a>&nbsp;|
+			<a href="{{ pathto('doc') }}">downloads</a>&nbsp;|
+			<a href="{{ pathto('doc') }}">screenshots</a>&nbsp;|
+			<a href="{{ pathto('doc') }}">about</a>
+			{% endblock %}
+		</div>
+		
+		
+	</div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="document">
-          {%- block document %}
-            {{ super() }}
-          {%- endblock %}
-        </div>
-        <div class="sidebar">
-          {%- block sidebartoc %}
-          <h3>{{ _('Table Of Contents') }}</h3>
-          {{ toctree() }}
-          {%- endblock %}
-          {%- block sidebarsearch %}
-          <div role="search">
-            <h3 style="margin-top: 1.5em;">{{ _('Search') }}</h3>
-            <form class="search" action="{{ pathto('search') }}" method="get">
-                <input type="text" name="q" />
-                <input type="submit" value="{{ _('Go') }}" />
-                <input type="hidden" name="check_keywords" value="yes" />
-                <input type="hidden" name="area" value="default" />
-            </form>
-            <p class="searchtip" style="font-size: 90%">
-                {{ _('Enter search terms withing the gemc website.') }}
-            </p>
-          </div>
-          {%- endblock %}
-        </div>
-        <div class="clearer"></div>
-      </div>
-    </div>
+<div class="content-wrapper">
+	<div class="content">
+		<div class="document">
+			{%- block document %}
+			{{ super() }}
+			{%- endblock %}
+		</div>
+		<div class="sidebar">
+			{%- block latestnews %}
+			<h3>{{ _('Latest News') }}</h3>
+			{{ _('Enter search terms withing the gemc website.') }}
+			{%- endblock %}
+			{%- block sidebarsearch %}
+			<div role="search">
+				<h3 style="margin-top: 1.5em;">{{ _('Search') }}</h3>
+				<form class="search" action="{{ pathto('search') }}" method="get">
+					<input type="text" name="q" />
+					<input type="submit" value="{{ _('Go') }}" />
+					<input type="hidden" name="check_keywords" value="yes" />
+					<input type="hidden" name="area" value="default" />
+				</form>
+				<p class="searchtip" style="font-size: 90%">
+				{{ _('Search withing the gemc website.') }}
+				</p>
+			</div>
+			{%- endblock %}
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
 {% endblock %}
 
 {% block footer %}
-    <div class="footer-wrapper">
-      <div class="footer">
-        <div class="right">
-          {{ super() }}
-        </div>
-        <div class="clearer"></div>
-      </div>
-    </div>
+<div class="footer-wrapper">
+	<div class="footer">
+		<div class="center">
+			{{ super() }}
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
 {% endblock %}
 
 {% block relbar1 %}{% endblock %}
