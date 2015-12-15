@@ -320,21 +320,18 @@ div.footer-wrapper {
 	border-top: 4px solid #babdb6;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	min-height: 80px;
+	min-height: 60px;
+	font-size: 80%;
+
 }
 
 div.footer, div.footer a {
-	color: #204a87;
+	color: #555555;
 }
 
 div.footer .center {
 	text-align: center;
 }
-
-div.footer .left {
-	text-transform: uppercase;
-}
-
 
 /* Styles copied from basic theme */
 

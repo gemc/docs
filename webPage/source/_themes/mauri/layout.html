@@ -21,10 +21,11 @@ Adapted from Agogo style
 		<div class="rel" role="navigation" aria-label="related navigation">
 			{% block rootrellink %}
 			<a href="{{ pathto('index') }}">home</a>&nbsp;|
-			<a href="{{ pathto('doc') }}">documentation</a>&nbsp;|
+			<a href="{{ pathto('doc') }}">examples</a>&nbsp;|
 			<a href="{{ pathto('doc') }}">downloads</a>&nbsp;|
-			<a href="{{ pathto('doc') }}">screenshots</a>&nbsp;|
-			<a href="{{ pathto('doc') }}">about</a>
+			<a href="{{ pathto('doc') }}">gallery</a>&nbsp;|
+			<a href="{{ pathto('doc') }}">tutorials</a>&nbsp;|
+			<a href="{{ pathto('doc') }}">documentation</a>
 			{% endblock %}
 		</div>
 		
@@ -70,7 +71,7 @@ Adapted from Agogo style
 <div class="footer-wrapper">
 	<div class="footer">
 		<div class="center">
-			{{ super() }}
+			{{ _('2016 GEMC - Maurizio Ungaro') }}
 		</div>
 		<div class="clearer"></div>
 	</div>
