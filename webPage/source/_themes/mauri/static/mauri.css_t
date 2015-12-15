@@ -54,7 +54,7 @@ div.bodywrapper a, div.footer a {
 }
 
 .right {
-  float: right;
+  float: center;
 }
 
 .line-block {
@@ -352,7 +352,7 @@ div.footer, div.footer a {
 }
 
 div.footer .right {
-  text-align: right;
+  text-align: center;
 }
 
 div.footer .left {
