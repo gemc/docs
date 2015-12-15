@@ -1,0 +1,14 @@
+.. sampledoc documentation master file, created by
+sphinx-quickstart on Tue Aug 11 05:04:40 2009.
+You can adapt this file completely to your liking, but it should at least
+contain the root `toctree` directive.
+
+.. toctree::
+	:maxdepth: 2
+
+	getting_started.rst
+
+Indices and tables
+==================
+
+* :ref:`genindex`
