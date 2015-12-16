@@ -6,7 +6,7 @@
 GEant4 Monte-Carlo
 ==================
 
-gemc is an application based on `geant4 <https://geant4.cern.ch>`_  libraries to simulate the passage of
+gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate the passage of
 particles through matters.
 The user parameters (geometry, materials, fields, etc) are stored in databases
 (available: MYSQL, ASCII). This makes it possible to build complex setup
