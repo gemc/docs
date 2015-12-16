@@ -25,6 +25,7 @@ import shlex
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinxcontrib.images',
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',

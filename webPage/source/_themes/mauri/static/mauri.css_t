@@ -325,6 +325,11 @@ div.footer-wrapper {
 
 }
 
+
+div.mydiv {
+	text-align: center;
+}
+
 div.footer, div.footer a {
 	color: #555555;
 }
@@ -363,6 +368,12 @@ img.align-center, .figure.align-center, object.align-center {
 
 .align-right {
 	text-align: right;
+}
+
+
+/* ANYTHING .docutils will replace the basic */
+table.docutils {
+	border: 0;
 }
 
 table caption span.caption-number {
