@@ -25,7 +25,6 @@ Adapted from Agogo style
 			<a href="{{ pathto('doc') }}">downloads</a>&nbsp;|
 			<a href="{{ pathto('doc') }}">gallery</a>&nbsp;|
 			<a href="{{ pathto('doc') }}">tutorials</a>&nbsp;|
-			<a href="{{ pathto('doc') }}">documentation</a>
 			{% endblock %}
 		</div>
 		
@@ -43,13 +42,6 @@ Adapted from Agogo style
 			{%- endblock %}
 		</div>
 		<div class="sidebar">
-			{%- block latestnews %}
-			<br>
-			<h3>{{ _('Latest News') }}<br></h3>
-<!--			<object height="400" type="text/plain" data="changeLog.txt" border="0" ></object>-->
-			<object type="text/html" height="400" data="{{ pathto('latestNews') }}" border="0" ></object>
-		{%- endblock %}
-			
 			{%- block sidebarsearch %}
 			<div role="search">
 				<h3 style="margin-top: 1.5em;">{{ _('Search') }}</h3>
@@ -64,7 +56,15 @@ Adapted from Agogo style
 				</p>
 			</div>
 			{%- endblock %}
-		</div>
+			<br>
+			<br>
+
+		{%- block latestnews %}
+			<h3>{{ _('Latest News') }}<br></h3>
+<!--			<object height="400" type="text/plain" data="changeLog.txt" border="0" ></object>-->
+			<object type="text/html" height="450" data="{{ pathto('latestNews') }}" border="0" ></object>
+		{%- endblock %}
+			</div>
 		<div class="clearer"></div>
 	</div>
 </div>
