@@ -55,6 +55,10 @@ html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	cp $$GEMC/source/changeLog   $(BUILDDIR)/html/changeLog.html
+	cp source/latestNews.html    $(BUILDDIR)/html
+	cp source/nested.png         $(BUILDDIR)/html
+	@echo ""
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml

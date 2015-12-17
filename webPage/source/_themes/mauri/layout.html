@@ -44,9 +44,12 @@ Adapted from Agogo style
 		</div>
 		<div class="sidebar">
 			{%- block latestnews %}
-			<h3>{{ _('Latest News') }}</h3>
-			{{ _('Enter search terms withing the gemc website.') }}
-			{%- endblock %}
+			<br>
+			<h3>{{ _('Latest News') }}<br></h3>
+<!--			<object height="400" type="text/plain" data="changeLog.txt" border="0" ></object>-->
+			<object type="text/html" height="400" data="{{ pathto('latestNews') }}" border="0" ></object>
+		{%- endblock %}
+			
 			{%- block sidebarsearch %}
 			<div role="search">
 				<h3 style="margin-top: 1.5em;">{{ _('Search') }}</h3>

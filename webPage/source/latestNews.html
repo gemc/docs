@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Example</title>
+		
+		<!-- CSS -->
+		<style>
+			/* Force scrollbars onto browser window */
+
+		
+		/* Box styles */
+		.myBox {
+			border: 0;
+			padding: 0px 0px 0px 0px;
+			font: 16px/18px Verdana;
+		}
+		
+		/* Scrollbar styles */
+		::-webkit-scrollbar {
+			width: 12px;
+			height: 12px;
+		}
+		
+		::-webkit-scrollbar-track {
+			border: 1px solid #204a87;
+			border-radius: 10px;
+		}
+		
+		::-webkit-scrollbar-thumb {
+			background: #cf5c00;
+			border-radius: 10px;
+		}
+		
+		::-webkit-scrollbar-thumb:hover {
+			background: #88ba1c;
+		}
+		
+
+		.myBox ol { font-size:18px; list-style-type:none}
+		.myBox ol li { }
+		.myBox ol li ol { list-style-image: url("nested.png"); padding:5px 0 5px 18px; font-size:15px; }
+		.myBox ol li ol li { color:#444; height:15px; margin-left:10px; }
+
+		</style>
+	</head>
+	<body>
+		
+		<!-- HTML -->
+		<div class="myBox">
+			
+   <ol>
+		<li><em>The Netherlands</em>
+			<ol>
+				<li>Picasa</li>
+				<li>Feedburner</li>
+				<li>Youtube</li>
+			</ol>
+		</li>
+		<br>
+		<li>Microsoft
+			<ol>
+				<li>Corel Corporation</li>
+				<li>Zignals</li>
+				<li>ByteTaxi</li>
+			</ol>
+		</li>
+		<li>Yahoo!
+			<ol>
+				<li>Xoopit</li>
+				<li>BuzzTracker</li>
+				<li>MyBlogLog</li>
+			</ol>
+		</li>
+	</ol>
+	
+		</div>
+		
+	</body>
+</html>

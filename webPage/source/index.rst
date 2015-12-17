@@ -22,7 +22,7 @@ The user parameters (geometry, materials, fields, etc) are stored in databases.
 
 		A 5T solenoid field aligns the beam of electrons along the z-axis.
 		An addition tugnsten cone (blue) provides additional shielding to the
-		CLAS12 detector from the beam high current. The GEMC simulation was used to design
+		CLAS12 detector from the beam high current. The gemc simulation was used to design
 		and validate the shielding.
 
 	.. thumbnail:: clas12.png
@@ -37,7 +37,7 @@ The user parameters (geometry, materials, fields, etc) are stored in databases.
 		:group: mycenter
 		:title:
 
-		The GEMC simulation of the Electron Ion Collider beamline and detectors.
+		The gemc simulation of the Electron Ion Collider beamline and detectors.
 
 	.. thumbnail:: bubble.png
 		:width: 20%
@@ -54,13 +54,11 @@ Overview
 
 gemc tries to make easy things easy and hard things possible.
 
-Users can build a simulation with a few lines of code, with no required knowledge
-of C++ or geant4 even for the most complex setups: the
-definition of geometry, materials, output banks, etc is done by filling the relevant
-information in the gemc API scripts.
+Users can build any simulation with few lines of code. No knowledge
+of C++ or geant4 is required, even for the most complex setups.
 
-The upload to databases (available: MYSQL or ASCII) is automatic.
-GEMC can then read the databases and run the geant4 library.
+The upload of the parameters to databases (available: MYSQL or ASCII) is automatic.
+gemc reads these databases and run the geant4 library.
 
 
 At run time, options can be given to tilt objects, set conditions, etc.
@@ -69,14 +67,14 @@ At run time, options can be given to tilt objects, set conditions, etc.
 	:width: 70%
 	:align: center
 
-Any change in the setup is reflected in the databses and can be tested immediately, anywhere, by all gemc users w/o having
-to re-compile code. In fact, the same gemc executable is used for several  experiments.
-
+Any change in the setup is reflected in real time in the databases and can be tested immediately,
+anywhere, by all users w/o having to re-compile code.
 
 
 Open source
 ===========
 Please visit the contributing page for information on how to contribute to gemc.
+
 If you have any bug/code optimization to report, new ideas, features request, please head
 over github to open an issue.
 

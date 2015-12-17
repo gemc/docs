@@ -52,6 +52,10 @@ div.bodywrapper a, div.footer a {
 }
 
 .right {
+	float: right;
+}
+
+.center {
 	float: center;
 }
 
