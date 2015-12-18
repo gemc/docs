@@ -496,10 +496,11 @@ div.code-block-caption {
 }
 
 
-
-
-
-
+div.note {
+	background-color: #ffff99;
+	padding: 2px 5px;
+	border: 1px solid #ac9;
+}
 
 
 

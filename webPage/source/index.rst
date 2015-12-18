@@ -54,14 +54,10 @@ Overview
 
 gemc tries to make easy things easy and hard things possible.
 
-Users can build any simulation with few lines of code. No knowledge
-of C++ or geant4 is required, even for the most complex setups.
+With no C++ or geant4 knowledge required, users can build and run even the
+most complex of setups.
 
-The upload of the parameters to databases (available: MYSQL or ASCII) is automatic.
-gemc reads these databases and run the geant4 library.
-
-
-At run time, options can be given to tilt objects, set conditions, etc.
+The upload/download of the parameters to/from databases (available: MYSQL or ASCII) is automatic.
 
 .. image:: gemcAbstract.png
 	:width: 70%
@@ -76,7 +72,7 @@ Open source
 Please visit the :ref:`contributing to gemc <contributingToGemc>` page if you're interested in the code development.
 
 If you have any bug/code optimization to report, new ideas, features request, 
-please feel free to `open an issue <https://github.com/gemc/source/issues/new>`_ in github.
+please feel free to `open a code issue <https://github.com/gemc/source/issues/new>`_ in github.
 
 
 ..

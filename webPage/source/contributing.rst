@@ -8,19 +8,19 @@ Please use this guideline to contribute to the gemc code development.
 Quickstart
 ----------
 
-* `Open a new issue <https://github.com/gemc/source/issues/new`_
-* `Fork the repo <https://github.com/gemc/source>`_
-* Create branches if necessary
-* Create a pull request
-* Keep fork in sync
+* `open a new issue <https://github.com/gemc/source/issues/new>`_
+* `fork the repo <https://github.com/gemc/source>`_
+* `create a branch`_ `(if necessary)`
+* `create a pull request`_
+* `keep the fork in sync`_
 
 
 Feel free to ask
-================
+----------------
 
 So let's say that you have an idea for a great feature. It's a good idea 
-to `open an issue <https://github.com/gemc/source/issues/new>`_ describing the feature and its implementation
-and ask the code author's opinion. If they agree, go for it! They might even have some 
+to open an issue describing the feature and its implementation
+and ask the code's developers. If they agree, go for it! They might even have some
 good suggestions for changes or additions to the feature as well.
 
 If it's a bug you found, occasionally it can be ok to just create a **pull request** (PR),
@@ -33,7 +33,7 @@ improve the documentation.
 
 
 Forking the repo
-================
+----------------
 
 Ok, so we have a great feature idea (or we found a bug), we opened an issue to 
 check with the author, and they signed off on it. Whoo! Time to get to coding. 
@@ -53,11 +53,11 @@ can be found on the right menu. You can now clone it to your local machine and w
 You can `create a pull request`_ based on this fork. If you are working on several new features at once, you
 can `create a branch`_ for each feature.
 
-For long-term modifications it is highly desirable to `keep the fork in sync with the original repo`_.
+For long-term modifications it is highly desirable to `keep the fork in sync`_.
 
 
 Code Standards
-==============
+--------------
 
 When writing both commits and code, it's important to do so in harmony with a 
 project's existing style.
@@ -73,7 +73,8 @@ extremely poor taste.
 
 
 Create a Pull Request
-======================
+---------------------
+
 To create the pull request, navigate in github to your fork,
 and click on the PR button:
 
@@ -92,7 +93,8 @@ Then let's go for it and open it up!
 
 
 Expect a Thorough Review
-========================
+------------------------
+
 So the pull request has been submitted, and now it's time for review. As you would if
 someone sends you a PR, you should expect the maintainer to be reviewing every line of code.
 Do not be offended by this, keep in mind that any feedback is in good sprit,
@@ -101,30 +103,13 @@ and just meant to make the project better.
 Once all has been approved, any changes have been made, and the commits and code are clean,
 your PR should be ready for merge.
 
-\
-\
 
+|
+|
 
-Documentation
-=============
+Keep the fork in sync
+---------------------
 
-* `gemc home page <gemc.jlab.org>`_
-* `gemc GitHub <https://github.com/gemc>`_
-* `GitHub workflow <https://help.github.com/articles/fork-a-repo/>`_
-* ask the author: email ungaro@jlab.org
-* open an issue:
-
- 1. click on the "issues" link on the right menu of the source repository
- 2. clcik on the green button "New Issue".
-
-* `create a branch`_
-
-\
-\
-
-
-Keep the fork in sync with the original repo
-============================================
 You can keep your fork up-to-date with the gemc repository.
 cd to the local copy of your fork and type:
 
@@ -156,17 +141,16 @@ without losing your local changes.
 
  git merge upstream/master
 
-\
-\
+|
+
 Create a branch
-===============
+---------------
 
 You can create a branch with a name that summarize your modifications.
 
 For example, if John wants to fix a gui problem, a good branch-name would be:
 
 .. centered:: john-guifix
-
 
 To create a branch, first clone your fork locally, by running git on a terminal.
 
@@ -186,15 +170,11 @@ Now you can create a branch with the command:
 
 Tadaa! You're now working on a new branch, on a repo that you can commit to.
 
+|
+|
+.. note::
 
-
-\
-\
-
-
-
-
-
+	This page is based on the `GitHub workflow <https://help.github.com/articles/fork-a-repo/>`_.
 
 
 
