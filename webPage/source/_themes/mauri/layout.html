@@ -24,7 +24,7 @@ Adapted from Agogo style
 			<a href="{{ pathto('doc') }}">examples</a>&nbsp;|
 			<a href="{{ pathto('doc') }}">downloads</a>&nbsp;|
 			<a href="{{ pathto('doc') }}">gallery</a>&nbsp;|
-			<a href="{{ pathto('doc') }}">tutorials</a>&nbsp;|
+			<a href="{{ pathto('documentation/documentation') }}">documentation</a>
 			{% endblock %}
 		</div>
 		
@@ -55,14 +55,23 @@ Adapted from Agogo style
 				{{ _('Search withing the gemc website.') }}
 				</p>
 			</div>
+
 			{%- endblock %}
 			<br>
 			<br>
 
 		{%- block latestnews %}
+		{% if pagename == 'index' %}
 			<h3>{{ _('Latest News') }}<br></h3>
 <!--			<object height="400" type="text/plain" data="changeLog.txt" border="0" ></object>-->
-			<object type="text/html" height="450" data="{{ pathto('latestNews') }}" border="0" ></object>
+			<object type="text/html" height="350" data="{{ pathto('latestNews') }}" border="0" ></object>
+		{% endif %}
+		{% if pagename == 'documentation/documentation' %}
+			<h3>{{ _('Related') }}<br></h3>
+			<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
+		{% endif %}
+			
+			
 		{%- endblock %}
 			</div>
 		<div class="clearer"></div>

@@ -1,18 +1,14 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>My Example</title>
-		
-		<!-- CSS -->
-		<style>
-			/* Force scrollbars onto browser window */
 
+	<head>
+		<style>
 		
 		/* Box styles */
 		.myBox {
 			border: 0;
 			padding: 0px 0px 0px 0px;
-			font: 16px/18px Verdana;
+			font: 22px Calibri;
+			margin-left:-25px;
 		}
 		
 		/* Scrollbar styles */
@@ -35,61 +31,67 @@
 			background: #88ba1c;
 		}
 		
-
-		.myBox ol { font-size:16px; list-style-type:none}
+		/* Scrollbar styles */
+		.myBox ol { font-size:16px; list-style-type:none; }
 		.myBox ol li { }
-		.myBox ol li ol { list-style-image: url("nested.png"); padding:5px 0 5px 18px; font-size:14px; }
-		.myBox ol li ol li { color:#444; height:14px; margin-left:10px; }
+		.myBox ol li ol { list-style-image: url("nested.png"); padding:5px 0px 5px 18px; font-size:16px; }
+		.myBox ol li ol li { color:#444; height:16px; margin-left:10px; }
+
+		.myBox a {
+			font: 22px Calibri;
+			color: #cf5c00;
+		}
 
 		</style>
 	</head>
-	<body>
-		
-		<!-- HTML -->
-		<div class="myBox">
-			
-   <ol>
-		
-		<li><em>December 2015</em>
-			<ol>
-				<li>Readying gemc 2.3</li>
-				<li>Simulation speeds up</li>
-				<li>Better log for materials</li>
-				<li>Fixed replica bug</li>
-			</ol>
-		</li>
-		<br>
-		<li><em>November 2015</em>
-			<ol>
-				<li>CCDB access</li>
-				<li>Cosmic ray model added</li>
-				<li>Trigger Summary</li>
-				<li>Trigger GUI</li>
-				<li>FADC mode 1</li>
-			</ol>
-		</li>
-		<br>
-		<li><em>October 2015</em>
-			<ol>
-				<li>Production Cut</li>
-				<li>True Info output additions</li>
-				<li>Detector optimization</li>
-			</ol>
-		</li>
-		<br>
-		<li><em>Summer 2015</em>
-			<ol>
-				<li>Rayleigh Physics</li>
-				<li>Process Name in output</li>
-				<li>Active Fields in output</li>
-			</ol>
-		</li>
-		<br>
-
-
-	</ol>
 	
+	<body>
+		<div class="myBox">
+			<ol>
+				
+				<li><em>December 2015</em>
+					<ol>
+						<li>Readying gemc 2.3</li>
+						<li>Simulation speeds up</li>
+						<li>Better log for materials</li>
+						<li>Fixed replica bug</li>
+					</ol>
+				</li>
+				<br>
+				
+				<li><em>November 2015</em>
+					<ol>
+						<li>CCDB access</li>
+						<li>Cosmic ray model added</li>
+						<li>Trigger Summary</li>
+						<li>Trigger GUI</li>
+						<li>FADC mode 1</li>
+					</ol>
+				</li>
+				<br>
+				
+				<li><em>October 2015</em>
+					<ol>
+						<li>Production Cut</li>
+						<li>True Info output additions</li>
+						<li>Detector optimization</li>
+					</ol>
+				</li>
+				<br>
+				
+				<li><em>Summer 2015</em>
+					<ol>
+						<li>Rayleigh Physics</li>
+						<li>Process Name in output</li>
+						<li>Active Fields in output</li>
+					</ol>
+				</li>
+				<br>
+				
+			</ol>
 		</div>
-		
 	</body>
 </html>
+
+
+
