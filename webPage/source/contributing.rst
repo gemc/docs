@@ -104,8 +104,8 @@ Once all has been approved, any changes have been made, and the commits and code
 your PR should be ready for merge.
 
 
-|
-|
+
+
 
 Keep the fork in sync
 ---------------------
@@ -141,7 +141,7 @@ without losing your local changes.
 
  git merge upstream/master
 
-|
+
 
 Create a branch
 ---------------
@@ -171,12 +171,6 @@ Now you can create a branch with the command:
 Tadaa! You're now working on a new branch, on a repo that you can commit to.
 
 |
-|
-.. note::
-
-	This page is based on the `GitHub workflow <https://help.github.com/articles/fork-a-repo/>`_.
-
-
 
 
 
