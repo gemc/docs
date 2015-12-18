@@ -73,10 +73,9 @@ anywhere, by all users w/o having to re-compile code.
 
 Open source
 ===========
-Please visit the contributing page for information on how to contribute to gemc.
+Please visit the :ref:`contributingToGemc` page for information on how to contribute to the code development.
 
-If you have any bug/code optimization to report, new ideas, features request, please head
-over github to open an issue.
+If you have any bug/code optimization to report, new ideas, features request, please `open an issue <https://github.com/gemc/source/issues/new>`_ in github.
 
 
 ..

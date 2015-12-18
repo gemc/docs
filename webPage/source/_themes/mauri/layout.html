@@ -70,7 +70,11 @@ Adapted from Agogo style
 			<h3>{{ _('Related') }}<br></h3>
 			<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
 		{% endif %}
-			
+		{% if pagename == 'contributing' %}
+			<h3>{{ _('Shortcuts') }}<br></h3>
+			<object type="text/html" height="450" data="{{ pathto('contr') }}" border="0" ></object>
+		{% endif %}
+		
 			
 		{%- endblock %}
 			</div>

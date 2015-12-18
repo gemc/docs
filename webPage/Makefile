@@ -57,6 +57,7 @@ html:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 	cp $$GEMC/source/changeLog            $(BUILDDIR)/html/changeLog.html
 	cp source/latestNews.html             $(BUILDDIR)/html
+	cp source/contr.html                  $(BUILDDIR)/html
 	cp source/documentation/related.html  $(BUILDDIR)/html/documentation
 	cp source/nested.png                  $(BUILDDIR)/html
 	@echo ""
