@@ -10,5 +10,7 @@ I used "separate source and build" to have a nice separation.
 
 All this can be changed in the file conf.py
 
+Packages to be installed:
 
+pip install sphinxcontrib-images
 

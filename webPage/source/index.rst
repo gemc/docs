@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 GEant4 Monte-Carlo
-==================
+======================
 
 gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate the passage of
 particles through matter.
@@ -73,9 +73,10 @@ anywhere, by all users w/o having to re-compile code.
 
 Open source
 ===========
-Please visit the :ref:`contributingToGemc` page for information on how to contribute to the code development.
+Please visit the :ref:`contributing to gemc <contributingToGemc>` page if you're interested in the code development.
 
-If you have any bug/code optimization to report, new ideas, features request, please `open an issue <https://github.com/gemc/source/issues/new>`_ in github.
+If you have any bug/code optimization to report, new ideas, features request, 
+please feel free to `open an issue <https://github.com/gemc/source/issues/new>`_ in github.
 
 
 ..
