@@ -59,9 +59,13 @@ most complex of setups.
 
 The upload/download of the parameters to/from databases (available: MYSQL or ASCII) is automatic.
 
-.. image:: gemcAbstract.png
-	:width: 70%
+|
+
+.. image:: gemcArchitecture.png
+	:width: 90%
 	:align: center
+
+|
 
 Any change in the setup is reflected in real time in the databases and can be tested immediately,
 anywhere, by all users w/o having to re-compile code.
