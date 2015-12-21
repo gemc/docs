@@ -58,13 +58,26 @@ Adapted from Agogo style
 
 			{%- endblock %}
 			<br>
+			
 			<br>
-
 		{%- block latestnews %}
 		{% if pagename == 'index' %}
 			<h3>{{ _('Latest News') }}<br></h3>
 <!--			<object height="400" type="text/plain" data="changeLog.txt" border="0" ></object>-->
 			<object type="text/html" height="350" data="{{ pathto('latestNews') }}" border="0" ></object>
+			<br> <br> <br>
+			
+			<br>
+			<h3>{{ _('Quickstart') }}<br></h3>
+			<a href="">download gemc</a><br>
+			<a href="">build a simple detector</a> <br>
+			<br>
+			
+			<br>
+			<h3>{{ _('About') }}<br></h3>
+			<a href="">gemc: the origin</a><br>
+			<a href="">email Maurizio</a>
+
 		{% endif %}
 		{% if pagename == 'documentation/documentation' %}
 			<h3>{{ _('Related') }}<br></h3>

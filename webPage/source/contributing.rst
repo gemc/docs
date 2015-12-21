@@ -10,7 +10,7 @@ Quickstart
 
 * `open a new issue <https://github.com/gemc/source/issues/new>`_
 * `fork the repo <https://github.com/gemc/source>`_
-* `create a branch`_ `(if necessary)`
+* `create a branch`_ 
 * `create a pull request`_
 * `keep the fork in sync`_
 
@@ -18,7 +18,7 @@ Quickstart
 Feel free to ask
 ----------------
 
-So let's say that you have an idea for a great feature. It's a good idea 
+So let's say that you thought of a great feature. It's a good idea
 to open an issue describing the feature and its implementation
 and ask the code's developers. If they agree, go for it! They might even have some
 good suggestions for changes or additions to the feature as well.
