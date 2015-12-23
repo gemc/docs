@@ -38,7 +38,7 @@ Forking the repo
 Ok, so we have a great feature idea (or we found a bug), we opened an issue to 
 check with the author, and they signed off on it. Whoo! Time to get to coding. 
 First thing you do is create a fork, that is a copy of the main repository.
-Forking a repository allows you to freely experiment with changes without affecting 
+Forking the repository allows you to freely experiment with changes without affecting
 the original project.
 
 

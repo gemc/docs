@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-#
-# test documentation build configuration file, created by
-# sphinx-quickstart on Tue Dec 15 08:52:12 2015.
-#
-# This file is execfile()d with the current directory set to its
-# containing dir.
-#
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 

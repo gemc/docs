@@ -19,9 +19,12 @@ body {
 	background-color: {{ theme_bgcolor }};
 }
 
+div.bodywrapper {
+	margin: 0 0px 0 0;
+	border-right: 1px solid #ccc;
+}
 
 /* Page layout */
-
 div.header, div.content, div.footer {
 	width: {{ theme_pagewidth }};
 	margin-left: auto;
@@ -40,9 +43,12 @@ a {
 }
 
 div.bodywrapper a, div.footer a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
+div.bodywrapper a:hover, div.header a:hover {
+	text-decoration: underline;
+}
 .clearer {
 	clear: both;
 }
@@ -100,7 +106,9 @@ img {
 }
 
 
+/* ------ */
 /* Header */
+/* ------ */
 
 div.header {
 	padding-top: 10px;
@@ -141,7 +149,10 @@ img.logo {
 }
 
 
+/* ------- */
 /* Content */
+/* ------- */
+
 div.content-wrapper {
 	background-color: white;
 	padding-top: 20px;
@@ -163,8 +174,10 @@ div.document h1 {
 }
 
 div.document ul {
-	margin: 1.5em;
+	margin: 0.1em 1.5em ;
 	list-style-type: square;
+	margin-bottom: 2em;
+
 }
 
 div.document dd {
@@ -176,6 +189,7 @@ div.document dd {
 div.document .section {
 	margin-top: 1.7em;
 }
+
 div.document .section:first-child {
 	margin-top: 0px;
 }
@@ -214,9 +228,46 @@ div.document p {
 	margin-bottom: .5em;
 }
 
-div.document li.toctree-l1 {
-	margin-bottom: 1em;
+li.toctree-l1 {
+	margin: 0;
+	padding: 0px 0px;
+	border: none;
 }
+
+
+
+
+.toctree-wrapper ul:first-child {
+	border: none;
+	padding: 25px 10px 30px 0px;
+}
+
+.toctree-wrapper ul {
+	border-top: 1px solid black;
+	padding: 15px 30px 20px 0px;
+}
+
+
+
+div.document li.toctree-l2 {
+	display: inline-block;
+	width: 48%;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	font-size: 85%;
+	line-height: 20%;
+
+}
+
+
+div.document li.toctree-l2:last-child {
+	margin: 0;
+	padding: 0;
+	margin-right: 50px; /* this will put the right item on the left otherwise it's misaligned */
+}
+
+
 
 div.document .descname {
 	font-weight: bold;
@@ -245,12 +296,29 @@ div.document ol {
 }
 
 
+li.toctree-l1 a {
+	border: none;
+}
+
+
+
+li.toctree-l2 a {
+	border: none;
+}
+
+
+
+
+/* ------- */
 /* Sidebar */
+/* ------- */
 
 div.sidebar {
 	width: {{ theme_sidebarwidth }};
 	float: right;
 	font-size: .9em;
+	padding-left: 20px;
+
 }
 
 div.sidebar a, div.header a {

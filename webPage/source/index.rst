@@ -8,7 +8,9 @@ GEant4 Monte-Carlo
 
 gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate the passage of
 particles through matter.
-The user parameters (geometry, materials, fields, etc) are stored in databases.
+The main features of gemc are:
+	* user parameters stored in databases.
+	* easy interface to build simulations.
 
 |
 
