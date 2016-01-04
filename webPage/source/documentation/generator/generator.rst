@@ -3,7 +3,7 @@
 Generator
 #########
 
-This document describes the various possibility to generate events to swim through the gemc setup.
+This document describes how to generate events in gemc.
 
 .. toctree::
 	:maxdepth: 1

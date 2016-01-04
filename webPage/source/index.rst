@@ -4,13 +4,14 @@
    contain the root `toctree` directive.
 
 GEant4 Monte-Carlo
-======================
+==================
 
 gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate the passage of
 particles through matter.
 The main features of gemc are:
-	* user parameters stored in databases.
-	* easy interface to build simulations.
+
+ * user parameters stored in databases.
+ * easy interface to build simulations.
 
 |
 

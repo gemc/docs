@@ -5,4 +5,6 @@
 
 
 
+	options.rst
 	generator/generator.rst
+	fields/fields.rst

@@ -194,11 +194,12 @@ div.document .section:first-child {
 	margin-top: 0px;
 }
 
+/* code */
 div.document div.highlight {
 	padding: 3px;
-	background-color: #eeeeec;
-	border-top: 2px solid #dddddd;
-	border-bottom: 2px solid #dddddd;
+	background-color: #effeef;
+	border-top: 1px solid #ac9;
+	border-bottom: 1px solid #ac9;
 	margin-top: .8em;
 	margin-bottom: .8em;
 }
@@ -217,8 +218,6 @@ div.document div.code-block-caption span.caption-number {
 	font-style: italic;
 }
 
-div.document div.code-block-caption span.caption-text {
-}
 
 div.document h2 {
 	margin-top: .7em;
@@ -403,6 +402,14 @@ div.mydiv {
 	text-align: center;
 }
 
+div.lmydiv {
+	float: left;
+}
+
+div.tmydiv {
+	float: right;
+}
+
 div.footer, div.footer a {
 	color: #555555;
 }
@@ -538,6 +545,14 @@ img.toggler {
 	cursor: pointer;
 }
 
+table {
+	text-align: center;
+}
+
+table tr:first-child {
+	background-color: #ddf;
+}
+
 /* -- viewcode extension ---------------------------------------------------- */
 
 .viewcode-link {
@@ -571,8 +586,13 @@ div.note {
 	border: 1px solid #ac9;
 }
 
+p.admonition-title:after {
+	content: ":";
+}
 
-
+div.note p.admonition-title {
+	font-weight: bold;
+}
 
 
 
