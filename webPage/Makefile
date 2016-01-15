@@ -62,6 +62,9 @@ html:
 	cp source/nested.png                  $(BUILDDIR)/html
 	@echo ""
 
+makeWeb:
+	scp -r build/html ftp:/u/group/clas/www/gemc/html/gemc
+
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
 	@echo

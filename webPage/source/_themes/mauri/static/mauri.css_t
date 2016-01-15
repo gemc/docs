@@ -456,6 +456,8 @@ img.align-center, .figure.align-center, object.align-center {
 /* ANYTHING .docutils will replace the basic */
 table.docutils {
 	border: 0;
+	vertical-align: center;
+
 }
 
 table caption span.caption-number {
@@ -524,7 +526,7 @@ span.linkdescr {
 
 table.indextable td {
 	text-align: left;
-	vertical-align: top;
+	vertical-align: center;
 }
 
 table.indextable dl, table.indextable dd {
@@ -549,7 +551,9 @@ img.toggler {
 
 table {
 	text-align: center;
+	vertical-align: center;
 }
+
 
 table tr:first-child {
 	background-color: #ddf;
