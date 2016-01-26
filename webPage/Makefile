@@ -63,7 +63,7 @@ html:
 	@echo ""
 
 makeWeb:
-	scp -r build/html ftp:/u/group/clas/www/gemc/html/gemc
+	scp -r build/html ftp.jlab.org:/u/group/clas/www/gemc/html/gemc
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml

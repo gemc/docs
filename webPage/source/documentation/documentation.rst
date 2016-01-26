@@ -9,3 +9,4 @@ GEMC Documentation
 	options.rst
 	generator/generator.rst
 	fields/fields.rst
+	hitDefinition.rst
