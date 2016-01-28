@@ -47,6 +47,7 @@ help:
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
+	@echo "  publish    to publish webpage onto gemc server"
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -62,7 +63,7 @@ html:
 	cp source/nested.png                  $(BUILDDIR)/html
 	@echo ""
 
-makeWeb:
+publish:
 	scp -r build/html ftp.jlab.org:/u/group/clas/www/gemc/html/gemc
 
 dirhtml:
