@@ -1,4 +1,6 @@
 
+.. _downloads:
+
 GEMC Dowloads
 =============
 
@@ -37,7 +39,7 @@ GEMC Dowloads
 +--------------+------------------+----------+--------------------+
 |     devel    |    23            |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
-|     2.2      |    23            |          | comong soon!       |
+|     2.2      |    23            |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
 
 |
@@ -49,7 +51,7 @@ GEMC Dowloads
 +--------------+------------------+----------+--------------------+
 |     devel    |    14.04         |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
-|     2.2      |    14.04         |          | comong soon!       |
+|     2.2      |    14.04         |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
 
 
@@ -57,7 +59,7 @@ GEMC Dowloads
 
 Geometry Downloads
 ------------------
-`text factory experiment tarball <http://jlab.org/12gev_phys/packages/gcards/experiments-devel.tar>`_
+`text factory experiment tarball <http://jlab.org/12gev_phys/packages/gcards/experiments-devel.tar>`_ 
 
 
 Events:
@@ -68,4 +70,28 @@ Events:
 GCards:
 -------
 `CLAS12 Experimental setup <http://jlab.org/12gev_phys/packages/gcards/clas12.php>`_
+
 `HPS Experimental setup <http://jlab.org/12gev_phys/packages/gcards/hps.php>`_
+
+
+
+Running the GEMC app on a mac
+-----------------------------
+
+Using the gemc app icon
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Drag and drop a gcard on the GEMC icon.
+
+
+Using the command line
+^^^^^^^^^^^^^^^^^^^^^^
+
+You can use the gemc.command on a terminal to run gemc, using the typical options and gcard::
+
+ /Application/gemc-*version*.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
+
+
+
+
+

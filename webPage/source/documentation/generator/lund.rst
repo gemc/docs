@@ -1,3 +1,5 @@
+.. _lund:
+
 The LUND format
 ---------------
 

@@ -1,3 +1,4 @@
+.. _gemcOption:
 
 ############
 GEMC Options

@@ -197,7 +197,7 @@ div.document .section:first-child {
 /* code */
 div.document div.highlight {
 	padding: 3px;
-	background-color: #effeef;
+	background-color: #efffff;
 	border-top: 1px solid #ac9;
 	border-bottom: 1px solid #ac9;
 	margin-top: .8em;
@@ -587,7 +587,7 @@ div.code-block-caption {
 
 
 div.note {
-	background-color: #ffff99;
+	background-color: #ffffdc;
 	padding: 2px 5px;
 	border: 1px solid #ac9;
 }

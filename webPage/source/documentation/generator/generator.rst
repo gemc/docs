@@ -1,4 +1,6 @@
 
+.. _generator:
+
 #########
 Generator
 #########
