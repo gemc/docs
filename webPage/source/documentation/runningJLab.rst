@@ -13,7 +13,7 @@ The environment is necessary to load the libraries needed to run gemc. To load::
 
  source /site/12gev_phys/production.csh
 
-csh is supported, and bash is in the works.
+Currently only csh is supported, and bash is in the works.
 
 
 

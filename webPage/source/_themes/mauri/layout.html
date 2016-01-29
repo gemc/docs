@@ -79,11 +79,14 @@ Adapted from Agogo style
 			<a href="">email Maurizio</a>
 
 		{% endif %}
-		{% if pagename == 'documentation/documentation' %}
+		{% if pagename.startswith("documentation") %}
 			<h3>{{ _('Related') }}<br></h3>
 			<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
 		{% endif %}
-		{% if pagename == 'contributing' %}
+		
+		
+		
+		{% if pagename.startswith("contributing")" %}
 			<h3>{{ _('Shortcuts') }}<br></h3>
 			<object type="text/html" height="450" data="{{ pathto('contr') }}" border="0" ></object>
 		{% endif %}
