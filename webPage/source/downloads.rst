@@ -59,7 +59,8 @@ GEMC Dowloads
 
 Geometry Downloads
 ------------------
-`text factory experiment tarball <http://jlab.org/12gev_phys/packages/gcards/experiments-devel.tar>`_ 
+`text factory experiment tarball <http://jlab.org/12gev_phys/packages/gcards/experiments-devel.tar>`_.
+Includes the clas12 detectors, the hps beamline, the cebaf bubble experiment, the bdx setup, beamline and detectors of the electron-ion colloider (eic).
 
 
 Events:
@@ -78,10 +79,10 @@ GCards:
 Running the GEMC app on a mac
 -----------------------------
 
-Using the gemc app icon
+Using the gemc app icon:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Drag and drop a gcard on the GEMC icon.
+* Drag and drop a gcard on the GEMC icon.
 
 
 Using the command line
@@ -91,7 +92,7 @@ You can use the gemc.command on a terminal to run gemc, using the typical option
 
  /Application/gemc-*version*.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
 
-
+Where *version* is the gemc version you're using.
 
 GEMC Release Notes
 ------------------
