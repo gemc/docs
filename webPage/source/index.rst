@@ -57,7 +57,7 @@ Overview
 
 gemc tries to make easy things easy and hard things possible.
 
-Users can build and run complex of setups even with no C++ or geant4 knowledge.
+Users can build and run complex setups even with no C++ or geant4 knowledge.
 
 The upload/download of the parameters to/from databases (available: MYSQL or ASCII) is automatic.
 
