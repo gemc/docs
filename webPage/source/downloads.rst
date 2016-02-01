@@ -93,5 +93,13 @@ You can use the gemc.command on a terminal to run gemc, using the typical option
 
 
 
+GEMC Release Notes
+------------------
+For release notes and the complete changelog see :ref:`release notes <releaseNotes>`.
+
+
+
+
+
 
 
