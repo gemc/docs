@@ -37,7 +37,40 @@ of two tracks and secondaries hitting two detector elements to better illustrate
    its steps add to the previous hits’ steps.
 
 
+True Information
+----------------
 
+
+
+
+
+
+Process Names / ID Table
+------------------------
+
+   =====================  =========
+   Process Name           ID (int)
+   ---------------------  ---------
+   e ionization              1
+   compton scattering        2
+   e bremsstrahlung          3
+   Photo Electric Effect     4
+   Gamma Conversion          5
+   e+ Annihilation           6
+   photon-Nuclear            7
+   electron-Nuclear          8
+   Hadronic Elastic          9
+   Proton Inelast ic         10
+   Neutron Inelastic         11
+   pi- Inelastic             12
+   pi+ Inelastic             13
+   hadron ionization         14
+   neutron capture           15
+   decay                     16
+   muon ionization           17
+   Coulomb Scattering        18
+   na                        90
+   =====================  =========
 
 
 
