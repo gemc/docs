@@ -1,12 +1,14 @@
 Internal Generator
 ------------------
 
-A primary particle 4-momentum and vertex ranges can be set with the gcard directives::
+A primary particle 4-momentum and vertex ranges can be set with the gcard directives:
 
- <option name="BEAM_P"   value="proton, 4.0*GeV, 20.0*deg, 10*deg"/>
- <option name="SPREAD_P" value="1*GeV, 10*deg, 180*deg"/>
- <option name="BEAM_V"   value="(0, 0, -5)cm"/>
- <option name="SPREAD_V" value="(0.1, 10)cm"/>
+.. code-block:: bash
+
+	<option name="BEAM_P"   value="proton, 4.0*GeV, 20.0*deg, 10*deg"/>
+	<option name="SPREAD_P" value="1*GeV, 10*deg, 180*deg"/>
+	<option name="BEAM_V"   value="(0, 0, -5)cm"/>
+	<option name="SPREAD_V" value="(0.1, 10)cm"/>
 
 
 The above will generate a proton with:

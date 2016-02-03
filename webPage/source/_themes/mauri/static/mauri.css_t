@@ -402,6 +402,7 @@ div.footer-wrapper {
 
 div.mydiv {
 	text-align: center;
+    align: center;
 }
 
 div.lmydiv {
