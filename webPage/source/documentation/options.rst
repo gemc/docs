@@ -52,4 +52,4 @@ For example, to set the primary particle momentum as above::
 
 .. note::
 
-   All command line options can be used in the gcard and viceversa.
+   All command line options can be used in the gcard and viceversa. The command line will superseed the gcard.
