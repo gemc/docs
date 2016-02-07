@@ -202,16 +202,3 @@ You can access to a specific subcategory like this::
  gemc -help-control
 
 
-
-GEMC on a personal computer
----------------------------
-
-gemc can be installed on apple computers using the dmg found in :ref:`gemc downloads <downloads>`.
-
-For linux OSes a installation from source is required.
-Here are the `installation instructions <https://www.jlab.org/12gev_phys/packages/sources/ceInstall/1.2_install.html>`_.
-
-
-The CLAS12 detectors geometry, materials, fields etc can be downloaded from the :ref:`downloads`.
-
-

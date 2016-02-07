@@ -10,3 +10,4 @@ GEMC Documentation
 	fields/fields.rst
 	hitDefinition.rst
 	runningJLab.rst
+	installation.rst
