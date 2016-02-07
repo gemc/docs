@@ -40,13 +40,62 @@ of two tracks and secondaries hitting two detector elements to better illustrate
 True Information
 ----------------
 
+The true information for any system *systemname* can be written in the output
+by using the *INTEGRATEDRAW* option. For example, to record true information for the system *dc*:
 
+.. code-block:: bash
+
+	<option name="INTEGRATEDRAW" value="dc"/>
+
+By default *INTEGRATEDRAW* is disabled.
+
+The option *SAVE_ALL_MOTHERS* can be used to enable the storing of mother particle information [#]_ .
+
+The complete lise of all the variable is given in the table below.
+For quantities that can be integrated, the variable is either an average or the weighted
+sum of the quantity.
+For quantities such as pid where no integration makes sense, the value refers to the *the
+first particle entering the sensitive volume*, or *FP* in the table.
+
+=====================  ========= ================================================================================================
+Variable Name             ID                                          Description
+---------------------  --------- ------------------------------------------------------------------------------------------------
+pid                       1       ID of the FP [#]_
+mpid                      2       ID of the mother of the FP
+tid                       3       Track ID of the FP
+mtid                      4       Track ID of the mother of the FP (if enabled)
+otid                      5       Track ID of the ancestor that generated the FP (if enabled)
+trackE                    6       Total energy of the FP
+totEdep                   7       Total energy deposited (in MeV)
+avg_x                     8       Average X position in the global reference system (in mm)
+avg_y                     9       Average Y position in the global reference system
+avg_z                     10      Average Z position in the global reference system
+avg_lx                    11      Average X position in the local reference system 
+avg_ly                    12      Average Y position in the local reference system
+avg_lz                    13      Average Z position in the local reference system
+px                        14      x component of momentum of the FP (in MeV)
+py                        15      y component of momentum of the FP
+pz                        16      z component of momentum of the FP
+vx                        17      x component of the FP's point of origin (in mm)
+vy                        18      y component of the FP's point of origin
+vz                        19      z component of the FP's point of origin
+mvx                       20      x component of the FP mother's point of origin (if enabled)
+mvy                       21      y component of the FP mother's point of origin
+mvz                       22      z component of the FP mother's point of origin
+avg_t                     23      Average time
+nsteps                    24      Number of geant4 steps
+procID                    25      Process that created the FP. See section below.
+hitn                      99      Hit ID
+=====================  ========= ================================================================================================
 
 
 
 
 Process Names / ID Table
 ------------------------
+
+The link between process name and the procID variable stored in the true information bank is given in the
+table below.
 
    =====================  =========
    Process Name           ID (int)
@@ -69,6 +118,7 @@ Process Names / ID Table
    decay                     16
    muon ionization           17
    Coulomb Scattering        18
+   Cherenkov                 19
    na                        90
    =====================  =========
 
@@ -81,6 +131,9 @@ Process Names / ID Table
 .. [#] Geant4 determines the size of a step, and the energy deposited, based on particle type, momentum,
        material type and density, and physics processes cross sections.
        In GEMC users can limit the maximum step for a given detector.
-.. [#] A detector element is its smallest readout. For example, a wire in Drift Chambers, or a strip in a silicon vertex.
+.. [#] A detector element is its smallest readout. For example, a wire in a drift chamber, or a strip in a silicon tracker.
+.. [#] Note: SAVE_ALL_MOTHERS will force a loop on all the existing tracks. Do not use if you have hundreds of tracks in one event as it will
+       slow down the simulation.
+.. [#] FP: the first particle entering the sensitive volume
 
 

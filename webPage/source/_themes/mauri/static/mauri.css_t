@@ -602,6 +602,11 @@ div.note p.admonition-title {
 }
 
 
+.footnote td {
+    background-color: #eee;
+    text-align: left;
+    padding: 0 5px;
+}
 
 
 

@@ -12,13 +12,16 @@ Command Line Options
 
 The syntax of the gemc command line options is::
 
- -OPTION="argument"
+   -OPTION="argument"
 
 For example, to set the primary particle momentum::
 
- -BEAM_P="proton, 4.0*GeV, 20.0*deg, 10*deg"
+   -BEAM_P="proton, 4.0*GeV, 20.0*deg, 10*deg"
+
+Unless the argument is a single word, quotes are necessary.
 
 Typing gemc -help will show the help sub-categories::
+
 
  Help Options:
 
@@ -33,7 +36,9 @@ Typing gemc -help will show the help sub-categories::
  >  -help-physics             physics options.
  >  -help-verbosity           verbosity options.
 
-You can access to a specific subcategory like this::
+You can access to a specific subcategory like this:
+
+.. code-block:: bash
 
  gemc -help-control
 
@@ -41,15 +46,23 @@ You can access to a specific subcategory like this::
 Gcard
 -----
 
-The syntax of the gcard options is::
+The syntax of the gcard options is:
+
+.. code-block:: bash
 
  <option name="OPTION"   value="argument"/>
 
-For example, to set the primary particle momentum as above::
+For example, to set the primary particle momentum as above:
+
+.. code-block:: bash
 
  <option name="BEAM_P"   value="proton, 4.0*GeV, 20.0*deg, 10*deg"/>
 
 
 .. note::
 
-   All command line options can be used in the gcard and viceversa. The command line will superseed the gcard.
+ All command line options can be used in the gcard and viceversa. The command line will superseed the gcard.
+
+.. note::
+
+ All the options and simulation conditions are saved in the output stream.

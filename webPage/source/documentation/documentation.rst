@@ -11,3 +11,4 @@ GEMC Documentation
 	hitDefinition.rst
 	runningJLab.rst
 	installation.rst
+	FAQ.rst
