@@ -1,3 +1,5 @@
+:orphan:
+
 .. _contributingToGemc:
 
 Contributing to gemc

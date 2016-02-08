@@ -1,3 +1,6 @@
+
+:orphan:
+
 .. _releaseNotes:
 
 GEMC Release Notes

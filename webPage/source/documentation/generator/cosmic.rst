@@ -52,8 +52,6 @@ For example:
 will target an area at (0, 0, 1m) with 5m of radius.
 
 
-.. container:: mydiv
-
 
 .. thumbnail:: model.png
 	:width: 48%

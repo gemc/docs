@@ -1,4 +1,6 @@
 
+:orphan:
+
 .. _downloads:
 
 GEMC Dowloads
@@ -78,7 +80,7 @@ Running the GEMC app on a mac
 -----------------------------
 
 Using the gemc app icon:
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Drag and drop a gcard on the GEMC icon.
 
@@ -88,7 +90,7 @@ Using the command line
 
 You can use the gemc.command on a terminal to run gemc, using the typical options and gcard::
 
- /Application/gemc-*version*.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
+ /Application/gemc-version.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
 
 Where *version* is the gemc version you're using.
 
