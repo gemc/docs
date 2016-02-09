@@ -51,10 +51,10 @@ By default *INTEGRATEDRAW* is disabled.
 
 The option *SAVE_ALL_MOTHERS* can be used to enable the storing of mother particle information [#]_ .
 
-The complete lise of all the variable is given in the table below.
+The complete list of all the variable is given in the table below.
 For quantities that can be integrated, the variable is either an average or the weighted
 sum of the quantity.
-For quantities such as pid where no integration makes sense, the value refers to the *the
+For quantities such as *pid* where the integration does not make sense, the value refers to the *the
 first particle entering the sensitive volume*, or *FP* in the table.
 
 =====================  ========= ================================================================================================
@@ -109,7 +109,7 @@ table below.
    photon-Nuclear            7
    electron-Nuclear          8
    Hadronic Elastic          9
-   Proton Inelast ic         10
+   Proton Inelastic          10
    Neutron Inelastic         11
    pi- Inelastic             12
    pi+ Inelastic             13
