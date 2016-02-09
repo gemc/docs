@@ -120,6 +120,7 @@ table below.
    Coulomb Scattering        18
    Cherenkov                 19
    deuteron Inelastic        20
+   muPairProd                21
    na                        90
    =====================  =========
 
