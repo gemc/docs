@@ -1,16 +1,27 @@
 
 :orphan:
 
+
+Tutorials
+=========
+
+.. toctree::
+	:maxdepth: 2
+
+	tutorials
+
 GEMC Documentation
 ==================
 
 .. toctree::
 	:maxdepth: 2
 
-	options.rst
-	generator/generator.rst
-	fields/fields.rst
-	hitDefinition.rst
-	runningJLab.rst
-	installation.rst
-	FAQ.rst
+	options
+	generator/generator
+	fields/fields
+	hitDefinition
+	runningJLab
+	installation
+	FAQ
+
+
