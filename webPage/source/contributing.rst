@@ -148,25 +148,10 @@ without losing your local changes.
 Create a branch
 ---------------
 
-You can create a branch with a name that summarize your modifications.
-
-For example, if John wants to fix a gui problem, a good branch-name would be:
-
-.. centered:: john-guifix
-
-To create a branch, first clone your fork locally, by running git on a terminal.
+You can create a branch with the command:
 
 .. code-block:: bash
 
- git clone fork-url-address
-
-This will install a local copy of your fork.
-
-Now you can create a branch with the command:
-
-.. code-block:: bash
-
- cd reponame
  git checkout -b branch-name
 
 
