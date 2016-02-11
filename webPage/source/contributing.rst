@@ -113,9 +113,7 @@ Keep the fork in sync
 ---------------------
 
 You can keep your fork up-to-date with the gemc repository.
-cd to the local copy of your fork and type:
-
-.. code-block:: bash
+cd to the local copy of your fork and type::
 
  git remote add upstream https://github.com/gemc/source.git
 
@@ -123,23 +121,17 @@ To verify the new upstream repository you've specified for your fork,
 type *git remote -v*. You should see the URL for your fork as origin,
 and the URL for the original repository as upstream.
 
-You're now ready to sync a fork. First, fetch the commits:
-
-.. code-block:: bash
+You're now ready to sync a fork. First, fetch the commits::
 
  git fetch upstream
 
-Then change to your master fork:
-
-.. code-block:: bash
+Then change to your master fork::
 
  git checkout master
 
 Finally, merge the changes from the upstream/master to your local master fork.
 This brings your fork's master branch into sync with the gemc repository,
-without losing your local changes.
-
-.. code-block:: bash
+without losing your local changes::
 
  git merge upstream/master
 
@@ -148,14 +140,15 @@ without losing your local changes.
 Create a branch
 ---------------
 
-You can create a branch with the command:
-
-.. code-block:: bash
+You can create a branch with the command::
 
  git checkout -b branch-name
 
-
 Tadaa! You're now working on a new branch, on a repo that you can commit to.
+
+Don't forget to push your branch to the remote server so you may select it to create a pull request::
+
+ git push origin dc-hitprocesses-ccdb
 
 |
 
