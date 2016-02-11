@@ -148,7 +148,7 @@ Tadaa! You're now working on a new branch, on a repo that you can commit to.
 
 Don't forget to push your branch to the remote server so you may select it to create a pull request::
 
- git push origin dc-hitprocesses-ccdb
+ git push origin branch-name
 
 |
 
