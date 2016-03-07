@@ -34,7 +34,7 @@ gemc requires several libraries and environment:
  * ccdb
 
 
-The installation instructions to install gemc and all its dependencies can be found `here
+ `Here are the installation instructions to install gemc and all its dependencies
 <https://www.jlab.org/12gev_phys/packages/sources/ceInstall/1.3_install.html>`_.
 All the packages listed "go_gemc" are necessary in order to run gemc. The packages listed below
 "go_gemc" are not necessary to run gemc.
