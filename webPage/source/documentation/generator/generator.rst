@@ -14,3 +14,4 @@ This document describes how to generate events in gemc.
 	cosmic
 	lund
 	luminosity
+	bgmerge

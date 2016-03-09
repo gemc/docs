@@ -1,5 +1,8 @@
-Luminosity Generator
---------------------
+.. _luminosity:
+
+
+Luminosity (background) Generator
+---------------------------------
 
 To add background coming from the beam the following quantities must be defined
 
