@@ -34,7 +34,7 @@ The three events, merged to a single track, are shown in Fig 1, 2 and 3 right.
    :group: mycenter
    :title:
 
-    No hits were merged onto the real track.
+    No hits were merged onto the generated track.
 
 *Figure 1. Event 1. Left: no background hits with luminosity. Right: no hits were merged to the generated track.*
 
@@ -52,7 +52,7 @@ The three events, merged to a single track, are shown in Fig 1, 2 and 3 right.
 	:group: mycenter
 	:title:
 
-	The luminosity tracks were merged onto the real track.
+	The luminosity tracks were merged onto the generated track.
 
 *Figure 2. Event 2. Left: tracks producing hits from luminosity were saved.
 Right: the tracks were merged to the generated track.*
@@ -72,7 +72,7 @@ Right: the tracks were merged to the generated track.*
 	:group: mycenter
 	:title:
 
-	The tracks were merged onto the real track.
+	The tracks were merged onto a generated track.
 
 *Figure 3. Event 3. Left: tracks producing hits from a realistic luminosity of 124,000 electrons per event were saved.
 Right: the tracks were merged to the generated track.*
