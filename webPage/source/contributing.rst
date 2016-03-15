@@ -112,7 +112,9 @@ your PR should be ready for merge.
 Keep the fork in sync
 ---------------------
 
-You can keep your fork up-to-date with the gemc repository.
+To keep your fork up-to-date with the gemc repository first you need the upstream repo
+(you only need to do this once).
+
 cd to the local copy of your fork and type::
 
  git remote add upstream https://github.com/gemc/source.git
@@ -121,20 +123,23 @@ To verify the new upstream repository you've specified for your fork,
 type *git remote -v*. You should see the URL for your fork as origin,
 and the URL for the original repository as upstream.
 
-You're now ready to sync a fork. First, fetch the commits::
 
- git fetch upstream
+To sync a fork:
 
-Then change to your master fork::
+ 1. fetch the commits::
 
- git checkout master
+     git fetch upstream
 
-Finally, merge the changes from the upstream/master to your local master fork.
-This brings your fork's master branch into sync with the gemc repository,
-without losing your local changes::
+ 2. change to your master fork::
 
- git merge upstream/master
+     git checkout master
 
+ 3. merge the changes from the upstream/master to your local master fork::
+
+     git merge upstream/master
+
+This brings your fork in sync with the gemc repository,
+without losing your local changes.
 
 
 Create a branch
