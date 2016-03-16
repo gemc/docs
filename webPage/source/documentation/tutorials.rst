@@ -6,4 +6,4 @@ Tutorials
 .. toctree::
 	:maxdepth: 2
 
-	tutorials/myFirst
+	tutorials/1/myFirstp1

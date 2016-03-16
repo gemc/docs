@@ -25,3 +25,12 @@ GEMC Website
 Local server is in
 
 /group/clas/www/gemc/html
+
+
+
+
+To not include a doc in the tocree, add
+
+:orphan:
+
+at its top.
