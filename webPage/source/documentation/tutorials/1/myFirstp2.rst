@@ -1,8 +1,8 @@
 :orphan:
 
-=====================
-My First Volume *2/5*
-=====================
+========================
+My First Volume  - *2/5*
+========================
 
 
 
@@ -14,11 +14,13 @@ We want the paddle 30 cm downstream of the target (0,0,0)::
    $detector{"pos"}         = "0*cm 0*cm 30*cm";
    $detector{"rotation"}    = "0*deg 0*deg 0*deg";
 
-Note that since there is no rotation, we could have omitted the "rotation" entry to make the code more compact.
+Note: since there is no rotation, we could have omitted the "rotation" entry to make the code more compact.
 
-The type of geant4 solid is "box". In this case its dimensions depend on the variation. Notice how units are specified::
+The type of geant4 solid is "box". Since we want to study two versions of it, a short and a long one,
+its dimensions depend on the variation name.
+Notice how units are specified::
 
-	$detector{"type"}        = "Box";
+	$detector{"type"} = "Box";
 	
 	if($configuration{"variation"} eq "short")
 	{

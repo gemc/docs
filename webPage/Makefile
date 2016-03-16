@@ -63,11 +63,11 @@ html:
 	cp source/nested.png                  $(BUILDDIR)/html
 	# making sure the txt files are deleted
 	rm -f `find source/documentation/tutorials/material/ -name "*.txt"`
-	cp -r source/documentation/tutorials/material  $(BUILDDIR)/html/documentation/tutorials/
 	@echo ""
 
 publish:
 	scp -r build/html ftp.jlab.org:/u/group/clas/www/gemc/html/gemc
+	cd source/documentation/tutorials/material ;  ./makeTars
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml

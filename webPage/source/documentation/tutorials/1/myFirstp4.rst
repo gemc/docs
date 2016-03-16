@@ -1,8 +1,8 @@
 :orphan:
 
-=====================
-My First Volume *4/5*
-=====================
+=======================
+My First Volume - *4/5*
+=======================
 
 
 Running GEMC
@@ -14,7 +14,7 @@ Let's see what you produced. Run gemc using the provided gcard::
 
 You should see the "long" variation of the geometry:
 
-.. figure:: ../material/myFirst/fig1.png
+.. figure:: fig1.png
 	:width: 70%
 	:align: center
 
@@ -22,7 +22,7 @@ You should see the "long" variation of the geometry:
 Go ahead and hit the "Run" button to shoot a 1 GeV electron:
 
 
-.. figure:: ../material/myFirst/fig2.png
+.. figure:: fig2.png
 	:width: 70%
 	:align: center
 

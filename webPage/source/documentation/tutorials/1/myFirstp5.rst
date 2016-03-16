@@ -1,24 +1,16 @@
 :orphan:
 
-=====================
-My First Volume *5/5*
-=====================
+=======================
+My First Volume - *5/5*
+=======================
 
 
 Materials
 ----------
 
-Let’s create a “scintillator” material.
-
-In geant4 materials can be made by
- - molecular composition: counting the number of atoms of each element
- - fractional mass: a composite of other materials, each with its own mass percentage.
-
-We’ll use the molecular composition. Take a look at materials.pl.
-
 A simple scintillator material is C9H10. It has two elements, Carbon and Hydrogen. The molecule has 9 and 10 atoms respectively.
 
-The relevant lines in the material definition are::
+The relevant lines in the material definition file (*materials.pl*) are::
 
  $mat{"ncomponents"} = "2";
  $mat{"components"}  = "C 9 H 10";
@@ -33,12 +25,32 @@ Now the material will be loaded, with "myFirstscintillator" name. To use it, cha
 
  $detector{"material"} = "myFirstscintillator";
 
-Voilà, you are now assigning your very own material to the paddle. You can verify this in the GUI (detector page) or by specifying the
+Write the new material
+----------------------
+
+Execute:
+
+ ./myFirst.pl config.dat
+
+You should see that four files are created this time. Two additional files describe the materials [#]_.
+
+Voilà, you are now assigning your very own material to the paddle. Remember you can change the variation in the gcard. Run gemc::
+
+ gemc example.gcard
+
+
+You can verify the material in the GUI (detector page) or by specifying the
 option::
 
  -MATERIAL_VERBOSITY=4.
 
 Congratulations, you created your very first volumes and material in GEMC!
+
+
+.. rubric:: Footnotes
+
+.. [#]  Since we didn't change the paddle composition based on the variation name, the two files
+        happen to be identical. However only the variation specified in the gcard will be loaded.
 
 |
 

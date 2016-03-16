@@ -1,12 +1,12 @@
 
-=====================
-My First Volume *1/5*
-=====================
+========================
+My First Volume  - *1/5*
+========================
 
 In this tutorial you will build a liquid hydrogen target and
 a paddle with a custom scintillator material. You will use variations to study two options for paddle length.
 
-You can find the material for this tutorial `here <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/myFirst/>`_.
+You can find a tarball material for this tutorial `here <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/myFirst.tar>`_.
 
 MYSQL or TEXT?
 --------------

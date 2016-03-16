@@ -1,0 +1,14 @@
+#!/bin/csh
+
+rm -f *.tar
+
+foreach d (`\ls | grep -v makeTars`)
+	cd $d
+	tar cvf $d.tar *
+	mv $d.tar ..
+	cd ..
+end
+
+scp *.tar ftp:/group/clas/www/gemc/html/gemc/html/documentation/tutorials/material/
+
+rm -f *.tar

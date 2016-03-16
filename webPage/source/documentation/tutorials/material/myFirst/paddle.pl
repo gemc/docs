@@ -14,18 +14,10 @@ sub build_simple_paddle
 	$detector{"color"}       = "339999";
 	$detector{"type"}        = "Box";
 	
-	if($configuration{"variation"} eq "short")
-	{
-		$detector{"dimensions"}  = "2*cm 2*cm 4*cm";
-	}
-	if($configuration{"variation"} eq "long")
-	{
-		$detector{"dimensions"}  = "2*cm 2*cm 10*cm";
-	}
-
+	if($configuration{"variation"} eq "short") { $detector{"dimensions"}  = "2*cm 2*cm  4*cm"; }
+	if($configuration{"variation"} eq "long")  { $detector{"dimensions"}  = "2*cm 2*cm 10*cm"; }
 	
 	$detector{"material"}    = "G4_GLASS_LEAD";
-	$detector{"visible"}     = 1;
 	$detector{"style"}       = 1;
 	print_det(\%configuration, \%detector);
 }
