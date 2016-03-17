@@ -21,7 +21,7 @@ In order to use this materials, first load it in the main script myFirst.pl by a
  # materials
  require "./materials.pl";
 
-Now the material will be loaded, with "myFirstscintillator" name. To use it, change the material entry::
+Now the material will be loaded, with "myFirstscintillator" name. To use it, change the material entry in paddle.pl::
 
  $detector{"material"} = "myFirstscintillator";
 
