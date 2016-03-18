@@ -15,11 +15,14 @@ The relevant lines in the material definition file (*materials.pl*) are::
  $mat{"ncomponents"} = "2";
  $mat{"components"}  = "C 9 H 10";
 
-In order to use this materials, first load it in the main script myFirst.pl by adding, right after the paddle.pl require, the lines::
-
+In order to use this material, first load it in the main script myFirst.pl by adding, right after the paddle.pl require, the lines::
 
  # materials
  require "./materials.pl";
+
+To call the routine, put it in the loop (after build_target is ok)::
+
+ materials();
 
 Now the material will be loaded, with "myFirstscintillator" name. To use it, change the material entry in paddle.pl::
 

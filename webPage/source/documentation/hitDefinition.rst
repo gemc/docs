@@ -121,6 +121,10 @@ table below.
    Cherenkov                 19
    deuteron Inelastic        20
    muPairProd                21
+	ion ionization            22
+	hadron pair production    23
+	triton Inelastic          24
+	kaon Inelastic            25
    na                        90
    =====================  =========
 

@@ -1,10 +1,11 @@
+:orphan:
 
 ========================
 My First Volume  - *1/5*
 ========================
 
 In this tutorial you will build a liquid hydrogen target and
-a paddle made from a custom scintillator material. You will use variations to study two options for paddle length.
+a paddle with a custom scintillator material. You will use variations to study two options for paddle length.
 
 Pre-requisites
 ^^^^^^^^^^^^^^
@@ -49,7 +50,7 @@ The following lines of code define the volume name, its mother volume and a desc
    $detector{"mother"}      = "root";
    $detector{"description"} = "Example of paddle";
 
-The position and rotation of a volume are relative to its mother volume. The rotation will happen before the
+The positions and rotation of a volume are relative to its mother volume. The rotation will happen before the
 position. "root" is the root volume.
 
 |

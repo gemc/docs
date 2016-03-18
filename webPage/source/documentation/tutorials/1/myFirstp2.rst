@@ -9,7 +9,7 @@ My First Volume  - *2/5*
 Geometry
 --------
 
-We want the paddle 30 cm downstream of the target (0,0,0)::
+We want the paddle shifted 30 cm in z relative to the target (0,0,0)::
 
    $detector{"pos"}         = "0*cm 0*cm 30*cm";
    $detector{"rotation"}    = "0*deg 0*deg 0*deg";
