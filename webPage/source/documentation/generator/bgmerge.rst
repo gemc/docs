@@ -12,9 +12,7 @@ The option "SAVE_ALL_MOTHERS" can be set to "3" as follows::
 
  -SAVE_ALL_MOTHERS=3
 
-
-
-This saves the tracks that produced hits into a LUND file. If a track's mother also produced hits, only the mother
+This saves all tracks that entered any sensitive volumes into a LUND file. If a track's mother also produced hits, only the mother
 is saved so the hits are not double counted [#]_.
 
 Merging background tracks

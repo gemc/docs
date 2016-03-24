@@ -97,9 +97,9 @@ Process Names / ID Table
 The link between process name and the procID variable stored in the true information bank is given in the
 table below.
 
-   =====================  =========
-   Process Name           ID (int)
-   ---------------------  ---------
+   ======================  =========
+   Process Name            ID (int)
+   ----------------------  ---------
    e ionization              1
    compton scattering        2
    e bremsstrahlung          3
@@ -121,12 +121,12 @@ table below.
    Cherenkov                 19
    deuteron Inelastic        20
    muPairProd                21
-	ion ionization            22
-	hadron pair production    23
-	triton Inelastic          24
-	kaon Inelastic            25
+   ion ionization            22
+   hadron pair production    23
+   triton Inelastic          24
+   kaon Inelastic            25
    na                        90
-   =====================  =========
+   ======================  =========
 
 
 
