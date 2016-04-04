@@ -21,8 +21,8 @@ Installing gemc on Windows 10
 This is expected to happen in Winter 2016.
 
 
-Installing gemc and its dependencies
-------------------------------------
+Installing gemc and all its dependencies
+----------------------------------------
 
 gemc requires several libraries and environment:
 
@@ -34,7 +34,7 @@ gemc requires several libraries and environment:
  * ccdb
 
 
-`Here are the installation instructions to install gemc and all its dependencies <https://www.jlab.org/12gev_phys/packages/sources/ceInstall/1.3_install.html>`_.
+`Here are the step by step instructions on how to install gemc and all its dependencies <https://www.jlab.org/12gev_phys/packages/sources/ceInstall/1.3_install.html>`_.
 
 All the packages listed "go_gemc" are necessary in order to run gemc. The packages listed below
 "go_gemc" are not necessary to run gemc.

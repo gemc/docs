@@ -20,6 +20,12 @@ For example, to set the primary particle momentum::
 
 Unless the argument is a single word, quotes are necessary.
 
+Some options support multiple instances. For example, one could scale several fields with the SCALE_FIELD option::
+
+ -SCALE_FIELD="field1, 0.6"
+ -SCALE_FIELD="field2, -1"
+
+
 Typing gemc -help will show the help sub-categories::
 
 
@@ -61,8 +67,10 @@ For example, to set the primary particle momentum as above:
 
 .. note::
 
- All command line options can be used in the gcard and viceversa. The command line will superseed the gcard.
+ All command line options can be used in the gcard and viceversa. The command line will superseed the gcard. When doing so,
+ the option multiplicity is reset (i.e. if SCALE_FIELD is used in the gcard and the command line, only the command line option
+ will be used.
 
 .. note::
 
- All the options and simulation conditions are saved in the output stream.
+ All the options are saved in the output stream.
