@@ -7,15 +7,12 @@ GEMC Dowloads
 =============
 
 
-.. |downloadDevel| image:: download-button.png
+.. |download2.3at10| image:: download-button.png
 	:width: 110pt
-	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-devel.dmg
+	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.3.dmg
 
-.. |download2.28| image:: download-button.png
-	:width: 110pt
-	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.2.dmg
 
-.. |download2.210| image:: download-button.png
+.. |download2.2at10| image:: download-button.png
 	:width: 110pt
 	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.2.y.dmg
 
@@ -25,9 +22,9 @@ GEMC Dowloads
 +--------------+------------------+----------+--------------------+
 |   Version    |  OS Version      |   Size   |                    |
 +--------------+------------------+----------+--------------------+
-|   **2.2**    |    10.8 and up   |  471 MB  | |download2.28|     |
+|   **2.3**    |    10.10 and up  |  478 MB  | |download2.3at10|  |
 +--------------+------------------+----------+--------------------+
-|   **2.2**    |    10.10 and up  |  586 MB  | |download2.210|    |
+|   **2.2**    |    10.10 and up  |  586 MB  | |download2.2at10|  |
 +--------------+------------------+----------+--------------------+
 
 |
@@ -36,8 +33,6 @@ GEMC Dowloads
 |          Fedora Line                                            |
 +--------------+------------------+----------+--------------------+
 |   Version    |  OS Version      |   Size   |                    |
-+--------------+------------------+----------+--------------------+
-|     devel    |    23            |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
 |     2.2      |    23            |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
@@ -48,8 +43,6 @@ GEMC Dowloads
 |          Ubuntu Line                                            |
 +--------------+------------------+----------+--------------------+
 |   Version    |  OS Version      |   Size   |                    |
-+--------------+------------------+----------+--------------------+
-|     devel    |    14.04         |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
 |     2.2      |    14.04         |          | coming soon!       |
 +--------------+------------------+----------+--------------------+
@@ -79,10 +72,16 @@ GCards:
 Running the GEMC app on a mac
 -----------------------------
 
+You may have to allow to open apps from any developer to run gemc.
+
 Using the gemc app icon:
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Drag and drop a gcard on the GEMC icon.
+* Drag and drop a gcard on the GEMC icon in the application directory:
+
+.. image:: gemcDrag.png
+	:width: 60%
+	:align: center
 
 
 Using the command line
@@ -90,9 +89,30 @@ Using the command line
 
 You can use the gemc.command on a terminal to run gemc, using the typical options and gcard::
 
- /Application/gemc-version.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
+ /Applications/gemc-version.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
 
 Where *version* is the gemc version you're using.
+
+
+Magnetic Fields
+---------------
+Some experiment require magnetic field maps. For example, clas12 field maps are located here:
+
+ * `solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12SolenoidFieldMap.dat>`_
+ * `torus <http://clasweb.jlab.org/12gev/field_maps/clas12TorusOriginalMap.dat>`_
+
+In case of dmg installation, download and move the maps to:
+
+gemc.app/Contents/Resources/
+
+For example::
+
+ mv ~/Downloads/clas12SolenoidFieldMap.dat.txt /Applications/gemc-2.3.app/gemc.app/Contents/Resources/
+
+
+In case of installation from source code, unpack in::
+
+ $JLAB_ROOT/noarch/data/
 
 
 GEMC Release Notes
