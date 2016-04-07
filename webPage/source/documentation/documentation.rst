@@ -19,6 +19,7 @@ GEMC Documentation
 	options
 	generator/generator
 	fields/fields
+	detectorDefinition
 	hitDefinition
 	runningJLab
 	installation
