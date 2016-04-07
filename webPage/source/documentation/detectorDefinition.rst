@@ -101,6 +101,10 @@ For example a green detector would have::
 An optional 7th digit could be added to set the transparency. The number goes from 0 to 5 with 5 setting the detector to
 fully transparent and 0 being fully opaque.
 
+For example a red semi-transparent detector would have::
+
+"ff00002"
+
 |
 
 .. rubric:: Footnotes
