@@ -46,7 +46,9 @@ More details are given below.
 
 Detector type, dimensions
 -------------------------
-The detector type corresponds to the geant4 solid type. Its dimensions correspond to the geant4 constructor arguments [#]_ [#]_, in their order. The complete list of geant4 solid can be found
+The detector type corresponds to the geant4 solid type. Its dimensions correspond
+to the geant4 constructor arguments [#]_ [#]_, in their order. The complete list
+of geant4 solid can be found
 `here <http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/ch04.html#sect.Geom.Solid>`_.
 
 For example, to define a sphere the G4Sphere can be used. Its geant4 parameters are::
@@ -67,8 +69,32 @@ would build the geant4 sphere::
  pRmin = 100, pRmax = 120, pSPhi = 0*Degree, pDPhi = 180*Degree, pSTheta = 0 Degree, pDTheta = 180*Degree
 
 
+Rotations
+---------
+The rotation of a volume is an ordered set of rotation around each axis. The reference frame is the detector mother's.
+
+The default rotation order is xyz, so that the following will rotate the detector first around x, then y then z by 10, 30,
+and 50 degrees respectively::
+
+ "10*deg 30*deg 50*deg"
+
+To change the order of rotation the "ordered" directive can be used. For example, to rotate around z first, then x then y::
+
+ "ordered: zxy 10*deg 30*deg 50*deg"
 
 
+Color, Transparency
+-------------------
+The visual attributes of color and transparency can be set with a string of 6 or 7 numbers.
+The first 6 numbers are in the form rrggbb where rr, gg, bb are numbers (in hexadecimal) from 0 to 255
+controlling the intensite of red, green, and blue respectively.
+
+For example a green detector would have::
+
+ "00ff00"
+
+An optional 7th digit could be added to set the transparency. The number goes from 0 to 5 with 5 setting the detector to
+fully transparent and 0 being fully opaque.
 
 |
 
