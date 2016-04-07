@@ -60,14 +60,17 @@ For example, to define a sphere the G4Sphere can be used. Its geant4 parameters 
 
 so the gemc definition::
 
- "100*cm 120*cm 0*deg 180*deg 0*deg 180*deg:
+ "100*cm 120*cm 0*deg 180*deg 0*deg 180*deg"
 
-would build the geant4 sphere::
+would build the geant4 sphere:
 
- pRmin = 100, pRmax = 120, pSPhi = 0*Degree, pDPhi = 180*Degree, pSTheta = 0 Degree, pDTheta = 180*Degree
+.. image:: g4sphere.png
+	:width: 50%
+	:align: center
 
+corresponding to::
 
-
+ pRmin=100, pRmax=120, pSPhi=0*Degree, pDPhi=180*Degree, pSTheta=0*Degree, pDTheta=180*Degree
 
 
 |
