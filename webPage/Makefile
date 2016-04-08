@@ -66,6 +66,7 @@ html:
 	@echo ""
 
 publish:
+	make html
 	scp -r build/html ftp.jlab.org:/u/group/clas/www/gemc/html/gemc
 	cd source/documentation/tutorials/material ;  ./makeTars
 
