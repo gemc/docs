@@ -21,6 +21,19 @@ Installing gemc on Windows 10
 This is expected to happen in Winter 2016.
 
 
+Getting and compiling gemc source code
+--------------------------------------
+
+If you have the dependencies libraries and environment already installed you can simply get the gemc
+`source code from github <https://github.com/gemc/source>`_ and type::
+
+ cd source
+ scons -jN OPT=1
+
+to compile gemc. N refers to the numbers of cores in your processor and the "OPT=1" argument
+tells scons to compile with optimization.
+
+
 Installing gemc and all its dependencies
 ----------------------------------------
 
@@ -42,15 +55,3 @@ All the packages listed "go_gemc" are necessary in order to run gemc. The packag
 Some experiment's geometry, materials, fields etc can also be downloaded from the :ref:`downloads`.
 
 
-
-Getting and compiling gemc source code
---------------------------------------
-
-If you have the above libraries and environment already installed you can simply get the gemc
-`source code from github <https://github.com/gemc/source>`_ and type::
-
- cd source
- scons -jN OPT=1
-
-to compile gemc. N refers to the numbers of cores in your processor and the "OPT=1" argument
-tells scons to compile with optimization.
