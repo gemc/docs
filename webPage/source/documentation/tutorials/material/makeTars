@@ -9,6 +9,6 @@ foreach d (`\ls | grep -v makeTars`)
 	cd ..
 end
 
-scp *.tar ftp:/group/clas/www/gemc/html/gemc/html/documentation/tutorials/material/
+scp *.tar ftp.jlab.org:/group/clas/www/gemc/html/gemc/html/documentation/tutorials/material/
 
 rm -f *.tar
