@@ -1,3 +1,7 @@
+
+.. _mergingBackground:
+
+
 Saving and merging background
 -----------------------------
 

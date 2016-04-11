@@ -7,10 +7,13 @@ Release 2.3
 ###########
 
 
+Physics Processes
+-----------------
+
 - added scintillation in the material definition, both in API and in the gemc core.
   The number of photons emitted has two component (fast and slow) and is proportional two::
 
-   A e^(-t/tfast) + B e ^(-t/tslow)
+   A e^(-t/tfast) + B e^(-t/tslow)
 
   where A and B are the fast and slow component respectively and are dependent on wavelength,
   and tfast and tslow are the fast and slow time constant (valid for all wavelengths).
@@ -30,6 +33,14 @@ Release 2.3
 - setting hadronic physics list to "none" by default. User can enable them in the gcard or
   command line. This way one can choose to run w/o hadronic physics.
 
+
+- A map of names to process ID is in place and documented. See :ref:`processCatalogue`.
+- The **production cut** will now affect all volumes in a system rather than just the sensitive volumes
+
+
+Run Luminosity
+--------------
+
 - added RUN_WEIGHTS option. The argument is a text file with two columns: run number and its luminosity
   weight. GEMC will distribute the number of events requested among the run list according to their weight.
   The calibration constants, including status, are re-read from the user databases at each run number change.
@@ -39,23 +50,61 @@ Release 2.3
 	 :align: center
 
 
- - production cut will now affect all volumes in a system rather than just the sensitive volumes
-
- - time resolution is an external parameter "VTRESOLUTION"
-
- - added bunch sampling of the voltage vs signal time. Data structure name is quantumS, map<int, int>.
-   This is effectively FADC mode 1.
- - added graphing of the FADC signal. The shape and intensity of the signal should be optimized for each detector
- - trigger signal added to hit
- - display of trigger added to trigger gui
- - dropdown menu to decide to plot voltage, trigger, or both
-
- - added COSMICRAYS option, small utility macro to show the distribution
 
 
-.. image:: cosmics.png
-	:width: 90%
-	:align: center
+Digitization
+------------
+
+- time resolution is an external parameter "VTRESOLUTION"
+
+- added bunch sampling of the voltage vs signal time. Data structure name is quantumS, map<int, int>.
+  This is effectively FADC mode 1.
+
+GUI
+---
+
+- added graphing of the FADC signal. The shape and intensity of the signal should be optimized for each detector
+- trigger signal added to hit
+- display of trigger added to trigger gui
+- dropdown menu to decide to plot voltage, trigger, or both
+- added buttons to export a detector or the whole root in gdml format
+- added button to inspect detector in a new window
+- added buttons to print screenshots in png PNG, EPS format
+- added button to write single volumes or all volumes to WRL
+
+
+Cosmic Ray Model
+----------------
+
+- added COSMICRAYS option, small utility macro to show the distribution
+- added COSMICAREA option to define the area where the cosmic ray will go through,
+
+
+ .. image:: cosmics.png
+ 	 :width: 90%
+	 :align: center
+
+
+
+
+Merging Background
+------------------
+
+- with SAVE_ALL_MOTHERS set to 2, all particles generating hits are saved in LUND format
+- adding MERGE_LUND_BG option to merge events from the LUND format.
+- See :ref:`mergingBackground` for details.
+
+ .. image:: mergingBackground.png
+ 	 :width: 90%
+	 :align: center
+
+
+Generator
+---------
+
+- defaulting SPREAD to **phasespace**, cos(theta) is flat, not theta, unless flag "flat" is given to the SPREAD option
+
+
 
 |
 
