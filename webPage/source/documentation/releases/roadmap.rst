@@ -80,6 +80,15 @@ GEMC 3.1
 - output format plugins.
 - geant4 output definitions will be an external GEMC library.
 - particles color map option.
+- overimposing magnetic fields
+
+GEMC 3.2
+--------
+
+- FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
+- Benchmarking tools
+
+
 
 
 
