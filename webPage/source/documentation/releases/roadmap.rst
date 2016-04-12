@@ -6,6 +6,10 @@
 GEMC Roadmap
 ############
 
+.. image:: ../../GEMCRoadmap.png
+	:width: 90%
+	:align: center
+
 
 
 GEMC 2.4
@@ -39,12 +43,20 @@ GEMC 2.4
 
 - Starting to move utility source code to **GEMC/libraries** github.
 
+- Removing sensitivity for a detector.
+
 - Test suite for individual detectors.
 
 - remove more obsolete cpp materials.
 
 
 GEMC 2.5
+--------
+- G4Analysis tool for all detectors fluxes
+
+- Physics Cross Section Validation at JLab regine. SAID tables, inclusive cross section.
+
+GEMC 2.6
 --------
 
 - **Digitization routines will be plugins**, stored with the detector definitions (geometry, materials, etc)
@@ -54,21 +66,30 @@ GEMC 2.5
 
 - Support for **proMC** format for event generation.
 
-- Multihit TDC.
 
 - GUI improvements:
-  * culling options combobox.
-  * move timewindow to general generator tab - make all other the same.
+   - culling options combobox.
+   - move timewindow to general generator tab - make all other the same.
 
 - bring splash screen out of util - general library.
+
+
+GEMC 2.7
+--------
+- overimposing magnetic fields
+
+- Multihit TDC.
 
 
 GEMC 3.0
 --------
 
 - 3.0 will start making use of **c++11** features.
+
 - **geant4 multithreading**.
+
 - re-define and document all verbosities.
+
 - match detector types to geant4.
 
 
@@ -77,15 +98,18 @@ GEMC 3.1
 --------
 
 - geant4 **parallel worlds**.
+
 - output format plugins.
+
 - geant4 output definitions will be an external GEMC library.
+
 - particles color map option.
-- overimposing magnetic fields
 
 GEMC 3.2
 --------
 
 - FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
+
 - Benchmarking tools
 
 
