@@ -22,7 +22,20 @@ GEMC Documentation
 	detectorDefinition
 	hitDefinition
 	runningJLab
+
+
+GEMC Installation
+==================
+
+.. toctree::
+	:maxdepth: 2
+
 	installation
+
+FAQ
+===
+
+.. toctree::
+	:maxdepth: 2
+
 	FAQ
-
-

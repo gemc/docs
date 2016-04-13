@@ -49,12 +49,15 @@ GEMC 2.4
 
 - remove more obsolete cpp materials.
 
+- add physical volume constructor - active rotations
 
 GEMC 2.5
 --------
 - G4Analysis tool for all detectors fluxes
 
 - Physics Cross Section Validation at JLab regine. SAID tables, inclusive cross section.
+
+- Finalize implementation of Replicas and Divisions.
 
 GEMC 2.6
 --------
