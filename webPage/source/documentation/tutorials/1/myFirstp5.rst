@@ -28,10 +28,10 @@ Now the material will be loaded, with "myFirstscintillator" name. To use it, cha
 
  $detector{"material"} = "myFirstscintillator";
 
-Write the new material
-----------------------
+Write out the new material
+--------------------------
 
-Execute:
+Execute the main script again:
 
  ./myFirst.pl config.dat
 
@@ -53,7 +53,7 @@ Congratulations, you created your very first volumes and material in GEMC!
 .. rubric:: Footnotes
 
 .. [#]  Since we didn't change the paddle composition based on the variation name, the two files
-        happen to be identical. However only the variation specified in the gcard will be loaded.
+        happen to be identical. 
 
 |
 

@@ -8,7 +8,7 @@ My First Volume  - *3/5*
 myFirst.pl
 ----------
 
-This script will read the *config.dat* file and create two variations of the geometry, "short" and "long".
+Now let's put it all together. The myFirst.pl script will read the *config.dat* file and create two variations of the geometry, "short" and "long".
 It calls the routines defined in *target.pl* and *paddle.pl* twice, once per variation::
 
 
@@ -33,7 +33,7 @@ You should see that two files are created:
  * example__geometry_short.txt
 
 
-The variation is part of the file name. When running gemc you can choose the variation by specifying in the gcard file::
+The variation is part of the file name. When running gemc you can choose the variation by specifying it in the gcard file::
 
 
  <detector name="example" factory="TEXT" variation="long"/>

@@ -8,7 +8,7 @@ My First Volume - *4/5*
 Running GEMC
 ------------
 
-Let's see what you produced. Run gemc using the provided gcard::
+Run gemc using the provided gcard::
 
  gemc example.gcard
 
@@ -19,7 +19,7 @@ You should see the "long" variation of the geometry:
 	:align: center
 
 
-Go ahead and hit the "Run" button to shoot a 1 GeV electron:
+Hit the "Run" button to shoot a 1 GeV electron:
 
 
 .. figure:: fig2.png
