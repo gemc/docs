@@ -117,4 +117,17 @@
     <change idref="t52" attribute="noEarlierThanConstraintDate" type="date" from="2016-08-01T13:30:00.000Z" to="2016-08-17T12:00:00.000Z" resolved="yes"/>
     <change idref="t55" attribute="noEarlierThanConstraintDate" type="date" from="2016-08-12T13:30:00.000Z" to="2016-08-30T13:00:00.000Z" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-04-14T19:43:30.212Z" timestamp="2016-04-14T19:43:30.212Z">
+    <change idref="t62" to="t1" to-position="1" resolved="yes">
+      <change idref="t62" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t62" attribute="internalPrerequisitesString" type="string" to="59FS"/>
+      <change idref="t62" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-20T20:00:00.000Z"/>
+      <change idref="t62" attribute="title" type="string" to="Linux Tar"/>
+    </change>
+    <change idref="t4" attribute="internalPrerequisitesString" type="string" from="59FS" to="62FS" resolved="yes"/>
+    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-04-27T17:00:00.000Z" to="2016-04-29T17:30:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-04-14T19:45:07.188Z" timestamp="2016-04-14T19:45:07.188Z">
+    <change idref="t62" attribute="title" type="string" from="Linux Tar" to="Linux Tarballs" resolved="yes"/>
+  </task-change-set>
 </changelog>

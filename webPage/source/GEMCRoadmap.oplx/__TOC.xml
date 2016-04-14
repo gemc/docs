@@ -13,8 +13,8 @@
         <column name="Notes" width="20"/>
         <column name="Title" width="241"/>
         <column name="Effort" width="87"/>
-        <expanded-items idrefs="t1 t13 t42 t22 t38 t34 t27"/>
-        <selected-items-at-filter-time idrefs="t50 t26 t45 t8 t13 t32 t9 t59 t27 t46 t33 t52 t20 t34 t21 t29 t16 t35 t22 t17 t60 t36 t55 t23 t42 t10 t18 t61 t24 t4 t11 t19 t30 t5 t38 t25 t6 t31 t7"/>
+        <expanded-items idrefs="t27 t13 t42 t22 t38 t34 t1"/>
+        <selected-items-at-filter-time idrefs="t7 t26 t45 t8 t13 t32 t59 t27 t9 t46 t33 t52 t20 t34 t21 t29 t16 t35 t22 t17 t36 t55 t23 t42 t10 t18 t24 t4 t11 t62 t30 t5 t38 t19 t25 t6 t31 t50"/>
       </outline>
       <gantt-view x="-45" y="0" w="1869" h="1169">
         <view-mode>actual</view-mode>
@@ -69,7 +69,7 @@
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="689" y="0" w="1786" h="1169">
+      <timeline x="751" y="0" w="1908" h="1169">
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
           <key>Title</key>
@@ -123,7 +123,7 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>62</next-task-id>
+    <next-task-id>63</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="lJ9YoVH2ibY" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="true" seconds="false"/>

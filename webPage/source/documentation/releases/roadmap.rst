@@ -15,9 +15,11 @@ GEMC Roadmap
 GEMC 2.4
 --------
 
-- Using new geant4 10.2.
+- Using new geant4 10.2. ✅
 
-- Magnetic Field interpolations
+- Magnetic Field interpolations.
+
+- Linux Tarballs.
 
 - **Custom V(t)**:
   Currently a Voltage vs time V(t) function is provided by gemc, based on a user parameterization
