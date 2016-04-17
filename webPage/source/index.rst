@@ -57,7 +57,8 @@ Overview
 
 gemc tries to make easy things easy and hard things possible.
 
-Users can build and run complex setups even with no C++ or geant4 knowledge.
+Users can build and run complex setups even with no C++ or geant4 knowledge. See for example :ref:`how to build a TOF with
+few lines of code <simplePaddleExample>`.
 
 The upload/download of the parameters to/from databases (available: MYSQL or ASCII) is automatic.
 

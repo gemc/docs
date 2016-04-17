@@ -53,7 +53,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
-	cp $(GEMC)/source/changeLog            source/documentation/releases/changelog.rst
+	cp $(GEMC)/changeLog                    source/documentation/releases/changelog.rst
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
