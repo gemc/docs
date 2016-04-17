@@ -70,7 +70,7 @@ Adapted from Agogo style
 			<br>
 			<h3>{{ _('Quickstart') }}<br></h3>
 			<a href="downloads.html">Download gemc</a><br>
-			<a href="examples/paddles.html">              Build a TOF detector</a> <br>
+			<a href="/examples/paddles.html">              Build a TOF detector</a> <br>
 			<br>
 
 			<br>
@@ -92,6 +92,10 @@ Adapted from Agogo style
 			<h3>{{ _('Related') }}<br></h3>
 			<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
 		{% endif %}
+      {% if pagename.startswith("examples") %}
+      	<h3>{{ _('Related') }}<br></h3>
+      	<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
+      {% endif %}
 		
 		
 		
