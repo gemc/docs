@@ -52,7 +52,7 @@ GEMC Dowloads
 
 Geometry Downloads
 ------------------
-`text factory experiment tarball <http://jlab.org/12gev_phys/packages/gcards/experiments-devel.tar>`_.
+`text factory experiment tarball <http://jlab.org/12gev_phys/packages/gcards/experiments.tar>`_.
 Includes the clas12 detectors, the hps beamline, the cebaf bubble experiment, the bdx setup, beamline and detectors of the electron-ion colloider (eic).
 
 
