@@ -125,7 +125,9 @@ table below.
    ion ionization            22
    hadron pair production    23
    triton Inelastic          24
-   kaon Inelastic            25
+   kaon- Inelastic           25
+	kaon+ Inelastic           26
+	alpha Inelastic           27
    na                        90
    ======================  =========
 
