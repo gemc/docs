@@ -12,6 +12,10 @@ Use in gemc with the option::
 
  -INPUT_GEN_FILE="LUND, input.dat"
 
+Or, in a gcard [#]_::
+
+ <option name="INPUT_GEN_FILE" value="LUND, input.dat"/>
+
 
 Description
 ^^^^^^^^^^^
@@ -107,6 +111,9 @@ Examples
 
 
 
+.. rubric:: Footnotes
+
+.. [#] See also :ref:`gemcOption`.
 
 
 
