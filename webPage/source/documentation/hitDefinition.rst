@@ -126,8 +126,11 @@ table below.
    hadron pair production    23
    triton Inelastic          24
    kaon- Inelastic           25
-	kaon+ Inelastic           26
-	alpha Inelastic           27
+   kaon+ Inelastic           26
+   alpha Inelastic           27
+   kaon0 Inelastic           28
+   lambda Inelastic          29
+   sigma- Inelastic          30
    na                        90
    ======================  =========
 
