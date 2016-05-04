@@ -69,7 +69,7 @@ pygments_style = 'sphinx'
 #keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = ''
+# todo_include_todos = ''
 
 
 # -- Options for HTML output ----------------------------------------------
