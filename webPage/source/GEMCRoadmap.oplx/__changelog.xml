@@ -913,6 +913,12 @@
     <change idref="t55" attribute="effort" type="real" from="288000" to="432000" resolved="yes"/>
     <change idref="t63" attribute="effort" type="real" from="144000" to="288000" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-06T17:11:43.137Z" timestamp="2016-05-06T17:11:43.137Z">
+    <change idref="t8" attribute="internalEffortDone" type="real" from="0" to="144000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-06T17:12:14.456Z" timestamp="2016-05-06T17:12:14.456Z">
+    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-30T12:00:00.000Z" to="2016-05-27T12:00:00.000Z"/>
+  </task-change-set>
   <metadata-change-set user="Maurizio Ungaro" date="2016-05-06T15:55:01.036Z" timestamp="2016-05-06T15:55:01.036Z">
     <change idref="m1" attribute="scheduleGranularity" type="real" from="0" to="2" resolved="yes"/>
     <change idref="m1" attribute="fixedDate" type="date" from="2016-04-12T12:00:00.000Z" to="2016-05-06T12:00:00.000Z" resolved="yes"/>

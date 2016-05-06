@@ -1,6 +1,9 @@
 Cosmic Rays Generator
 ---------------------
 
+Muons
+=====
+
 A cosmic ray model can be used to generate cosmics in gemc.
 
 The model is based on the parameterization [#]_:
@@ -61,7 +64,6 @@ will target an area at (0, 0, 1m) with 5m of radius.
 	The momentum versus theta distribution of muons using the default model parameters.
 
 
-
 .. thumbnail:: example.png
 	:width: 48%
 	:group: mycenter
@@ -69,7 +71,25 @@ will target an area at (0, 0, 1m) with 5m of radius.
 
 	An example of 100 events with cosmic rays. The detector is the clas12 silicon vertex tracker.
 
+Neutrons
+========
 
+Neutrons are selected by the 4th field in the COSMICRAYS data card,
+corresponding to the type of cosmic ray particle: muon || neutron. Default (null string): muon is selected.
+
+Generation of neutron cosmic rays:
+
+The vertical distribution of cosmic neutrons is described by
+j(E) dE ~ E^(-gamma)dE with gamma = 2.95 +- 10 (from a fit of data by several
+experiments by Ashton et al. (Cosmic rays at ground level (1973), updated by Nature 256, 387 (1975), see picture).
+
+
+.. thumbnail:: neutrons.jpg
+	:width: 48%
+	:group: mycenter
+	:title:
+
+//  The zenith angle dependence is given by::  I(theta) = I(0)*cos^n(theta) with theta = 3.5 +- 1.2 (from Heidbreder et al., J. Geophys. Pres. 76, 2905 (1971))
 
 .. rubric:: Footnotes
 

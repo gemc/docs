@@ -17,7 +17,9 @@ GEMC 2.4
 
 - Using new geant4 10.2. ✅
 
-- Magnetic Field interpolations.
+- Magnetic Field interpolations. ✅
+
+- Field map attributes. ✅
 
 - Linux Tarballs.
 
@@ -43,7 +45,7 @@ GEMC 2.4
 
 - Option: by giving a material name, change all volume with that material to a material.
 
-- Neutrons cosmic ray model.
+- Neutrons cosmic ray model. ✅
 
 - Custom model for mu decay.
 
