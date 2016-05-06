@@ -80,20 +80,59 @@ field values. The header can define the column order as well:
 
 	<mfield>
 		<description name="solenoid" factory="ASCII" comment="superconducting solenoid"/>
-		<symmetry type="cylindrical-z" format="map" integration="ClassicalRK4" minStep="0.01*mm"/>
+		<symmetry type="cylindrical-z" format="map""/>
 		<map>
 			<coordinate>
 				<first  name="transverse"    npoints="601"   min="0"  max="3" units="m"/>
 				<second name="longitudinal"  npoints="1201"  min="-3" max="3" units="m"/>
 			</coordinate>
 			<field unit="T"/>
-			<interpolation type="none"/>
 		</map>
 	</mfield>
 	0.000  -3.000       0.000000     0.005970
 	0.000  -2.995       0.000000     0.006010
 	0.000  -2.990       0.000000     0.006051
 	0.000  -2.985       0.000000     0.006091
+
+
+.. _fieldAttributes:
+
+Field maps Integration Method, Minimum Steps and Interpolation
+--------------------------------------------------------------
+
+The following field map properties can be set in the **FIELD_PROPERTIES** gcard / command line option:
+
+- minimum step in the magnetic field
+- integration method
+- interpolation method
+
+For example::
+
+ -FIELD_PROPERTIES="srr-solenoid, 1*mm, G4ClassicalRK4, linear"
+
+Will set the *srr-solenoid* field minimum step to 1 mm, the integration method to the
+classical fourth order range kutta, and will use linear interpolation.
+
+The available intergration method are:
+
+- G4CashKarpRKF45: Fift Order Range Kutta, for very smooth fields
+- G4ClassicalRK4: Fourth Order Range Kutta. Robust for every field.
+- G4SimpleHeum: Third order stepper.
+- G4SimpleRunge: Simplified (second order) Range Kutta (faster).
+- G4ImplicitEuler: Second order stepper, for faster varying fields.
+- G4ExplicitEuler: First order stepper, for rough fields.
+- G4HelixImplicitEuler: Second order, specialized for helix-like trakectories.
+- G4HelixExplicitEuler: First order, specialized for helix-like trakectories.
+- G4HelixSimpleRunge: Second order Range Kutta, specialized for helix-like trakectories.
+- G4NystromRK4: provides accuracy near that of G4ClassicalRK4 with a significantly reduced cost in field evaluation.
+
+The available interpolation methods are:
+- none: closest grid point.
+- linear: linear interpolation.
+
+Note: specifying interpolation method is optional. "linear" is the default.
+
+
 
 
 Multipoles

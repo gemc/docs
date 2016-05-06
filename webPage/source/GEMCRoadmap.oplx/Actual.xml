@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="lJ9YoVH2ibY">
-  <start-date>2016-04-12T12:00:00.000Z</start-date>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="lJ9YoVH2ibY">
+  <start-date>2016-05-06T12:00:00.000Z</start-date>
+  <granularity>days</granularity>
   <prototype-task>
-    <task id="t4294967294">
+    <task id="t-2">
       <title>Task 1</title>
       <effort>28800</effort>
     </task>
   </prototype-task>
   <prototype-task>
-    <task id="t4294967293">
+    <task id="t-3">
       <title>Milestone 1</title>
       <type>milestone</type>
     </task>
   </prototype-task>
   <prototype-task>
-    <task id="t4294967292">
+    <task id="t-4">
       <title>Group 1</title>
       <type>group</type>
     </task>
   </prototype-task>
   <prototype-resource>
-    <resource id="r4294967294">
+    <resource id="r-2">
       <name>Resource 1</name>
       <type>Staff</type>
     </resource>
   </prototype-resource>
   <prototype-resource>
-    <resource id="r4294967293">
+    <resource id="r-3">
       <name>Equipment 1</name>
       <type>Equipment</type>
     </resource>
   </prototype-resource>
   <prototype-resource>
-    <resource id="r4294967292">
+    <resource id="r-4">
       <name>Material 1</name>
       <type>Material</type>
       <units-available>0</units-available>
@@ -40,7 +41,7 @@
     </resource>
   </prototype-resource>
   <prototype-resource>
-    <resource id="r4294967291">
+    <resource id="r-5">
       <name>Group 1</name>
       <type>Group</type>
     </resource>
@@ -69,6 +70,7 @@
     <title>Release 2.4</title>
     <type>group</type>
     <child-task idref="t59"/>
+    <child-task idref="t66"/>
     <child-task idref="t62"/>
     <child-task idref="t4"/>
     <child-task idref="t5"/>
@@ -83,110 +85,95 @@
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
   </task>
   <task id="t4">
     <title>Custom V(t)</title>
     <effort>576000</effort>
-    <start-constraint-date>2016-04-29T17:30:00.000Z</start-constraint-date>
+    <start-constraint-date>2016-05-30T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t62"/>
-    <start-no-earlier-than>2016-04-29T17:30:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-05-30T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t5">
     <title>Translation Tables</title>
     <effort>288000</effort>
-    <start-constraint-date>2016-05-27T18:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t4"/>
-    <start-no-earlier-than>2016-05-27T18:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t6">
     <title>Composite Banks</title>
     <effort>432000</effort>
-    <start-constraint-date>2016-06-13T15:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t5"/>
-    <start-no-earlier-than>2016-06-13T15:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t7">
     <title>Material change options</title>
     <effort>86400</effort>
-    <start-constraint-date>2016-05-11T12:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t8"/>
-    <start-no-earlier-than>2016-05-11T12:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t8">
     <title>Neutron Cosmics</title>
-    <effort>57600</effort>
-    <start-constraint-date>2016-05-06T13:00:00.000Z</start-constraint-date>
+    <effort>144000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t64"/>
-    <start-no-earlier-than>2016-05-06T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t9">
     <title>GEMC libraries</title>
     <effort>144000</effort>
-    <start-constraint-date>2016-05-16T20:45:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t7"/>
-    <start-no-earlier-than>2016-05-16T20:45:00.000Z</start-no-earlier-than>
   </task>
   <task id="t10">
     <title>Detector Tests Template</title>
     <effort>144000</effort>
-    <start-constraint-date>2016-06-01T17:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t11"/>
-    <start-no-earlier-than>2016-06-01T17:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t11">
     <title>Remove CPP mats</title>
     <effort>86400</effort>
-    <start-constraint-date>2016-05-25T18:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t9"/>
-    <start-no-earlier-than>2016-05-25T18:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t13">
     <title>Release 2.6</title>
     <type>group</type>
-    <start-constraint-date>2016-09-23T20:30:00.000Z</start-constraint-date>
     <child-task idref="t16"/>
     <child-task idref="t17"/>
     <child-task idref="t18"/>
@@ -195,63 +182,60 @@
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.898039" g="0.529412" b="0.360784"/>
       </value>
     </style>
     <prerequisite-task idref="t42"/>
-    <start-no-earlier-than>2016-09-23T20:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
     <title>De-couple digitization</title>
     <effort>432000</effort>
+    <start-constraint-date>2016-11-04T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.898039" g="0.529412" b="0.360784"/>
       </value>
     </style>
+    <start-no-earlier-than>2016-11-04T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t17">
     <title>Event Generator Lib</title>
     <effort>576000</effort>
-    <start-constraint-date>2016-10-18T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.898039" g="0.529412" b="0.360784"/>
       </value>
     </style>
     <prerequisite-task idref="t16"/>
-    <start-no-earlier-than>2016-10-18T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t18">
     <title>proMC</title>
     <effort>288000</effort>
-    <start-constraint-date>2016-11-15T20:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.898039" g="0.529412" b="0.360784"/>
       </value>
     </style>
     <prerequisite-task idref="t17"/>
-    <start-no-earlier-than>2016-11-15T20:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t19">
     <title>Multihit TDC</title>
-    <effort>288000</effort>
+    <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.74902" g="0.74902" b="0.74902"/>
@@ -260,37 +244,34 @@
   </task>
   <task id="t20">
     <title>GUI Improvements</title>
-    <effort>144000</effort>
-    <start-constraint-date>2016-09-28T19:30:00.000Z</start-constraint-date>
+    <effort>288000</effort>
+    <start-constraint-date>2016-11-22T13:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.898039" g="0.529412" b="0.360784"/>
       </value>
     </style>
-    <start-no-earlier-than>2016-09-28T19:30:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-11-22T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t21">
     <title>Splash Screen lib</title>
     <effort>144000</effort>
-    <start-constraint-date>2016-10-10T13:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.898039" g="0.529412" b="0.360784"/>
       </value>
     </style>
     <prerequisite-task idref="t20"/>
-    <start-no-earlier-than>2016-10-10T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t22">
     <title>Release 3.0</title>
     <type>group</type>
-    <start-constraint-date>2017-01-04T19:30:00.000Z</start-constraint-date>
     <child-task idref="t23"/>
     <child-task idref="t24"/>
     <child-task idref="t25"/>
@@ -298,21 +279,20 @@
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.847059" g="0.301961" b="0.301961"/>
       </value>
     </style>
     <prerequisite-task idref="t38"/>
-    <start-no-earlier-than>2017-01-04T19:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t23">
     <title>c++ 11 features</title>
-    <effort>1152000</effort>
+    <effort>1440000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.847059" g="0.301961" b="0.301961"/>
@@ -322,52 +302,45 @@
   <task id="t24">
     <title>geant4 multithreading</title>
     <effort>720000</effort>
-    <start-constraint-date>2017-03-02T21:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.847059" g="0.301961" b="0.301961"/>
       </value>
     </style>
     <prerequisite-task idref="t23"/>
-    <start-no-earlier-than>2017-03-02T21:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t25">
     <title>refurbish verbosities</title>
     <effort>288000</effort>
-    <start-constraint-date>2017-04-10T15:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.847059" g="0.301961" b="0.301961"/>
       </value>
     </style>
     <prerequisite-task idref="t24"/>
-    <start-no-earlier-than>2017-04-10T15:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t26">
     <title>match det types to geant4</title>
     <effort>288000</effort>
-    <start-constraint-date>2017-04-24T18:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.847059" g="0.301961" b="0.301961"/>
       </value>
     </style>
     <prerequisite-task idref="t25"/>
-    <start-no-earlier-than>2017-04-24T18:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t27">
     <title>Release 3.1</title>
     <type>group</type>
-    <start-constraint-date>2017-05-15T14:00:00.000Z</start-constraint-date>
     <child-task idref="t29"/>
     <child-task idref="t31"/>
     <child-task idref="t30"/>
@@ -375,21 +348,20 @@
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.4" g="0.737255" b="0.796078"/>
       </value>
     </style>
     <prerequisite-task idref="t22"/>
-    <start-no-earlier-than>2017-05-15T14:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t29">
     <title>geant4 parallel worlds</title>
     <effort>576000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.4" g="0.737255" b="0.796078"/>
@@ -398,88 +370,78 @@
   </task>
   <task id="t30">
     <title>output format plugins</title>
-    <effort>288000</effort>
-    <start-constraint-date>2017-07-17T19:30:00.000Z</start-constraint-date>
+    <effort>576000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.4" g="0.737255" b="0.796078"/>
       </value>
     </style>
     <prerequisite-task idref="t31"/>
-    <start-no-earlier-than>2017-07-17T19:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t31">
     <title>output def library</title>
     <effort>576000</effort>
-    <start-constraint-date>2017-06-14T13:30:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.4" g="0.737255" b="0.796078"/>
       </value>
     </style>
     <prerequisite-task idref="t29"/>
-    <start-no-earlier-than>2017-06-14T13:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t32">
     <title>particles color option</title>
-    <effort>165600</effort>
-    <start-constraint-date>2017-08-02T13:30:00.000Z</start-constraint-date>
+    <effort>144000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.4" g="0.737255" b="0.796078"/>
       </value>
     </style>
     <prerequisite-task idref="t30"/>
-    <start-no-earlier-than>2017-08-02T13:30:00.000Z</start-no-earlier-than>
   </task>
   <task id="t33">
     <title>over-imposing fields</title>
-    <effort>288000</effort>
-    <start-constraint-date>2016-12-15T21:00:00.000Z</start-constraint-date>
+    <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.74902" g="0.74902" b="0.74902"/>
       </value>
     </style>
     <prerequisite-task idref="t19"/>
-    <start-no-earlier-than>2016-12-15T21:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t34">
     <title>Release 3.2</title>
     <type>group</type>
-    <start-constraint-date>2017-08-11T13:00:00.000Z</start-constraint-date>
     <child-task idref="t35"/>
     <child-task idref="t36"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.439216" b="0.803922"/>
       </value>
     </style>
     <prerequisite-task idref="t27"/>
-    <start-no-earlier-than>2017-08-11T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t35">
     <title>FASTMC mode</title>
-    <effort>576000</effort>
+    <effort>864000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.439216" b="0.803922"/>
@@ -491,7 +453,7 @@
     <effort>576000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.439216" b="0.803922"/>
@@ -502,20 +464,18 @@
   <task id="t38">
     <title>Release 2.7</title>
     <type>group</type>
-    <start-constraint-date>2016-11-30T19:00:00.000Z</start-constraint-date>
     <child-task idref="t19"/>
     <child-task idref="t33"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.74902" g="0.74902" b="0.74902"/>
       </value>
     </style>
     <prerequisite-task idref="t13"/>
-    <start-no-earlier-than>2016-11-30T19:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t42">
     <title>Release 2.5</title>
@@ -528,7 +488,7 @@
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.721569" b="0.278431"/>
@@ -539,21 +499,23 @@
   <task id="t45">
     <title>G4 Analysis Tools</title>
     <effort>432000</effort>
+    <start-constraint-date>2016-08-05T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
+    <start-no-earlier-than>2016-08-05T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t46">
     <title>Cross Sections Validations</title>
     <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.721569" b="0.278431"/>
@@ -564,78 +526,93 @@
   <task id="t50">
     <title>Active Rotations</title>
     <effort>57600</effort>
-    <start-constraint-date>2016-06-09T19:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
     <prerequisite-task idref="t10"/>
-    <start-no-earlier-than>2016-06-09T19:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t52">
     <title>Finalize Replicas, Divisions</title>
-    <effort>201600</effort>
-    <start-constraint-date>2016-08-17T12:00:00.000Z</start-constraint-date>
+    <effort>144000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
     <prerequisite-task idref="t46"/>
-    <start-no-earlier-than>2016-08-17T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t55">
     <title>Python API Implementation</title>
-    <effort>288000</effort>
-    <start-constraint-date>2016-08-30T13:00:00.000Z</start-constraint-date>
+    <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
     <prerequisite-task idref="t52"/>
-    <start-no-earlier-than>2016-08-30T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t59">
     <title>Field Interpolations</title>
     <effort>144000</effort>
-    <start-constraint-date>2016-04-14T12:00:00.000Z</start-constraint-date>
-    <start-no-earlier-than>2016-04-14T12:00:00.000Z</start-no-earlier-than>
+    <effort-done>144000</effort-done>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+    </style>
   </task>
   <task id="t62">
     <title>Linux Tarballs</title>
     <effort>144000</effort>
-    <start-constraint-date>2016-04-20T20:00:00.000Z</start-constraint-date>
-    <prerequisite-task idref="t59"/>
-    <start-no-earlier-than>2016-04-20T20:00:00.000Z</start-no-earlier-than>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t66"/>
   </task>
   <task id="t63">
     <title>Use Run Action</title>
-    <effort>144000</effort>
-    <start-constraint-date>2016-09-13T17:00:00.000Z</start-constraint-date>
+    <effort>288000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.129412" g="0.501961" b="0.254902"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
     <prerequisite-task idref="t55"/>
-    <start-no-earlier-than>2016-09-13T17:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t64">
     <title>Noise Generator</title>
     <effort>144000</effort>
-    <start-constraint-date>2016-04-28T13:30:00.000Z</start-constraint-date>
-    <start-no-earlier-than>2016-04-28T13:30:00.000Z</start-no-earlier-than>
+    <start-constraint-date>2016-05-30T12:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+    </style>
+    <start-no-earlier-than>2016-05-30T12:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t66">
+    <title>Field Map Attributes</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.23228" g="0.92539" b="0.472862"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t59"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

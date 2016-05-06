@@ -1,12 +1,920 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
   <version>2.1</version>
-  <task-change-set user="Maurizio Ungaro" date="2016-04-26T16:06:27.133Z" timestamp="2016-04-26T16:06:27.133Z">
-    <change idref="t64" to="t1" to-position="5" resolved="yes">
-      <change idref="t64" attribute="effort" type="real" from="28800" to="144000"/>
-      <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-28T13:30:00.000Z"/>
-      <change idref="t64" attribute="title" type="string" to="Noise Generator"/>
-    </change>
-    <change idref="t8" attribute="internalPrerequisitesString" type="string" to="64FS" resolved="yes"/>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-05T19:14:13.896Z" timestamp="2016-05-05T19:14:13.896Z">
+    <change idref="t1" attribute="styleDict" type="dict" from="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t4" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t5" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t6" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t7" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t8" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t9" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t10" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t11" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t13" attribute="styleDict" type="dict" from="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t16" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t17" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t18" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t19" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t20" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t21" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t22" attribute="styleDict" type="dict" from="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t23" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t24" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t25" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t26" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t27" attribute="styleDict" type="dict" from="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t29" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t30" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t31" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t32" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t33" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t34" attribute="styleDict" type="dict" from="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t35" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t36" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t38" attribute="styleDict" type="dict" from="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t42" attribute="styleDict" type="dict" from="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t45" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t46" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t50" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t52" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t55" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t59" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t59" attribute="internalEffortDone" type="real" from="0" to="144000" resolved="yes"/>
+    <change idref="t62" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t63" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.254902&quot;;
+        g = &quot;0.501961&quot;;
+        r = &quot;0.129412&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t64" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-05T20:36:08.465Z" timestamp="2016-05-05T20:36:08.465Z">
+    <change idref="t66" to="t1" to-position="1" resolved="yes">
+      <change idref="t66" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t66" attribute="internalPrerequisitesString" type="string" to="59FS"/>
+      <change idref="t66" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-05T12:00:00.000Z"/>
+      <change idref="t66" attribute="title" type="string" to="Field Map Attributes"/>
+    </change>
+    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-04-29T17:30:00.000Z" to="2016-05-18T15:00:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-27T18:00:00.000Z" to="2016-06-15T19:00:00.000Z" resolved="yes"/>
+    <change idref="t6" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-13T15:30:00.000Z" to="2016-06-30T14:30:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-23T20:30:00.000Z" to="2016-10-10T15:30:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-18T12:00:00.000Z" to="2016-11-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t18" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-15T20:30:00.000Z" to="2016-11-28T21:00:00.000Z" resolved="yes"/>
+    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-28T19:30:00.000Z" to="2016-10-21T15:30:00.000Z" resolved="yes"/>
+    <change idref="t21" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-10T13:00:00.000Z" to="2016-11-02T17:00:00.000Z" resolved="yes"/>
+    <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" from="2017-01-04T19:30:00.000Z" to="2017-01-20T21:30:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="noEarlierThanConstraintDate" type="date" from="2017-03-02T21:30:00.000Z" to="2017-03-22T12:00:00.000Z" resolved="yes"/>
+    <change idref="t25" attribute="noEarlierThanConstraintDate" type="date" from="2017-04-10T15:30:00.000Z" to="2017-04-27T13:30:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="noEarlierThanConstraintDate" type="date" from="2017-04-24T18:30:00.000Z" to="2017-05-12T19:00:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="noEarlierThanConstraintDate" type="date" from="2017-05-15T14:00:00.000Z" to="2017-06-02T14:30:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="effort" type="real" from="288000" to="289800" resolved="yes"/>
+    <change idref="t30" attribute="noEarlierThanConstraintDate" type="date" from="2017-07-17T19:30:00.000Z" to="2017-08-07T17:30:00.000Z" resolved="yes"/>
+    <change idref="t31" attribute="noEarlierThanConstraintDate" type="date" from="2017-06-14T13:30:00.000Z" to="2017-07-06T13:30:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" from="2017-08-02T13:30:00.000Z" to="2017-08-23T15:00:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="noEarlierThanConstraintDate" type="date" from="2016-12-15T21:00:00.000Z" to="2017-01-03T18:00:00.000Z" resolved="yes"/>
+    <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" from="2017-08-11T13:00:00.000Z" to="2017-09-01T18:00:00.000Z" resolved="yes"/>
+    <change idref="t38" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-30T19:00:00.000Z" to="2016-12-16T18:30:00.000Z" resolved="yes"/>
+    <change idref="t52" attribute="noEarlierThanConstraintDate" type="date" from="2016-08-17T12:00:00.000Z" to="2016-09-05T13:00:00.000Z" resolved="yes"/>
+    <change idref="t55" attribute="noEarlierThanConstraintDate" type="date" from="2016-08-30T13:00:00.000Z" to="2016-09-15T17:00:00.000Z" resolved="yes"/>
+    <change idref="t62" attribute="internalPrerequisitesString" type="string" from="59FS" to="66FS" resolved="yes"/>
+    <change idref="t62" attribute="noEarlierThanConstraintDate" type="date" from="2016-04-20T20:00:00.000Z" to="2016-05-09T20:30:00.000Z" resolved="yes"/>
+    <change idref="t63" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-13T17:00:00.000Z" to="2016-09-30T14:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-05T20:44:08.431Z" timestamp="2016-05-05T20:44:08.431Z">
+    <change idref="t7" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-11T12:30:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-06T13:00:00.000Z" resolved="yes"/>
+    <change idref="t9" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-16T20:45:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-01T17:00:00.000Z" resolved="yes"/>
+    <change idref="t11" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-25T18:30:00.000Z" resolved="yes"/>
+    <change idref="t62" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-09T20:30:00.000Z" resolved="yes"/>
+    <change idref="t64" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" from="2016-04-28T13:30:00.000Z" to="2016-05-07T12:00:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-05T12:00:00.000Z" to="2016-05-07T12:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-05T20:44:27.444Z" timestamp="2016-05-05T20:44:27.444Z">
+    <change idref="t50" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-09T19:00:00.000Z" resolved="yes"/>
+    <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-07T12:00:00.000Z" to="2016-05-20T19:30:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-06T15:55:01.040Z" timestamp="2016-05-06T15:55:01.040Z">
+    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-18T15:00:00.000Z" to="2016-05-30T12:00:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-15T19:00:00.000Z" resolved="yes"/>
+    <change idref="t6" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-30T14:30:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="effort" type="real" from="57600" to="144000" resolved="yes"/>
+    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-10T15:30:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t18" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-28T21:00:00.000Z" resolved="yes"/>
+    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-21T15:30:00.000Z" to="2016-10-20T12:00:00.000Z" resolved="yes"/>
+    <change idref="t21" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-02T17:00:00.000Z" resolved="yes"/>
+    <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" from="2017-01-20T21:30:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="noEarlierThanConstraintDate" type="date" from="2017-03-22T12:00:00.000Z" resolved="yes"/>
+    <change idref="t25" attribute="noEarlierThanConstraintDate" type="date" from="2017-04-27T13:30:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="noEarlierThanConstraintDate" type="date" from="2017-05-12T19:00:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="noEarlierThanConstraintDate" type="date" from="2017-06-02T14:30:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="effort" type="real" from="289800" to="432000" resolved="yes"/>
+    <change idref="t30" attribute="noEarlierThanConstraintDate" type="date" from="2017-08-07T17:30:00.000Z" resolved="yes"/>
+    <change idref="t31" attribute="noEarlierThanConstraintDate" type="date" from="2017-07-06T13:30:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" from="2017-08-23T15:00:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="noEarlierThanConstraintDate" type="date" from="2017-01-03T18:00:00.000Z" resolved="yes"/>
+    <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" from="2017-09-01T18:00:00.000Z" resolved="yes"/>
+    <change idref="t38" attribute="noEarlierThanConstraintDate" type="date" from="2016-12-16T18:30:00.000Z" resolved="yes"/>
+    <change idref="t52" attribute="effort" type="real" from="201600" to="144000" resolved="yes"/>
+    <change idref="t52" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-05T13:00:00.000Z" resolved="yes"/>
+    <change idref="t55" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-15T17:00:00.000Z" resolved="yes"/>
+    <change idref="t59" attribute="noEarlierThanConstraintDate" type="date" from="2016-04-14T12:00:00.000Z" resolved="yes"/>
+    <change idref="t63" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-30T14:00:00.000Z" resolved="yes"/>
+    <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-20T19:30:00.000Z" to="2016-05-30T12:00:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-07T12:00:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.472862&quot;;
+        g = &quot;0.92539&quot;;
+        r = &quot;0.23228&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t66" attribute="internalEffortDone" type="real" from="0" to="57600" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-06T15:57:14.890Z" timestamp="2016-05-06T15:57:14.890Z">
+    <change idref="t16" attribute="noEarlierThanConstraintDate" type="date" to="2016-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t19" attribute="effort" type="real" from="288000" to="432000" resolved="yes"/>
+    <change idref="t20" attribute="effort" type="real" from="144000" to="288000" resolved="yes"/>
+    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-20T12:00:00.000Z" to="2016-11-22T13:00:00.000Z" resolved="yes"/>
+    <change idref="t23" attribute="effort" type="real" from="1152000" to="1440000" resolved="yes"/>
+    <change idref="t30" attribute="effort" type="real" from="432000" to="576000" resolved="yes"/>
+    <change idref="t32" attribute="effort" type="real" from="165600" to="144000" resolved="yes"/>
+    <change idref="t33" attribute="effort" type="real" from="288000" to="432000" resolved="yes"/>
+    <change idref="t35" attribute="effort" type="real" from="576000" to="864000" resolved="yes"/>
+    <change idref="t45" attribute="noEarlierThanConstraintDate" type="date" to="2016-08-05T12:00:00.000Z" resolved="yes"/>
+    <change idref="t55" attribute="effort" type="real" from="288000" to="432000" resolved="yes"/>
+    <change idref="t63" attribute="effort" type="real" from="144000" to="288000" resolved="yes"/>
+  </task-change-set>
+  <metadata-change-set user="Maurizio Ungaro" date="2016-05-06T15:55:01.036Z" timestamp="2016-05-06T15:55:01.036Z">
+    <change idref="m1" attribute="scheduleGranularity" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="m1" attribute="fixedDate" type="date" from="2016-04-12T12:00:00.000Z" to="2016-05-06T12:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
 </changelog>
