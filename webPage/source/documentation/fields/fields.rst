@@ -97,14 +97,14 @@ field values. The header can define the column order as well:
 
 .. _fieldAttributes:
 
-Field maps Integration Method, Minimum Steps and Interpolation
---------------------------------------------------------------
+Field maps properties
+---------------------
 
 The following field map properties can be set in the **FIELD_PROPERTIES** gcard / command line option:
 
-- minimum step in the magnetic field
-- integration method
-- interpolation method
+- minimum step in the magnetic field. Default: 1 mm.
+- integration method. Default: G4ClassicalRK4.
+- interpolation method. Default: linear.
 
 For example::
 
@@ -127,10 +127,9 @@ The available intergration method are:
 - G4NystromRK4: provides accuracy near that of G4ClassicalRK4 with a significantly reduced cost in field evaluation.
 
 The available interpolation methods are:
+
 - none: closest grid point.
 - linear: linear interpolation.
-
-Note: specifying interpolation method is optional. "linear" is the default.
 
 
 
