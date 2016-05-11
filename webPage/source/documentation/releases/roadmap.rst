@@ -47,7 +47,7 @@ GEMC 2.4
 
 - Neutrons cosmic ray model. ✅
 
-- Custom model for mu decay.
+- Option to force radiative decay of muons. ✅
 
 - Starting to move utility source code to **GEMC/libraries** github.
 

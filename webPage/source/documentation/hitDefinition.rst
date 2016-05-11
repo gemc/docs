@@ -132,6 +132,7 @@ table below.
    lambda Inelastic          29
    sigma- Inelastic          30
    hadronic bremsstrahlung   31
+   muon decay With Spin      32
    na                        90
    =======================  =========
 

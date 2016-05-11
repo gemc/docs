@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="128" y="41" w="2432" h="1297">
+  <window x="93" y="58" w="2432" h="1297">
     <editing-scenario>lJ9YoVH2ibY</editing-scenario>
     <view>task</view>
     <change-tracking/>
     <draw-folded/>
     <status-display>basic</status-display>
     <task-view>
-      <split-view-divider-position>373</split-view-divider-position>
-      <outline x="0" y="0" w="373" h="1175">
+      <split-view-divider-position>464</split-view-divider-position>
+      <outline x="0" y="0" w="464" h="1175">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
-        <column name="Title" width="241"/>
+        <column name="Title" width="332"/>
         <column name="Effort" width="87"/>
         <expanded-items idrefs="t1 t62 t13 t42 t22 t38 t34 t27"/>
-        <selected-items-at-filter-time idrefs="t50 t26 t45 t13 t64 t32 t8 t9 t59 t27 t46 t33 t52 t20 t66 t34 t21 t29 t16 t35 t22 t17 t36 t55 t23 t42 t10 t18 t24 t4 t11 t19 t30 t5 t38 t62 t25 t6 t63 t31 t7"/>
+        <selected-items-at-filter-time idrefs="t7 t26 t45 t8 t64 t32 t13 t9 t70 t27 t46 t59 t33 t52 t20 t66 t34 t21 t29 t16 t35 t22 t17 t36 t55 t23 t42 t10 t18 t24 t4 t11 t19 t62 t38 t5 t30 t25 t6 t63 t31 t50"/>
       </outline>
-      <gantt-view x="-54" y="0" w="2058" h="1175">
+      <gantt-view x="-54" y="0" w="1967" h="1175">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -48,7 +48,7 @@
         <task-bar-label task-type="task" position="right">
           <key>Assigned</key>
         </task-bar-label>
-        <scale scale-name="Automatic" full-day-width="13.7124">
+        <scale scale-name="Automatic" full-day-width="13.6284">
           <selected/>
         </scale>
         <scale scale-name="Day" full-day-width="1215"/>
@@ -123,7 +123,7 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>70</next-task-id>
+    <next-task-id>71</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="lJ9YoVH2ibY" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="false" seconds="false"/>
