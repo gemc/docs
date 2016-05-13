@@ -24,6 +24,15 @@ GEMC Documentation
 	runningJLab
 
 
+Physics Processes
+=================
+
+.. toctree::
+	:maxdepth: 2
+
+	physics
+
+
 GEMC Installation
 ==================
 
