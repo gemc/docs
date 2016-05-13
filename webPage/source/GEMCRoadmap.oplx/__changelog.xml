@@ -30,6 +30,9 @@
     <change idref="t59" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-27T12:00:00.000Z" resolved="yes"/>
     <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-24T12:00:00.000Z" to="2016-05-05T12:00:00.000Z" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-13T18:47:35.358Z" timestamp="2016-05-13T18:47:35.358Z">
+    <change idref="t7" attribute="internalEffortDone" type="real" from="0" to="86400" resolved="yes"/>
+  </task-change-set>
   <metadata-change-set user="Maurizio Ungaro" date="2016-05-11T19:20:39.407Z" timestamp="2016-05-11T19:20:39.407Z">
     <change idref="m1" attribute="fixedDate" type="date" from="2016-05-06T12:00:00.000Z" to="2016-04-20T12:00:00.000Z" resolved="yes"/>
   </metadata-change-set>

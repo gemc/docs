@@ -41,9 +41,9 @@ GEMC 2.4
 
 - **Noise generator mechanism**: possibility to add custom noise to detector response.
 
-- Option: by giving a volume name, change its material to a new material.
+- Option: by giving a volume name, change its material to a new material. ✅
 
-- Option: by giving a material name, change all volume with that material to a material.
+- Option: by giving a material name, change all volume with that material to a material. ✅
 
 - Neutrons cosmic ray model. ✅
 

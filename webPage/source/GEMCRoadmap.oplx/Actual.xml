@@ -127,6 +127,7 @@
   <task id="t7">
     <title>Material change options</title>
     <effort>86400</effort>
+    <effort-done>86400</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
