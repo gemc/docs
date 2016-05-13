@@ -113,13 +113,12 @@ The hadronic interactions software implementation is documented in the
 `Physics Reference Manual <http://geant4.web.cern.ch/geant4/G4UsersDocuments/UsersGuides/PhysicsReferenceManual/html/>`_.
 
 
-
 References
 ----------
 
 - `Electro and gamma nuclear physics in Geant4 <http://arxiv.org/pdf/nucl-th/0306012v1.pdf>`_ : *arXiv:nucl-th/0306012*
 - `Recent Developments and Validation of Geant4 Hadronic Physics <http://iopscience.iop.org/article/10.1088/1742-6596/396/2/022060/pdf>`_ : *Journal of Physics: Conference Series 396 (2012) 022060*
 - `Geant4 Physics Reference Manual <http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/PhysicsReferenceManual/fo/PhysicsReferenceManual.pdf>`_.
-
+- `Geant4 Physics Validation and Verification <http://geant4.cern.ch/results/validation_plots.htm>`_.
 
 
