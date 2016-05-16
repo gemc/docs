@@ -4,36 +4,20 @@
   <task-change-set user="Maurizio Ungaro" date="2016-05-06T17:12:14.456Z" timestamp="2016-05-06T17:12:14.456Z">
     <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-30T12:00:00.000Z" to="2016-05-27T12:00:00.000Z"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-11T19:18:58.415Z" timestamp="2016-05-11T19:18:58.415Z">
-    <change idref="t70" to="t1" to-position="8" resolved="yes">
-      <change idref="t70" attribute="effort" type="real" from="28800" to="144000"/>
-      <change idref="t70" attribute="internalEffortDone" type="real" from="0" to="144000"/>
-      <change idref="t70" attribute="internalPrerequisitesString" type="string" to="8FS"/>
-      <change idref="t70" attribute="styleDict" type="dict" to="{
+  <task-change-set user="Maurizio Ungaro" date="2016-05-16T18:43:48.329Z" timestamp="2016-05-16T18:43:48.329Z">
+    <change idref="t71" to="t1" to-position="10" resolved="yes">
+      <change idref="t71" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t71" attribute="internalEffortDone" type="real" from="0" to="57600"/>
+      <change idref="t71" attribute="internalPrerequisitesString" type="string" to="7FS"/>
+      <change idref="t71" attribute="styleDict" type="dict" to="{
     &quot;gantt-completion-color&quot; =     {
         b = &quot;0.472862&quot;;
         g = &quot;0.92539&quot;;
         r = &quot;0.23228&quot;;
     };
 }"/>
-      <change idref="t70" attribute="title" type="string" to="Options to Force Radiative decay for muons "/>
+      <change idref="t71" attribute="title" type="string" to="Remove sensitivity option"/>
     </change>
-    <change idref="t7" attribute="internalPrerequisitesString" type="string" from="8FS" to="70FS" resolved="yes"/>
-    <change idref="t8" attribute="noEarlierThanConstraintDate" type="date" to="2016-06-07T12:00:00.000Z" resolved="yes"/>
+    <change idref="t9" attribute="internalPrerequisitesString" type="string" from="7FS" to="71FS" resolved="yes"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-11T19:19:50.173Z" timestamp="2016-05-11T19:19:50.173Z">
-    <change idref="t8" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-07T12:00:00.000Z" resolved="yes"/>
-    <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-30T12:00:00.000Z" to="2016-05-24T12:00:00.000Z" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-11T19:20:39.411Z" timestamp="2016-05-11T19:20:39.411Z">
-    <change idref="t1" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-27T12:00:00.000Z" resolved="yes"/>
-    <change idref="t59" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-27T12:00:00.000Z" resolved="yes"/>
-    <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-24T12:00:00.000Z" to="2016-05-05T12:00:00.000Z" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-13T18:47:35.358Z" timestamp="2016-05-13T18:47:35.358Z">
-    <change idref="t7" attribute="internalEffortDone" type="real" from="0" to="86400" resolved="yes"/>
-  </task-change-set>
-  <metadata-change-set user="Maurizio Ungaro" date="2016-05-11T19:20:39.407Z" timestamp="2016-05-11T19:20:39.407Z">
-    <change idref="m1" attribute="fixedDate" type="date" from="2016-05-06T12:00:00.000Z" to="2016-04-20T12:00:00.000Z" resolved="yes"/>
-  </metadata-change-set>
 </changelog>

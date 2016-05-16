@@ -51,7 +51,7 @@ GEMC 2.4
 
 - Starting to move utility source code to **GEMC/libraries** github.
 
-- Removing sensitivity option for a given detector.
+- Remove sensitivity option. ✅
 
 - Test suite for individual detectors.
 

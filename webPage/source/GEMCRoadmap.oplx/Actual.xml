@@ -80,6 +80,7 @@
     <child-task idref="t8"/>
     <child-task idref="t70"/>
     <child-task idref="t7"/>
+    <child-task idref="t71"/>
     <child-task idref="t9"/>
     <child-task idref="t11"/>
     <child-task idref="t10"/>
@@ -154,7 +155,7 @@
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
     </style>
-    <prerequisite-task idref="t7"/>
+    <prerequisite-task idref="t71"/>
   </task>
   <task id="t10">
     <title>Detector Tests Template</title>
@@ -631,6 +632,17 @@
       </value>
     </style>
     <prerequisite-task idref="t8"/>
+  </task>
+  <task id="t71">
+    <title>Remove sensitivity option</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.23228" g="0.92539" b="0.472862"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t7"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>
