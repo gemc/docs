@@ -127,12 +127,13 @@ table below.
    triton Inelastic          24
    kaon- Inelastic           25
    kaon+ Inelastic           26
-   alpha Inelastic           27
-   kaon0 Inelastic           28
-   lambda Inelastic          29
-   sigma- Inelastic          30
-   hadronic bremsstrahlung   31
-   muon decay With Spin      32
+   kaon0 Inelastic           27
+   kaon0L Inelastic          28
+   alpha Inelastic           29
+   lambda Inelastic          30
+   sigma- Inelastic          31
+   hadronic bremsstrahlung   32
+   muon decay With Spin      33
    na                        90
    =======================  =========
 
