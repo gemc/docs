@@ -472,6 +472,8 @@
     <type>group</type>
     <child-task idref="t19"/>
     <child-task idref="t33"/>
+    <child-task idref="t72"/>
+    <child-task idref="t74"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -643,6 +645,36 @@
       </value>
     </style>
     <prerequisite-task idref="t7"/>
+  </task>
+  <task id="t72">
+    <title>Identifier to Touchable</title>
+    <effort>288000</effort>
+    <start-constraint-date>2017-02-21T13:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.74902" g="0.74902" b="0.74902"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t33"/>
+    <start-no-earlier-than>2017-02-21T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t74">
+    <title>Reading gzipped fields</title>
+    <effort>288000</effort>
+    <start-constraint-date>2017-03-14T12:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.23228" g="0.92539" b="0.472862"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.74902" g="0.74902" b="0.74902"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t72"/>
+    <start-no-earlier-than>2017-03-14T12:00:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

@@ -96,6 +96,9 @@ GEMC 2.7
 
 - Multihit TDC.
 
+- Change identifier class to touchable.
+  Have the vector<id> inside it, instead of passing vectors of identifier.
+
 
 GEMC 3.0
 --------

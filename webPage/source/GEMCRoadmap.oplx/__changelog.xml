@@ -4,20 +4,44 @@
   <task-change-set user="Maurizio Ungaro" date="2016-05-06T17:12:14.456Z" timestamp="2016-05-06T17:12:14.456Z">
     <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-30T12:00:00.000Z" to="2016-05-27T12:00:00.000Z"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-16T18:43:48.329Z" timestamp="2016-05-16T18:43:48.329Z">
-    <change idref="t71" to="t1" to-position="10" resolved="yes">
-      <change idref="t71" attribute="effort" type="real" from="28800" to="57600"/>
-      <change idref="t71" attribute="internalEffortDone" type="real" from="0" to="57600"/>
-      <change idref="t71" attribute="internalPrerequisitesString" type="string" to="7FS"/>
-      <change idref="t71" attribute="styleDict" type="dict" to="{
+  <task-change-set user="Maurizio Ungaro" date="2016-05-20T15:42:01.762Z" timestamp="2016-05-20T15:42:01.762Z">
+    <change idref="t72" to="t38" to-position="2" resolved="yes">
+      <change idref="t72" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t72" attribute="internalPrerequisitesString" type="string" to="33FS"/>
+      <change idref="t72" attribute="noEarlierThanConstraintDate" type="date" to="2017-02-21T13:00:00.000Z"/>
+      <change idref="t72" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}"/>
+      <change idref="t72" attribute="title" type="string" to="Identifier to Touchable"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-20T15:43:30.782Z" timestamp="2016-05-20T15:43:30.782Z">
+    <change idref="t74" to="t38" to-position="3">
+      <change idref="t74" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t74" attribute="internalPrerequisitesString" type="string" to="72FS"/>
+      <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" to="2017-03-14T12:00:00.000Z"/>
+      <change idref="t74" attribute="styleDict" type="dict" to="{
     &quot;gantt-completion-color&quot; =     {
         b = &quot;0.472862&quot;;
         g = &quot;0.92539&quot;;
         r = &quot;0.23228&quot;;
     };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
 }"/>
-      <change idref="t71" attribute="title" type="string" to="Remove sensitivity option"/>
+      <change idref="t74" attribute="title" type="string" to="Reading gzipped fields"/>
     </change>
-    <change idref="t9" attribute="internalPrerequisitesString" type="string" from="7FS" to="71FS" resolved="yes"/>
   </task-change-set>
 </changelog>
