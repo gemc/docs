@@ -61,13 +61,13 @@ GEMC 2.4
 
 GEMC 2.5
 --------
-- G4Analysis tool for all detectors fluxes.
+- **G4Analysis tool** for all detectors fluxes.
 
 - Physics Cross Section Validation at JLab regine. SAID tables, inclusive cross section.
 
 - Finalize implementation of Replicas and Divisions.
 
-- Python API implementation.
+- **Python API** implementation.
 
 - Use Run Action.
 
