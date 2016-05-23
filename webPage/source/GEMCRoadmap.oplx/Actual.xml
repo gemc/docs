@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="lJ9YoVH2ibY">
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="lJ9YoVH2ibY">
   <start-date>2016-04-20T12:00:00.000Z</start-date>
   <granularity>days</granularity>
   <prototype-task>
-    <task id="t-2">
+    <task id="t4294967294">
       <title>Task 1</title>
       <effort>28800</effort>
     </task>
   </prototype-task>
   <prototype-task>
-    <task id="t-3">
+    <task id="t4294967293">
       <title>Milestone 1</title>
       <type>milestone</type>
     </task>
   </prototype-task>
   <prototype-task>
-    <task id="t-4">
+    <task id="t4294967292">
       <title>Group 1</title>
       <type>group</type>
     </task>
   </prototype-task>
   <prototype-resource>
-    <resource id="r-2">
+    <resource id="r4294967294">
       <name>Resource 1</name>
       <type>Staff</type>
     </resource>
   </prototype-resource>
   <prototype-resource>
-    <resource id="r-3">
+    <resource id="r4294967293">
       <name>Equipment 1</name>
       <type>Equipment</type>
     </resource>
   </prototype-resource>
   <prototype-resource>
-    <resource id="r-4">
+    <resource id="r4294967292">
       <name>Material 1</name>
       <type>Material</type>
       <units-available>0</units-available>
@@ -41,7 +41,7 @@
     </resource>
   </prototype-resource>
   <prototype-resource>
-    <resource id="r-5">
+    <resource id="r4294967291">
       <name>Group 1</name>
       <type>Group</type>
     </resource>
@@ -183,8 +183,10 @@
     <child-task idref="t16"/>
     <child-task idref="t17"/>
     <child-task idref="t18"/>
+    <child-task idref="t77"/>
     <child-task idref="t20"/>
     <child-task idref="t21"/>
+    <child-task idref="t76"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -249,9 +251,9 @@
     </style>
   </task>
   <task id="t20">
-    <title>GUI Improvements</title>
-    <effort>288000</effort>
-    <start-constraint-date>2016-11-22T13:00:00.000Z</start-constraint-date>
+    <title>Culling options combobox</title>
+    <effort>144000</effort>
+    <start-constraint-date>2016-12-02T13:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -260,7 +262,7 @@
         <color r="0.898039" g="0.529412" b="0.360784"/>
       </value>
     </style>
-    <start-no-earlier-than>2016-11-22T13:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-12-02T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t21">
     <title>Splash Screen lib</title>
@@ -488,11 +490,13 @@
   <task id="t42">
     <title>Release 2.5</title>
     <type>group</type>
+    <start-constraint-date>2016-08-05T12:00:00.000Z</start-constraint-date>
     <child-task idref="t45"/>
     <child-task idref="t46"/>
     <child-task idref="t52"/>
     <child-task idref="t55"/>
     <child-task idref="t63"/>
+    <child-task idref="t75"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -503,6 +507,7 @@
       </value>
     </style>
     <prerequisite-task idref="t1"/>
+    <start-no-earlier-than>2016-08-05T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t45">
     <title>G4 Analysis Tools</title>
@@ -650,7 +655,6 @@
   <task id="t72">
     <title>Identifier to Touchable</title>
     <effort>288000</effort>
-    <start-constraint-date>2017-02-21T13:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -660,12 +664,10 @@
       </value>
     </style>
     <prerequisite-task idref="t33"/>
-    <start-no-earlier-than>2017-02-21T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t74">
     <title>Reading gzipped fields</title>
     <effort>288000</effort>
-    <start-constraint-date>2017-03-14T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
         <color r="0.23228" g="0.92539" b="0.472862"/>
@@ -675,7 +677,49 @@
       </value>
     </style>
     <prerequisite-task idref="t72"/>
-    <start-no-earlier-than>2017-03-14T12:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t75">
+    <title>Add / Remove axis in GUI</title>
+    <effort>115200</effort>
+    <start-constraint-date>2016-10-31T12:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t63"/>
+    <start-no-earlier-than>2016-10-31T12:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t76">
+    <title>Pop up window for detector description</title>
+    <effort>144000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.898039" g="0.529412" b="0.360784"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t21"/>
+  </task>
+  <task id="t77">
+    <title>Redesign Generator Tab</title>
+    <effort>288000</effort>
+    <start-constraint-date>2017-01-09T13:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.898039" g="0.529412" b="0.360784"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t18"/>
+    <start-no-earlier-than>2017-01-09T13:00:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

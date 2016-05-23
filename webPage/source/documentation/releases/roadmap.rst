@@ -71,6 +71,8 @@ GEMC 2.5
 
 - Use Run Action.
 
+- Add / Remove axis in GUI
+
 GEMC 2.6
 --------
 
