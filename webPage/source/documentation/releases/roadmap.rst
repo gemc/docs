@@ -12,8 +12,8 @@ GEMC Roadmap
 
 
 
-GEMC 2.4
---------
+GEMC 2.4 - July 2016
+--------------------
 
 - Using new geant4 10.2. ✅
 
@@ -59,8 +59,9 @@ GEMC 2.4
 
 - add physical volume constructor - active rotations.
 
-GEMC 2.5
---------
+GEMC 2.5 - November 2016
+------------------------
+
 - **G4Analysis tool** for all detectors fluxes.
 
 - Physics Cross Section Validation at JLab regine. SAID tables, inclusive cross section.
@@ -73,8 +74,9 @@ GEMC 2.5
 
 - Add / Remove axis in GUI
 
-GEMC 2.6
---------
+
+GEMC 2.6 - January 2017
+-----------------------
 
 - **Digitization routines will be plugins**, stored with the detector definitions (geometry, materials, etc)
   They will not be compiled in the gemc core anymore.
@@ -91,8 +93,9 @@ GEMC 2.6
 
 - Pop up window for detector description
 
-GEMC 2.7
---------
+
+GEMC 2.7 - April 2017
+---------------------
 
 - Overimposing magnetic fields
 
@@ -102,8 +105,8 @@ GEMC 2.7
   Have the vector<id> inside it, instead of passing vectors of identifier.
 
 
-GEMC 3.0
---------
+GEMC 3.0 - August 2017
+----------------------
 
 - 3.0 will start making use of **c++11** features.
 
@@ -114,9 +117,8 @@ GEMC 3.0
 - Match detector types to geant4.
 
 
-
-GEMC 3.1
---------
+GEMC 3.1 - November 2017
+------------------------
 
 - Geant4 **parallel worlds**.
 
@@ -126,8 +128,8 @@ GEMC 3.1
 
 - Particles color map option.
 
-GEMC 3.2
---------
+GEMC 3.2 - January 2018
+-----------------------
 
 - FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
 
