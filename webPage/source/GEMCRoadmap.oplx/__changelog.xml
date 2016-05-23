@@ -95,4 +95,7 @@
     <change idref="t72" attribute="noEarlierThanConstraintDate" type="date" from="2017-02-21T13:00:00.000Z" resolved="yes"/>
     <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" from="2017-03-14T12:00:00.000Z" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-05-23T14:34:32.596Z" timestamp="2016-05-23T14:34:32.596Z">
+    <change idref="t21" attribute="title" type="string" from="Splash Screen lib" to="Splash Screen library" resolved="yes"/>
+  </task-change-set>
 </changelog>

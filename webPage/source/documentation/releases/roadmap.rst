@@ -83,20 +83,20 @@ GEMC 2.6
 
 - Support for **proMC** format for event generation.
 
+- Redesign Generator Tab
 
-- GUI improvements:
-   - culling options combobox.
-   - move timewindow to general generator tab - make all other the same.
+- Culling options combobox.
 
-- bring splash screen out of util - general library.
+- Splash Screen library
 
+- Pop up window for detector description
 
 GEMC 2.7
 --------
 
-- overimposing magnetic fields
+- Overimposing magnetic fields
 
-- Multihit TDC.
+- Multihit TDC
 
 - Change identifier class to touchable.
   Have the vector<id> inside it, instead of passing vectors of identifier.
@@ -107,24 +107,24 @@ GEMC 3.0
 
 - 3.0 will start making use of **c++11** features.
 
-- **geant4 multithreading**.
+- **Geant4 multithreading**.
 
-- re-define and document all verbosities.
+- Re-define and document all verbosities.
 
-- match detector types to geant4.
+- Match detector types to geant4.
 
 
 
 GEMC 3.1
 --------
 
-- geant4 **parallel worlds**.
+- Geant4 **parallel worlds**.
 
-- output format plugins.
+- Output format plugins.
 
-- geant4 output definitions will be an external GEMC library.
+- Geant4 output definitions will be an external GEMC library.
 
-- particles color map option.
+- Particles color map option.
 
 GEMC 3.2
 --------
