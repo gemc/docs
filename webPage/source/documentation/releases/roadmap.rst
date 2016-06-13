@@ -12,14 +12,40 @@ GEMC Roadmap
 
 
 
-GEMC 2.4 - July 2016
---------------------
+GEMC 2.4 - June 2016 ✅
+-----------------------
 
 - Using new geant4 10.2. ✅
 
 - Magnetic Field interpolations. ✅
 
 - Field map attributes. ✅
+
+
+- **Noise generator mechanism**: possibility to add custom noise/hot channels to detector response. ✅
+
+- Option: by giving a volume name, change its material to a new material. ✅
+
+- Option: by giving a material name, change all volume with that material to a material. ✅
+
+- Neutrons cosmic ray model. ✅
+
+- Option to force radiative decay of muons. ✅
+
+- Remove sensitivity option. ✅
+
+
+
+GEMC 2.5 - September 2016
+-------------------------
+
+- Gemc external Libraries
+
+- remove more obsolete cpp materials.
+
+- Test suite for individual detectors.
+
+- add physical volume constructor - active rotations.
 
 - Linux Tarballs.
 
@@ -39,28 +65,9 @@ GEMC 2.4 - July 2016
 
 - Output format will match the composite banks of the JLab data acquisition group.
 
-- **Noise generator mechanism**: possibility to add custom noise to detector response. ✅
 
-- Option: by giving a volume name, change its material to a new material. ✅
-
-- Option: by giving a material name, change all volume with that material to a material. ✅
-
-- Neutrons cosmic ray model. ✅
-
-- Option to force radiative decay of muons. ✅
-
-- Starting to move utility source code to **GEMC/libraries** github.
-
-- Remove sensitivity option. ✅
-
-- Test suite for individual detectors.
-
-- remove more obsolete cpp materials.
-
-- add physical volume constructor - active rotations.
-
-GEMC 2.5 - November 2016
-------------------------
+GEMC 2.6 - January 2017
+-----------------------
 
 - **G4Analysis tool** for all detectors fluxes.
 
@@ -75,8 +82,8 @@ GEMC 2.5 - November 2016
 - Add / Remove axis in GUI
 
 
-GEMC 2.6 - January 2017
------------------------
+GEMC 2.7 - April 2017
+---------------------
 
 - **Digitization routines will be plugins**, stored with the detector definitions (geometry, materials, etc)
   They will not be compiled in the gemc core anymore.
@@ -94,8 +101,8 @@ GEMC 2.6 - January 2017
 - Pop up window for detector description
 
 
-GEMC 2.7 - April 2017
----------------------
+GEMC 2.8 - June 2017
+--------------------
 
 - Overimposing magnetic fields
 
@@ -105,8 +112,8 @@ GEMC 2.7 - April 2017
   Have the vector<id> inside it, instead of passing vectors of identifier.
 
 
-GEMC 3.0 - August 2017
-----------------------
+GEMC 3.0 - October 2017
+-----------------------
 
 - 3.0 will start making use of **c++11** features.
 
@@ -117,8 +124,8 @@ GEMC 3.0 - August 2017
 - Match detector types to geant4.
 
 
-GEMC 3.1 - November 2017
-------------------------
+GEMC 3.1 - January 2018
+-----------------------
 
 - Geant4 **parallel worlds**.
 
@@ -128,8 +135,8 @@ GEMC 3.1 - November 2017
 
 - Particles color map option.
 
-GEMC 3.2 - January 2018
------------------------
+GEMC 3.2 - April 2018
+---------------------
 
 - FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
 

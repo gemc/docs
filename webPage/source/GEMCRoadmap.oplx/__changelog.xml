@@ -24,78 +24,204 @@
       <change idref="t74" attribute="title" type="string" to="Reading gzipped fields"/>
     </change>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-23T12:41:56.688Z" timestamp="2016-05-23T12:41:56.688Z">
-    <change idref="t64" attribute="internalEffortDone" type="real" from="0" to="144000" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-23T12:42:07.389Z" timestamp="2016-05-23T12:42:07.389Z">
-    <change idref="t64" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-05T12:00:00.000Z" to="2016-05-06T12:00:00.000Z" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="ungaro" date="2016-05-23T13:13:10.629Z" timestamp="2016-05-23T13:13:10.629Z">
-    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" to="2016-08-05T12:00:00.000Z" resolved="yes"/>
-    <change idref="t75" to="t42" to-position="5" resolved="yes">
-      <change idref="t75" attribute="effort" type="real" from="28800" to="115200"/>
-      <change idref="t75" attribute="internalPrerequisitesString" type="string" to="63FS"/>
-      <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" to="2016-10-31T12:00:00.000Z"/>
-      <change idref="t75" attribute="styleDict" type="dict" to="{
+  <task-change-set user="Maurizio Ungaro" date="2016-06-13T15:47:36.189Z" timestamp="2016-06-13T15:47:36.189Z">
+    <change idref="t81" to="t-1" to-position="1" resolved="yes">
+      <change idref="t81" attribute="internalPrerequisitesString" type="string" to="1FS"/>
+      <change idref="t81" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t81" attribute="noEarlierThanConstraintDate" type="date" to="2016-06-13T12:00:00.000Z"/>
+      <change idref="t81" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
     &quot;gantt-completion-color&quot; =     {
         b = &quot;0.454889&quot;;
         g = &quot;0.890216&quot;;
         r = &quot;0.223451&quot;;
     };
     &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.278431&quot;;
-        g = &quot;0.721569&quot;;
-        r = &quot;0.8&quot;;
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
     };
 }"/>
-      <change idref="t75" attribute="title" type="string" to="Add / Remove axis in GUI"/>
+      <change idref="t81" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t81" attribute="title" type="string" to="Release 2.5"/>
     </change>
-  </task-change-set>
-  <task-change-set user="ungaro" date="2016-05-23T13:19:19.544Z" timestamp="2016-05-23T13:19:19.544Z">
-    <change idref="t77" to="t13" to-position="3" resolved="yes">
-      <change idref="t77" attribute="effort" type="real" from="28800" to="288000"/>
-      <change idref="t77" attribute="internalPrerequisitesString" type="string" to="18FS"/>
-      <change idref="t77" attribute="noEarlierThanConstraintDate" type="date" to="2017-01-09T13:00:00.000Z"/>
-      <change idref="t77" attribute="styleDict" type="dict" to="{
+    <change idref="t4" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
     &quot;gantt-completion-color&quot; =     {
         b = &quot;0.454889&quot;;
         g = &quot;0.890216&quot;;
         r = &quot;0.223451&quot;;
     };
     &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.360784&quot;;
-        g = &quot;0.529412&quot;;
-        r = &quot;0.898039&quot;;
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
     };
-}"/>
-      <change idref="t77" attribute="title" type="string" to="Redesign Generator Tab"/>
-    </change>
-    <change idref="t76" to="t13" to-position="6" resolved="yes">
-      <change idref="t76" attribute="effort" type="real" from="28800" to="144000"/>
-      <change idref="t76" attribute="internalPrerequisitesString" type="string" to="21FS"/>
-      <change idref="t76" attribute="styleDict" type="dict" to="{
+}" resolved="yes"/>
+    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-05-27T12:00:00.000Z" to="2016-07-15T12:00:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
     &quot;gantt-completion-color&quot; =     {
         b = &quot;0.454889&quot;;
         g = &quot;0.890216&quot;;
         r = &quot;0.223451&quot;;
     };
     &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.360784&quot;;
-        g = &quot;0.529412&quot;;
-        r = &quot;0.898039&quot;;
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
     };
-}"/>
-      <change idref="t76" attribute="title" type="string" to="Pop up window for detector description"/>
-    </change>
-    <change idref="t20" attribute="title" type="string" from="GUI Improvements" to="Culling options combobox" resolved="yes"/>
-    <change idref="t20" attribute="effort" type="real" from="288000" to="144000" resolved="yes"/>
-    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-22T13:00:00.000Z" to="2016-12-02T13:00:00.000Z" resolved="yes"/>
+}" resolved="yes"/>
+    <change idref="t6" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t9" attribute="internalPrerequisitesString" type="string" from="71FS" resolved="yes"/>
+    <change idref="t9" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t10" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t11" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t13" attribute="title" type="string" from="Release 2.6" to="Release 2.7" resolved="yes"/>
+    <change idref="t16" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" from="2016-12-02T13:00:00.000Z" resolved="yes"/>
+    <change idref="t38" attribute="title" type="string" from="Release 2.7" to="Release 2.8" resolved="yes"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-08-05T12:00:00.000Z" to="2016-09-22T12:00:00.000Z" resolved="yes"/>
+    <change idref="t42" attribute="title" type="string" from="Release 2.5" to="Release 2.6" resolved="yes"/>
+    <change idref="t42" attribute="internalPrerequisitesString" type="string" from="1FS" to="81FS" resolved="yes"/>
+    <change idref="t45" attribute="noEarlierThanConstraintDate" type="date" from="2016-08-05T12:00:00.000Z" to="2016-09-23T12:00:00.000Z" resolved="yes"/>
+    <change idref="t50" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t62" attribute="internalPrerequisitesString" type="string" from="66FS" to="50FS" resolved="yes"/>
+    <change idref="t62" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="t62" attribute="noEarlierThanConstraintDate" type="date" to="2016-07-06T12:00:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-31T12:00:00.000Z" resolved="yes"/>
+    <change idref="t77" attribute="noEarlierThanConstraintDate" type="date" from="2017-01-09T13:00:00.000Z" resolved="yes"/>
+    <change idref="t9" from="t1" from-position="11" to="t81" to-position="0" resolved="yes"/>
+    <change idref="t11" from="t1" from-position="12" to="t81" to-position="1" resolved="yes"/>
+    <change idref="t10" from="t1" from-position="13" to="t81" to-position="2" resolved="yes"/>
+    <change idref="t50" from="t1" from-position="14" to="t81" to-position="3" resolved="yes"/>
+    <change idref="t62" from="t1" from-position="2" to="t81" to-position="4" resolved="yes"/>
+    <change idref="t4" from="t1" from-position="3" to="t81" to-position="5" resolved="yes"/>
+    <change idref="t5" from="t1" from-position="4" to="t81" to-position="6" resolved="yes"/>
+    <change idref="t6" from="t1" from-position="5" to="t81" to-position="7" resolved="yes"/>
   </task-change-set>
-  <task-change-set user="ungaro" date="2016-05-23T13:21:33.174Z" timestamp="2016-05-23T13:21:33.174Z">
-    <change idref="t72" attribute="noEarlierThanConstraintDate" type="date" from="2017-02-21T13:00:00.000Z" resolved="yes"/>
-    <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" from="2017-03-14T12:00:00.000Z" resolved="yes"/>
+  <task-change-set user="Maurizio Ungaro" date="2016-06-13T15:55:49.256Z" timestamp="2016-06-13T15:55:49.256Z">
+    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" from="2016-07-15T12:00:00.000Z" resolved="yes"/>
+    <change idref="t20" attribute="internalPrerequisitesString" type="string" to="77FS" resolved="yes"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-22T12:00:00.000Z" to="2016-10-05T12:00:00.000Z" resolved="yes"/>
+    <change idref="t45" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-23T12:00:00.000Z" resolved="yes"/>
+    <change idref="t62" attribute="noEarlierThanConstraintDate" type="date" from="2016-07-06T12:00:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="title" type="string" from="Remove sensitivity option" to="Sensitivity removal option" resolved="yes"/>
+    <change idref="t81" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-13T12:00:00.000Z" to="2016-06-23T12:00:00.000Z" resolved="yes"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-05-23T14:34:32.596Z" timestamp="2016-05-23T14:34:32.596Z">
-    <change idref="t21" attribute="title" type="string" from="Splash Screen lib" to="Splash Screen library" resolved="yes"/>
+  <task-change-set user="Maurizio Ungaro" date="2016-06-13T18:45:13.398Z" timestamp="2016-06-13T18:45:13.398Z">
+    <change idref="t9" attribute="title" type="string" from="GEMC libraries" to="GEMC external libraries"/>
   </task-change-set>
 </changelog>
