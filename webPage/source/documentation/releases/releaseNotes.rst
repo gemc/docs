@@ -14,6 +14,6 @@ GEMC Release Notes
 	changelog
 
 
-.. image:: releaseEngine/releaseEngine.001.png
-	:width: 90%
+.. image:: releases/releases.001.png
+	:width: 98%
 	:align: center
