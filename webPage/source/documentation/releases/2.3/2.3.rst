@@ -108,7 +108,7 @@ Generator
 
 |
 
-For the complete list of all changes please visit the `changelog <changelog.html>`_.
+For the complete list of all changes please visit the `changelog <../changelog.html>`_.
 
 
 

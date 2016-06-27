@@ -6,109 +6,128 @@
 Release 2.4
 ###########
 
-
-Physics Processes
------------------
-
-- added scintillation in the material definition, both in API and in the gemc core.
-  The number of photons emitted has two component (fast and slow) and is proportional two::
-
-   A e^(-t/tfast) + B e^(-t/tslow)
-
-  where A and B are the fast and slow component respectively and are dependent on wavelength,
-  and tfast and tslow are the fast and slow time constant (valid for all wavelengths).
-
-  The following quantities can now be specified in the material API, and will be read by gemc.
-
-   * fastcomponent: vector (wavelength)
-   * slowcomponent: vector (wavelength)
-   * scintillationyield: number of photons / MeV
-   * resolutionscale: scale to control the resolution (multiplies sqrt(N))
-   * fasttimeconstant: fast time constant
-   * slowtimeconstant: slow time constant
-   * yieldratio: relative strength of the fast component
-   * rayleigh scattering
-
-
-- setting hadronic physics list to "none" by default. User can enable them in the gcard or
-  command line. This way one can choose to run w/o hadronic physics.
-
-
-- A map of names to process ID is in place and documented. See :ref:`processCatalogue`.
-- The **production cut** will now affect all volumes in a system rather than just the sensitive volumes
-
-
-Run Luminosity
---------------
-
-- added RUN_WEIGHTS option. The argument is a text file with two columns: run number and its luminosity
-  weight. GEMC will distribute the number of events requested among the run list according to their weight.
-  The calibration constants, including status, are re-read from the user databases at each run number change.
-
- .. image:: lumiWeight.png
- 	 :width: 90%
-	 :align: center
-
-
-
-
-Digitization
-------------
-
-- time resolution is an external parameter "VTRESOLUTION"
-
-- added bunch sampling of the voltage vs signal time. Data structure name is quantumS, map<int, int>.
-  This is effectively FADC mode 1.
-
-GUI
----
-
-- added graphing of the FADC signal. The shape and intensity of the signal should be optimized for each detector
-- trigger signal added to hit
-- display of trigger added to trigger gui
-- dropdown menu to decide to plot voltage, trigger, or both
-- added buttons to export a detector or the whole root in gdml format
-- added button to inspect detector in a new window
-- added buttons to print screenshots in png PNG, EPS format
-- added button to write single volumes or all volumes to WRL
-
-
-Cosmic Ray Model
+Electronic Noise
 ----------------
 
-- added COSMICRAYS option, small utility macro to show the distribution
-- added COSMICAREA option to define the area where the cosmic ray will go through,
+A new pure virtual function vector<MHit*> electronicNoise() is added to the hit process routine methods
+to generate electronic noise / hot channels.
+
+Electronic noise hits are added to the normal geant4 hits. Each process routine will have them available in the output.
+
+In its implementation users can instantiate an arbitrary number of hits as shown in the figure below.
+
+|
+
+.. image:: electronicNoise.png
+	:width: 98%
+	:align: center
 
 
- .. image:: cosmics.png
- 	 :width: 90%
-	 :align: center
+
+
+Database Mechanism in Digitizaton
+---------------------------------
+
+The hit process routines are user defined, external routines where the user can:
+
+- identify the element that was hit
+- share energy between elements (typically nearest neighbor)
+- digitize detector response
+- produce electronic noise
+
+A new mechanism as been added to load detector specific constants from a database. These are typically geometry calibration constants
+that can be used by the reconstructions, monitoring and visualization mechanism.
+
+|
+
+.. image:: databaseHitProcess.png
+	:width: 98%
+	:align: center
+
+Field Properties
+----------------
+
+The following quantities can now be defined by options / gcard:
+
+- Mapped field minimum step
+- Field integration method.
+- Field interpolation method.
+
+Available Integration Methods:
+
+- G4CashKarpRKF45: Fifth Order Range Kutta, for very smooth fields.
+- G4ClassicalRK4: Fourth Order Range Kutta. Robust for every field.
+- G4SimpleHeum: Third order stepper.
+- G4SimpleRunge: Simplified (second order) Range Kutta (faster).
+- G4ImplicitEuler: Second order stepper, for faster varying fields.
+- G4ExplicitEuler: First order stepper, for rough fields.
+- G4HelixImplicitEuler: Second order, specialized for helix-like trajectories.
+- G4HelixExplicitEuler: First order, specialized for helix-like trajectories.
+- G4HelixSimpleRunge: Second order Range Kutta, specialized for helix-like trajectories.
+- G4NystromRK4: provides accuracy near that of G4ClassicalRK4 with a significantly reduced cost in field evaluation.
+
+Available Interpolation Methods:
+
+- none: closest grid point.
+- linear: linear interpolation (new, now is default)
+
+
+Neutron Cosmic Rays
+-------------------
+The COSMICRAYS option now accept an additional, optional argument:
+
+- muon: default behavior, generate muons as before
+- neutron: generate neutrons with energy and angle dependencies given by *Heidbreder et al., J. Geophys. Pres. 76, 2905 (1971)*
+
+This work was performed by Alessandra Filippi.
+
+.. image:: neutrons.png
+	:width: 60%
+	:align: center
+
+
+Material, Sensitivity Options
+-----------------------------
+
+Two additional options can switch material::
+
+ - CHANGEVOLUMEMATERIALTO to change a volume material:
+   Usage: -CHANGEVOLUMEMATERIALTO="volume, new material"
+
+ - SWITCH_MATERIALTO to change a material into another:\n
+   Usage: -SWITCH_MATERIALTO="oldmaterial, newmaterial"
+
+Both CHANGEVOLUMEMATERIALTO and SWITCH_MATERIALTO can be repeated.
+
+In addition::
+
+ - REMOVESENSITIVITY can be used to remove a volume sensitivity:
+   Usage: -REMOVESENSITIVITY="volumename1, volumename2, ..."
+
+
+Process Catalogue
+-----------------
+
+A procID variable has been added to the true information banks.
+This is the physical process that generated the particle.
+A value of 90 is given to the "transportation" process (i.e. if the particle was a primary particle).
+
+
+
+.. image:: procId.png
+	:width: 98%
+	:align: center
 
 
 
 
-Merging Background
-------------------
 
-- with SAVE_ALL_MOTHERS set to 2, all particles generating hits are saved in LUND format
-- adding MERGE_LUND_BG option to merge events from the LUND format.
-- See :ref:`mergingBackground` for details.
-
- .. image:: mergingBackground.png
- 	 :width: 90%
-	 :align: center
-
-
-Generator
----------
-
-- defaulting SPREAD to **phasespace**, cos(theta) is flat, not theta, unless flag "flat" is given to the SPREAD option
 
 
 
 |
 
-For the complete list of all changes please visit the `changelog <changelog.html>`_.
+For the complete list of all changes please visit the `changelog <../changelog.html>`_.
 
 
 
