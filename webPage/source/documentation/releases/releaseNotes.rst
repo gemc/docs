@@ -9,8 +9,8 @@ GEMC Release Notes
 .. toctree::
 	:maxdepth: 2
 
-	2.4
-	2.3
+	2.4/2.4
+	2.3/2.3
 	changelog
 
 
