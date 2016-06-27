@@ -113,7 +113,7 @@ For example::
 Will set the *srr-solenoid* field minimum step to 1 mm, the integration method to the
 classical fourth order range kutta, and will use linear interpolation.
 
-The available intergration method are:
+The available integration method are:
 
 - G4CashKarpRKF45: Fift Order Range Kutta, for very smooth fields
 - G4ClassicalRK4: Fourth Order Range Kutta. Robust for every field.
@@ -121,9 +121,9 @@ The available intergration method are:
 - G4SimpleRunge: Simplified (second order) Range Kutta (faster).
 - G4ImplicitEuler: Second order stepper, for faster varying fields.
 - G4ExplicitEuler: First order stepper, for rough fields.
-- G4HelixImplicitEuler: Second order, specialized for helix-like trakectories.
-- G4HelixExplicitEuler: First order, specialized for helix-like trakectories.
-- G4HelixSimpleRunge: Second order Range Kutta, specialized for helix-like trakectories.
+- G4HelixImplicitEuler: Second order, specialized for helix-like trajectories.
+- G4HelixExplicitEuler: First order, specialized for helix-like trajectories.
+- G4HelixSimpleRunge: Second order Range Kutta, specialized for helix-like trajectories.
 - G4NystromRK4: provides accuracy near that of G4ClassicalRK4 with a significantly reduced cost in field evaluation.
 
 The available interpolation methods are:
