@@ -1,0 +1,6 @@
+import os
+from util import scanFiles
+env = Environment(ENV=os.environ)
+
+pdf  = env.PDF(target = 'gemc.pdf',  source = 'gemc.tex')
+
