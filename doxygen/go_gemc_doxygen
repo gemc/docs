@@ -1,9 +1,9 @@
 #!/bin/csh 
 
 # MacPro cronjob:
-# 35 04 * * * /opt/projects/cronjobs/go_gemc_doxygen
+# 35 04 * * * /opt/projects/gemc/docs/doxygen/go_gemc_doxygen
 
-set cdir = `pwd`
+set cdir = /opt/projects/gemc/docs/doxygen
 
 # make sure we have all versions
 rm -rf   gemc_doxy
@@ -25,9 +25,7 @@ foreach v ($versions)
 	echo
 	echo Running $v
 	cd $v
-	cp $cdir/gemc_logo.gif .
 	cp $cdir/Doxyfile .
-	cp $cdir/doxygen.css .
 	echo "PROJECT_NUMBER=$v" >> Doxyfile
 	doxygen Doxyfile
 
@@ -35,14 +33,16 @@ foreach v ($versions)
 	# destination filename, otherwise may put it
 	# in sub-dir (e.g. 2.0_beta1/2.0_beta1)
 	mv html $v
+	cp $cdir/gemc_logo.gif $v
 
 	scp -r $v ftp:/u/group/clas/www/gemc/html/work/doxy
 
 	cd ../
 end
 
+# main mage
 cd $cdir
-scp table.css     ftp:/u/group/clas/www/gemc/html/work/doxy
 scp gemc_logo.gif ftp:/u/group/clas/www/gemc/html/work/doxy
 scp doxies.html   ftp:/u/group/clas/www/gemc/html/work/doxy
+scp table.css     ftp:/u/group/clas/www/gemc/html/work/doxy
 
