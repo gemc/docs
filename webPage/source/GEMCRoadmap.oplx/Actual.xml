@@ -470,6 +470,7 @@
     <child-task idref="t33"/>
     <child-task idref="t72"/>
     <child-task idref="t74"/>
+    <child-task idref="t91"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -668,7 +669,7 @@
     <effort>288000</effort>
     <style>
       <value key="gantt-completion-color">
-        <color r="0.23228" g="0.92539" b="0.472862"/>
+        <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
         <color r="0.74902" g="0.74902" b="0.74902"/>
@@ -774,6 +775,19 @@
       </value>
     </style>
     <prerequisite-task idref="t36"/>
+  </task>
+  <task id="t91">
+    <title>Output to sqlite</title>
+    <effort>432000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.74902" g="0.74902" b="0.74902"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t74"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

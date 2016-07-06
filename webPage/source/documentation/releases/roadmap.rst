@@ -39,15 +39,13 @@ GEMC 2.4 - June 2016 ✅
 GEMC 2.5 - September 2016
 -------------------------
 
-- Gemc external Libraries
+- Gemc external Libraries ✅
 
-- remove more obsolete cpp materials.
+- Remove more obsolete cpp materials.
 
 - Test Template for individual detectors.
 
-- add physical volume constructor - active rotations.
-
-- Linux Tarballs.
+- Add physical volume constructor - active rotations.
 
 - **Custom V(t)**:
   Currently a Voltage vs time V(t) function is provided by gemc, based on a user parameterization
@@ -65,6 +63,7 @@ GEMC 2.5 - September 2016
 
 - Output format will match the composite banks of the JLab data acquisition group.
 
+- Linux Tarballs.
 
 GEMC 2.6 - January 2017
 -----------------------
@@ -112,6 +111,8 @@ GEMC 2.8 - June 2017
   Have the vector<id> inside it, instead of passing vectors of identifier.
 
 - Read Gzipped field maps
+
+- API to sqlite
 
 GEMC 3.0 - October 2017
 -----------------------

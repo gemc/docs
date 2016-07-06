@@ -289,4 +289,46 @@
       <change idref="t90" attribute="title" type="string" to="G4Cout redirections"/>
     </change>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-06T13:25:47.425Z" timestamp="2016-07-06T13:25:47.425Z">
+    <change idref="t91" to="t38" to-position="4">
+      <change idref="t91" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t91" attribute="internalPrerequisitesString" type="string" to="74FS"/>
+      <change idref="t91" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}"/>
+      <change idref="t91" attribute="title" type="string" to="Output to sqlite"/>
+    </change>
+    <change idref="t74" attribute="styleDict" type="dict" from="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.472862&quot;;
+        g = &quot;0.92539&quot;;
+        r = &quot;0.23228&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}"/>
+  </task-change-set>
 </changelog>
