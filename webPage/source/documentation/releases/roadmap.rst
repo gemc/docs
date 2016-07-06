@@ -43,7 +43,7 @@ GEMC 2.5 - September 2016
 
 - remove more obsolete cpp materials.
 
-- Test suite for individual detectors.
+- Test Template for individual detectors.
 
 - add physical volume constructor - active rotations.
 
@@ -71,7 +71,7 @@ GEMC 2.6 - January 2017
 
 - **G4Analysis tool** for all detectors fluxes.
 
-- Physics Cross Section Validation at JLab regine. SAID tables, inclusive cross section.
+- Physics Cross Section Validation at JLab regine. (Semi) Inclusive cross section.
 
 - Finalize implementation of Replicas and Divisions.
 
@@ -111,15 +111,18 @@ GEMC 2.8 - June 2017
 - Change identifier class to touchable.
   Have the vector<id> inside it, instead of passing vectors of identifier.
 
+- Read Gzipped field maps
 
 GEMC 3.0 - October 2017
 -----------------------
 
 - 3.0 will start making use of **c++11** features.
 
-- **Geant4 multithreading**.
+- Option library - change options to make more sense.
 
 - Re-define and document all verbosities.
+
+- **Geant4 multithreading**.
 
 - Match detector types to geant4.
 
@@ -134,6 +137,8 @@ GEMC 3.1 - January 2018
 - Geant4 output definitions will be an external GEMC library.
 
 - Particles color map option.
+
+- Geant4 scorers
 
 GEMC 3.2 - April 2018
 ---------------------
