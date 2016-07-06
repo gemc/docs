@@ -61,6 +61,8 @@ html:
 	cp source/contr.html                  $(BUILDDIR)/html
 	cp source/documentation/related.html  $(BUILDDIR)/html/documentation
 	cp source/nested.png                  $(BUILDDIR)/html
+	gemcHelp
+	mv options.html                       $(BUILDDIR)/html/documentation
 	# making sure the txt files are deleted
 	rm -f `find source/documentation/tutorials/material/ -name "*.txt"`
 	@echo ""

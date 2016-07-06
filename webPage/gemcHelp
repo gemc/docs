@@ -1,0 +1,7 @@
+#!/bin/csh -f
+
+setenv JLAB_VERSION devel
+source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine
+
+
+gemc -help-html

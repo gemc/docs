@@ -48,3 +48,10 @@ FAQ
 	:maxdepth: 2
 
 	FAQ
+
+
+Command Line Options
+====================
+
+`Complete list of gemc options <options.html>`_.
+
