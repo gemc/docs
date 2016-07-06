@@ -176,6 +176,7 @@
   <task id="t11">
     <title>Remove CPP mats</title>
     <effort>86400</effort>
+    <effort-done>43200</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
