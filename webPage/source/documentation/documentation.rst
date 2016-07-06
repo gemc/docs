@@ -53,5 +53,5 @@ FAQ
 Command Line Options
 ====================
 
-`Complete list of gemc options <options.html>`_.
+ - `Complete list of gemc options <options.html>`_.
 
