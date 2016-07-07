@@ -119,7 +119,7 @@ GEMC 2.8 - June 2017
 GEMC 3.0 - October 2017
 -----------------------
 
-- 3.0 will start making use of **c++11** features.
+- gemc 3.0 will make use of many **c++11** features and optimization.
 
 - Option library - change options to make more sense.
 
