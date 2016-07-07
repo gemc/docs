@@ -334,4 +334,11 @@
   <task-change-set user="Maurizio Ungaro" date="2016-07-06T18:35:16.059Z" timestamp="2016-07-06T18:35:16.059Z">
     <change idref="t11" attribute="internalEffortDone" type="real" from="0" to="43200" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-07T13:40:56.349Z" timestamp="2016-07-07T13:40:56.349Z">
+    <change idref="t11" attribute="internalEffortDone" type="real" from="43200" to="64800" resolved="yes"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-05T12:00:00.000Z" to="2016-09-26T12:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-07T17:52:16.777Z" timestamp="2016-07-07T17:52:16.777Z">
+    <change idref="t11" attribute="internalEffortDone" type="real" from="64800" to="86400" resolved="yes"/>
+  </task-change-set>
 </changelog>
