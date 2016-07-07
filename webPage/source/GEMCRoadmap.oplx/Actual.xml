@@ -292,6 +292,7 @@
     <child-task idref="t24"/>
     <child-task idref="t25"/>
     <child-task idref="t26"/>
+    <child-task idref="t93"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -742,8 +743,9 @@
     <start-no-earlier-than>2016-06-23T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t86">
-    <title>Option Library</title>
+    <title>option Library</title>
     <effort>288000</effort>
+    <effort-done>86399.9948501587</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.23228" g="0.92539" b="0.472862"/>
@@ -789,6 +791,19 @@
       </value>
     </style>
     <prerequisite-task idref="t74"/>
+  </task>
+  <task id="t93">
+    <title>Touchable Library</title>
+    <effort>432000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.23228" g="0.92539" b="0.472862"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t26"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

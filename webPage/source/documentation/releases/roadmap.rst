@@ -127,6 +127,8 @@ GEMC 3.0 - October 2017
 
 - Match detector types to geant4.
 
+- Touchable library: contains vector<identifier>. Optimize with no string operations?
+
 
 GEMC 3.1 - January 2018
 -----------------------

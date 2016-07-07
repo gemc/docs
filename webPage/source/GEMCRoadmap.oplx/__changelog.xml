@@ -341,4 +341,27 @@
   <task-change-set user="Maurizio Ungaro" date="2016-07-07T17:52:16.777Z" timestamp="2016-07-07T17:52:16.777Z">
     <change idref="t11" attribute="internalEffortDone" type="real" from="64800" to="86400" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-07T19:37:26.422Z" timestamp="2016-07-07T19:37:26.422Z">
+    <change idref="t93" to="t22" to-position="5" resolved="yes">
+      <change idref="t93" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t93" attribute="internalPrerequisitesString" type="string" to="26FS"/>
+      <change idref="t93" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.472862&quot;;
+        g = &quot;0.92539&quot;;
+        r = &quot;0.23228&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t93" attribute="title" type="string" to="Touchable Library"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-07T19:40:01.931Z" timestamp="2016-07-07T19:40:01.931Z">
+    <change idref="t86" attribute="title" type="string" from="Option Library" to="option Library" resolved="yes"/>
+    <change idref="t86" attribute="internalEffortDone" type="real" from="0" to="86399.99485015869" resolved="yes"/>
+  </task-change-set>
 </changelog>
