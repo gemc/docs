@@ -494,6 +494,7 @@
     <child-task idref="t55"/>
     <child-task idref="t63"/>
     <child-task idref="t75"/>
+    <child-task idref="t94"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -745,7 +746,7 @@
   <task id="t86">
     <title>option Library</title>
     <effort>288000</effort>
-    <effort-done>86399.9948501587</effort-done>
+    <effort-done>86399.9921875</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.23228" g="0.92539" b="0.472862"/>
@@ -804,6 +805,19 @@
       </value>
     </style>
     <prerequisite-task idref="t26"/>
+  </task>
+  <task id="t94">
+    <title>Fix GDML factory</title>
+    <effort>288000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t75"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

@@ -80,6 +80,8 @@ GEMC 2.6 - January 2017
 
 - Add / Remove axis in GUI
 
+- Fix GDML factory
+
 
 GEMC 2.7 - April 2017
 ---------------------

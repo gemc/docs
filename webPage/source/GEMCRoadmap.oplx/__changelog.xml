@@ -364,4 +364,23 @@
     <change idref="t86" attribute="title" type="string" from="Option Library" to="option Library" resolved="yes"/>
     <change idref="t86" attribute="internalEffortDone" type="real" from="0" to="86399.99485015869" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-07T20:42:46.417Z" timestamp="2016-07-07T20:42:46.417Z">
+    <change idref="t94" to="t42" to-position="6" resolved="yes">
+      <change idref="t94" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t94" attribute="internalPrerequisitesString" type="string" to="75FS"/>
+      <change idref="t94" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t94" attribute="title" type="string" to="Fix GDML factory"/>
+    </change>
+  </task-change-set>
 </changelog>
