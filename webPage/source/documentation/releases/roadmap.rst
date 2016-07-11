@@ -41,7 +41,7 @@ GEMC 2.5 - September 2016
 
 - Gemc external Libraries ✅
 
-- Remove more obsolete cpp materials.
+- Remove more obsolete cpp materials.✅
 
 - Test Template for individual detectors.
 
@@ -87,7 +87,8 @@ GEMC 2.7 - April 2017
 ---------------------
 
 - **Digitization routines will be plugins**, stored with the detector definitions (geometry, materials, etc)
-  They will not be compiled in the gemc core anymore.
+  - They will not be compiled in the gemc core anymore.
+  - Constants mechanism will be handled in run action, no more in static call
 
 - GEMC library for event generation. This will include plugins for different formats.
 
@@ -151,6 +152,10 @@ GEMC 3.2 - April 2018
 - FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
 
 - Benchmarking tools
+
+- GEMC Nim A Paper
+
+- GEMC on the mac app store
 
 
 

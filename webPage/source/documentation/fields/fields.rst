@@ -153,6 +153,16 @@ Translating/Rotating a Field
 Getting the field value at one point
 ------------------------------------
 
+1. Set the BEAM_V option at the point location you want to probe.
+2. set FIELD_VERBOSITY to 99.
+
+GEMC will generate a track at that location, print the field values, then exit.
+
+For example, to check the field at x (10, 11, 12)cm::
+
+ -BEAM_V=(10, 11, 12)cm
+ -FIELD_VERBOSITY=99
+
 
 
 
