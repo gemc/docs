@@ -102,6 +102,7 @@
   <task id="t5">
     <title>Translation Tables</title>
     <effort>288000</effort>
+    <effort-done>288000</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>

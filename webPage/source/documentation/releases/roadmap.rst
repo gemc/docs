@@ -59,7 +59,7 @@ GEMC 2.5 - September 2016
   algorithms (attenuation lengths, smearling, pmt q.e. for example) and provide a signal that should be
   very close to what we see in real scopes.
 
-- **Translation tables mechanism**: from detector identifier to crate/slot/channel.
+- **Translation tables mechanism**: from detector identifier to crate/slot/channel. ✅
 
 - Output format will match the composite banks of the JLab data acquisition group.
 
