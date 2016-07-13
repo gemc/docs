@@ -89,6 +89,81 @@ hitn                      99      Hit ID
 =====================  ========= ================================================================================================
 
 
+.. _productionThreshold:
+
+Production Threshold
+--------------------
+
+Every simulation developer must answer the questions:
+
+- how low can you go?
+- at what energy do I stop tracking particles?
+
+This is a balancing act:
+
+- need to go lowe enough to capture the physics of interest
+- cannot go too low: some processes have infrared divergence
+
+In *geant3* this balance was addressed by imposing an absolute cutoff in energy: particles are
+stopped when this energy is reached, and the remaining energy is dumped at that point.
+
+This leads to large inaccuracies in location: there is a particle type, momentum and material dependance of
+the distance travelled by particles. A 10 KeV cutoff in lead is very different than a 10 KeV cutoff
+in a scintillator.
+
+Definition
+==========
+
+in *geant4* **the production threshold is a distance**, not an energy:
+
+- if secondaries can travel more than that distance, they are produced.
+- otherwise there is discrete energy loss.
+
+The location is now correct. Onlt one value of threshold is needed for all materials.
+
+Example: 10mm vs 1mm vs 0.1mm
+=============================
+
+Let's consider a box of aluminum, an electron passing through it for 3 different production thresholds pth:
+
+- pth=10mm: only secondary electrons of ~5 Mev or higher will be produced.
+- pth=1mm: only secondary electrons of ~700 ev or higher will be produced.
+- pth=0.1mm: only secondary electrons of ~150 ev or higher will be produced.
+
+Depending on the e.m. physics list precision, pth=0.1mm could yield same resulsts as pth=1mm.
+
+.. figure:: prodThreshold.png
+	:width: 90%
+	:align: center
+
+*Mean ranges of protons and electrons in aluminum [Source: E.J. Daly, A.Hilgers, G. Drolshagen, and H.D.R. Evans, "Space Environment Analysis: Experience and Trends,"
+ESA 1996 Symposium on Environment Modelling for Space-based Applications, Sept. 18-20, 1996, ESTEC, Noordwijk, The Netherlands.]*
+
+
+.. _fluxDetector:
+
+
+FLUX Detector
+-------------
+A FLUX detector is a special case of sensitive detector. The hit definition for FLUX is different than the one above:
+
+- different tracks will produce different hits, indipendently of their time.
+
+In the same detector element, all steps of the same truck will form one "integrated hit".
+
+In the FLUX detector, each particle produced will then produce a separate hit (thus the name *FLUX*), while in normal sensitive detectors all
+particles within the same electronic timewindow will collect in one hit.
+
+Setting FLUX detectors in GEMC
+==============================
+
+In GEMC we can have an arbitrary number of FLUX detector. Their ID is set as follows::
+
+ $detector{"identifiers"}  = "id manual 3";
+
+The "id" variable is part of the true information in the output.
+
+
 .. _processCatalogue:
 
 
