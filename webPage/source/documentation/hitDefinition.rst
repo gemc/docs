@@ -3,6 +3,8 @@
 GEMC Hit
 ########
 
+.. _hitDefinition:
+
 
 Hit Definition
 --------------
@@ -35,6 +37,9 @@ of two tracks and secondaries hitting two detector elements to better illustrate
 
    Figure 1: the first track generate two hits. The second track is within the TW of the first one, so it does not generate additional hits and
    its steps add to the previous hits’ steps.
+
+Notice that lowering a production threshold may not affect the number of hits: there may be more secondaries produced, but these steps may all happen
+within the same timewindow, thus collecting in the same hit.
 
 
 True Information
@@ -130,7 +135,8 @@ Let's consider a box of aluminum, an electron passing through it for 3 different
 - pth=1mm: only secondary electrons of ~700 ev or higher will be produced.
 - pth=0.1mm: only secondary electrons of ~150 ev or higher will be produced.
 
-Depending on the e.m. physics list precision, pth=0.1mm could yield same resulsts as pth=1mm.
+Depending on the e.m. physics list precision, pth=0.1mm could yield same resulsts as pth=1mm:
+if the threshold is smaller than free range path of a particle, lowering won't affect results.
 
 .. figure:: prodThreshold.png
 	:width: 90%
@@ -145,14 +151,17 @@ ESA 1996 Symposium on Environment Modelling for Space-based Applications, Sept. 
 
 FLUX Detector
 -------------
-A FLUX detector is a special case of sensitive detector. The hit definition for FLUX is different than the one above:
+A FLUX detector is a special case of sensitive detector. The hit definition for FLUX is different than :ref:`the one above <hitDefinition>`:
 
-- different tracks will produce different hits, indipendently of their time.
+ - different tracks will produce different hits, independently of their time.
 
 In the same detector element, all steps of the same truck will form one "integrated hit".
 
 In the FLUX detector, each particle produced will then produce a separate hit (thus the name *FLUX*), while in normal sensitive detectors all
 particles within the same electronic timewindow will collect in one hit.
+
+
+
 
 Setting FLUX detectors in GEMC
 ==============================
