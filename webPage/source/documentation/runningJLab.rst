@@ -11,7 +11,7 @@ Sourcing the environment
 
 The environment is necessary to load the libraries needed to run gemc. To load::
 
- source /site/12gev_phys/production.csh 1.3
+ source /site/12gev_phys/production.csh 1.3.1
 
 Currently only csh is supported, and bash is in the works.
 
