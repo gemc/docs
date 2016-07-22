@@ -43,9 +43,7 @@ GEMC 2.5 - September 2016
 
 - Remove more obsolete cpp materials.✅
 
-- Test Template for individual detectors.
-
-- Add physical volume constructor - active rotations.
+- **Translation tables mechanism**: from detector identifier to crate/slot/channel. ✅
 
 - **Custom V(t)**:
   Currently a Voltage vs time V(t) function is provided by gemc, based on a user parameterization
@@ -59,11 +57,17 @@ GEMC 2.5 - September 2016
   algorithms (attenuation lengths, smearling, pmt q.e. for example) and provide a signal that should be
   very close to what we see in real scopes.
 
-- **Translation tables mechanism**: from detector identifier to crate/slot/channel. ✅
 
 - Output format will match the composite banks of the JLab data acquisition group.
 
-- Linux Tarballs.
+- GDML factory ✅
+
+- CAD factory ✅
+
+- Test Template for individual detectors.
+
+- Add physical volume constructor - active rotations.
+
 
 GEMC 2.6 - January 2017
 -----------------------
@@ -80,7 +84,7 @@ GEMC 2.6 - January 2017
 
 - Add / Remove axis in GUI
 
-- Fix GDML factory
+- Linux Tarballs.
 
 
 GEMC 2.7 - April 2017

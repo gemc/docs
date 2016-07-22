@@ -72,4 +72,68 @@
   <task-change-set user="Maurizio Ungaro" date="2016-07-11T19:27:10.007Z" timestamp="2016-07-11T19:27:10.007Z">
     <change idref="t5" attribute="internalEffortDone" type="real" from="0" to="288000"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-22T16:07:17.514Z" timestamp="2016-07-22T16:07:17.514Z">
+    <change idref="t4" attribute="internalPrerequisitesString" type="string" from="62FS" to="5FS"/>
+    <change idref="t5" attribute="internalPrerequisitesString" type="string" from="4FS" to="11FS"/>
+    <change idref="t6" attribute="internalPrerequisitesString" type="string" from="5FS" to="4FS"/>
+    <change idref="t10" attribute="internalPrerequisitesString" type="string" from="11FS" to="96FS"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-09-26T12:00:00.000Z" to="2016-10-04T12:00:00.000Z"/>
+    <change idref="t62" from="t81" from-position="4">
+      <change idref="t62" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t62" attribute="internalPrerequisitesString" type="string" to="50FS"/>
+      <change idref="t62" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t62" attribute="title" type="string" to="Linux Tarballs"/>
+    </change>
+    <change idref="t5" from="t81" from-position="5" to="t81" to-position="2"/>
+    <change idref="t4" from="t81" from-position="5" to="t81" to-position="3"/>
+    <change idref="t6" from="t81" from-position="6" to="t81" to-position="4"/>
+    <change idref="t95" to="t81" to-position="5">
+      <change idref="t95" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t95" attribute="internalEffortDone" type="real" from="0" to="144000"/>
+      <change idref="t95" attribute="internalPrerequisitesString" type="string" to="6FS"/>
+      <change idref="t95" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t95" attribute="title" type="string" to="GDML Factory"/>
+    </change>
+    <change idref="t96" to="t81" to-position="6">
+      <change idref="t96" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t96" attribute="internalEffortDone" type="real" from="0" to="144000"/>
+      <change idref="t96" attribute="internalPrerequisitesString" type="string" to="95FS"/>
+      <change idref="t96" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t96" attribute="title" type="string" to="CAD Factory"/>
+    </change>
+    <change idref="t94" attribute="title" type="string" from="Fix GDML factory" to="Linux Tarballs"/>
+  </task-change-set>
 </changelog>

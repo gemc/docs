@@ -33,9 +33,9 @@ CAD to GDML Conversion
 
 .. raw:: html
 
-	<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl?height=300&width=300"></script>
-	<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl?height=300&width=300"></script>
 
+	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/enterprise.stl?height=300&width=300"></script>
+	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/dragon.stl?height=300&width=300"></script>
 
 
 |
@@ -43,6 +43,7 @@ CAD to GDML Conversion
 .. rubric:: Footnotes
 
 .. [#] Geometry Description Markup Language. It's an application independent geometry description based on XML. See `gdml at cern <http://gdml.web.cern.ch/GDML>`_.
-.. [#] STL (`STereoLithography <https://en.wikipedia.org/wiki/STL_(file_format)>`_)
-       and PLY (`Standard Polygon Format <https://en.wikipedia.org/wiki/PLY_%28file_format%29>`_) file format are available.
+.. [#] STL (`STereoLithography <https://en.wikipedia.org/wiki/STL_(file_format)>`_),
+   PLY (`Standard Polygon Format <https://en.wikipedia.org/wiki/PLY_%28file_format%29>`_),
+   OBJ (`Alias Waveform Object <https://en.wikipedia.org/wiki/Wavefront_.obj_file>`_) file formats are available.
 

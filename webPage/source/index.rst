@@ -10,10 +10,12 @@ gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate 
 particles through matter.
 The main features of gemc are:
 
- * user parameters stored in databases.
- * easy interface to build simulations.
+ * application independent geometry description
+ * easy interface
+ * cad/gdml imports
 
-|
+.. raw:: html
+	<br>
 
 .. container:: mydiv
 
@@ -28,7 +30,7 @@ The main features of gemc are:
 		CLAS12 detector from the beam high current. The gemc simulation was used to design
 		and validate the shielding.
 
-	.. thumbnail:: clas12.png
+	.. thumbnail:: eic_beam.png
 		:width: 20%
 		:group: mycenter
 		:title:
@@ -36,7 +38,7 @@ The main features of gemc are:
 		A Deep Virtual Compton Scattering (DVCS) event in the CLAS12 Central Detector.
 
 	.. thumbnail:: eic.png
-		:width: 20%
+		:width: 35%
 		:group: mycenter
 		:title:
 
@@ -50,19 +52,45 @@ The main features of gemc are:
 		10,000 electrons producing photons in the 6mm collimator in the bubble experiments at
  		Jefferson Lab.
 
+.. raw:: html
+
+	<center><small> <i> From left to right:
+    the clas12 electron beam in CLAS12;
+    electron and ion beans in the EIC;
+    the eic detector at interaction point
+    the cebaf bubble experiment
+   </i></small></center><br>
+
+
 
 
 Overview
 ========
 
-gemc tries to make easy things easy and hard things possible.
+gemc makes easy things trivial and hard things possible.
 
-Users can build and run complex setups even with no C++ or geant4 knowledge. See for example :ref:`how to build a TOF with
+Users can build and run complex setups with no C++ or geant4 knowledge. See for example :ref:`how to build a TOF with
 few lines of code <simplePaddleExample>`.
 
-The upload/download of the parameters to/from databases (available: MYSQL or ASCII) is automatic.
+The geometry and sensitivity is application independent. Users can load detectors using a combination several available factories:
 
-|
+ - MYSQL
+ - TEXT
+ - GDML
+ - CAD
+ - C++ Plugin
+
+.. raw:: html
+
+	<center>
+	<script src="https://embed.github.com/view/3d/gemc/detectors/master/humanBody/Upper_GI.stl?width=250"></script>
+	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/enterprise.stl?width=250"></script>
+	<br>
+	<small> <i> gemc can import models from CAD and GDML.
+   </i></small></center><br><br>
+
+
+The materials, digitization, electromagnetic fields, output format are application independent and customizable.
 
 .. image:: gemcArchitecture.png
 	:width: 90%
@@ -70,8 +98,7 @@ The upload/download of the parameters to/from databases (available: MYSQL or ASC
 
 |
 
-Changes in the setup are reflected in the databases and can be tested in real time
-by all users w/o having to re-compile code.
+
 
 
 Open source
