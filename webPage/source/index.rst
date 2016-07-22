@@ -88,17 +88,29 @@ Users can load experiments can be loaded  using a combination of several availab
 	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/enterprise.stl?width=250"></script>
 	<br>
    <small> <i> gemc can import models from CAD and GDML. Left: the upper gastrointestinal system is modeled in CAD. It can be
-   imported in GEMC and made it sensitive so radiation doses can be measured. Right: the mighty USS Enterprise NCC 1701-A can be
-   used to shoot protons torpedos.
+   imported in GEMC and made it sensitive so that radiation doses can be measured. Right: the mighty USS Enterprise NCC 1701-A can be
+   used to shoot protons torpedos. These stl files are directly imported in GEMC. Use the mouse to interact with the picture.
    </i></small></center><br><br>
 
 
 Simulations are application independent
 =======================================
 
-The geometry and sensitivity is application independent.
+Once the user defined setup is loaded, it is translated in geant4. This includes:
 
-The materials, digitization, electromagnetic fields, output format are application independent.
+- geometry
+- materials
+- mirrors
+- physics list
+- digitization
+- electromagnetic fields
+
+All particles are transported through matters and
+produce radiation. The geant4 results are then collected and organized according to user preferences.
+
+
+
+|
 
 .. image:: gemcArchitecture.png
 	:width: 90%
