@@ -1,0 +1,48 @@
+
+.. stl files can be viewed by using the github viewer. Doc is here: https://help.github.com/articles/3d-file-viewer/
+
+######################
+GDML and CAD Factories
+######################
+
+.. _gdmlCadFactories:
+
+
+Importing GDML and CAD models in gemc
+-------------------------------------
+
+gemc can import models in GDML [#]_ or CAD [#]_.
+
+For example, to import three detectors:
+
+ - one in the usual TEXT format, named "drift_chambers"
+ - one in GDML, named "target" (filename is target.gdml)
+ - one in CAD, named "beamline" (filename is target.stl or target.ply)
+
+you would add the following lines in the gcard::
+
+ <detector name="drift_chambers" factory="TEXT" variation="lH2"/>
+ <detector name="target" factory="GDML"/>
+ <detector name="beamline" factory="CAD"/>
+
+Notice you do not need the variation tag for the GDML and CAD detector factories.
+
+
+CAD to GDML Conversion
+----------------------
+
+.. raw:: html
+
+	<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl?height=300&width=300"></script>
+	<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl?height=300&width=300"></script>
+
+
+
+|
+
+.. rubric:: Footnotes
+
+.. [#] Geometry Description Markup Language. It's an application independent geometry description based on XML. See `gdml at cern <http://gdml.web.cern.ch/GDML>`_.
+.. [#] STL (`STereoLithography <https://en.wikipedia.org/wiki/STL_(file_format)>`_)
+       and PLY (`Standard Polygon Format <https://en.wikipedia.org/wiki/PLY_%28file_format%29>`_) file format are available.
+

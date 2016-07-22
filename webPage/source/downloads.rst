@@ -88,7 +88,7 @@ Using the command line
 
 You can use the gemc.command on a terminal to run gemc, using the typical options and gcard::
 
- /Applications/gemc-version.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
+ /Applications/gemc-2.4.app/gemc.app/Contents/MacOs/gemc.command   *options* *gcard*
 
 Where *version* is the gemc version you're using.
 
@@ -106,7 +106,7 @@ gemc.app/Contents/Resources/
 
 For example::
 
- mv ~/Downloads/clas12SolenoidFieldMap.dat.txt /Applications/gemc-2.3.app/gemc.app/Contents/Resources/
+ mv ~/Downloads/clas12SolenoidFieldMap.dat.txt /Applications/gemc-2.4.app/gemc.app/Contents/Resources/
 
 
 In case of installation from source code, unpack in::
