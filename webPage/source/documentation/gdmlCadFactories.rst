@@ -28,6 +28,43 @@ you would add the following lines in the gcard::
 Notice you do not need the variation tag for the GDML and CAD detector factories.
 
 
+GEMC attributes to models
+--------------------------
+
+Attributes can be added on the fly. This includes:
+
+ - material
+ - visualization attributes (color, surface style)
+ - sensitivity
+
+Attributes are assigned by using XML files (extension: ".gxml"). For example the following line will change
+the color, material of an imported volume named "target" and assign flux sensitivity so that hits can be recorded::
+
+ <volume name="target" color="99ff00" material="G4_Pb" sensitivity="flux" identifiers="id manual 1"/>
+
+
+
+
+CAD vs GDML Attributes
+----------------------
+
+- A GDML file can contain many volumes. Their attributes are assigned by a .gxml file with the same name as the system.
+  For example, to set the attributes of the target of the gcard above, a filename *"target.gxml"* can be used::
+
+   <gxml>
+ 	 <volume name="inner_target_vol" color="8899dd" material="lH2"/>
+   </gxml>
+
+- A CAD file contains only one volume. Many cad files can be imported and the attributes of all of them can
+  be set by filename *"cad.gxml"*"::
+
+   <gxml>
+	 <volume name="beamline" color="8899dd" material="G4_Al"/>
+   </gxml>
+
+
+
+
 CAD to GDML Conversion
 ----------------------
 
@@ -36,6 +73,7 @@ CAD to GDML Conversion
 
 	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/enterprise.stl?height=300&width=300"></script>
 	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/dragon.stl?height=300&width=300"></script>
+
 
 
 |

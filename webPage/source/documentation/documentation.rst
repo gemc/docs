@@ -10,6 +10,16 @@ Tutorials
 
 	tutorials
 
+
+Examples
+=========
+
+.. toctree::
+	:maxdepth: 2
+
+	examples
+
+
 GEMC Documentation
 ==================
 

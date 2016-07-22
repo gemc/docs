@@ -15,37 +15,38 @@ The main features of gemc are:
  * cad/gdml imports
 
 .. raw:: html
+
 	<br>
 
 .. container:: mydiv
 
 
 	.. thumbnail:: beam.png
-		:width: 20%
+		:width: 19%
 		:group: mycenter
 		:title:
 
 		A 5T solenoid field aligns the beam of electrons along the z-axis.
 		An addition tugnsten cone (blue) provides additional shielding to the
-		CLAS12 detector from the beam high current. The gemc simulation was used to design
+		`CLAS12 <https://www.jlab.org/Hall-B/clas12-web/>`_ detector from the beam high current. The gemc simulation was used to design
 		and validate the shielding.
 
 	.. thumbnail:: eic_beam.png
-		:width: 20%
+		:width: 19%
 		:group: mycenter
 		:title:
 
-		A Deep Virtual Compton Scattering (DVCS) event in the CLAS12 Central Detector.
+		The electron and ion beamline and interation point detectors for the `electron-ion collider <https://www.jlab.org/meic/`_.
 
 	.. thumbnail:: eic.png
-		:width: 35%
+		:width: 38%
 		:group: mycenter
 		:title:
 
 		The gemc simulation of the Electron Ion Collider beamline and detectors.
 
 	.. thumbnail:: bubble.png
-		:width: 20%
+		:width: 19%
 		:group: mycenter	
 		:title:
 
@@ -55,10 +56,10 @@ The main features of gemc are:
 .. raw:: html
 
 	<center><small> <i> From left to right:
-    the clas12 electron beam in CLAS12;
-    electron and ion beans in the EIC;
-    the eic detector at interaction point
-    the cebaf bubble experiment
+    the electron beam in the <a href="https://www.jlab.org/Hall-B/clas12-web/"> clas12</a> detector;
+    electron and ion beans in the <a href="https://www.jlab.org/meic/"> electron-ion collider project</a>;
+    the <a href="https://www.jlab.org/meic">electron-ion collider</a>  detector at interaction point;
+    the <a href="https://wiki.jlab.org/ciswiki/index.php/Simulations_and_Backgrounds">cebaf bubble experiment </a>.
    </i></small></center><br>
 
 
@@ -69,10 +70,10 @@ Overview
 
 gemc makes easy things trivial and hard things possible.
 
-Users can build and run complex setups with no C++ or geant4 knowledge. See for example :ref:`how to build a TOF with
+Users can build and run complex setups without c++ or geant4 knowledge. See for example :ref:`how to build a TOF with
 few lines of code <simplePaddleExample>`.
 
-The geometry and sensitivity is application independent. Users can load detectors using a combination several available factories:
+Users can load experiments can be loaded  using a combination of several available factories:
 
  - MYSQL
  - TEXT
@@ -86,11 +87,18 @@ The geometry and sensitivity is application independent. Users can load detector
 	<script src="https://embed.github.com/view/3d/gemc/detectors/master/humanBody/Upper_GI.stl?width=250"></script>
 	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/enterprise.stl?width=250"></script>
 	<br>
-	<small> <i> gemc can import models from CAD and GDML.
+   <small> <i> gemc can import models from CAD and GDML. Left: the upper gastrointestinal system is modeled in CAD. It can be
+   imported in GEMC and made it sensitive so radiation doses can be measured. Right: the mighty USS Enterprise NCC 1701-A can be
+   used to shoot protons torpedos.
    </i></small></center><br><br>
 
 
-The materials, digitization, electromagnetic fields, output format are application independent and customizable.
+Simulations are application independent
+=======================================
+
+The geometry and sensitivity is application independent.
+
+The materials, digitization, electromagnetic fields, output format are application independent.
 
 .. image:: gemcArchitecture.png
 	:width: 90%
