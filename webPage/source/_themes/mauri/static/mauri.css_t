@@ -631,9 +631,17 @@ div.note p.admonition-title {
       
    }
    div.document {
-      width: 65em;
+      width: 68em;
       float: left;
-   }
-   
+	}
+	
+	
 }
+
+
+
+
+
+
+
 

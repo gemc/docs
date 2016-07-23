@@ -10,7 +10,7 @@ gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate 
 particles through matter. It provides:
 
  * application independent geometry description
- * easy interface
+ * easy interface to build / run experiments
  * cad/gdml imports
 
 
@@ -78,7 +78,7 @@ Experiments can be loaded  using a combination of several available factories:
  - MYSQL
  - TEXT
  - GDML
- - CAD
+ - CAD (STL, PLY, OBJ formats)
  - C++ Plugin
 
 .. raw:: html
