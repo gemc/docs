@@ -5,6 +5,7 @@
  * Sphinx stylesheet -- mauri theme
  * derived from both sphinxdoc and agogo themes
  *
+ * At the bottom are the options for iphone
  */
 
 * {
@@ -608,9 +609,31 @@ div.note p.admonition-title {
     padding: 0 5px;
 }
 
+/*
+  mobile options.
+  To test:
+  scp build/html/_static/mauri.css ftp.jlab.org:/u/group/clas/www/gemc/html/gemc/html/_static/mauri.css
+  and reload on the phone
+*/
 
 
-
-
-
+@media only screen and (max-device-width: 480px) {
+   
+   body {
+      width: 130%;
+      margin-left: 20px;
+   }
+   div.sidebar {
+      width: 100%;
+      float: bottom;
+      font-size: 1.2em;
+      padding-left: 20px;
+      
+   }
+   div.document {
+      width: 65em;
+      float: left;
+   }
+   
+}
 

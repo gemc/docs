@@ -7,12 +7,12 @@ GEant4 Monte-Carlo
 ==================
 
 gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate the passage of
-particles through matter.
-The main features of gemc are:
+particles through matter. It provides:
 
  * application independent geometry description
  * easy interface
  * cad/gdml imports
+
 
 .. raw:: html
 
@@ -70,10 +70,10 @@ Overview
 
 gemc makes easy things trivial and hard things possible.
 
-Users can build and run complex setups without c++ or geant4 knowledge. See for example :ref:`how to build a TOF with
+Users can build and run complex setups with minimal programming knowledge. See for example :ref:`how to build a TOF with
 few lines of code <simplePaddleExample>`.
 
-Users can load experiments can be loaded  using a combination of several available factories:
+Experiments can be loaded  using a combination of several available factories:
 
  - MYSQL
  - TEXT
@@ -89,7 +89,7 @@ Users can load experiments can be loaded  using a combination of several availab
 	<br>
    <small> <i> gemc can import models from CAD and GDML. Left: the upper gastrointestinal system is modeled in CAD. It can be
    imported in GEMC and made it sensitive so that radiation doses can be measured. Right: the mighty USS Enterprise NCC 1701-A can be
-   used to shoot protons torpedos. These stl files are directly imported in GEMC. Use the mouse to interact with the picture.
+   used to shoot protons torpedos. These stl files are directly imported in GEMC.
    </i></small></center><br><br>
 
 
@@ -106,7 +106,7 @@ Once the user defined setup is loaded, it is translated in geant4. This includes
 - electromagnetic fields
 
 All particles are transported through matters and
-produce radiation. The geant4 results are then collected and organized according to user preferences.
+produce radiation, hits, secondaries. The geant4 results are then collected and organized according to user preferences.
 
 
 
