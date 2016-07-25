@@ -77,6 +77,19 @@ CAD Examples
 
 You can find many autocad examples `here <http://www.thingiverse.com/search/>`_.
 
+|
+
+Step to Mesh with FreeCad
+------------------------
+
+Most autocad software can export models in the mesh format needed (STL, PLY or OBJ).
+You can use Freecad [#]_ to convert step objects to stl format. Here are the steps:
+
+1. Change the View > Workbench > Mesh Design
+2. Select the object
+3. Clicl on Meshes > Create Mesh From Shape
+4. Select precision desired - click OK
+5. Click on the new meshed object and File > Export  to a STL file (or PLY or OBJ).
 
 
 |
@@ -87,4 +100,4 @@ You can find many autocad examples `here <http://www.thingiverse.com/search/>`_.
 .. [#] STL (`STereoLithography <https://en.wikipedia.org/wiki/STL_(file_format)>`_),
    PLY (`Standard Polygon Format <https://en.wikipedia.org/wiki/PLY_%28file_format%29>`_),
    OBJ (`Alias Waveform Object <https://en.wikipedia.org/wiki/Wavefront_.obj_file>`_) file formats are available.
-
+.. [#] http://www.freecadweb.org
