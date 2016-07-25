@@ -63,7 +63,7 @@ html:
 	cp source/nested.png                  $(BUILDDIR)/html
 	./gemcHelp
 	mv options.html                       $(BUILDDIR)/html/documentation
-	# making sure the txt files are deleted
+	# making sure the txt files in the tutorials and materials are deleted
 	rm -f `find source/documentation/tutorials/material/ -name "*.txt"`
 	@echo ""
 
