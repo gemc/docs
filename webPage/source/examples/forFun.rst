@@ -12,7 +12,7 @@ In this example the USS Enterprise shoots protons torpedoes at a dragin.
 Requirements
 ------------
 
-- gemc 2.5 or newer
+- gemc 2.5 or newer (september 2016, currently "devel")
 - `example tarball <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/exampleforFun.tar>`_
 
 

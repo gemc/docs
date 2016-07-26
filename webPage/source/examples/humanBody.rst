@@ -17,7 +17,7 @@ In this example the following organs are imported from CAD:
 Requirements
 ------------
 
-- gemc 2.5 or newer
+- gemc 2.5 or newer (september 2016, currently "devel")
 - `example tarball <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/examplehumanBody.tar>`_
 
 
