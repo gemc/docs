@@ -87,7 +87,7 @@ If that's not possible you can use Freecad [#]_ to convert step objects to stl f
 
 1. Change the View > Workbench > Mesh Design
 2. Select the object
-3. Clicl on Meshes > Create Mesh From Shape
+3. Click on Meshes > Create Mesh From Shape
 4. Select precision desired - click OK
 5. Click on the new meshed object and File > Export  to a STL file (or PLY or OBJ).
 
