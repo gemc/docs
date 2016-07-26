@@ -11,6 +11,18 @@ The base closest to the beam is smaller than the one further away to ensure full
 
 Notice how users can focus on the geometry dimensions and positions and do not need to know c++ or geant4.
 
+Requirements
+------------
+
+- gemc 2.4 or newer
+
+
+How to run
+----------
+
+
+
+
 
 .. image:: paddles.png
 	:width: 98%
