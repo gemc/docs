@@ -84,12 +84,14 @@ Experiments can be loaded  using a combination of several available factories:
 .. raw:: html
 
 	<center>
-	<script src="https://embed.github.com/view/3d/gemc/detectors/master/humanBody/Upper_GI.stl?width=250"></script>
-	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/enterprise.stl?width=250"></script>
+	<a href="https://github.com/gemc/detectors/blob/master/humanBody/Upper_GI.stl"><img src="_images/humanBody.png" width="400px" height="400px"></img></a>
+	<a href="https://github.com/gemc/detectors/blob/master/forFun/enterprise.stl"> <img src="_images/forFun.png"    width="400px" height="400px"></img></a>
 	<br>
-   <small> <i> gemc can import models from CAD and GDML. Left: the upper gastrointestinal system is modeled in CAD. It can be
-   imported in GEMC and made it sensitive so that radiation doses can be measured. Right: the mighty USS Enterprise NCC 1701-A can be
-   used to shoot protons torpedos. These stl files are directly imported in GEMC.
+   <small> <i> gemc can <a href="documentation/gdmlCadFactories.html">import models from CAD and GDML</a>.
+   Left: the upper gastrointestinal system is modeled in CAD.
+   It can be <a href="examples/humanBody.html">imported in GEMC and made it sensitive</a> so that radiation doses can be measured.
+   Right: the mighty USS Enterprise NCC 1701-A <a href="examples/forFun.html">can be
+   used to shoot protons torpedos</a>. These stl files are directly imported in GEMC.
    </i></small></center><br><br>
 
 
