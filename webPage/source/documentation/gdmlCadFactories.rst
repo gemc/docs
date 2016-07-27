@@ -28,6 +28,17 @@ you would add the following lines in the gcard::
 Notice you do not need the variation tag for the GDML and CAD detector factories.
 
 
+Importing CAD models from a directory
+-------------------------------------
+
+A single directory can be specified in the gcard. GEMC will look for and load all valid CAD files inside that directory.
+For example::
+
+ <detector name="beamline/" factory="CAD"/>
+
+will load all CAD files inside "beamline".
+Only files with these extensions will be loaded: ".stl" or ".ply" or ".obj". Any other format will be ignored.
+
 GEMC attributes to models
 --------------------------
 

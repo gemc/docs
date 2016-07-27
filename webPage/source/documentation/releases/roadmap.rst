@@ -43,6 +43,8 @@ GEMC 2.5 - September 2016
 
 - Remove more obsolete cpp materials.✅
 
+- Accelerator Sync Bank
+
 - **Translation tables mechanism**: from detector identifier to crate/slot/channel. ✅
 
 - **Custom V(t)**:
@@ -56,7 +58,6 @@ GEMC 2.5 - September 2016
   A V(t) function will be based on the I(t). The new V(t) will therefore take into account all detectors
   algorithms (attenuation lengths, smearling, pmt q.e. for example) and provide a signal that should be
   very close to what we see in real scopes.
-
 
 - Output format will match the composite banks of the JLab data acquisition group.
 

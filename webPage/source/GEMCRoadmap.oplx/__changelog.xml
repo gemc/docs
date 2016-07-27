@@ -136,4 +136,26 @@
     </change>
     <change idref="t94" attribute="title" type="string" from="Fix GDML factory" to="Linux Tarballs"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-07-27T13:05:26.403Z" timestamp="2016-07-27T13:05:26.403Z">
+    <change idref="t5" attribute="internalPrerequisitesString" type="string" from="11FS" to="97FS" resolved="yes"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-04T12:00:00.000Z" to="2016-10-18T12:00:00.000Z" resolved="yes"/>
+    <change idref="t97" to="t81" to-position="2" resolved="yes">
+      <change idref="t97" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t97" attribute="internalPrerequisitesString" type="string" to="11FF"/>
+      <change idref="t97" attribute="noEarlierThanConstraintDate" type="date" to="2016-07-08T12:00:00.000Z"/>
+      <change idref="t97" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t97" attribute="title" type="string" to="Accelerator Sync Bank"/>
+    </change>
+  </task-change-set>
 </changelog>

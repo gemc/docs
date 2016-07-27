@@ -111,7 +111,7 @@
         <color r="0.847059" g="0.301961" b="0.301961"/>
       </value>
     </style>
-    <prerequisite-task idref="t11"/>
+    <prerequisite-task idref="t97"/>
   </task>
   <task id="t6">
     <title>Composite Banks</title>
@@ -488,7 +488,7 @@
   <task id="t42">
     <title>Release 2.6</title>
     <type>group</type>
-    <start-constraint-date>2016-10-04T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2016-10-18T12:00:00.000Z</start-constraint-date>
     <child-task idref="t45"/>
     <child-task idref="t46"/>
     <child-task idref="t52"/>
@@ -506,7 +506,7 @@
       </value>
     </style>
     <prerequisite-task idref="t81"/>
-    <start-no-earlier-than>2016-10-04T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-10-18T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t45">
     <title>G4 Analysis Tools</title>
@@ -713,6 +713,7 @@
     <start-constraint-date>2016-06-23T12:00:00.000Z</start-constraint-date>
     <child-task idref="t9"/>
     <child-task idref="t11"/>
+    <child-task idref="t97"/>
     <child-task idref="t5"/>
     <child-task idref="t4"/>
     <child-task idref="t6"/>
@@ -835,6 +836,21 @@
       </value>
     </style>
     <prerequisite-task idref="t95"/>
+  </task>
+  <task id="t97">
+    <title>Accelerator Sync Bank</title>
+    <effort>86400</effort>
+    <start-constraint-date>2016-07-08T12:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t11" kind="FF"/>
+    <start-no-earlier-than>2016-07-08T12:00:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>
