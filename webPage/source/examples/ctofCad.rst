@@ -48,7 +48,7 @@ How to run
    The digitization routine "ctof" (set in cad.gxml) is called for each sensitive paddle.
 
 
-6. The CAD imports are:
+6. The CAD imports are non trivial shapes:
 
    - 48 scintillators, with 132 facets each.
    - 48 lightguides, with 1330 facets each.
