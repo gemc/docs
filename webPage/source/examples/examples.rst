@@ -24,6 +24,11 @@ Examples
    :height: 350px
    :target: forFun.html
 
+.. |ctofCad| image:: ctofCad.png
+   :width: 350px
+   :height: 350px
+   :target: ctofCad.html
+
 +-------------------------------+-------------------------------------+
 +-------------------------------+-------------------------------------+
 | |paddlesI|                    | |atlasI|                            |
@@ -31,6 +36,9 @@ Examples
 +-------------------------------+-------------------------------------+
 | |humanBodyI|                  | |forFunI|                           |
 | shoot protons in the upper GI |  fire torpedoes with the enterprise |
++-------------------------------+-------------------------------------+
+| |ctofCad|                     |                                     |
+| realistic CTOF from CAD       |                                     |
 +-------------------------------+-------------------------------------+
 
 

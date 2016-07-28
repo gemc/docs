@@ -28,14 +28,23 @@ How to run
 
     ./ctof.pl config.dat
 
-3. run gemc using the gcard provided:
+
+3. Notice (geometry.pl) how easy is to build a barrel setup, with trapezoidal shapes. You can change
+   any of these parameters - but you do not have to change and recompile any gemc/geant4 code.
+
+.. image:: paddles.png
+	:width: 98%
+	:align: center
+
+4. run gemc using the gcard provided:
 
     gemc ctof.gcard
 
 
-4. Run some events and look at the signal GUI. You can select various quantities to display on screen.
+5. Run some events and look at the signal GUI. You can select various quantities to display on screen.
 
 .. image:: ctofExample.png
 	:width: 98%
 	:align: center
+
 
