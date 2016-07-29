@@ -1,6 +1,6 @@
 :orphan:
 
-.. _ctofCade:
+.. _ctofCad:
 
 A time of flight detector from CAD
 ==================================

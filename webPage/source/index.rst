@@ -70,10 +70,10 @@ Overview
 
 gemc makes easy things trivial and hard things possible.
 
-Users can build and run complex setups with minimal programming knowledge. See for example :ref:`how to build a TOF with
-few lines of code <simplePaddleExample>`.
+Users can build or import from cad complex setups with minimal programming knowledge. See for example :ref:`how to build a TOF with
+few lines of code <simplePaddleExample>` or :ref:`how to import TOF from cad <ctofCad>`.
 
-Experiments can be loaded  using a combination of several available factories:
+Experiments can be loaded using a combination of these factories:
 
  - MYSQL
  - TEXT
@@ -90,8 +90,8 @@ Experiments can be loaded  using a combination of several available factories:
    <small> <i> gemc can <a href="documentation/gdmlCadFactories.html">import models from CAD and GDML</a>.
    Left: the upper gastrointestinal system is modeled in CAD.
    It can be <a href="examples/humanBody.html">imported in GEMC and made it sensitive</a> so that radiation doses can be measured.
-   Right: the mighty USS Enterprise NCC 1701-A <a href="examples/forFun.html">can be
-   used to shoot protons torpedos</a>. These stl files are directly imported in GEMC.
+   Right: the mighty USS Enterprise NCC 1701-A (CAD) <a href="examples/forFun.html">can be
+   used to shoot protons torpedos</a> at a dragon (CAD) while a GDML sphere is watching. 
    </i></small></center><br><br>
 
 
