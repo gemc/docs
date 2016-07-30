@@ -98,7 +98,7 @@ Experiments can be loaded using a combination of these factories:
 Simulations are application independent
 =======================================
 
-Once the user defined setup is loaded, it is translated in geant4. This includes:
+Once the user defined setup is loaded, gemc translates it in geant4. This includes:
 
 - geometry
 - materials
@@ -107,8 +107,8 @@ Once the user defined setup is loaded, it is translated in geant4. This includes
 - digitization
 - electromagnetic fields
 
-All particles are transported through matters and
-produce radiation, hits, secondaries. The geant4 results are then collected and organized according to user preferences.
+All particles are transported through matters and produce radiation, hits, secondaries.
+gemc then collects the geant4 results and produce the output specified by the user.
 
 
 
@@ -125,10 +125,12 @@ produce radiation, hits, secondaries. The geant4 results are then collected and 
 
 Open source
 ===========
+gemc is free and open source.
+
 Please visit the :ref:`contributing to gemc <contributingToGemc>` page if you're interested in the code development.
 
 If you have any bug/code optimization to report, new ideas, features request, 
-please feel free to `open a code issue / feature request <https://github.com/gemc/source/issues/new>`_ in github.
+please `open a code issue / feature request <https://github.com/gemc/source/issues/new>`_ in github.
 
 
 ..
