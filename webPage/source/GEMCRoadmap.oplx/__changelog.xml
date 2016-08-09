@@ -136,14 +136,14 @@
     </change>
     <change idref="t94" attribute="title" type="string" from="Fix GDML factory" to="Linux Tarballs"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-07-27T13:05:26.403Z" timestamp="2016-07-27T13:05:26.403Z">
-    <change idref="t5" attribute="internalPrerequisitesString" type="string" from="11FS" to="97FS" resolved="yes"/>
-    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-04T12:00:00.000Z" to="2016-10-18T12:00:00.000Z" resolved="yes"/>
-    <change idref="t97" to="t81" to-position="2" resolved="yes">
-      <change idref="t97" attribute="effort" type="real" from="28800" to="86400"/>
-      <change idref="t97" attribute="internalPrerequisitesString" type="string" to="11FF"/>
-      <change idref="t97" attribute="noEarlierThanConstraintDate" type="date" to="2016-07-08T12:00:00.000Z"/>
-      <change idref="t97" attribute="styleDict" type="dict" to="{
+  <task-change-set user="Maurizio Ungaro" date="2016-08-09T20:06:07.100Z" timestamp="2016-08-09T20:06:07.100Z">
+    <change idref="t4" attribute="internalPrerequisitesString" type="string" from="5FS" to="98FS" resolved="yes"/>
+    <change idref="t98" to="t81" to-position="4" resolved="yes">
+      <change idref="t98" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t98" attribute="internalEffortDone" type="real" from="0" to="57600"/>
+      <change idref="t98" attribute="internalPrerequisitesString" type="string" to="5FF"/>
+      <change idref="t98" attribute="noEarlierThanConstraintDate" type="date" to="2016-08-09T12:00:00.000Z"/>
+      <change idref="t98" attribute="styleDict" type="dict" to="{
     &quot;gantt-completion-color&quot; =     {
         b = &quot;0.454889&quot;;
         g = &quot;0.890216&quot;;
@@ -155,7 +155,19 @@
         r = &quot;0.847059&quot;;
     };
 }"/>
-      <change idref="t97" attribute="title" type="string" to="Accelerator Sync Bank"/>
+      <change idref="t98" attribute="title" type="string" to="gstring namespace mlibrary"/>
     </change>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-08-09T20:07:50.421Z" timestamp="2016-08-09T20:07:50.421Z">
+    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" to="2017-02-20T13:00:00.000Z" resolved="yes"/>
+    <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" to="2017-09-20T12:00:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="noEarlierThanConstraintDate" type="date" to="2018-03-21T12:00:00.000Z" resolved="yes"/>
+    <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" to="2018-07-11T12:00:00.000Z" resolved="yes"/>
+    <change idref="t38" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-09T12:00:00.000Z" resolved="yes"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-10-18T12:00:00.000Z" to="2016-11-01T12:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-08-09T20:08:27.406Z" timestamp="2016-08-09T20:08:27.406Z">
+    <change idref="t4" attribute="internalEffortDone" type="real" from="0" to="172799.9897003174" resolved="yes"/>
+    <change idref="t6" attribute="internalEffortDone" type="real" from="0" to="43199.99742507935" resolved="yes"/>
   </task-change-set>
 </changelog>

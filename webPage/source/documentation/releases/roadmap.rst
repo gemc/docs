@@ -47,6 +47,9 @@ GEMC 2.5 - September 2016
 
 - **Translation tables mechanism**: from detector identifier to crate/slot/channel. ✅
 
+- gstring namespace library ✅
+
+
 - **Custom V(t)**:
   Currently a Voltage vs time V(t) function is provided by gemc, based on a user parameterization
   and the Edep(t) geant4 steps.
