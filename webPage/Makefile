@@ -62,7 +62,7 @@ html:
 	cp source/documentation/related.html  $(BUILDDIR)/html/documentation
 	cp source/nested.png                  $(BUILDDIR)/html
 	./gemcHelp
-	mv options.html                       $(BUILDDIR)/html/documentation
+	mv allOptions.html                    $(BUILDDIR)/html/documentation
 	# making sure the txt files in the tutorials and materials are deleted
 	rm -f `find source/documentation/tutorials/material/ -name "*.txt | grep -v exampleCTOFCAD"`
 	@echo ""

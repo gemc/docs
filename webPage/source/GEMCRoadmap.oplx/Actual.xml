@@ -89,7 +89,8 @@
   <task id="t4">
     <title>Custom V(t)</title>
     <effort>576000</effort>
-    <effort-done>172799.989700317</effort-done>
+    <effort-done>172799.984375</effort-done>
+    <start-constraint-date>2016-07-26T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -99,11 +100,13 @@
       </value>
     </style>
     <prerequisite-task idref="t98"/>
+    <start-no-earlier-than>2016-07-26T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t5">
     <title>Translation Tables</title>
     <effort>288000</effort>
     <effort-done>288000</effort-done>
+    <start-constraint-date>2016-07-05T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -113,11 +116,12 @@
       </value>
     </style>
     <prerequisite-task idref="t97"/>
+    <start-no-earlier-than>2016-07-05T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t6">
     <title>Composite Banks</title>
     <effort>432000</effort>
-    <effort-done>43199.9974250793</effort-done>
+    <effort-done>43199.99609375</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -193,7 +197,7 @@
   <task id="t13">
     <title>Release 2.7</title>
     <type>group</type>
-    <start-constraint-date>2017-02-20T13:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-02-16T13:00:00.000Z</start-constraint-date>
     <child-task idref="t16"/>
     <child-task idref="t17"/>
     <child-task idref="t18"/>
@@ -211,7 +215,7 @@
       </value>
     </style>
     <prerequisite-task idref="t42"/>
-    <start-no-earlier-than>2017-02-20T13:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-02-16T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
     <title>De-couple digitization from gemc</title>
@@ -500,7 +504,7 @@
   <task id="t42">
     <title>Release 2.6</title>
     <type>group</type>
-    <start-constraint-date>2016-11-01T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2016-10-20T12:00:00.000Z</start-constraint-date>
     <child-task idref="t45"/>
     <child-task idref="t46"/>
     <child-task idref="t52"/>
@@ -518,7 +522,7 @@
       </value>
     </style>
     <prerequisite-task idref="t81"/>
-    <start-no-earlier-than>2016-11-01T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-10-20T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t45">
     <title>G4 Analysis Tools</title>
@@ -722,7 +726,7 @@
   <task id="t81">
     <title>Release 2.5</title>
     <type>group</type>
-    <start-constraint-date>2016-06-23T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2016-06-14T12:00:00.000Z</start-constraint-date>
     <child-task idref="t9"/>
     <child-task idref="t11"/>
     <child-task idref="t97"/>
@@ -744,7 +748,7 @@
       </value>
     </style>
     <prerequisite-task idref="t1"/>
-    <start-no-earlier-than>2016-06-23T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-06-14T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t86">
     <title>option Library</title>
@@ -852,8 +856,8 @@
   </task>
   <task id="t97">
     <title>Accelerator Sync Bank</title>
-    <effort>86400</effort>
-    <start-constraint-date>2016-07-08T12:00:00.000Z</start-constraint-date>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -863,13 +867,11 @@
       </value>
     </style>
     <prerequisite-task idref="t11" kind="FF"/>
-    <start-no-earlier-than>2016-07-08T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t98">
     <title>gstring namespace mlibrary</title>
     <effort>57600</effort>
     <effort-done>57600</effort-done>
-    <start-constraint-date>2016-08-09T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -879,7 +881,6 @@
       </value>
     </style>
     <prerequisite-task idref="t5" kind="FF"/>
-    <start-no-earlier-than>2016-08-09T12:00:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

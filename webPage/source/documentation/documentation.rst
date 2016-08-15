@@ -52,12 +52,3 @@ FAQ
 
 	FAQ
 
-
-Command Line Options
-====================
-
-.. raw:: html
-
-   <div style="margin-top:10px;">
-   	<iframe width="99%" height="10000" src="options.html" frameborder="0" ></iframe>
-   </div>

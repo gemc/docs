@@ -43,7 +43,7 @@ GEMC 2.5 - September 2016
 
 - Remove more obsolete cpp materials.✅
 
-- Accelerator Sync Bank
+- Accelerator Sync Bank ✅
 
 - **Translation tables mechanism**: from detector identifier to crate/slot/channel. ✅
 

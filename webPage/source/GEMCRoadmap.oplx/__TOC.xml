@@ -15,7 +15,7 @@
         <column name="Title" width="332"/>
         <column name="Effort" width="87"/>
         <expanded-items idrefs="t27 t13 t81 t42 t22 t38 t34 t1"/>
-        <selected-items-at-filter-time idrefs="t66 t31 t17 t24 t59 t74 t81 t32 t18 t25 t75 t19 t33 t26 t90 t27 t76 t34 t77 t42 t35 t91 t29 t50 t36 t86 t4 t93 t5 t94 t45 t10 t52 t38 t6 t7 t95 t46 t8 t11 t88 t9 t96 t97 t55 t20 t13 t98 t70 t63 t21 t71 t22 t64 t72 t16 t30 t23"/>
+        <selected-items-at-filter-time idrefs="t66 t31 t24 t17 t59 t81 t25 t74 t18 t32 t75 t26 t33 t19 t90 t27 t76 t34 t91 t35 t42 t77 t50 t36 t29 t86 t4 t93 t5 t94 t52 t10 t38 t6 t45 t7 t95 t46 t8 t88 t11 t9 t96 t97 t55 t13 t20 t98 t63 t21 t70 t71 t64 t22 t72 t30 t16 t23"/>
       </outline>
       <gantt-view x="-31" y="0" w="1968" h="1150">
         <view-mode>actual</view-mode>
@@ -70,7 +70,7 @@
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="3384" y="0" w="2098" h="1150">
+      <timeline x="3743" y="0" w="2098" h="1150">
         <offtime-display>none</offtime-display>
         <task-bar-label task-type="group" position="left">
           <key>Title</key>
