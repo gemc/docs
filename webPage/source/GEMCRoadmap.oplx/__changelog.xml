@@ -136,15 +136,10 @@
     </change>
     <change idref="t94" attribute="title" type="string" from="Fix GDML factory" to="Linux Tarballs"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-08-15T13:39:39.197Z" timestamp="2016-08-15T13:39:39.197Z">
-    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" to="2016-07-26T12:00:00.000Z" resolved="yes"/>
-    <change idref="t5" attribute="noEarlierThanConstraintDate" type="date" to="2016-07-05T12:00:00.000Z" resolved="yes"/>
-    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" from="2017-02-20T13:00:00.000Z" to="2017-02-16T13:00:00.000Z" resolved="yes"/>
-    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-11-01T12:00:00.000Z" to="2016-10-20T12:00:00.000Z" resolved="yes"/>
-    <change idref="t81" attribute="noEarlierThanConstraintDate" type="date" from="2016-06-23T12:00:00.000Z" to="2016-06-14T12:00:00.000Z" resolved="yes"/>
-    <change idref="t97" attribute="effort" type="real" from="86400" to="57600" resolved="yes"/>
-    <change idref="t97" attribute="noEarlierThanConstraintDate" type="date" from="2016-07-08T12:00:00.000Z" resolved="yes"/>
-    <change idref="t97" attribute="internalEffortDone" type="real" from="0" to="57600" resolved="yes"/>
-    <change idref="t98" attribute="noEarlierThanConstraintDate" type="date" from="2016-08-09T12:00:00.000Z" resolved="yes"/>
+  <task-change-set user="Maurizio Ungaro" date="2016-08-16T19:55:08.631Z" timestamp="2016-08-16T19:55:08.631Z">
+    <change idref="t4" attribute="internalEffortDone" type="real" from="172799.984375" to="460799.9725341797" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-08-18T14:09:11.712Z" timestamp="2016-08-18T14:09:11.712Z">
+    <change idref="t4" attribute="internalEffortDone" type="real" from="460799.96875" to="576000" resolved="yes"/>
   </task-change-set>
 </changelog>

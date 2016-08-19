@@ -14,8 +14,8 @@
         <column name="Notes" width="20"/>
         <column name="Title" width="332"/>
         <column name="Effort" width="87"/>
-        <expanded-items idrefs="t27 t13 t81 t42 t22 t38 t34 t1"/>
-        <selected-items-at-filter-time idrefs="t66 t31 t24 t17 t59 t81 t25 t74 t18 t32 t75 t26 t33 t19 t90 t27 t76 t34 t91 t35 t42 t77 t50 t36 t29 t86 t4 t93 t5 t94 t52 t10 t38 t6 t45 t7 t95 t46 t8 t88 t11 t9 t96 t97 t55 t13 t20 t98 t63 t21 t70 t71 t64 t22 t72 t30 t16 t23"/>
+        <expanded-items idrefs="t1 t13 t42 t81 t22 t38 t34 t27"/>
+        <selected-items-at-filter-time idrefs="t66 t24 t31 t17 t59 t81 t18 t74 t32 t25 t75 t19 t33 t26 t90 t34 t27 t76 t77 t91 t35 t42 t29 t50 t36 t93 t4 t86 t5 t94 t45 t38 t6 t52 t10 t7 t95 t88 t8 t11 t46 t9 t96 t97 t55 t13 t20 t98 t70 t63 t21 t64 t22 t71 t72 t30 t23 t16"/>
       </outline>
       <gantt-view x="-31" y="0" w="1968" h="1150">
         <view-mode>actual</view-mode>

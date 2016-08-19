@@ -89,7 +89,7 @@
   <task id="t4">
     <title>Custom V(t)</title>
     <effort>576000</effort>
-    <effort-done>172799.984375</effort-done>
+    <effort-done>576000</effort-done>
     <start-constraint-date>2016-07-26T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">

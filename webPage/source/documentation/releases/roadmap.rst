@@ -49,20 +49,13 @@ GEMC 2.5 - September 2016
 
 - gstring namespace library ✅
 
+- **Custom V(t)**: ✅
+   A user-defined **chargeTime** routine produces charge and time information
+   for each geant4 step.
 
-- **Custom V(t)**:
-  Currently a Voltage vs time V(t) function is provided by gemc, based on a user parameterization
-  and the Edep(t) geant4 steps.
-  This does not take into account any signal treatment present in the digitization routines.
+  A user-defined **voltage** function produces a voltage value for a given asked time
 
-  The step by step digitization routine will produce an intensity vector and its time vector: I(t)
-  The algorithms can be copied from the digitization routines.
-
-  A V(t) function will be based on the I(t). The new V(t) will therefore take into account all detectors
-  algorithms (attenuation lengths, smearling, pmt q.e. for example) and provide a signal that should be
-  very close to what we see in real scopes.
-
-- Output format will match the composite banks of the JLab data acquisition group.
+- Output format to match the composite banks of the JLab data acquisition group.
 
 - GDML factory ✅
 
