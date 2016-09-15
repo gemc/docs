@@ -50,20 +50,17 @@ GEMC 2.5 - September 2016
 - gstring namespace library ✅
 
 - **Custom V(t)**: ✅
-   A user-defined **chargeTime** routine produces charge and time information
-   for each geant4 step.
 
-  A user-defined **voltage** function produces a voltage value for a given asked time
+    - A user-defined **chargeTime** routine produces charge and time information
+      for each geant4 step ✅
 
-- Output format to match the composite banks of the JLab data acquisition group.
+    - A user-defined **voltage** function produces a voltage value for a given asked time ✅
+
+- Output format to match the FADC composite banks of the JLab data acquisition group. ✅
 
 - GDML factory ✅
 
 - CAD factory ✅
-
-- Test Template for individual detectors.
-
-- Add physical volume constructor - active rotations.
 
 
 GEMC 2.6 - January 2017
@@ -77,11 +74,14 @@ GEMC 2.6 - January 2017
 
 - **Python API** implementation.
 
-- Use Run Action.
-
 - Add / Remove axis in GUI
 
 - Linux Tarballs.
+
+- Test Template for individual detectors.
+
+- Add physical volume constructor - active rotations.
+
 
 
 GEMC 2.7 - April 2017
@@ -118,6 +118,7 @@ GEMC 2.8 - June 2017
 
 - API to sqlite
 
+
 GEMC 3.0 - October 2017
 -----------------------
 
@@ -132,6 +133,8 @@ GEMC 3.0 - October 2017
 - Match detector types to geant4.
 
 - Touchable library: contains vector<identifier>. Optimize with no string operations?
+
+- Use Run Action.
 
 
 GEMC 3.1 - January 2018

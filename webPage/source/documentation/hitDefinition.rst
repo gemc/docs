@@ -194,31 +194,34 @@ table below.
    photon-Nuclear            7
    electron-Nuclear          8
    positron-Nuclear          9
-   Hadronic Elastic          10
-   Proton Inelastic          11
-   Neutron Inelastic         12
-   pi- Inelastic             13
-   pi+ Inelastic             14
-   hadron ionization         15
-   neutron capture           16
-   decay                     17
-   muon ionization           18
-   Coulomb Scattering        19
-   Cherenkov                 20
-   deuteron Inelastic        21
-   muPairProd                22
-   ion ionization            23
-   hadron pair production    24
-   triton Inelastic          25
-   kaon- Inelastic           26
-   kaon+ Inelastic           27
-   kaon0 Inelastic           28
-   kaon0L Inelastic          29
-   alpha Inelastic           30
-   lambda Inelastic          31
-   sigma- Inelastic          32
-   hadronic bremsstrahlung   33
-   muon decay With Spin      34
+   Coulomb Scattering        10
+   Cherenkov                 11
+   Hadronic Elastic          20
+   Hadronic bremsstrahlung   21
+   Hadron ionization         22
+   Hadron pair production    23
+   Proton Inelastic          30
+   Neutron Inelastic         31
+   Neutron capture           32
+   pi- Inelastic             40
+   pi+ Inelastic             41
+   Decay                     50
+   Decay With Spin           51
+   muon ionization           60
+   muon pair production      61
+   muon bremsstrahlung       62
+   muon nuclear              63
+   kaon- Inelastic           70
+   kaon+ Inelastic           71
+   kaon0 Inelastic           72
+   kaon0L Inelastic          73
+   kaon0S Inelastic          74
+   alpha Inelastic           80
+   lambda Inelastic          90
+   sigma- Inelastic          100
+   deuteron Inelastic        110
+   ion ionization            120
+   triton Inelastic          130
    na                        90
    =======================  =========
 
