@@ -1,0 +1,7 @@
+:orphan:
+
+.. _gstring:
+
+#######
+gstring
+#######

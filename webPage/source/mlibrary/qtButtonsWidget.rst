@@ -1,0 +1,7 @@
+:orphan:
+
+.. _qtButtonsWidget:
+
+###############
+qtButtonsWidget
+###############
