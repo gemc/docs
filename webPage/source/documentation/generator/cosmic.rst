@@ -96,7 +96,7 @@ Source Area
 Be default the particles are generated on a sphere with radius specified by the *COSMICAREA* option.
 The *COSMICAREA* can have an additional argument to generate the cosmics on a cylinder instead. For example::
 
- <option name="COSMICAREA"   value="0*cm, 0*cm, 1*m, 5*m"/>
+ <option name="COSMICAREA"   value="0*cm, 0*cm, 1*m, 5*m, cyl"/>
 
 will generate cosmics on a cylinder with radius 5m and height 2.5m (half the radius).
 
