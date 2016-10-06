@@ -1,12 +1,14 @@
 
 :orphan:
 
+.. _mlibrary:
+
 
 The mlibrary
 ============
 
 The mlibrary is a collection of highly optimized, specialized stand-alone c++ libraries
-that fashion the gemc into a object oriented framework.
+that fashion gemc into a object oriented framework.
 
 
 .. toctree::

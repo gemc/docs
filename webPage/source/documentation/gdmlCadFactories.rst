@@ -11,7 +11,8 @@ GDML and CAD Factories
 Importing GDML and CAD models in gemc
 -------------------------------------
 
-gemc can import models in GDML [#]_ or CAD [#]_.
+gemc can import models in GDML [#]_ format or directly from CAD models [#]_.
+
 
 For example, to import three detectors:
 
