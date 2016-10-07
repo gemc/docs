@@ -121,6 +121,17 @@ For example, to set the accelerator radio frequency to 500MHz (0.5 GHz) and prod
  -RFSETUP="0.5, 80, 30"
 
 
+Magnetic Field Lines and Scale
+------------------------------
+
+Two buttons have been added in the camera GUI tab to display magnetic field lines, and add
+an automatic scale on screen. An example is showin in the pic below.
+
+.. image:: fieldAndScale.png
+	:width: 90%
+	:align: center
+
+
 
 Translation tables
 ------------------
