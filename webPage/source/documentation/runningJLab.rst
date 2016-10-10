@@ -9,11 +9,13 @@ This section describes how to run gemc on the CUE machines, using the CLAS12 det
 Sourcing the environment
 ------------------------
 
-The environment is necessary to load the libraries needed to run gemc. To load::
+The environment is necessary to load the libraries needed to run gemc. To load (csh)::
 
- source /site/12gev_phys/production.csh 1.3.1
+ source /site/12gev_phys/production.csh 2.0
 
-Currently only csh is supported, and bash is in the works.
+Bash users can source jlab.sh::
+
+ source /site/12gev_phys/2.0/ce/jlab.sh
 
 
 

@@ -6,6 +6,13 @@
 Release 2.5
 ###########
 
+Libraries Version
+-----------------
+
+- geant4: 4.10.02.p02
+- qt: 5.6.0
+- clhep: 2.3.3.1
+
 MLibrary
 --------
 
