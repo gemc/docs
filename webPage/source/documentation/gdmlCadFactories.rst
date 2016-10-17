@@ -82,8 +82,8 @@ CAD Examples
 
 .. raw:: html
 
-	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/enterprise.stl?height=300&width=300"></script>
-	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/dragon.stl?height=300&width=300"></script>
+	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/cad/enterprise.stl?height=300&width=300"></script>
+	<script src="https://embed.github.com/view/3d/gemc/detectors/master/forFun/cad/dragon.stl?height=300&width=300"></script>
 
 
 You can find many autocad examples `here <http://www.thingiverse.com/search/>`_.

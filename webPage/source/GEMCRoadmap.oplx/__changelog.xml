@@ -136,78 +136,28 @@
     </change>
     <change idref="t94" attribute="title" type="string" from="Fix GDML factory" to="Linux Tarballs"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2016-09-13T20:42:47.702Z" timestamp="2016-09-13T20:42:47.702Z">
-    <change idref="t6" attribute="internalEffortDone" type="real" from="43199.99609375" to="216000" resolved="yes"/>
-    <change idref="t100" to="t42" to-position="7" resolved="yes">
-      <change idref="t100" attribute="effort" type="real" from="28800" to="144000"/>
-      <change idref="t100" attribute="internalPrerequisitesString" type="string" to="94FS"/>
-      <change idref="t100" attribute="styleDict" type="dict" to="{
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-    &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.278431&quot;;
-        g = &quot;0.721569&quot;;
-        r = &quot;0.8&quot;;
-    };
-}"/>
-      <change idref="t100" attribute="title" type="string" to="Detector Tests Template"/>
-    </change>
-    <change idref="t101" to="t42" to-position="8" resolved="yes">
-      <change idref="t101" attribute="effort" type="real" from="28800" to="57600"/>
-      <change idref="t101" attribute="internalPrerequisitesString" type="string" to="100FS"/>
-      <change idref="t101" attribute="styleDict" type="dict" to="{
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-    &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.278431&quot;;
-        g = &quot;0.721569&quot;;
-        r = &quot;0.8&quot;;
-    };
-}"/>
-      <change idref="t101" attribute="title" type="string" to="Active Rotations"/>
-    </change>
-    <change idref="t50" from="t81" from-position="10" resolved="yes">
-      <change idref="t50" attribute="effort" type="real" from="28800" to="57600"/>
-      <change idref="t50" attribute="internalPrerequisitesString" type="string" to="10FS"/>
-      <change idref="t50" attribute="styleDict" type="dict" to="{
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-    &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.301961&quot;;
-        g = &quot;0.301961&quot;;
-        r = &quot;0.847059&quot;;
-    };
-}"/>
-      <change idref="t50" attribute="title" type="string" to="Active Rotations"/>
-    </change>
-    <change idref="t10" from="t81" from-position="9" resolved="yes">
-      <change idref="t10" attribute="effort" type="real" from="28800" to="144000"/>
-      <change idref="t10" attribute="internalPrerequisitesString" type="string" to="96FS"/>
-      <change idref="t10" attribute="styleDict" type="dict" to="{
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-    &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.301961&quot;;
-        g = &quot;0.301961&quot;;
-        r = &quot;0.847059&quot;;
-    };
-}"/>
-      <change idref="t10" attribute="title" type="string" to="Detector Tests Template"/>
-    </change>
-  </task-change-set>
   <task-change-set user="Maurizio Ungaro" date="2016-09-15T20:03:25.826Z" timestamp="2016-09-15T20:03:25.826Z">
     <change idref="t6" attribute="internalEffortDone" type="real" from="216000" to="432000"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-10-17T15:43:49.068Z" timestamp="2016-10-17T15:43:49.068Z">
+    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" from="2017-02-16T13:00:00.000Z" to="2017-03-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t102" to="t42" to-position="7" resolved="yes">
+      <change idref="t102" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t102" attribute="internalPrerequisitesString" type="string" to="94FS"/>
+      <change idref="t102" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t102" attribute="title" type="string" to="Virtual Machine Mechanism"/>
+    </change>
+    <change idref="t100" attribute="internalPrerequisitesString" type="string" from="94FS" to="102FS" resolved="yes"/>
   </task-change-set>
 </changelog>

@@ -78,6 +78,8 @@ GEMC 2.6 - January 2017
 
 - Linux Tarballs.
 
+- RPM and Virtual Machines for installation.
+
 - Test Template for individual detectors.
 
 - Add physical volume constructor - active rotations.

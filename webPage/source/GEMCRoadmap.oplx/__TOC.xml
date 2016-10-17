@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="2614" y="78" w="2433" h="1306">
+  <window x="591" y="111" w="2433" h="1306">
     <editing-scenario>lJ9YoVH2ibY</editing-scenario>
     <view>task</view>
     <overview/>
@@ -15,7 +15,7 @@
         <column name="Title" width="332"/>
         <column name="Effort" width="87"/>
         <expanded-items idrefs="t1 t13 t42 t81 t22 t38 t34 t27"/>
-        <selected-items-at-filter-time idrefs="t66 t17 t59 t31 t24 t74 t32 t18 t25 t81 t75 t33 t26 t19 t90 t34 t27 t76 t77 t42 t35 t91 t36 t29 t86 t93 t4 t5 t94 t52 t45 t6 t38 t7 t88 t46 t11 t95 t8 t9 t96 t97 t55 t13 t20 t98 t70 t21 t63 t64 t71 t22 t72 t16 t23 t30"/>
+        <selected-items-at-filter-time idrefs="t66 t24 t59 t31 t102 t17 t74 t32 t25 t18 t81 t75 t19 t33 t103 t26 t90 t34 t27 t76 t77 t42 t91 t35 t104 t36 t29 t4 t86 t93 t5 t94 t38 t45 t52 t6 t7 t95 t46 t8 t11 t88 t9 t96 t97 t55 t20 t13 t98 t70 t21 t63 t64 t71 t22 t72 t16 t23 t30"/>
       </outline>
       <gantt-view x="-31" y="0" w="1968" h="1150">
         <view-mode>actual</view-mode>
@@ -123,7 +123,7 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>102</next-task-id>
+    <next-task-id>105</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="lJ9YoVH2ibY" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="false" seconds="false"/>

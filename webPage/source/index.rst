@@ -84,8 +84,8 @@ Experiments can be loaded using a combination of these factories:
 .. raw:: html
 
 	<center>
-	<a href="https://github.com/gemc/detectors/blob/master/humanBody/Upper_GI.stl"><img src="_images/humanBody1.png" width="400px" height="400px"></img></a>
-	<a href="https://github.com/gemc/detectors/blob/master/forFun/enterprise.stl"> <img src="_images/forFun.png"     width="400px" height="400px"></img></a>
+	<a href="https://github.com/gemc/detectors/tree/master/humanBody/cad/Upper_GI.stl"><img src="_images/humanBody1.png" width="400px" height="400px"></img></a>
+	<a href="https://github.com/gemc/detectors/tree/master/forFun/cad/enterprise.stl"> <img src="_images/forFun.png"     width="400px" height="400px"></img></a>
 	<br>
    <small> <i> gemc can <a href="documentation/gdmlCadFactories.html">import models from CAD and GDML</a>.
    Left: the upper gastrointestinal system is modeled in CAD.

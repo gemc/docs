@@ -184,7 +184,7 @@
   <task id="t13">
     <title>Release 2.7</title>
     <type>group</type>
-    <start-constraint-date>2017-02-16T13:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-03-01T13:00:00.000Z</start-constraint-date>
     <child-task idref="t16"/>
     <child-task idref="t17"/>
     <child-task idref="t18"/>
@@ -202,7 +202,7 @@
       </value>
     </style>
     <prerequisite-task idref="t42"/>
-    <start-no-earlier-than>2017-02-16T13:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-03-01T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
     <title>De-couple digitization from gemc</title>
@@ -499,6 +499,7 @@
     <child-task idref="t63"/>
     <child-task idref="t75"/>
     <child-task idref="t94"/>
+    <child-task idref="t102"/>
     <child-task idref="t100"/>
     <child-task idref="t101"/>
     <style>
@@ -867,7 +868,7 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t94"/>
+    <prerequisite-task idref="t102"/>
   </task>
   <task id="t101">
     <title>Active Rotations</title>
@@ -881,6 +882,19 @@
       </value>
     </style>
     <prerequisite-task idref="t100"/>
+  </task>
+  <task id="t102">
+    <title>Virtual Machine Mechanism</title>
+    <effort>288000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t94"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>
