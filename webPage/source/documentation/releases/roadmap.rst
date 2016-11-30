@@ -67,6 +67,10 @@ GEMC 2.5 - September 2016
 GEMC 2.6 - March 2017
 ---------------------
 
+- SKIPGEN option
+
+- Magnetic field info in MHit
+
 - Add Birk Constant.
 
 - Add Mirror Optical Smearing Alpha.

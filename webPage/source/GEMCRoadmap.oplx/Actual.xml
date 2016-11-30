@@ -187,7 +187,7 @@
   <task id="t13">
     <title>Release 2.7</title>
     <type>group</type>
-    <start-constraint-date>2017-03-30T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-03-17T12:00:00.000Z</start-constraint-date>
     <child-task idref="t16"/>
     <child-task idref="t133"/>
     <style>
@@ -200,7 +200,7 @@
       </value>
     </style>
     <prerequisite-task idref="t42"/>
-    <start-no-earlier-than>2017-03-30T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-03-17T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
     <title>Run Action and Constants</title>
@@ -479,8 +479,10 @@
   <task id="t42">
     <title>Release 2.6</title>
     <type>group</type>
-    <start-constraint-date>2016-12-05T13:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2016-11-22T13:00:00.000Z</start-constraint-date>
     <child-task idref="t45"/>
+    <child-task idref="t149"/>
+    <child-task idref="t148"/>
     <child-task idref="t106"/>
     <child-task idref="t107"/>
     <child-task idref="t105"/>
@@ -499,11 +501,12 @@
       </value>
     </style>
     <prerequisite-task idref="t81"/>
-    <start-no-earlier-than>2016-12-05T13:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-11-22T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t45">
-    <title>Add Birk Constants</title>
+    <title>Skip generated event option</title>
     <effort>86400</effort>
+    <effort-done>86400</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -832,7 +835,7 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t45"/>
+    <prerequisite-task idref="t148"/>
   </task>
   <task id="t107">
     <title>Identifier class to touchable library</title>
@@ -1013,6 +1016,33 @@
       </value>
     </style>
     <prerequisite-task idref="t143"/>
+  </task>
+  <task id="t148">
+    <title>Add Birk Constants</title>
+    <effort>86400</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t149"/>
+  </task>
+  <task id="t149">
+    <title>Magnetic Field info in MHit</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t45"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

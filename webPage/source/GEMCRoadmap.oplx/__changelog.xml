@@ -863,4 +863,46 @@
     <change idref="t38" attribute="noEarlierThanConstraintDate" type="date" from="2017-08-30T12:00:00.000Z" to="2017-09-07T12:00:00.000Z"/>
     <change idref="t133" attribute="effort" type="real" from="576000" to="720000"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2016-11-30T15:47:12.835Z" timestamp="2016-11-30T15:47:12.835Z">
+    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" from="2017-03-30T12:00:00.000Z" to="2017-03-17T12:00:00.000Z" resolved="yes"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2016-12-05T13:00:00.000Z" to="2016-11-22T13:00:00.000Z" resolved="yes"/>
+    <change idref="t149" to="t42" to-position="1" resolved="yes">
+      <change idref="t149" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t149" attribute="internalEffortDone" type="real" from="0" to="57600"/>
+      <change idref="t149" attribute="internalPrerequisitesString" type="string" to="45FS"/>
+      <change idref="t149" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t149" attribute="title" type="string" to="Magnetic Field info in MHit"/>
+    </change>
+    <change idref="t148" to="t42" to-position="2" resolved="yes">
+      <change idref="t148" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t148" attribute="internalPrerequisitesString" type="string" to="149FS"/>
+      <change idref="t148" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t148" attribute="title" type="string" to="Add Birk Constants"/>
+    </change>
+    <change idref="t45" attribute="title" type="string" from="Add Birk Constants" to="Skip generated event option" resolved="yes"/>
+    <change idref="t45" attribute="internalEffortDone" type="real" from="0" to="86400" resolved="yes"/>
+    <change idref="t106" attribute="internalPrerequisitesString" type="string" from="45FS" to="148FS" resolved="yes"/>
+  </task-change-set>
 </changelog>
