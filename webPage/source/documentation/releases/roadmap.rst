@@ -67,9 +67,9 @@ GEMC 2.5 - September 2016
 GEMC 2.6 - March 2017
 ---------------------
 
-- SKIPGEN option
+- SKIPGEN option ✅
 
-- Magnetic field info in MHit
+- Magnetic field info in MHit ✅
 
 - Add Birk Constant.
 
@@ -104,7 +104,7 @@ GEMC 2.7 - May 2017
 
 
 GEMC 2.8 - August 2017
----------------------
+----------------------
 
 - Event generation library. This will include plugins for different formats.
 

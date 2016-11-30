@@ -3,6 +3,17 @@
 # MacPro cronjob:
 # 35 04 * * * /opt/projects/gemc/docs/doxygen/go_gemc_doxygen
 
+if($#argv != 1) then
+    echo " "
+    echo "Usage:   "
+    echo  "  >> go_gemc_doxygen <version>"
+    echo
+    echo "      versions can be 'all' "
+    exit 0
+endif
+
+
+
 set cdir = /opt/projects/gemc/docs/doxygen
 
 # make sure we have all versions
@@ -13,9 +24,11 @@ cd       gemc_doxy
 git clone https://github.com/gemc/releases.git
 cd releases
 
-# can re-do for all versions, or just the latest
-#set versions = `\ls`
-set versions = `\ls -r | head -1`
+set versions = $1
+
+if($versions == "all") then
+    set versions = `\ls`
+endif
 
 echo
 echo DOXYGEN for versions: $versions
