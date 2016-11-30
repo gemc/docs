@@ -63,37 +63,46 @@ GEMC 2.5 - September 2016
 - CAD factory ✅
 
 
-GEMC 2.6 - January 2017
------------------------
 
-- **G4Analysis tool** for all detectors fluxes.
+GEMC 2.6 - March 2017
+---------------------
 
-- Physics Cross Section Validation at JLab regine. (Semi) Inclusive cross section.
+- Add Birk Constant.
+
+- Add Mirror Optical Smearing Alpha.
+
+- Identifier to **touchable** library.
+
+- **G4Analysis Tools**.
+
+- Cross Section Validation at JLab energies.
 
 - Finalize implementation of Replicas and Divisions.
 
-- **Python API** implementation.
-
 - Add / Remove axis in GUI
 
-- Linux Tarballs.
-
-- RPM and Virtual Machines for installation.
-
-- Test Template for individual detectors.
+- Detectors Test Template.
 
 - Add physical volume constructor - active rotations.
 
 
 
-GEMC 2.7 - April 2017
----------------------
+
+GEMC 2.7 - May 2017
+-------------------
+
+- Run Action and Digitization Constants
 
 - **Digitization routines will be plugins**, stored with the detector definitions (geometry, materials, etc)
   - They will not be compiled in the gemc core anymore.
   - Constants mechanism will be handled in run action, no more in static call
 
-- GEMC library for event generation. This will include plugins for different formats.
+
+
+GEMC 2.8 - August 2017
+---------------------
+
+- Event generation library. This will include plugins for different formats.
 
 - Support for **proMC** format for event generation.
 
@@ -101,71 +110,92 @@ GEMC 2.7 - April 2017
 
 - Culling options combobox.
 
-- Splash Screen library
-
 - Pop up window for detector description
 
 
-GEMC 2.8 - June 2017
---------------------
 
-- Overimposing magnetic fields
+GEMC 2.9 - December 2017
+------------------------
 
 - Multihit TDC
 
-- Change identifier class to touchable.
-  Have the vector<id> inside it, instead of passing vectors of identifier.
+- **Python API** implementation.
 
 - Read Gzipped field maps
 
 - API to sqlite
 
+- Virtual Machines for installation.
 
-GEMC 3.0 - October 2017
------------------------
+
+
+
+GEMC 3.0 - June 2018
+--------------------
 
 - gemc 3.0 will make use of many **c++11** features and optimization.
 
-- Option library - change options to make more sense.
-
-- Re-define and document all verbosities.
+- Option library
 
 - **Geant4 multithreading**.
 
+- Re-define and document all verbosities.
+
 - Match detector types to geant4.
 
-- Touchable library: contains vector<identifier>. Optimize with no string operations?
+- Splash Screen library
 
-- Use Run Action.
+- Refurbish GUI
 
 
-GEMC 3.1 - January 2018
------------------------
+
+
+GEMC 3.1 - November 2018
+------------------------
 
 - Geant4 **parallel worlds**.
 
-- Output format plugins.
+- Output library
 
-- Geant4 output definitions will be an external GEMC library.
+- Output format plugins.
 
 - Particles color map option.
 
 - Geant4 scorers
 
-GEMC 3.2 - April 2018
----------------------
+- RPM / Linux Tarballs.
+
+
+
+GEMC 3.2 - February 2019
+------------------------
 
 - FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
 
 - Benchmarking tools
 
+- G4Cout redirections
+
 - GEMC Nim A Paper
 
-- GEMC on the mac app store
 
 
 
+GEMC 3.3 - April 2019
+---------------------
 
+- Overimposing magnetic fields
+
+
+
+GEMC Paper - 2017 / 2019
+------------------------
+
+- Write Paper
+
+- Review / Submit
+
+- GEMC on the Apple Store
 
 
 

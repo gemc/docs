@@ -62,10 +62,13 @@
     <child-task idref="t81"/>
     <child-task idref="t42"/>
     <child-task idref="t13"/>
+    <child-task idref="t131"/>
     <child-task idref="t38"/>
     <child-task idref="t22"/>
     <child-task idref="t27"/>
     <child-task idref="t34"/>
+    <child-task idref="t137"/>
+    <child-task idref="t141"/>
   </task>
   <task id="t1">
     <title>Release 2.4</title>
@@ -184,14 +187,9 @@
   <task id="t13">
     <title>Release 2.7</title>
     <type>group</type>
-    <start-constraint-date>2017-03-01T13:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-03-30T12:00:00.000Z</start-constraint-date>
     <child-task idref="t16"/>
-    <child-task idref="t17"/>
-    <child-task idref="t18"/>
-    <child-task idref="t77"/>
-    <child-task idref="t20"/>
-    <child-task idref="t21"/>
-    <child-task idref="t76"/>
+    <child-task idref="t133"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -202,11 +200,11 @@
       </value>
     </style>
     <prerequisite-task idref="t42"/>
-    <start-no-earlier-than>2017-03-01T13:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-03-30T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
-    <title>De-couple digitization from gemc</title>
-    <effort>432000</effort>
+    <title>Run Action and Constants</title>
+    <effort>576000</effort>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -218,26 +216,25 @@
   </task>
   <task id="t17">
     <title>Event Generator Lib</title>
-    <effort>576000</effort>
+    <effort>720000</effort>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
-        <color r="0.898039" g="0.529412" b="0.360784"/>
+        <color r="0.141979" g="0.938222" b="0.959013"/>
       </value>
     </style>
-    <prerequisite-task idref="t16"/>
   </task>
   <task id="t18">
-    <title>proMC</title>
-    <effort>288000</effort>
+    <title>Support for proMC</title>
+    <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
-        <color r="0.898039" g="0.529412" b="0.360784"/>
+        <color r="0.141979" g="0.938222" b="0.959013"/>
       </value>
     </style>
     <prerequisite-task idref="t17"/>
@@ -262,34 +259,22 @@
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
-        <color r="0.898039" g="0.529412" b="0.360784"/>
+        <color r="0.141979" g="0.938222" b="0.959013"/>
       </value>
     </style>
     <prerequisite-task idref="t77"/>
   </task>
-  <task id="t21">
-    <title>Splash Screen library</title>
-    <effort>144000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-      <value key="gantt-fill-color">
-        <color r="0.898039" g="0.529412" b="0.360784"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t20"/>
-  </task>
   <task id="t22">
     <title>Release 3.0</title>
     <type>group</type>
-    <start-constraint-date>2017-09-20T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-12-20T13:00:00.000Z</start-constraint-date>
     <child-task idref="t23"/>
     <child-task idref="t86"/>
     <child-task idref="t24"/>
     <child-task idref="t25"/>
     <child-task idref="t26"/>
-    <child-task idref="t93"/>
+    <child-task idref="t135"/>
+    <child-task idref="t136"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -300,10 +285,10 @@
       </value>
     </style>
     <prerequisite-task idref="t38"/>
-    <start-no-earlier-than>2017-09-20T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-12-20T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t23">
-    <title>c++ 11 features</title>
+    <title>Port to C++ 11</title>
     <effort>1440000</effort>
     <style>
       <value key="gantt-completion-color">
@@ -315,7 +300,7 @@
     </style>
   </task>
   <task id="t24">
-    <title>geant4 multithreading</title>
+    <title>Geant4 Multithreading</title>
     <effort>720000</effort>
     <style>
       <value key="gantt-completion-color">
@@ -328,7 +313,7 @@
     <prerequisite-task idref="t86"/>
   </task>
   <task id="t25">
-    <title>refurbish verbosities</title>
+    <title>Refurbish verbosities</title>
     <effort>288000</effort>
     <style>
       <value key="gantt-completion-color">
@@ -341,7 +326,7 @@
     <prerequisite-task idref="t24"/>
   </task>
   <task id="t26">
-    <title>match det types to geant4</title>
+    <title>Match det types to geant4</title>
     <effort>288000</effort>
     <style>
       <value key="gantt-completion-color">
@@ -356,77 +341,80 @@
   <task id="t27">
     <title>Release 3.1</title>
     <type>group</type>
-    <start-constraint-date>2018-03-21T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2018-07-05T12:00:00.000Z</start-constraint-date>
     <child-task idref="t29"/>
     <child-task idref="t31"/>
     <child-task idref="t30"/>
     <child-task idref="t32"/>
     <child-task idref="t88"/>
+    <child-task idref="t109"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
+      <value key="gantt-fill-color">
+        <color r="0.132045" g="0.231019" b="0.899477"/>
+      </value>
     </style>
     <prerequisite-task idref="t22"/>
-    <start-no-earlier-than>2018-03-21T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2018-07-05T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t29">
-    <title>geant4 parallel worlds</title>
+    <title>Geant4 Parallel Worlds</title>
     <effort>576000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-    </style>
-  </task>
-  <task id="t30">
-    <title>output format plugins</title>
-    <effort>576000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t31"/>
-  </task>
-  <task id="t31">
-    <title>output def library</title>
-    <effort>576000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t29"/>
-  </task>
-  <task id="t32">
-    <title>particles color option</title>
-    <effort>144000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t30"/>
-  </task>
-  <task id="t33">
-    <title>over-imposing fields</title>
-    <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
-        <color r="0.74902" g="0.74902" b="0.74902"/>
+        <color r="0.132045" g="0.231019" b="0.899477"/>
       </value>
     </style>
-    <prerequisite-task idref="t19"/>
+  </task>
+  <task id="t30">
+    <title>Output format plugins</title>
+    <effort>576000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.132045" g="0.231019" b="0.899477"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t31"/>
+  </task>
+  <task id="t31">
+    <title>Output library</title>
+    <effort>576000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.132045" g="0.231019" b="0.899477"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t29"/>
+  </task>
+  <task id="t32">
+    <title>Particles color option</title>
+    <effort>144000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.132045" g="0.231019" b="0.899477"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t30"/>
   </task>
   <task id="t34">
     <title>Release 3.2</title>
     <type>group</type>
-    <start-constraint-date>2018-07-11T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2018-11-29T13:00:00.000Z</start-constraint-date>
     <child-task idref="t35"/>
     <child-task idref="t36"/>
     <child-task idref="t90"/>
@@ -440,7 +428,7 @@
       </value>
     </style>
     <prerequisite-task idref="t27"/>
-    <start-no-earlier-than>2018-07-11T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2018-11-29T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t35">
     <title>FASTMC mode</title>
@@ -468,14 +456,14 @@
     <prerequisite-task idref="t35"/>
   </task>
   <task id="t38">
-    <title>Release 2.8</title>
+    <title>Release 2.9</title>
     <type>group</type>
-    <start-constraint-date>2017-06-09T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-09-07T12:00:00.000Z</start-constraint-date>
     <child-task idref="t19"/>
-    <child-task idref="t33"/>
-    <child-task idref="t72"/>
+    <child-task idref="t108"/>
     <child-task idref="t74"/>
     <child-task idref="t91"/>
+    <child-task idref="t134"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -485,21 +473,20 @@
         <color r="0.74902" g="0.74902" b="0.74902"/>
       </value>
     </style>
-    <prerequisite-task idref="t13"/>
-    <start-no-earlier-than>2017-06-09T12:00:00.000Z</start-no-earlier-than>
+    <prerequisite-task idref="t131"/>
+    <start-no-earlier-than>2017-09-07T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t42">
     <title>Release 2.6</title>
     <type>group</type>
-    <start-constraint-date>2016-10-20T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2016-12-05T13:00:00.000Z</start-constraint-date>
     <child-task idref="t45"/>
+    <child-task idref="t106"/>
+    <child-task idref="t107"/>
+    <child-task idref="t105"/>
     <child-task idref="t46"/>
     <child-task idref="t52"/>
-    <child-task idref="t55"/>
-    <child-task idref="t63"/>
     <child-task idref="t75"/>
-    <child-task idref="t94"/>
-    <child-task idref="t102"/>
     <child-task idref="t100"/>
     <child-task idref="t101"/>
     <style>
@@ -512,11 +499,11 @@
       </value>
     </style>
     <prerequisite-task idref="t81"/>
-    <start-no-earlier-than>2016-10-20T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2016-12-05T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t45">
-    <title>G4 Analysis Tools</title>
-    <effort>432000</effort>
+    <title>Add Birk Constants</title>
+    <effort>86400</effort>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -527,7 +514,7 @@
     </style>
   </task>
   <task id="t46">
-    <title>Cross Sections Validations</title>
+    <title>Cross Sections Validations at JLab energies.</title>
     <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
@@ -537,7 +524,7 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t45"/>
+    <prerequisite-task idref="t105"/>
   </task>
   <task id="t52">
     <title>Finalize Replicas, Divisions</title>
@@ -552,19 +539,6 @@
     </style>
     <prerequisite-task idref="t46"/>
   </task>
-  <task id="t55">
-    <title>Python API Implementation</title>
-    <effort>432000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-      <value key="gantt-fill-color">
-        <color r="0.8" g="0.721569" b="0.278431"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t52"/>
-  </task>
   <task id="t59">
     <title>Field Interpolations</title>
     <effort>144000</effort>
@@ -576,19 +550,6 @@
       </value>
     </style>
     <start-no-earlier-than>2016-04-27T12:00:00.000Z</start-no-earlier-than>
-  </task>
-  <task id="t63">
-    <title>Use Run Action</title>
-    <effort>288000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-      <value key="gantt-fill-color">
-        <color r="0.8" g="0.721569" b="0.278431"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t55"/>
   </task>
   <task id="t64">
     <title>Noise Generator</title>
@@ -635,19 +596,6 @@
     </style>
     <prerequisite-task idref="t7"/>
   </task>
-  <task id="t72">
-    <title>Identifier to Touchable</title>
-    <effort>288000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-      <value key="gantt-fill-color">
-        <color r="0.74902" g="0.74902" b="0.74902"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t33"/>
-  </task>
   <task id="t74">
     <title>Reading gzipped fields</title>
     <effort>288000</effort>
@@ -659,7 +607,7 @@
         <color r="0.74902" g="0.74902" b="0.74902"/>
       </value>
     </style>
-    <prerequisite-task idref="t72"/>
+    <prerequisite-task idref="t108"/>
   </task>
   <task id="t75">
     <title>Add / Remove axis in GUI</title>
@@ -672,7 +620,7 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t63"/>
+    <prerequisite-task idref="t52"/>
   </task>
   <task id="t76">
     <title>Pop up window for detector description</title>
@@ -682,10 +630,10 @@
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
-        <color r="0.898039" g="0.529412" b="0.360784"/>
+        <color r="0.141979" g="0.938222" b="0.959013"/>
       </value>
     </style>
-    <prerequisite-task idref="t21"/>
+    <prerequisite-task idref="t20"/>
   </task>
   <task id="t77">
     <title>Redesign Generator Tab</title>
@@ -695,7 +643,7 @@
         <color r="0.223451" g="0.890216" b="0.454889"/>
       </value>
       <value key="gantt-fill-color">
-        <color r="0.898039" g="0.529412" b="0.360784"/>
+        <color r="0.141979" g="0.938222" b="0.959013"/>
       </value>
     </style>
     <prerequisite-task idref="t18"/>
@@ -726,7 +674,7 @@
     <start-no-earlier-than>2016-06-14T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t86">
-    <title>option Library</title>
+    <title>Option Library</title>
     <effort>288000</effort>
     <effort-done>86399.9921875</effort-done>
     <style>
@@ -745,6 +693,9 @@
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.132045" g="0.231019" b="0.899477"/>
       </value>
     </style>
     <prerequisite-task idref="t32"/>
@@ -774,32 +725,6 @@
       </value>
     </style>
     <prerequisite-task idref="t74"/>
-  </task>
-  <task id="t93">
-    <title>Touchable Library</title>
-    <effort>432000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.23228" g="0.92539" b="0.472862"/>
-      </value>
-      <value key="gantt-fill-color">
-        <color r="0.847059" g="0.301961" b="0.301961"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t26"/>
-  </task>
-  <task id="t94">
-    <title>Linux Tarballs</title>
-    <effort>288000</effort>
-    <style>
-      <value key="gantt-completion-color">
-        <color r="0.223451" g="0.890216" b="0.454889"/>
-      </value>
-      <value key="gantt-fill-color">
-        <color r="0.8" g="0.721569" b="0.278431"/>
-      </value>
-    </style>
-    <prerequisite-task idref="t75"/>
   </task>
   <task id="t95">
     <title>GDML Factory</title>
@@ -859,7 +784,7 @@
   </task>
   <task id="t100">
     <title>Detector Tests Template</title>
-    <effort>144000</effort>
+    <effort>288000</effort>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -868,10 +793,10 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t102"/>
+    <prerequisite-task idref="t75"/>
   </task>
   <task id="t101">
-    <title>Active Rotations</title>
+    <title>Active Rotations Phys Volume Constructor</title>
     <effort>57600</effort>
     <style>
       <value key="gantt-completion-color">
@@ -883,9 +808,9 @@
     </style>
     <prerequisite-task idref="t100"/>
   </task>
-  <task id="t102">
-    <title>Virtual Machine Mechanism</title>
-    <effort>288000</effort>
+  <task id="t105">
+    <title>G4 Analysis Tools</title>
+    <effort>432000</effort>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -894,7 +819,200 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t94"/>
+    <prerequisite-task idref="t107"/>
+  </task>
+  <task id="t106">
+    <title>Add Mirror Optical Smearing Alpha</title>
+    <effort>115200</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t45"/>
+  </task>
+  <task id="t107">
+    <title>Identifier class to touchable library</title>
+    <effort>432000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t106"/>
+  </task>
+  <task id="t108">
+    <title>Python API Implementation</title>
+    <effort>432000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.74902" g="0.74902" b="0.74902"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t19"/>
+  </task>
+  <task id="t109">
+    <title>RPM / Linux Tarballs</title>
+    <effort>576000</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.132045" g="0.231019" b="0.899477"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t88"/>
+  </task>
+  <task id="t131">
+    <title>Release 2.8</title>
+    <type>group</type>
+    <start-constraint-date>2017-06-06T12:00:00.000Z</start-constraint-date>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <child-task idref="t77"/>
+    <child-task idref="t20"/>
+    <child-task idref="t76"/>
+    <style>
+      <value key="font-size">18</value>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.141979" g="0.938222" b="0.959013"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t13"/>
+    <start-no-earlier-than>2017-06-06T12:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t133">
+    <title>De-couple digitization from gemc</title>
+    <effort>720000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.898039" g="0.529412" b="0.360784"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t16"/>
+  </task>
+  <task id="t134">
+    <title>Virtual Machines for installation</title>
+    <effort>288000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.74902" g="0.74902" b="0.74902"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t91"/>
+  </task>
+  <task id="t135">
+    <title>Splash Screen Library</title>
+    <effort>144000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.23228" g="0.92539" b="0.472862"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t26"/>
+  </task>
+  <task id="t136">
+    <title>Refurbished GUI</title>
+    <effort>432000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.23228" g="0.92539" b="0.472862"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.847059" g="0.301961" b="0.301961"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t135"/>
+  </task>
+  <task id="t137">
+    <title>Release 3.3</title>
+    <type>group</type>
+    <start-constraint-date>2019-03-01T13:00:00.000Z</start-constraint-date>
+    <child-task idref="t138"/>
+    <style>
+      <value key="font-size">18</value>
+    </style>
+    <prerequisite-task idref="t34"/>
+    <start-no-earlier-than>2019-03-01T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t138">
+    <title>Over imposing magnetic fields</title>
+    <effort>576000</effort>
+  </task>
+  <task id="t141">
+    <title>GEMC Publish</title>
+    <type>group</type>
+    <start-constraint-date>2017-03-13T12:00:00.000Z</start-constraint-date>
+    <child-task idref="t142"/>
+    <child-task idref="t143"/>
+    <child-task idref="t144"/>
+    <style>
+      <value key="font-size">18</value>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.888449" g="0" b="0.0600497"/>
+      </value>
+    </style>
+    <start-no-earlier-than>2017-03-13T12:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t142">
+    <title>Write Paper</title>
+    <effort>7200000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.888449" g="0" b="0.0600497"/>
+      </value>
+    </style>
+  </task>
+  <task id="t143">
+    <title>Review / Submit</title>
+    <effort>5760000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.888449" g="0" b="0.0600497"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t142"/>
+  </task>
+  <task id="t144">
+    <title>GEMC on the Apple Store</title>
+    <effort>1440000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.888449" g="0" b="0.0600497"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t143"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>
