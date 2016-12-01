@@ -24,6 +24,7 @@ GEMC Documentation
 	fields/fields
 	detectorDefinition
 	hitDefinition
+	voltageTime
 	runningJLab
 
 
