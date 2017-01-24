@@ -64,16 +64,18 @@ GEMC 2.5 - September 2016
 
 
 
-GEMC 2.6 - March 2017
+GEMC 2.6 - May 2017
 ---------------------
 
 - SKIPGEN option ✅
 
 - Magnetic field info in MHit ✅
 
-- Add Birk Constant.
+- Add Birk Constant. ✅
 
-- Add Mirror Optical Smearing Alpha.
+- Add Mirror Optical Smearing Alpha. ✅
+
+- Fast MC mode and track smearing.
 
 - Identifier to **touchable** library.
 
@@ -92,7 +94,7 @@ GEMC 2.6 - March 2017
 
 
 
-GEMC 2.7 - May 2017
+GEMC 2.7 - Jul 2017
 -------------------
 
 - Run Action and Digitization Constants
@@ -103,7 +105,7 @@ GEMC 2.7 - May 2017
 
 
 
-GEMC 2.8 - August 2017
+GEMC 2.8 - Oct 2017
 ----------------------
 
 - Event generation library. This will include plugins for different formats.
@@ -118,7 +120,7 @@ GEMC 2.8 - August 2017
 
 
 
-GEMC 2.9 - December 2017
+GEMC 2.9 - Jan 2018
 ------------------------
 
 - Multihit TDC
@@ -134,7 +136,7 @@ GEMC 2.9 - December 2017
 
 
 
-GEMC 3.0 - June 2018
+GEMC 3.0 - July 2018
 --------------------
 
 - gemc 3.0 will make use of many **c++11** features and optimization.
@@ -154,7 +156,7 @@ GEMC 3.0 - June 2018
 
 
 
-GEMC 3.1 - November 2018
+GEMC 3.1 - December 2018
 ------------------------
 
 - Geant4 **parallel worlds**.
@@ -185,7 +187,7 @@ GEMC 3.2 - February 2019
 
 
 
-GEMC 3.3 - April 2019
+GEMC 3.3 - March 2019
 ---------------------
 
 - Overimposing magnetic fields

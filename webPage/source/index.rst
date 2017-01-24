@@ -6,8 +6,14 @@
 GEant4 Monte-Carlo
 ==================
 
-gemc is an application based on `geant4 <https://geant4.cern.ch>`_  to simulate the passage of
-particles through matter. It provides:
+Why gemc?
+=========
+
+`geant4 <https://geant4.cern.ch>`_  is a c++ framework to simulate the passage of
+particles through matter.
+
+GEMC aims at making available all the powerful geant4 features w/o any prior knowledge of c++ or geant4. It provides:
+
 
  * application independent geometry description
  * easy interface to build / run experiments
