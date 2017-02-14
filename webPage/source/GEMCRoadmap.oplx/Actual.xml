@@ -187,7 +187,7 @@
   <task id="t13">
     <title>Release 2.7</title>
     <type>group</type>
-    <start-constraint-date>2017-05-17T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-06-26T12:00:00.000Z</start-constraint-date>
     <child-task idref="t16"/>
     <child-task idref="t133"/>
     <style>
@@ -200,7 +200,7 @@
       </value>
     </style>
     <prerequisite-task idref="t42"/>
-    <start-no-earlier-than>2017-05-17T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-06-26T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
     <title>Run Action and Constants</title>
@@ -267,7 +267,7 @@
   <task id="t22">
     <title>Release 3.0</title>
     <type>group</type>
-    <start-constraint-date>2018-01-30T13:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2018-03-21T12:00:00.000Z</start-constraint-date>
     <child-task idref="t23"/>
     <child-task idref="t86"/>
     <child-task idref="t24"/>
@@ -285,7 +285,7 @@
       </value>
     </style>
     <prerequisite-task idref="t38"/>
-    <start-no-earlier-than>2018-01-30T13:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2018-03-21T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t23">
     <title>Port to C++ 11</title>
@@ -341,7 +341,7 @@
   <task id="t27">
     <title>Release 3.1</title>
     <type>group</type>
-    <start-constraint-date>2018-08-01T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2018-09-21T12:00:00.000Z</start-constraint-date>
     <child-task idref="t29"/>
     <child-task idref="t31"/>
     <child-task idref="t30"/>
@@ -358,7 +358,7 @@
       </value>
     </style>
     <prerequisite-task idref="t22"/>
-    <start-no-earlier-than>2018-08-01T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2018-09-21T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t29">
     <title>Geant4 Parallel Worlds</title>
@@ -414,7 +414,7 @@
   <task id="t34">
     <title>Release 3.2</title>
     <type>group</type>
-    <start-constraint-date>2018-12-19T13:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2019-02-11T13:00:00.000Z</start-constraint-date>
     <child-task idref="t35"/>
     <child-task idref="t36"/>
     <child-task idref="t90"/>
@@ -428,7 +428,7 @@
       </value>
     </style>
     <prerequisite-task idref="t27"/>
-    <start-no-earlier-than>2018-12-19T13:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2019-02-11T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t35">
     <title>FASTMC mode</title>
@@ -458,7 +458,7 @@
   <task id="t38">
     <title>Release 2.9</title>
     <type>group</type>
-    <start-constraint-date>2017-10-25T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-12-14T13:00:00.000Z</start-constraint-date>
     <child-task idref="t19"/>
     <child-task idref="t108"/>
     <child-task idref="t74"/>
@@ -474,7 +474,7 @@
       </value>
     </style>
     <prerequisite-task idref="t131"/>
-    <start-no-earlier-than>2017-10-25T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-12-14T13:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t42">
     <title>Release 2.6</title>
@@ -485,7 +485,9 @@
     <child-task idref="t148"/>
     <child-task idref="t106"/>
     <child-task idref="t150"/>
+    <child-task idref="t152"/>
     <child-task idref="t107"/>
+    <child-task idref="t151"/>
     <child-task idref="t105"/>
     <child-task idref="t46"/>
     <child-task idref="t52"/>
@@ -823,7 +825,7 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t107"/>
+    <prerequisite-task idref="t151"/>
   </task>
   <task id="t106">
     <title>Add Mirror Optical Smearing Alpha</title>
@@ -850,7 +852,7 @@
         <color r="0.8" g="0.721569" b="0.278431"/>
       </value>
     </style>
-    <prerequisite-task idref="t150"/>
+    <prerequisite-task idref="t152"/>
   </task>
   <task id="t108">
     <title>Python API Implementation</title>
@@ -878,7 +880,7 @@
   <task id="t131">
     <title>Release 2.8</title>
     <type>group</type>
-    <start-constraint-date>2017-07-28T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2017-09-13T12:00:00.000Z</start-constraint-date>
     <child-task idref="t17"/>
     <child-task idref="t18"/>
     <child-task idref="t77"/>
@@ -894,7 +896,7 @@
       </value>
     </style>
     <prerequisite-task idref="t13"/>
-    <start-no-earlier-than>2017-07-28T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2017-09-13T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t133">
     <title>De-couple digitization from gemc</title>
@@ -951,13 +953,13 @@
   <task id="t137">
     <title>Release 3.3</title>
     <type>group</type>
-    <start-constraint-date>2019-03-20T12:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2019-05-10T12:00:00.000Z</start-constraint-date>
     <child-task idref="t138"/>
     <style>
       <value key="font-size">18</value>
     </style>
     <prerequisite-task idref="t34"/>
-    <start-no-earlier-than>2019-03-20T12:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2019-05-10T12:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t138">
     <title>Over imposing magnetic fields</title>
@@ -1049,9 +1051,8 @@
   </task>
   <task id="t150">
     <title>FAST MC Mode</title>
-    <effort>288000</effort>
-    <effort-done>144000</effort-done>
-    <start-constraint-date>2017-01-17T13:00:00.000Z</start-constraint-date>
+    <effort>720000</effort>
+    <effort-done>360000</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.223451" g="0.890216" b="0.454889"/>
@@ -1061,7 +1062,34 @@
       </value>
     </style>
     <prerequisite-task idref="t106"/>
-    <start-no-earlier-than>2017-01-17T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t151">
+    <title>GFLUX detector</title>
+    <effort>144000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t107"/>
+  </task>
+  <task id="t152">
+    <title>BEAGLE event format</title>
+    <effort>288000</effort>
+    <start-constraint-date>2017-02-14T13:00:00.000Z</start-constraint-date>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t150" kind="FF"/>
+    <start-no-earlier-than>2017-02-14T13:00:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

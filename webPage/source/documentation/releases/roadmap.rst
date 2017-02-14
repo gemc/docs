@@ -64,7 +64,7 @@ GEMC 2.5 - September 2016
 
 
 
-GEMC 2.6 - May 2017
+GEMC 2.6 - Jun 2017
 ---------------------
 
 - SKIPGEN option ✅
@@ -77,7 +77,11 @@ GEMC 2.6 - May 2017
 
 - Fast MC mode and track smearing.
 
+- Beagle event generator.
+
 - Identifier to **touchable** library.
+
+- GFLUX hittype to record photons.
 
 - **G4Analysis Tools**.
 
@@ -94,7 +98,7 @@ GEMC 2.6 - May 2017
 
 
 
-GEMC 2.7 - Jul 2017
+GEMC 2.7 - Aug 2017
 -------------------
 
 - Run Action and Digitization Constants
@@ -105,7 +109,7 @@ GEMC 2.7 - Jul 2017
 
 
 
-GEMC 2.8 - Oct 2017
+GEMC 2.8 - Dec 2017
 ----------------------
 
 - Event generation library. This will include plugins for different formats.
@@ -120,7 +124,7 @@ GEMC 2.8 - Oct 2017
 
 
 
-GEMC 2.9 - Jan 2018
+GEMC 2.9 - Mar 2018
 ------------------------
 
 - Multihit TDC
@@ -136,7 +140,7 @@ GEMC 2.9 - Jan 2018
 
 
 
-GEMC 3.0 - July 2018
+GEMC 3.0 - Sep 2018
 --------------------
 
 - gemc 3.0 will make use of many **c++11** features and optimization.
@@ -156,7 +160,7 @@ GEMC 3.0 - July 2018
 
 
 
-GEMC 3.1 - December 2018
+GEMC 3.1 - Feb 2019
 ------------------------
 
 - Geant4 **parallel worlds**.
@@ -173,7 +177,7 @@ GEMC 3.1 - December 2018
 
 
 
-GEMC 3.2 - February 2019
+GEMC 3.2 - May 2019
 ------------------------
 
 - FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
@@ -187,7 +191,7 @@ GEMC 3.2 - February 2019
 
 
 
-GEMC 3.3 - March 2019
+GEMC 3.3 - Jul 2019
 ---------------------
 
 - Overimposing magnetic fields
