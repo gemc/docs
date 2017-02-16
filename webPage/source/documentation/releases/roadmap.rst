@@ -75,7 +75,7 @@ GEMC 2.6 - Jun 2017
 
 - Add Mirror Optical Smearing Alpha. ✅
 
-- Fast MC mode and track smearing.
+- Fast MC mode and track smearing. ✅
 
 - Beagle event generator.
 
