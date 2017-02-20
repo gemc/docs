@@ -34,8 +34,12 @@ The modes are as follows (see Figure 1):
 
 a. Mode 0: Full geant4 simulation
 b. Mode 1: Turns off secondaries production. Energy loss is still computed, the would-be secondaries just dump all their energy at their
-   producion vertex.
+   producion vertex. All hit process routines are disabled.
 c. Mode 2: Turns off all physics except transportation. No energy loss. Force detection of particles passing through detectors.
+   All hit process routines are disabled.
+d. Mode 10: Same as mode 1 but with process routines enabled.
+e. Mode 20: Same as mode 2 but with process routines enabled.
+
 
 In both modes 1 and 2 the field transportation is made faster (by using G4SimpleRunge integration method), and hits are not digitized.
 
