@@ -77,8 +77,7 @@ Below is the benchmars for running 200 events within CLAS12, a full-fledge detec
 several panels of Time-Of-Flights, a tracker and three calorimeters.
 
 - Mode 0: 99 seconds
-- Mode 1: 11 seconds
-- Mode 2: ~ 0.5 seconds.
+- Mode 1: 11 seconds, or ~10x faster.
+- Mode 2: ~ 0.5 seconds, or ~200x faster.
 
-Thus mode 1 gives a factor of ~10X in speed and mode 2 a factor of ~200X.
 
