@@ -13,5 +13,6 @@ This document describes how to generate events in gemc.
 	internal
 	cosmic
 	lund
+	ion
 	luminosity
 	bgmerge
