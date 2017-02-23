@@ -22,6 +22,8 @@ This is expected to happen in Winter 2016.
 
 
 
+.. _installFromScratch:
+
 Getting and compiling gemc (all platforms)
 ------------------------------------------
 
