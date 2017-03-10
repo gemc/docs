@@ -1079,6 +1079,7 @@
   <task id="t152">
     <title>BEAGLE event format</title>
     <effort>288000</effort>
+    <effort-done>288000</effort-done>
     <start-constraint-date>2017-02-14T13:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">

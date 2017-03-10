@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="2682" y="128" w="2389" h="1267">
+  <window x="2635" y="126" w="2389" h="1267">
     <editing-scenario>lJ9YoVH2ibY</editing-scenario>
     <view>task</view>
     <overview/>
@@ -9,15 +9,15 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>464</split-view-divider-position>
-      <outline x="0" y="0" w="464" h="1111">
+      <outline x="0" y="45" w="464" h="1111">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="332"/>
         <column name="Effort" width="87"/>
-        <expanded-items idrefs="t1 t13 t81 t42 t137 t38 t131 t141 t34 t22 t27"/>
-        <selected-items-at-filter-time idrefs="t66 t17 t31 t152 t138 t59 t24 t81 t18 t131 t74 t32 t25 t75 t19 t26 t90 t34 t27 t76 t77 t91 t42 t35 t133 t29 t36 t105 t148 t4 t86 t5 t134 t141 t52 t38 t45 t6 t7 t106 t149 t95 t46 t8 t88 t11 t135 t9 t96 t142 t107 t97 t13 t20 t143 t136 t150 t98 t70 t108 t64 t22 t71 t137 t151 t144 t23 t16 t30 t109"/>
+        <expanded-items idrefs="t27 t13 t42 t81 t137 t38 t22 t141 t34 t131 t1"/>
+        <selected-items-at-filter-time idrefs="t66 t24 t17 t138 t152 t59 t31 t81 t18 t131 t32 t74 t25 t75 t26 t19 t76 t34 t90 t27 t91 t77 t42 t35 t133 t29 t36 t105 t148 t4 t86 t5 t134 t141 t45 t38 t52 t6 t7 t106 t149 t88 t95 t8 t46 t11 t9 t135 t96 t142 t107 t97 t20 t13 t143 t136 t150 t98 t70 t108 t71 t22 t64 t144 t151 t137 t23 t16 t109 t30"/>
       </outline>
-      <gantt-view x="294" y="0" w="1924" h="1111">
+      <gantt-view x="294" y="45" w="1924" h="1111">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -70,7 +70,7 @@
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="5227" y="0" w="2054" h="1111">
+      <timeline x="5262" y="0" w="2054" h="1111">
         <offtime-display>none</offtime-display>
         <task-bar-label task-type="group" position="left">
           <key>Title</key>

@@ -77,7 +77,7 @@ GEMC 2.6 - Jun 2017
 
 - Fast MC mode and track smearing. ✅
 
-- Beagle event generator.
+- Beagle event generator. ✅
 
 - Identifier to **touchable** library.
 

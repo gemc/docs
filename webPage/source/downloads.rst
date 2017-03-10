@@ -6,6 +6,10 @@
 GEMC Dowloads
 =============
 
+.. |download2.6at10| image:: download-button.png
+	:width: 110pt
+	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.6.dmg
+
 .. |download2.5at10| image:: download-button.png
 	:width: 110pt
 	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.5.dmg
@@ -13,10 +17,6 @@ GEMC Dowloads
 .. |download2.4at10| image:: download-button.png
 	:width: 110pt
 	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.4.dmg
-
-.. |download2.3at10| image:: download-button.png
-	:width: 110pt
-	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.3.dmg
 
 
 
@@ -28,8 +28,6 @@ GEMC Dowloads
 |   **2.5**    |    10.10 and up  |  498 MB  | |download2.5at10|  |
 +--------------+------------------+----------+--------------------+
 |   **2.4**    |    10.10 and up  |  484 MB  | |download2.4at10|  |
-+--------------+------------------+----------+--------------------+
-|   **2.3**    |    10.10 and up  |  478 MB  | |download2.3at10|  |
 +--------------+------------------+----------+--------------------+
 
 |
