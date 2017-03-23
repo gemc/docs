@@ -88,8 +88,9 @@ you're ready, go ahead and press the PR button to provide additional information
 
 * Make sure you selected the correct branch name ("master" if it's the main fork)
 * Make sure the title and description are clear and concise
-* If the change is visual, make sure to include a screenshot or gif
+* If the change is visual, make sure to include a screenshot
 * If the PR closes an issue, make sure to put Closes #X at the end of the description on a newline
+* Make sure you have pushed to your fork all the changes you wish to submit.
 
 Then let's go for it and open it up!
 
@@ -140,6 +141,9 @@ To sync a fork:
 
 This brings your fork in sync with the gemc repository,
 without losing your local changes.
+
+Note: syncing your fork only updates your local copy of the repository.
+To update your fork on GitHub, you must push your changes.
 
 
 Create a branch
