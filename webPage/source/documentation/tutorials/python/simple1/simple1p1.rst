@@ -56,7 +56,7 @@ position. "root" is the root volume.
 |
 
 .. image:: ../../next.png
-	:target: 	myFirstp2.html
+	:target: 	simple1p2.html
 	:align: right
 
 

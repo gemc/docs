@@ -41,12 +41,12 @@ The variation is part of the file name. When running gemc you can choose the var
 
 |
 
-.. image:: ../next.png
+.. image:: ../../next.png
 	:target: 	myFirstp4.html
 	:align: right
 
 
-.. image:: ../previous.png
+.. image:: ../../previous.png
 	:target: 	myFirstp2.html
 	:align: left
 

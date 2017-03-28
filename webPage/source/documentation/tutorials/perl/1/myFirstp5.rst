@@ -58,7 +58,7 @@ Congratulations, you created your very first volumes and material in GEMC!
 |
 
 
-.. image:: ../previous.png
+.. image:: ../../previous.png
 	:target: 	myFirstp4.html
 	:align: left
 

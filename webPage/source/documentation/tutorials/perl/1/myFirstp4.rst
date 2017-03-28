@@ -31,12 +31,12 @@ Next we'll change the paddle material.
 
 |
 
-.. image:: ../next.png
+.. image:: ../../next.png
 	:target: 	myFirstp5.html
 	:align: right
 
 
-.. image:: ../previous.png
+.. image:: ../../previous.png
 	:target: 	myFirstp3.html
 	:align: left
 

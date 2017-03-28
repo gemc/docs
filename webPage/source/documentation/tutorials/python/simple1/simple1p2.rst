@@ -53,11 +53,11 @@ Easy right? *target.pl* looks even easier, since we can omit position (defaulted
 |
 
 .. image:: ../../next.png
-	:target: 	myFirstp3.html
+	:target: 	simple1p3.html
 	:align: right
 
 
 .. image:: ../../previous.png
-	:target: 	myFirstp1.html
+	:target: 	simple1p1.html
 	:align: left
 
