@@ -1,57 +1,46 @@
 
-========================
-My First Volume  - *1/5*
-========================
+=======================
+Simple Example  - *1/2*
+=======================
 
-In this tutorial you will build a liquid hydrogen target and
-a paddle made from a custom scintillator material. You will use variations to study two options for paddle length.
-This could be done using a single perl script, however the code is organized in a "paddle" and a "target" script to give an idea
-on how to work with more complex geometries.
+This folder contains one of the simplest possible projects:  a simple material in a beam.
+To make it slightly more interesting, the detector has been made sensitive, that is,
+it will record hit information when a track passes through it.
+
+The detector material is a pre-defined GEANT4 element “G4_Si” so there is no need to generate a materials file for gemc.
+
 
 Pre-requisites
 ^^^^^^^^^^^^^^
-Tarball containing the material for this tutorial: `myFirst.tar <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/myFirst.tar>`_.
+Tarball containing the material for this tutorial: `myFirst.tar <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/simple1.tar>`_.
 
 To unpack::
 
- tar -xpvf myFirst.tar
+ tar -xpvf simple1.tar
 
-MYSQL or TEXT?
-^^^^^^^^^^^^^^
+Sensitive Detector
+^^^^^^^^^^^^^^^^^^
 
-Take a look at the file *config.dat*. Notice the entries that speficy the detector name,
-and the factory::
+The sensitive detector is of the “flux” type which means that every track that passes through
+will generate a hit.
 
- # Detector name and variation
- detector_name: example
- factory:       TEXT
+The track parameters (energy deposited, time, position, etc.)
+are integrated through all steps in the volume and presented as one hit per track,
+based on the INTEGRATEDRAW=“flux” option in the gcard file.
 
-The **factory**  will select the format in which the geometry is saved. Here we will work in offline mode (TEXT) using a
-local database (a text file). If MYSQL was selected, the geometry would go in a MYSQL database.
-The **detector_name** is the name of the database. All volumes, materials, sensitivity definitions, etc are grouped under
-this name.
+The ‘flux’ type detector does not use a digitization factory to simulate the effects
+of readout electronics on the output signal.
 
-Variation
-^^^^^^^^^
+The geometry
+^^^^^^^^^^^^
 
-A *variation* of a detector is a different version of it.
-In this example we will create **two variations**: "short" and "long" to compare different detectors (short and long paddle).
+The simple "Tube" is defined in geometry.py::
+
+ detector.type        = "Tube"
+ detector.dimensions = "0.*cm 1.*cm 5.*mm 0*deg 360*deg"
 
 
 
-Hierarchy
-^^^^^^^^^
-
-Take a look at *paddle.pl*, the file that builds the paddle.
-
-The following lines of code define the volume name, its mother volume and a description of it::
-
-   $detector{"name"}        = "paddle_1";
-   $detector{"mother"}      = "root";
-   $detector{"description"} = "Example of paddle";
-
-The position and rotation of a volume are relative to its mother volume. The rotation will happen before the
-position. "root" is the root volume.
 
 |
 

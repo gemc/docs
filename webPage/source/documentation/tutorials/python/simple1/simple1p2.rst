@@ -1,60 +1,58 @@
 :orphan:
 
-========================
-My First Volume  - *2/5*
-========================
+=======================
+Simple Example  - *2/2*
+=======================
 
 
 
-Geometry
-^^^^^^^^
+Producing the geometry
+^^^^^^^^^^^^^^^^^^^^^^
 
-We want the paddle shifted 30 cm in z relative to the target (0,0,0)::
+The location of the python api files should be added to the PYTHONPATH. If gemc was installed via the DMG,
+add the following path for gemc-2.6::
 
-   $detector{"pos"}         = "0*cm 0*cm 30*cm";
-   $detector{"rotation"}    = "0*deg 0*deg 0*deg";
+ export PYTHONPATH=$PYTHONPATH:/Applications/gemc-2.6.app/gemc.app/Contents/Resources/api/python
 
-The type of geant4 solid is "box". Since we want to study two versions of it, a short and a long one,
-its dimensions depend on the variation name.
-Notice how units are specified::
+If gemc was installed from source PYTHONPATH would be automatically set already.
 
-	$detector{"type"} = "Box";
-	
-	if($configuration{"variation"} eq "short")
-	{
-	  $detector{"dimensions"}  = "2*cm 2*cm 4*cm";
-	}
-	if($configuration{"variation"} eq "long")
-	{
-	  $detector{"dimensions"}  = "2*cm 2*cm 10*cm";
-	}
+The geometry can be generated with the command::
 
-The material of this paddle is a predefined geant4 material::
+ ./example.py config.dat
 
-	$detector{"material"}    = "G4_GLASS_LEAD";
+WARNING:  this will overwrite the original project text files.
 
-The color entry is a 6 digit hexadecimal number that represents Red, Green and Blue weights from
-0 to 255 each in the form:  RRGGBB. Let's make it blue/greenish::
+The gcard
+^^^^^^^^^
+
+The example.gcard is the configuration file that gemc use to load detectors and simulation conditions.
+Notice how the primary generator is set in the gcard::
+
+<option name="BEAM_P" value="proton, 1.0*GeV, 180*deg, 0*deg"/>
+<option name="BEAM_V" value="(0., 0., 0.0)cm"/>
+
+And notice how the output file is also a gcard entry::
+
+<option name="OUTPUT" value="txt, out.txt"/>
+
+Running GEMC
+^^^^^^^^^^^^
+
+Run gemc using the provided gcard::
+
+ gemc.command example.gcard
+
+Go ahead and run one event. You should see a proton track as in the figure below:
+
+.. figure:: fig1.png
+	:width: 70%
+	:align: center
 
 
-	$detector{"color"}       = "339999";
 
-
-Finally, the volume is set to “visible” (0 would be "invisible") and the style to “solid” (0 would be "wireframe")::
-
-	$detector{"visible"}     = 1;
-	$detector{"style"}       = 1;
-
-
-
-Easy right? *target.pl* looks even easier, since we can omit position (defaulted at (0, 0, 0), rotation and visibility (defaulted at 1).
 
 
 |
-
-.. image:: ../../next.png
-	:target: 	simple1p3.html
-	:align: right
 
 
 .. image:: ../../previous.png
