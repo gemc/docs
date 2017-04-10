@@ -54,3 +54,14 @@ FAQ
 
 	FAQ
 
+
+
+Open source
+===========
+gemc is free and open source.
+
+Please visit the :ref:`contributing to gemc <contributingToGemc>` page if you're interested in the code development.
+
+If you have any bug/code optimization to report, new ideas, features request, 
+please `open a code issue / feature request <https://github.com/gemc/source/issues/new>`_ in github.
+
