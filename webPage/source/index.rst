@@ -12,7 +12,7 @@ Why gemc?
 `geant4 <https://geant4.cern.ch>`_  is a c++ framework to simulate the passage of
 particles through matter.
 
-GEMC aims at making available all the powerful geant4 features w/o any prior knowledge of c++ or geant4. It provides:
+GEMC makes available all the powerful geant4 features w/o need of c++ or geant4 knowledge. It provides:
 
 
  * application independent geometry description
