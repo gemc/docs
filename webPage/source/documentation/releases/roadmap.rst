@@ -79,95 +79,80 @@ GEMC 2.6 - Jun 2017
 
 - Beagle event generator. ✅
 
-- Identifier to **touchable** library.
+- GFLUX hittype to record photons. ✅
 
-- GFLUX hittype to record photons.
+- Detectors Test Template. ✅
 
-- **G4Analysis Tools**.
+- Pop up window for detector description ✅
 
-- Cross Section Validation at JLab energies.
-
-- Finalize implementation of Replicas and Divisions.
+- **Python API** implementation. ✅
 
 - Add / Remove axis in GUI
 
-- Detectors Test Template.
+- Culling options combobox.
 
 - Add physical volume constructor - active rotations.
 
+- User requests:
+
+  - dipole map with reflection symmetry
+  - shift and rotate field
+  - luminosity spread of particle in time
+  - 3d field map
 
 
 
-GEMC 2.7 - Aug 2017
--------------------
 
-- Run Action and Digitization Constants
+GEMC 3.0.beta1 - Dec 2017
+-------------------------
 
-- **Digitization routines will be plugins**, stored with the detector definitions (geometry, materials, etc)
-  - They will not be compiled in the gemc core anymore.
-  - Constants mechanism will be handled in run action, no more in static call
+- Option library ✅
 
+- Match detector types to geant4. ✅
 
+- Splash Screen library ✅
 
-GEMC 2.8 - Dec 2017
-----------------------
+- Run Action ✅
 
-- Event generation library. This will include plugins for different formats.
+- gvolume definitions and factories ✅
 
-- Support for **proMC** format for event generation.
+- MT G4Cout redirections ✅
 
-- Redesign Generator Tab
+- **Geant4 multithreading**.
 
-- Culling options combobox.
+- geant4 volumes factories
 
-- Pop up window for detector description
+- Refurbish GUI
 
+- Identifier to **touchable** library.
 
+- Digitization Constants mechanism
 
-GEMC 2.9 - Mar 2018
-------------------------
+- **Digitization routines as plugins**
+
+- Event generation library / factories / plugin
+
+- Implementation of Replicas and Divisions.
+
+- Redesign GUI Generator Tab
 
 - Multihit TDC
-
-- **Python API** implementation.
 
 - Read Gzipped field maps
 
 - API to sqlite
 
-- Virtual Machines for installation.
-
-
-
-
-GEMC 3.0 - Sep 2018
---------------------
-
-- gemc 3.0 will make use of many **c++11** features and optimization.
-
-- Option library
-
-- **Geant4 multithreading**.
-
 - Re-define and document all verbosities.
 
-- Match detector types to geant4.
+- Output format factories / plugins.
 
-- Splash Screen library
-
-- Refurbish GUI
+- Support for **proMC** format for event generation.
 
 
-
-
-GEMC 3.1 - Feb 2019
+GEMC 3.1 - June 2018
 ------------------------
 
 - Geant4 **parallel worlds**.
-
-- Output library
-
-- Output format plugins.
 
 - Particles color map option.
 
@@ -175,26 +160,22 @@ GEMC 3.1 - Feb 2019
 
 - RPM / Linux Tarballs.
 
+- Virtual Machines / docker for installation.
+
+- Overimposing magnetic fields
 
 
-GEMC 3.2 - May 2019
+
+GEMC 3.2 - Jan 2019
 ------------------------
 
-- FASTMC mode. Simplified physics? Calorimeter parameterisation? Geant4 Bias?
+- **G4Analysis Tools**.
+
+- Calorimeter parameterisation? Geant4 Bias?
 
 - Benchmarking tools
 
-- G4Cout redirections
-
 - GEMC Nim A Paper
-
-
-
-
-GEMC 3.3 - Jul 2019
----------------------
-
-- Overimposing magnetic fields
 
 
 

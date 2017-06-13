@@ -198,7 +198,550 @@
     <change idref="t150" attribute="noEarlierThanConstraintDate" type="date" from="2017-01-17T13:00:00.000Z"/>
     <change idref="t150" attribute="internalEffortDone" type="real" from="144000" to="360000"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2017-03-10T19:32:33.271Z" timestamp="2017-03-10T19:32:33.271Z">
-    <change idref="t152" attribute="internalEffortDone" type="real" from="0" to="288000" resolved="yes"/>
+  <task-change-set user="Maurizio Ungaro" date="2017-06-13T13:22:57.644Z" timestamp="2017-06-13T13:22:57.644Z">
+    <change idref="t46" from="t42" from-position="9" resolved="yes">
+      <change idref="t46" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t46" attribute="internalPrerequisitesString" type="string" to="105FS"/>
+      <change idref="t46" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t46" attribute="title" type="string" to="Cross Sections Validations at JLab energies."/>
+    </change>
+    <change idref="t105" from="t42" from-position="8" resolved="yes">
+      <change idref="t105" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t105" attribute="internalPrerequisitesString" type="string" to="151FS"/>
+      <change idref="t105" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t105" attribute="title" type="string" to="G4 Analysis Tools"/>
+    </change>
+    <change idref="t107" from="t42" from-position="6" resolved="yes">
+      <change idref="t107" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t107" attribute="internalPrerequisitesString" type="string" to="152FS"/>
+      <change idref="t107" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t107" attribute="title" type="string" to="Identifier class to touchable library"/>
+    </change>
+    <change idref="t52" attribute="internalPrerequisitesString" type="string" from="46FS" to="151FS" resolved="yes"/>
+    <change idref="t151" attribute="internalPrerequisitesString" type="string" from="107FS" to="152FS" resolved="yes"/>
+    <change idref="t151" attribute="internalEffortDone" type="real" from="0" to="144000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2017-06-13T13:36:12.117Z" timestamp="2017-06-13T13:36:12.117Z">
+    <change idref="t13" attribute="title" type="string" from="Release 2.7" to="Release 3.0.beta1" resolved="yes"/>
+    <change idref="t18" attribute="internalPrerequisitesString" type="string" to="17FS" resolved="yes"/>
+    <change idref="t20" attribute="internalPrerequisitesString" type="string" to="77FS" resolved="yes"/>
+    <change idref="t101" from="t42" from-position="10" resolved="yes">
+      <change idref="t101" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t101" attribute="internalPrerequisitesString" type="string" to="100FS"/>
+      <change idref="t101" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t101" attribute="title" type="string" to="Active Rotations Phys Volume Constructor"/>
+    </change>
+    <change idref="t155" to="t42" to-position="10" resolved="yes">
+      <change idref="t155" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t155" attribute="internalPrerequisitesString" type="string" to="100FS"/>
+      <change idref="t155" attribute="noEarlierThanConstraintDate" type="date" to="2017-05-12T12:00:00.000Z"/>
+      <change idref="t155" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t155" attribute="title" type="string" to="Axis GUI API"/>
+    </change>
+    <change idref="t156" to="t42" to-position="11" resolved="yes">
+      <change idref="t156" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t156" attribute="internalPrerequisitesString" type="string" to="155FS"/>
+      <change idref="t156" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-07T12:00:00.000Z"/>
+      <change idref="t156" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t156" attribute="title" type="string" to="Culling option API"/>
+    </change>
+    <change idref="t157" to="t42" to-position="12" resolved="yes">
+      <change idref="t157" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t157" attribute="internalPrerequisitesString" type="string" to="156FS"/>
+      <change idref="t157" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t157" attribute="title" type="string" to="Active Phys Volume constructor"/>
+    </change>
+    <change idref="t158" to="t42" to-position="13" resolved="yes">
+      <change idref="t158" attribute="effort" type="real" from="28800" to="576000"/>
+      <change idref="t158" attribute="internalPrerequisitesString" type="string" to="157FS"/>
+      <change idref="t158" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-28T12:00:00.000Z"/>
+      <change idref="t158" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t158" attribute="title" type="string" to="User requests on magnetic field"/>
+    </change>
+    <change idref="t52" attribute="title" type="string" from="Finalize Replicas, Divisions" to="Detector Test Template" resolved="yes"/>
+    <change idref="t52" attribute="internalEffortDone" type="real" from="0" to="144000" resolved="yes"/>
+    <change idref="t75" attribute="title" type="string" from="Add / Remove axis in GUI" to="Volume inspector" resolved="yes"/>
+    <change idref="t75" attribute="internalEffortDone" type="real" from="0" to="115200" resolved="yes"/>
+    <change idref="t76" attribute="internalPrerequisitesString" type="string" to="20FS" resolved="yes"/>
+    <change idref="t77" attribute="internalPrerequisitesString" type="string" to="18FS" resolved="yes"/>
+    <change idref="t100" attribute="title" type="string" from="Detector Tests Template" to="Python API" resolved="yes"/>
+    <change idref="t100" attribute="internalEffortDone" type="real" from="0" to="288000" resolved="yes"/>
+    <change idref="t131" attribute="internalPrerequisitesString" type="string" to="13FS" resolved="yes"/>
+    <change idref="t17" to="t131" to-position="0" resurrection="yes" resolved="yes">
+      <change idref="t17" attribute="effort" type="real" from="28800" to="720000"/>
+      <change idref="t17" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t17" attribute="title" type="string" to="Event Generator Lib"/>
+    </change>
+    <change idref="t18" to="t131" to-position="1" resurrection="yes" resolved="yes">
+      <change idref="t18" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t18" attribute="internalPrerequisitesString" type="string" to="17FS"/>
+      <change idref="t18" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t18" attribute="title" type="string" to="Support for proMC"/>
+    </change>
+    <change idref="t77" to="t131" to-position="2" resurrection="yes" resolved="yes">
+      <change idref="t77" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t77" attribute="internalPrerequisitesString" type="string" to="18FS"/>
+      <change idref="t77" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t77" attribute="title" type="string" to="Redesign Generator Tab"/>
+    </change>
+    <change idref="t20" to="t131" to-position="3" resurrection="yes" resolved="yes">
+      <change idref="t20" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t20" attribute="internalPrerequisitesString" type="string" to="77FS"/>
+      <change idref="t20" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t20" attribute="title" type="string" to="Culling options combobox"/>
+    </change>
+    <change idref="t76" to="t131" to-position="4" resurrection="yes" resolved="yes">
+      <change idref="t76" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t76" attribute="internalPrerequisitesString" type="string" to="20FS"/>
+      <change idref="t76" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t76" attribute="title" type="string" to="Pop up window for detector description"/>
+    </change>
+    <change idref="t17" to="t131" to-position="0" resurrection="yes" resolved="yes">
+      <change idref="t17" attribute="effort" type="real" from="28800" to="720000"/>
+      <change idref="t17" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t17" attribute="title" type="string" to="Event Generator Lib"/>
+    </change>
+    <change idref="t18" to="t131" to-position="1" resurrection="yes" resolved="yes">
+      <change idref="t18" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t18" attribute="internalPrerequisitesString" type="string" to="17FS"/>
+      <change idref="t18" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t18" attribute="title" type="string" to="Support for proMC"/>
+    </change>
+    <change idref="t77" to="t131" to-position="2" resurrection="yes" resolved="yes">
+      <change idref="t77" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t77" attribute="internalPrerequisitesString" type="string" to="18FS"/>
+      <change idref="t77" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t77" attribute="title" type="string" to="Redesign Generator Tab"/>
+    </change>
+    <change idref="t20" to="t131" to-position="3" resurrection="yes" resolved="yes">
+      <change idref="t20" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t20" attribute="internalPrerequisitesString" type="string" to="77FS"/>
+      <change idref="t20" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t20" attribute="title" type="string" to="Culling options combobox"/>
+    </change>
+    <change idref="t76" to="t131" to-position="4" resurrection="yes" resolved="yes">
+      <change idref="t76" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t76" attribute="internalPrerequisitesString" type="string" to="20FS"/>
+      <change idref="t76" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t76" attribute="title" type="string" to="Pop up window for detector description"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2017-06-13T13:46:54.906Z" timestamp="2017-06-13T13:46:54.906Z">
+    <change idref="t137" from="t-1" from-position="9" resolved="yes">
+      <change idref="t137" attribute="internalPrerequisitesString" type="string" to="34FS"/>
+      <change idref="t137" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t137" attribute="noEarlierThanConstraintDate" type="date" to="2019-05-10T12:00:00.000Z"/>
+      <change idref="t137" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+}"/>
+      <change idref="t137" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t137" attribute="title" type="string" to="Release 3.3"/>
+    </change>
+    <change idref="t34" from="t-1" from-position="8" resolved="yes">
+      <change idref="t34" attribute="internalPrerequisitesString" type="string" to="27FS"/>
+      <change idref="t34" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" to="2019-02-11T13:00:00.000Z"/>
+      <change idref="t34" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.803922&quot;;
+        g = &quot;0.439216&quot;;
+        r = &quot;0.8&quot;;
+    };
+}"/>
+      <change idref="t34" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t34" attribute="title" type="string" to="Release 3.2"/>
+    </change>
+    <change idref="t27" from="t-1" from-position="7" resolved="yes">
+      <change idref="t27" attribute="internalPrerequisitesString" type="string" to="22FS"/>
+      <change idref="t27" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t27" attribute="noEarlierThanConstraintDate" type="date" to="2018-09-21T12:00:00.000Z"/>
+      <change idref="t27" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.899477&quot;;
+        g = &quot;0.231019&quot;;
+        r = &quot;0.132045&quot;;
+    };
+}"/>
+      <change idref="t27" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t27" attribute="title" type="string" to="Release 3.1"/>
+    </change>
+    <change idref="t22" from="t-1" from-position="6" resolved="yes">
+      <change idref="t22" attribute="internalPrerequisitesString" type="string" to="38FS"/>
+      <change idref="t22" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" to="2018-03-21T12:00:00.000Z"/>
+      <change idref="t22" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.472862&quot;;
+        g = &quot;0.92539&quot;;
+        r = &quot;0.23228&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t22" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t22" attribute="title" type="string" to="Release 3.0"/>
+    </change>
+    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" from="2017-06-26T12:00:00.000Z" to="2017-07-13T12:00:00.000Z" resolved="yes"/>
+    <change idref="t133" from="t13" from-position="1" resolved="yes">
+      <change idref="t133" attribute="effort" type="real" from="28800" to="720000"/>
+      <change idref="t133" attribute="internalPrerequisitesString" type="string" to="16FS"/>
+      <change idref="t133" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.360784&quot;;
+        g = &quot;0.529412&quot;;
+        r = &quot;0.898039&quot;;
+    };
+}"/>
+      <change idref="t133" attribute="title" type="string" to="De-couple digitization from gemc"/>
+    </change>
+    <change idref="t162" to="t13" to-position="0" resolved="yes">
+      <change idref="t162" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t162" attribute="title" type="string" to="Option Library"/>
+    </change>
+    <change idref="t164" to="t13" to-position="1" resolved="yes">
+      <change idref="t164" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t164" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.472862&quot;;
+        g = &quot;0.92539&quot;;
+        r = &quot;0.23228&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t164" attribute="title" type="string" to="Match det types to geant4"/>
+    </change>
+    <change idref="t165" to="t13" to-position="2" resolved="yes">
+      <change idref="t165" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t165" attribute="title" type="string" to="Splash Screen Library"/>
+    </change>
+    <change idref="t166" to="t13" to-position="4" resolved="yes">
+      <change idref="t166" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t166" attribute="title" type="string" to="GEMC Volume definitions "/>
+    </change>
+    <change idref="t167" to="t13" to-position="5" resolved="yes">
+      <change idref="t167" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t167" attribute="title" type="string" to="MT G4cout redirections"/>
+    </change>
+    <change idref="t168" to="t13" to-position="6" resolved="yes">
+      <change idref="t168" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t168" attribute="title" type="string" to="Geant4 multithreading"/>
+    </change>
+    <change idref="t169" to="t13" to-position="7" resolved="yes">
+      <change idref="t169" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t169" attribute="title" type="string" to="Geant4 volume factories"/>
+    </change>
+    <change idref="t170" to="t13" to-position="8" resolved="yes">
+      <change idref="t170" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t170" attribute="title" type="string" to="GUI refurbish"/>
+    </change>
+    <change idref="t171" to="t13" to-position="9" resolved="yes">
+      <change idref="t171" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t171" attribute="title" type="string" to="Touchable library"/>
+    </change>
+    <change idref="t172" to="t13" to-position="10" resolved="yes">
+      <change idref="t172" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t172" attribute="title" type="string" to="Digitization plugins"/>
+    </change>
+    <change idref="t173" to="t13" to-position="11" resolved="yes">
+      <change idref="t173" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t173" attribute="title" type="string" to="Event generation libraries / factories / plugins"/>
+    </change>
+    <change idref="t174" to="t13" to-position="12" resolved="yes">
+      <change idref="t174" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t174" attribute="title" type="string" to="Replicas / Divisions"/>
+    </change>
+    <change idref="t175" to="t13" to-position="13" resolved="yes">
+      <change idref="t175" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t175" attribute="title" type="string" to="GUI Generator"/>
+    </change>
+    <change idref="t176" to="t13" to-position="14" resolved="yes">
+      <change idref="t176" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t176" attribute="title" type="string" to="Multi hit TDC"/>
+    </change>
+    <change idref="t177" to="t13" to-position="15" resolved="yes">
+      <change idref="t177" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t177" attribute="title" type="string" to="Read gzipped fields"/>
+    </change>
+    <change idref="t178" to="t13" to-position="16" resolved="yes">
+      <change idref="t178" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t178" attribute="title" type="string" to="API to sqlite / mysql"/>
+    </change>
+    <change idref="t179" to="t13" to-position="17" resolved="yes">
+      <change idref="t179" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t179" attribute="title" type="string" to="Output factories / plutins"/>
+    </change>
+    <change idref="t180" to="t13" to-position="18" resolved="yes">
+      <change idref="t180" attribute="noEarlierThanConstraintDate" type="date" to="2017-06-13T12:00:00.000Z"/>
+      <change idref="t180" attribute="title" type="string" to="proMC support"/>
+    </change>
+    <change idref="t16" attribute="title" type="string" from="Run Action and Constants" to="Run Action" resolved="yes"/>
+    <change idref="t17" attribute="title" type="string" from="Event Generator Lib" to="Parallel worlds" resolved="yes"/>
+    <change idref="t18" attribute="title" type="string" from="Support for proMC" to="Particle color map option" resolved="yes"/>
+    <change idref="t19" attribute="title" type="string" from="Multihit TDC" to="G4 analysis tools" resolved="yes"/>
+    <change idref="t20" attribute="title" type="string" from="Culling options combobox" to="RPM / Linux tarballs" resolved="yes"/>
+    <change idref="t38" attribute="title" type="string" from="Release 2.9" to="Release 3.2" resolved="yes"/>
+    <change idref="t134" from="t38" from-position="4" resolved="yes">
+      <change idref="t134" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t134" attribute="internalPrerequisitesString" type="string" to="91FS"/>
+      <change idref="t134" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}"/>
+      <change idref="t134" attribute="title" type="string" to="Virtual Machines for installation"/>
+    </change>
+    <change idref="t91" from="t38" from-position="3" resolved="yes">
+      <change idref="t91" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t91" attribute="internalPrerequisitesString" type="string" to="74FS"/>
+      <change idref="t91" attribute="styleDict" type="dict" to="{
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}"/>
+      <change idref="t91" attribute="title" type="string" to="Output to sqlite"/>
+    </change>
+    <change idref="t74" attribute="title" type="string" from="Reading gzipped fields" to="Benchmarking tools" resolved="yes"/>
+    <change idref="t76" attribute="title" type="string" from="Pop up window for detector description" to="Overimposing fields" resolved="yes"/>
+    <change idref="t77" attribute="title" type="string" from="Redesign Generator Tab" to="Geant4 scorers" resolved="yes"/>
+    <change idref="t108" attribute="title" type="string" from="Python API Implementation" to="Calorimeter parameterization / bias" resolved="yes"/>
+    <change idref="t131" attribute="title" type="string" from="Release 2.8" to="Release 3.1" resolved="yes"/>
+    <change idref="t141" attribute="title" type="string" from="GEMC Publish" to="GEMC Paper" resolved="yes"/>
   </task-change-set>
 </changelog>

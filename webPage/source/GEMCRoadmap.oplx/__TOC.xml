@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="2635" y="126" w="2389" h="1267">
+  <window x="480" y="61" w="1603" h="938">
     <editing-scenario>lJ9YoVH2ibY</editing-scenario>
     <view>task</view>
     <overview/>
@@ -9,15 +9,15 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>464</split-view-divider-position>
-      <outline x="0" y="45" w="464" h="1111">
+      <outline x="0" y="809" w="464" h="782">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="332"/>
         <column name="Effort" width="87"/>
-        <expanded-items idrefs="t27 t13 t42 t81 t137 t38 t22 t141 t34 t131 t1"/>
-        <selected-items-at-filter-time idrefs="t66 t24 t17 t138 t152 t59 t31 t81 t18 t131 t32 t74 t25 t75 t26 t19 t76 t34 t90 t27 t91 t77 t42 t35 t133 t29 t36 t105 t148 t4 t86 t5 t134 t141 t45 t38 t52 t6 t7 t106 t149 t88 t95 t8 t46 t11 t9 t135 t96 t142 t107 t97 t20 t13 t143 t136 t150 t98 t70 t108 t71 t22 t64 t144 t151 t137 t23 t16 t109 t30"/>
+        <expanded-items idrefs="t13 t81 t42 t38 t131 t141 t1"/>
+        <selected-items-at-filter-time idrefs="t143 t166 t81 t66 t109 t74 t155 t59 t178 t90 t144 t75 t167 t133 t91 t156 t76 t179 t77 t168 t134 t180 t157 t11 t86 t169 t135 t20 t95 t158 t181 t13 t88 t170 t96 t136 t22 t159 t97 t30 t171 t23 t98 t148 t31 t160 t137 t16 t24 t32 t17 t149 t172 t25 t161 t18 t138 t26 t150 t34 t173 t19 t42 t27 t35 t162 t105 t151 t36 t174 t29 t52 t163 t45 t106 t152 t38 t175 t46 t141 t4 t70 t5 t107 t176 t6 t71 t142 t7 t165 t64 t8 t108 t131 t154 t9 t177"/>
       </outline>
-      <gantt-view x="294" y="45" w="1924" h="1111">
+      <gantt-view x="939" y="809" w="1138" h="782">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -123,7 +123,7 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>154</next-task-id>
+    <next-task-id>182</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="lJ9YoVH2ibY" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="false" seconds="false"/>
