@@ -15,24 +15,24 @@ GEMC Roadmap
 GEMC 2.4 - June 2016 ✅
 -----------------------
 
-- Using new geant4 10.2. ✅
+- Using new geant4 10.2✅
 
-- Magnetic Field interpolations. ✅
+- Magnetic Field interpolations✅
 
-- Field map attributes. ✅
+- Field map attributes✅
 
 
-- **Noise generator mechanism**: possibility to add custom noise/hot channels to detector response. ✅
+- **Noise generator mechanism**: possibility to add custom noise/hot channels to detector response✅
 
-- Option: by giving a volume name, change its material to a new material. ✅
+- Option: by giving a volume name, change its material to a new material✅
 
-- Option: by giving a material name, change all volume with that material to a material. ✅
+- Option: by giving a material name, change all volume with that material to a material✅
 
-- Neutrons cosmic ray model. ✅
+- Neutrons cosmic ray model✅
 
-- Option to force radiative decay of muons. ✅
+- Option to force radiative decay of muons✅
 
-- Remove sensitivity option. ✅
+- Remove sensitivity option✅
 
 
 
@@ -45,7 +45,7 @@ GEMC 2.5 - September 2016
 
 - Accelerator Sync Bank ✅
 
-- **Translation tables mechanism**: from detector identifier to crate/slot/channel. ✅
+- **Translation tables mechanism**: from detector identifier to crate/slot/channel✅
 
 - gstring namespace library ✅
 
@@ -56,7 +56,7 @@ GEMC 2.5 - September 2016
 
     - A user-defined **voltage** function produces a voltage value for a given asked time ✅
 
-- Output format to match the FADC composite banks of the JLab data acquisition group. ✅
+- Output format to match the FADC composite banks of the JLab data acquisition group✅
 
 - GDML factory ✅
 
@@ -71,27 +71,27 @@ GEMC 2.6 - Jun 2017
 
 - Magnetic field info in MHit ✅
 
-- Add Birk Constant. ✅
+- Add Birk Constant✅
 
-- Add Mirror Optical Smearing Alpha. ✅
+- Add Mirror Optical Smearing Alpha ✅
 
-- Fast MC mode and track smearing. ✅
+- Fast MC mode and track smearing ✅
 
-- Beagle event generator. ✅
+- Beagle event generator✅
 
-- GFLUX hittype to record photons. ✅
+- GFLUX hittype to record photons ✅
 
-- Detectors Test Template. ✅
+- Detectors Test Template ✅
 
 - Pop up window for detector description ✅
 
-- **Python API** implementation. ✅
+- **Python API** implementation ✅
 
 - Add / Remove axis in GUI
 
-- Culling options combobox.
+- Culling options combobox
 
-- Add physical volume constructor - active rotations.
+- Add physical volume constructor - active rotations
 
 - User requests:
 
@@ -106,63 +106,61 @@ GEMC 2.6 - Jun 2017
 GEMC 3.0.beta1 - Dec 2017
 -------------------------
 
+- **Geant4 multithreading**
+
 - Option library ✅
 
-- Match detector types to geant4. ✅
+- Match detector types to geant4 ✅
 
 - Splash Screen library ✅
 
 - Run Action ✅
 
-- gvolume definitions and factories ✅
+- GEMC volumes definitions and factories ✅
 
 - MT G4Cout redirections ✅
 
-- **Geant4 multithreading**.
+- Geant4 volumes factories
 
-- geant4 volumes factories
+- **touchable** library
 
-- Refurbish GUI
+- Constants mechanism
 
-- Identifier to **touchable** library.
+- **Digitization plugins**
 
-- Digitization Constants mechanism
-
-- **Digitization routines as plugins**
+- GUI Refurbish
 
 - Event generation library / factories / plugin
 
-- Implementation of Replicas and Divisions.
+- GUI Generator
 
-- Redesign GUI Generator Tab
+- Output factories / plugins
+
+- Replicas and Divisions
 
 - Multihit TDC
 
 - Read Gzipped field maps
 
-- API to sqlite
+- API to sqlite / mysql
 
-- Re-define and document all verbosities.
-
-- Output format factories / plugins.
-
-- Support for **proMC** format for event generation.
+- **proMC** support
 
 
 GEMC 3.1 - June 2018
 ------------------------
 
-- Geant4 **parallel worlds**.
+- **parallel worlds**
 
-- Particles color map option.
+- Particles color map option
 
 - Geant4 scorers
 
-- RPM / Linux Tarballs.
+- RPM / Linux Tarballs
 
-- Virtual Machines / docker for installation.
+- Virtual Machines / Docker support
 
-- Overimposing magnetic fields
+- Overimposing fields
 
 
 
