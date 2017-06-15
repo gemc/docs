@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="50" y="89" w="1603" h="938">
+  <window x="121" y="356" w="3383" h="938">
     <editing-scenario>lJ9YoVH2ibY</editing-scenario>
     <view>task</view>
     <overview/>
@@ -9,15 +9,15 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>464</split-view-divider-position>
-      <outline x="0" y="855" w="464" h="782">
+      <outline x="0" y="660" w="464" h="782">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="332"/>
         <column name="Effort" width="87"/>
-        <expanded-items idrefs="t13 t81 t42 t38 t131 t141 t1"/>
-        <selected-items-at-filter-time idrefs="t166 t180 t66 t17 t59 t152 t188 t81 t18 t131 t167 t174 t74 t75 t19 t189 t76 t168 t182 t175 t77 t42 t176 t190 t183 t169 t148 t162 t4 t155 t5 t141 t184 t6 t191 t45 t38 t52 t7 t106 t149 t95 t156 t8 t170 t11 t177 t142 t185 t9 t96 t178 t157 t171 t97 t20 t13 t150 t179 t186 t98 t70 t143 t108 t158 t165 t172 t64 t71 t144 t187 t151 t16 t173"/>
+        <expanded-items idrefs="t13 t42 t81 t38 t131 t141 t1"/>
+        <selected-items-at-filter-time idrefs="t166 t173 t66 t17 t59 t152 t74 t81 t131 t174 t167 t18 t75 t19 t76 t168 t175 t77 t42 t190 t176 t169 t162 t4 t155 t148 t5 t141 t177 t45 t52 t38 t191 t6 t7 t106 t156 t95 t170 t8 t11 t149 t9 t178 t96 t142 t157 t171 t97 t20 t13 t150 t143 t179 t98 t70 t108 t165 t172 t158 t64 t71 t144 t151 t16 t180"/>
       </outline>
-      <gantt-view x="737" y="855" w="1138" h="782">
+      <gantt-view x="179" y="660" w="2918" h="782">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -49,7 +49,7 @@
         <task-bar-label task-type="task" position="right">
           <key>Assigned</key>
         </task-bar-label>
-        <scale scale-name="Automatic" full-day-width="12.1443">
+        <scale scale-name="Automatic" full-day-width="14.1534">
           <selected/>
         </scale>
         <scale scale-name="Day" full-day-width="1215"/>
@@ -70,7 +70,7 @@
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="5348" y="0" w="1268" h="782">
+      <timeline x="5764" y="0" w="1268" h="782">
         <offtime-display>none</offtime-display>
         <task-bar-label task-type="group" position="left">
           <key>Title</key>

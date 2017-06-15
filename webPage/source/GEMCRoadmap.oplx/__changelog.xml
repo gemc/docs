@@ -1178,4 +1178,7 @@
     };
 }" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2017-06-14T18:41:06.446Z" timestamp="2017-06-14T18:41:06.446Z">
+    <change idref="t170" attribute="effort" type="real" from="2880000" to="1440000"/>
+  </task-change-set>
 </changelog>
