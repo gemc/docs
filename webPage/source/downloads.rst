@@ -3,7 +3,7 @@
 
 .. _downloads:
 
-GEMC Dowloads
+GEMC Downloads
 =============
 
 .. |download2.6at10| image:: download-button.png
