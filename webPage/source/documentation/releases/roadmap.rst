@@ -86,9 +86,9 @@ GEMC 2.6 - July 2017
 
 - **Python API** implementation ✅
 
-- Add / Remove axis in GUI
+- Add / Remove axis in GUI ✅
 
-- Culling options combobox
+- Culling options combobox ✅
 
 - Add physical volume constructor - active rotations
 
@@ -99,6 +99,7 @@ GEMC 2.6 - July 2017
   - luminosity spread of particle in time
   - 3d field map
 
+- Multi-hit TDC
 
 
 

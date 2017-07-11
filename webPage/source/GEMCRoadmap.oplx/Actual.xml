@@ -315,6 +315,7 @@
     <child-task idref="t156"/>
     <child-task idref="t157"/>
     <child-task idref="t158"/>
+    <child-task idref="t192"/>
     <style>
       <value key="font-size">18</value>
       <value key="gantt-completion-color">
@@ -756,6 +757,7 @@
   <task id="t155">
     <title>Axis GUI API</title>
     <effort>144000</effort>
+    <effort-done>144000</effort-done>
     <start-constraint-date>2017-06-09T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
@@ -771,6 +773,7 @@
   <task id="t156">
     <title>Culling option API</title>
     <effort>144000</effort>
+    <effort-done>144000</effort-done>
     <start-constraint-date>2017-06-19T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
@@ -883,7 +886,7 @@
   <task id="t168">
     <title>Geant4 multithreading</title>
     <effort>5760000</effort>
-    <effort-done>1151999.875</effort-done>
+    <effort-done>1727999.89700317</effort-done>
     <start-constraint-date>2017-04-06T12:00:00.000Z</start-constraint-date>
     <style>
       <value key="gantt-completion-color">
@@ -898,7 +901,7 @@
   <task id="t169">
     <title>Geant4 volume factories</title>
     <effort>864000</effort>
-    <effort-done>143999.984375</effort-done>
+    <effort-done>518399.969100952</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.23228" g="0.92539" b="0.472862"/>
@@ -926,6 +929,7 @@
   <task id="t171">
     <title>Touchable library</title>
     <effort>576000</effort>
+    <effort-done>57599.9965667725</effort-done>
     <style>
       <value key="gantt-completion-color">
         <color r="0.23228" g="0.92539" b="0.472862"/>
@@ -1078,6 +1082,19 @@
       </value>
     </style>
     <prerequisite-task idref="t20"/>
+  </task>
+  <task id="t192">
+    <title>Multi hit TDC</title>
+    <effort>288000</effort>
+    <style>
+      <value key="gantt-completion-color">
+        <color r="0.223451" g="0.890216" b="0.454889"/>
+      </value>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t158"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>
