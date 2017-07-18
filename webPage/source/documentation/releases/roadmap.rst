@@ -136,6 +136,10 @@ GEMC 3.0.beta1 - Dec 2017. 3.0 May 2018
 
 - Output factories / plugins
 
+- ROOT Output
+
+- Excel Output
+
 - Replicas and Divisions
 
 - Multihit TDC

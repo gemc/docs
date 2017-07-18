@@ -201,28 +201,8 @@
   <task-change-set user="Maurizio Ungaro" date="2017-06-14T18:41:06.446Z" timestamp="2017-06-14T18:41:06.446Z">
     <change idref="t170" attribute="effort" type="real" from="2880000" to="1440000"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2017-07-11T14:52:39.204Z" timestamp="2017-07-11T14:52:39.204Z">
-    <change idref="t192" to="t42" to-position="14" resolved="yes">
-      <change idref="t192" attribute="effort" type="real" from="28800" to="288000"/>
-      <change idref="t192" attribute="internalPrerequisitesString" type="string" to="158FS"/>
-      <change idref="t192" attribute="styleDict" type="dict" to="{
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-    &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.278431&quot;;
-        g = &quot;0.721569&quot;;
-        r = &quot;0.8&quot;;
-    };
-}"/>
-      <change idref="t192" attribute="title" type="string" to="Multi hit TDC"/>
-    </change>
-    <change idref="t155" attribute="internalEffortDone" type="real" from="0" to="144000" resolved="yes"/>
-    <change idref="t156" attribute="internalEffortDone" type="real" from="0" to="144000" resolved="yes"/>
-    <change idref="t168" attribute="internalEffortDone" type="real" from="1151999.875" to="1727999.897003174" resolved="yes"/>
-    <change idref="t169" attribute="internalEffortDone" type="real" from="143999.984375" to="518399.9691009521" resolved="yes"/>
-    <change idref="t171" attribute="internalEffortDone" type="real" from="0" to="57599.99656677246" resolved="yes"/>
+  <task-change-set user="Maurizio Ungaro" date="2017-07-18T12:53:54.738Z" timestamp="2017-07-18T12:53:54.738Z">
+    <change idref="t179" attribute="title" type="string" from="Output factories / plugins" to="Output plugins: ROOT/Excel" resolved="yes"/>
+    <change idref="t179" attribute="effort" type="real" from="576000" to="720000" resolved="yes"/>
   </task-change-set>
 </changelog>
