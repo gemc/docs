@@ -3,7 +3,7 @@
 Generating ions
 ---------------
 
-ions can be generated with the options ION_P to sets Z, A and Charge State of the primary particle. Setting the charge state is optional.
+ions can be generated with the options ION_P [#]_ to sets Z, A and Charge State of the primary particle. Setting the charge state is optional.
 
 - Example 1: -ION_P="6 12" sets the Z to 6, A to 12. Charge will be Z.
 - Example 2: -ION_P="6 12 4" sets the Z to 6, A to 12, and charge to 4.
