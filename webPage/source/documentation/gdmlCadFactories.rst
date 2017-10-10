@@ -27,7 +27,7 @@ you would add the following lines in the gcard::
  <detector name="beamline" factory="CAD"/>
 
 Notice you do not need the variation tag for the GDML and CAD detector factories.
-
+If you import the models in this way, you will not be able to assign attributes to them.
 
 Importing CAD models from a directory
 -------------------------------------
@@ -43,16 +43,17 @@ Only files with these extensions will be loaded: ".stl" or ".ply" or ".obj". Any
 GEMC attributes to models
 --------------------------
 
-Attributes can be added on the fly. This includes:
+Attributes can be assigned when models are imported from a directory. This includes:
 
  - material
  - visualization attributes (color, surface style)
  - sensitivity
 
-Attributes are assigned by using XML files (extension: ".gxml"). For example the following line will change
-the color, material of an imported volume named "target" and assign flux sensitivity so that hits can be recorded::
+Attributes are assigned by using an XML file "cad.gxml" inside the directory dedicated to the models.
+For example the following line in a cad.gxml inside the directory "beamline" will change
+the color, material of an imported volume named "vacuumLine" and assign flux sensitivity so that hits can be recorded::
 
- <volume name="target" color="99ff00" material="G4_Pb" sensitivity="flux" identifiers="id manual 1"/>
+ <volume name="vacuumLine" color="99ff00" material="G4_Pb" sensitivity="flux" identifiers="id manual 1"/>
 
 
 
