@@ -14,9 +14,6 @@ GEMC Downloads
 	:width: 110pt
 	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.5.dmg
 
-.. |download2.4at10| image:: download-button.png
-	:width: 110pt
-	:target: http://jlab.org/12gev_phys/packages/dmg/gemc-2.4.dmg
 
 
 
@@ -25,31 +22,16 @@ GEMC Downloads
 +--------------+------------------+----------+--------------------+
 |   Version    |  OS Version      |   Size   |                    |
 +--------------+------------------+----------+--------------------+
+|   **2.6**    |    10.10 and up  |  498 MB  | |download2.6at10|  |
++--------------+------------------+----------+--------------------+
 |   **2.5**    |    10.10 and up  |  498 MB  | |download2.5at10|  |
 +--------------+------------------+----------+--------------------+
-|   **2.4**    |    10.10 and up  |  484 MB  | |download2.4at10|  |
-+--------------+------------------+----------+--------------------+
 
 
 
-
-Geometry Downloads
-------------------
-`text factory experiment tarball <http://jlab.org/12gev_phys/packages/gcards/experiments.tar>`_.
-Includes the clas12 detectors, the hps beamline, the cebaf bubble experiment, the bdx setup, beamline and detectors of the electron-ion colloider (eic).
-
-
-Events:
+LUND Events sample:
 -------
 `10 Deep Inelastic Scattering events in LUND format <http://jlab.org/12gev_phys/packages/gcards/dis.dat>`_
-
-
-GCards:
--------
-`CLAS12 Experimental setup <http://jlab.org/12gev_phys/packages/gcards/clas12.php>`_
-
-`HPS Experimental setup <http://jlab.org/12gev_phys/packages/gcards/hps.php>`_
-
 
 
 Running the GEMC app on a mac
