@@ -11,16 +11,6 @@ Installing gemc on a Mac using the DMG
 gemc can be installed on apple computers using the dmg found in :ref:`gemc downloads <downloads>`.
 
 
-Installing gemc on Linux using the tarball
-------------------------------------------
-Coming soon!
-
-
-Installing gemc on Windows 10
------------------------------
-This is expected to happen in Winter 2016.
-
-
 
 .. _installFromScratch:
 
