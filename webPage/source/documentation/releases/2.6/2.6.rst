@@ -1,0 +1,42 @@
+:orphan:
+
+.. _2.6:
+
+###########
+Release 2.6
+###########
+
+Libraries Version
+-----------------
+
+- geant4: 4.10.03.p02
+- qt: 5.8.0
+- clhep: 2.3.4.5
+
+MLibrary
+--------
+
+The mlibrary is a collection of highly optimized, specialized
+stand-alone c++ 11 libraries that fashion gemc into a object oriented framework.
+
+Some functionality of gemc 2.X is being replaced by these libraries. Others are being prepared
+for release 3.0.
+
+The documentation for the mlibrary can be found :ref:`here <mlibrary>`.
+
+Processes Catalogue
+-------------------
+ - added anti_neutronInelastic
+
+
+Additional Options
+------------------
+- added option SKIPNGEN to skip N generated events
+
+
+|
+
+For the complete list of all changes please visit the `changelog <../changelog.html>`_.
+
+
+
