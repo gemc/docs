@@ -1245,57 +1245,8 @@
     <change idref="t214" attribute="internalPrerequisitesString" type="string" from="213FS" to="212FS" resolved="yes"/>
     <change idref="t215" attribute="effort" type="real" from="144000" to="2880000" resolved="yes"/>
   </task-change-set>
-  <task-change-set user="Maurizio Ungaro" date="2018-03-08T20:10:38.599Z" timestamp="2018-03-08T20:10:38.599Z">
-    <change idref="t42" from="t-1" from-position="2" resolved="yes">
-      <change idref="t42" attribute="internalPrerequisitesString" type="string" to="81FS"/>
-      <change idref="t42" attribute="isGroup" type="real" from="0" to="1"/>
-      <change idref="t42" attribute="styleDict" type="dict" to="{
-    &quot;font-size&quot; = 18;
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-}"/>
-      <change idref="t42" attribute="taskType" type="real" from="0" to="2"/>
-      <change idref="t42" attribute="title" type="string" to="Release 2.6"/>
-    </change>
-    <change idref="t81" from="t-1" from-position="1" resolved="yes">
-      <change idref="t81" attribute="internalPrerequisitesString" type="string" to="1FS"/>
-      <change idref="t81" attribute="isGroup" type="real" from="0" to="1"/>
-      <change idref="t81" attribute="noEarlierThanConstraintDate" type="date" to="2016-06-17T12:00:00.000Z"/>
-      <change idref="t81" attribute="styleDict" type="dict" to="{
-    &quot;font-size&quot; = 18;
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-    &quot;gantt-fill-color&quot; =     {
-        b = &quot;0.301961&quot;;
-        g = &quot;0.301961&quot;;
-        r = &quot;0.847059&quot;;
-    };
-}"/>
-      <change idref="t81" attribute="taskType" type="real" from="0" to="2"/>
-      <change idref="t81" attribute="title" type="string" to="Release 2.5"/>
-    </change>
-    <change idref="t1" from="t-1" from-position="0" resolved="yes">
-      <change idref="t1" attribute="isGroup" type="real" from="0" to="1"/>
-      <change idref="t1" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-27T12:00:00.000Z"/>
-      <change idref="t1" attribute="styleDict" type="dict" to="{
-    &quot;font-size&quot; = 18;
-    &quot;gantt-completion-color&quot; =     {
-        b = &quot;0.454889&quot;;
-        g = &quot;0.890216&quot;;
-        r = &quot;0.223451&quot;;
-    };
-}"/>
-      <change idref="t1" attribute="taskType" type="real" from="0" to="2"/>
-      <change idref="t1" attribute="title" type="string" to="Release 2.4"/>
-    </change>
-    <change idref="t222" attribute="internalPrerequisitesString" type="string" from="247FS" resolved="yes"/>
-    <change idref="t244" from="t222" from-position="1" resolved="yes">
+  <task-change-set user="Maurizio Ungaro" date="2018-03-08T20:05:37.868Z" timestamp="2018-03-08T20:05:37.868Z">
+    <change idref="t244" from="t222" from-position="1">
       <change idref="t244" attribute="effort" type="real" from="28800" to="576000"/>
       <change idref="t244" attribute="internalPrerequisitesString" type="string" to="243FS"/>
       <change idref="t244" attribute="noEarlierThanConstraintDate" type="date" to="2018-04-25T12:00:00.000Z"/>
@@ -1313,7 +1264,7 @@
 }"/>
       <change idref="t244" attribute="title" type="string" to="User requests on magnetic field"/>
     </change>
-    <change idref="t255" to="t222" to-position="2" resolved="yes">
+    <change idref="t255" to="t222" to-position="2">
       <change idref="t255" attribute="effort" type="real" from="28800" to="288000"/>
       <change idref="t255" attribute="internalPrerequisitesString" type="string" to="246FS"/>
       <change idref="t255" attribute="noEarlierThanConstraintDate" type="date" to="2018-05-29T12:00:00.000Z"/>
@@ -1331,7 +1282,7 @@
 }"/>
       <change idref="t255" attribute="title" type="string" to="Dipole map with reflection symmetry"/>
     </change>
-    <change idref="t256" to="t222" to-position="3" resolved="yes">
+    <change idref="t256" to="t222" to-position="3">
       <change idref="t256" attribute="effort" type="real" from="28800" to="288000"/>
       <change idref="t256" attribute="internalPrerequisitesString" type="string" to="255FS"/>
       <change idref="t256" attribute="noEarlierThanConstraintDate" type="date" to="2018-06-25T12:00:00.000Z"/>
@@ -1349,7 +1300,7 @@
 }"/>
       <change idref="t256" attribute="title" type="string" to="Shift and rotate field options"/>
     </change>
-    <change idref="t257" to="t222" to-position="4" resolved="yes">
+    <change idref="t257" to="t222" to-position="4">
       <change idref="t257" attribute="effort" type="real" from="28800" to="288000"/>
       <change idref="t257" attribute="internalPrerequisitesString" type="string" to="256FS"/>
       <change idref="t257" attribute="noEarlierThanConstraintDate" type="date" to="2018-07-19T12:00:00.000Z"/>
@@ -1367,7 +1318,87 @@
 }"/>
       <change idref="t257" attribute="title" type="string" to="Luminosity spread of particle in time"/>
     </change>
-    <change idref="t246" attribute="internalPrerequisitesString" type="string" from="244FS" to="243FS" resolved="yes"/>
-    <change idref="t246" attribute="noEarlierThanConstraintDate" type="date" from="2018-06-07T12:00:00.000Z" to="2018-04-18T12:00:00.000Z" resolved="yes"/>
+    <change idref="t246" attribute="internalPrerequisitesString" type="string" from="244FS" to="243FS"/>
+    <change idref="t246" attribute="noEarlierThanConstraintDate" type="date" from="2018-06-07T12:00:00.000Z" to="2018-04-18T12:00:00.000Z"/>
+  </task-change-set>
+  <task-change-set user="Maurizio Ungaro" date="2018-03-08T20:10:07.405Z" timestamp="2018-03-08T20:10:07.405Z">
+    <change idref="t141" from="t-1" from-position="7" resolved="yes">
+      <change idref="t141" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t141" attribute="noEarlierThanConstraintDate" type="date" to="2017-07-11T12:00:00.000Z"/>
+      <change idref="t141" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.0600497&quot;;
+        g = 0;
+        r = &quot;0.888449&quot;;
+    };
+}"/>
+      <change idref="t141" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t141" attribute="title" type="string" to="GEMC Paper"/>
+    </change>
+    <change idref="t38" from="t-1" from-position="6" resolved="yes">
+      <change idref="t38" attribute="internalPrerequisitesString" type="string" to="131FS"/>
+      <change idref="t38" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t38" attribute="noEarlierThanConstraintDate" type="date" to="2019-10-11T12:00:00.000Z"/>
+      <change idref="t38" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.454889&quot;;
+        g = &quot;0.890216&quot;;
+        r = &quot;0.223451&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}"/>
+      <change idref="t38" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t38" attribute="title" type="string" to="Release 3.2"/>
+    </change>
+    <change idref="t131" from="t-1" from-position="5" resolved="yes">
+      <change idref="t131" attribute="internalPrerequisitesString" type="string" to="216FS"/>
+      <change idref="t131" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t131" attribute="noEarlierThanConstraintDate" type="date" to="2019-04-29T12:00:00.000Z"/>
+      <change idref="t131" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.472862&quot;;
+        g = &quot;0.92539&quot;;
+        r = &quot;0.23228&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.959013&quot;;
+        g = &quot;0.938222&quot;;
+        r = &quot;0.141979&quot;;
+    };
+}"/>
+      <change idref="t131" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t131" attribute="title" type="string" to="Release 3.1"/>
+    </change>
+    <change idref="t196" from="t-1" from-position="4" resolved="yes">
+      <change idref="t196" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t196" attribute="noEarlierThanConstraintDate" type="date" to="2017-01-30T13:00:00.000Z"/>
+      <change idref="t196" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 18;
+    &quot;gantt-completion-color&quot; =     {
+        b = &quot;0.472862&quot;;
+        g = &quot;0.92539&quot;;
+        r = &quot;0.23228&quot;;
+    };
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.301961&quot;;
+        g = &quot;0.301961&quot;;
+        r = &quot;0.847059&quot;;
+    };
+}"/>
+      <change idref="t196" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t196" attribute="title" type="string" to="Release 3.0"/>
+    </change>
   </task-change-set>
 </changelog>

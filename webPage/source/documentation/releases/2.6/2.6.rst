@@ -24,14 +24,81 @@ for release 3.0.
 
 The documentation for the mlibrary can be found :ref:`here <mlibrary>`.
 
+
+FAST MC Mode
+-------------
+- FASTMCMODE option:
+
+ - 0: No FASTMC (default).
+ - 1: Disable secondaries (5m production cut) and set high (5m) max step in sensitive detectors
+ - 2: Disable all physics but transportation.
+
+More details on the FAST MC mode can be found :ref:`here <fastMCMode>`.
+
 Processes Catalogue
 -------------------
- - added anti_neutronInelastic
+- added anti_neutronInelastic
+- added Scintillation in the process catalogue. Added verbosity condition to print not catalogue pro
+- added ionInelastic process
 
 
 Additional Options
 ------------------
 - added option SKIPNGEN to skip N generated events
+
+Various
+-------
+- added magnetic field information in MHit. This will give access to it to all sensitive detector hit process routines.
+- loading field info in MHit
+- Added vacuumOpt material - vacuum with optical property. Addressing issue #64.
+- making cameras slices more responsive
+- added culling combo option in the GUI
+- added button to show 100cm long axes
+
+Physics
+-------
+- added Birk Constant properties in material factory
+- added reading mirrors Sigma Alpha. Fixed backward compatibility for materials.
+- adding property sigmaAlpha in optical surfaces
+- added Birk Constant properties in material factory
+- addded mirror sigmaAlpha in verbosity log
+- added detector threshold variable detectorThreshold that can be set and used in the digitization routine in conjuction with writeHit
+- added option G4FIELDCACHESIZE to set the geant4 field cache size.
+- added G4SynchrotronRadiation process, off by default, activated with option SYNRAD
+- added G4SynchrotronRadiationInMat. SYNRAD option activate that one if it is set to 2.
+
+
+Generator
+---------
+- if one uses the /gun/particle /gun/ion command then we make sure not to overwrite those values
+- added option ION_P:
+  Option ION_P: Primary particle is an ion. Sets Z, A and Charge State of the primary particle. Setting the charge state is optional.
+
+ - Example 1: -ION_P="6 12" sets the Z to 6, A to 12. Charge will be Z.
+ - Example 2: -ION_P="6 12 4" sets the Z to 6, A to 12, and charge to 4.
+ - Notice: BEAM_P still sets the particle momentum, and its type must be GenericIon. For example:
+
+ -BEAM_P="GenericIon, 4*GeV, 90*deg, 0*deg"
+
+- added beagle open file in primary generator for ascii
+- stopping run manager if no more events in the LUND or BEAGLE format
+- routine to set generated particle from input file more general
+- M. Holtrop: fixed vertex spread
+
+- added optional argument (appended at the end) to BEAM_P: "KE" can specify that the momentum is kinematic energy instead.
+  For example, to simulate a K=250 MeV proton::
+
+-BEAM_P="proton, 250*MeV, 90*deg, 90*deg, KE"
+
+
+FADC Mode 1
+-----------
+- 1st version of FADC Mode1 output
+
+
+Background Merging
+------------------
+- option to load background hits from ascii file: for example random trigger hits from a real experiment
 
 
 |
