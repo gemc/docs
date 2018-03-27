@@ -70,7 +70,7 @@ Physics
 - added reading mirrors Sigma Alpha. Fixed backward compatibility for materials.
 - adding property sigmaAlpha in optical surfaces
 - added Birk Constant properties in material factory
-- addded mirror sigmaAlpha in verbosity log
+- added mirror sigmaAlpha in verbosity log
 - added detector threshold variable detectorThreshold that can be set and used in the digitization routine in conjuction with writeHit
 - added option G4FIELDCACHESIZE to set the geant4 field cache size.
 - added G4SynchrotronRadiation process, off by default, activated with option SYNRAD
