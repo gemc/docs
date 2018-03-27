@@ -43,7 +43,7 @@ Processes Catalogue
 
 Hit rejection mechanism
 -----------------------
-- added a boolean variable in the digitization hit process. It can be set to false to skip saving a hit to disk. Examples of reasons:
+- added a boolean variable "rejectHitConditions" in the digitization hit process. It can be set to false to skip saving a hit to disk. Examples of reasons:
 
   - threshold
   - inefficiency
@@ -71,7 +71,6 @@ Physics
 - adding property sigmaAlpha in optical surfaces
 - added sigmaAlpha in verbosity log
 - added Birk Constant properties in material factory
-- added detector threshold variable detectorThreshold that can be set and used in the digitization routine in conjuction with writeHit
 - added option G4FIELDCACHESIZE to set the geant4 field cache size.
 - added G4SynchrotronRadiation process, off by default, activated with option SYNRAD
 - added G4SynchrotronRadiationInMat. SYNRAD option activate that one if it is set to 2.
@@ -85,14 +84,18 @@ Generator
 
  - Example 1: -ION_P="6 12" sets the Z to 6, A to 12. Charge will be Z.
  - Example 2: -ION_P="6 12 4" sets the Z to 6, A to 12, and charge to 4.
- - Notice: BEAM_P still sets the particle momentum, and its type must be GenericIon. For example:
+
+
+Notice: BEAM_P still sets the particle momentum, and its type must be GenericIon. For example::
 
  -BEAM_P="GenericIon, 4*GeV, 90*deg, 0*deg"
+
 
 - added beagle open file in primary generator for ascii
 - stopping run manager if no more events in the LUND or BEAGLE format
 - routine to set generated particle from input file more general
-- M. Holtrop: fixed vertex spread
+- Maurik Holtrop: fixed vertex spread
+
 
 - added optional argument (appended at the end) to BEAM_P: "KE" can specify that the momentum is kinematic energy instead.
   For example, to simulate a K=250 MeV proton::
