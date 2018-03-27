@@ -41,6 +41,15 @@ Processes Catalogue
 - added Scintillation in the process catalogue. Added verbosity condition to print not catalogue pro
 - added ionInelastic process
 
+Hit rejection mechanism
+-----------------------
+- added a boolean variable in the digitization hit process. It can be set to false to skip saving a hit to disk. Examples of reasons:
+
+  - threshold
+  - inefficiency
+  - bad status
+  - voltage was turned off
+
 
 Additional Options
 ------------------
