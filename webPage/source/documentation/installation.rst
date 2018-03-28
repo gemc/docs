@@ -38,7 +38,7 @@ Some experiment's geometry, materials, fields etc can also be downloaded from th
 Gemc source code (github)
 -------------------------
 
-If you have the dependencies libraries above and environment already installed you can simply get the gemc
+If you have the dependencies above and environment already installed you can simply get the gemc
 `source code from github <https://github.com/gemc/source>`_ and type::
 
  cd source
