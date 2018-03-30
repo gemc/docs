@@ -6,7 +6,7 @@
 #source $JLAB_ROOT/$JLAB_VERSION/ce/jlab.csh keepmine
 
 # looks like setting DYLD_LIBRARY_PATH is enough. But gemc is found, how?
+# not needed in path: root, banks
 
-setenv DYLD_LIBRARY_PATH /opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/root/6.12.06/lib/root:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/root/6.12.06/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/qt/5.9.1/5.9.1/clang_64/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/mysql/lib:/opt/projects/mlibrary/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/geant4/4.10.03.p02/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/evio/5.1/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/clhep/2.3.4.5/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.0.0/ccdb/ccdb-1.06.02/lib:/opt/projects/banks/lib:
-
+setenv DYLD_LIBRARY_PATH /opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.1.0/xercesc/3.2.0/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.1.0/qt/5.9.1/5.9.1/clang_64/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.1.0/mysql/lib:/opt/projects/mlibrary/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.1.0/geant4/4.10.03.p02/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.1.0/evio/5.1/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.1.0/clhep/2.3.4.5/lib:/opt/jlab_software/2.2/Darwin_macosx10.13-x86_64-clang9.1.0/ccdb/ccdb-1.06.02/lib:
 gemc -help-html ; mv options.html allOptions.html
