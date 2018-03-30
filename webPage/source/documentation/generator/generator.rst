@@ -1,9 +1,9 @@
 
 .. _generator:
 
-#########
-Generator
-#########
+##########
+Generators
+##########
 
 This document describes how to generate events in gemc.
 

@@ -64,7 +64,7 @@ Adapted from Agogo style
 			<br>
 		{%- block latestnews %}
 		{% if pagename == 'index' %}
-			<h3>{{ _('Latest News') }}<br></h3>
+			<h3>{{ _('In the News') }}<br></h3>
 			<object type="text/html" height="350" data="{{ pathto('latestNews') }}" border="0" ></object>
 			<br> <br> <br>
 			
@@ -75,19 +75,19 @@ Adapted from Agogo style
 			<br>
 
 			<br>
-			<h3>{{ _('GEMC Releases') }}<br></h3>
-         <a href="documentation/releases/roadmap.html">      GEMC Roadmap</a><br>
-			<a href="documentation/releases/releaseNotes.html"> GEMC Releases</a><br>
-			<a href="documentation/releases/changelog.html">    Complete Changelog</a><br>
-			<a href="https://github.com/gemc/source" target="_">Gemc on GitHub</a>
+			<h3>{{ _('Software') }}<br></h3>
+			<a href="documentation/releases/roadmap.html">      Roadmap</a><br>
+			<a href="documentation/releases/releaseNotes.html"> Releases</a><br>
+			<a href="documentation/releases/changelog.html">    Changelog</a><br>
+			<a href="https://github.com/gemc/source" target="_">GitHub Repo</a>
 			<br>
 
 			<br>
 			<h3>{{ _('About') }}<br></h3>
 			<a href="https://groups.google.com/forum/#!forum/g_e_m_c">  Gemc: mailing list / forum</a><br>
 			<a href="">                                                 Gemc: the origin</a><br>
-			<a href="mailto:ungaro@jlab.org?subject=About%20gemc">      Email Maurizio</a>
-			<a href="https://userweb.jlab.org/~ungaro/mauripage/html/index.html"> Maurizio Home Page</a>
+			<a href="mailto:ungaro@jlab.org?subject=About%20gemc">      Email Mauri</a><br>
+			<a href="https://userweb.jlab.org/~ungaro/mauripage/html/index.html"> Mauri's Home Page</a>
 
 		{% endif %}
 		{% if pagename.startswith("documentation") %}
@@ -118,7 +118,7 @@ Adapted from Agogo style
 <div class="footer-wrapper">
 	<div class="footer">
 		<div class="center">
-			{{ _('2017 GEMC - Maurizio Ungaro') }}
+			{{ _('2018 GEMC - Maurizio Ungaro') }}
 		</div>
 	</div>
 </div>

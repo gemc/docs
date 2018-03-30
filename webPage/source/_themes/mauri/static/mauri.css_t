@@ -15,9 +15,10 @@
 
 body {
 	font-family: {{ theme_bodyfont }};
-	line-height: 1.4em;
+	line-height: 1.5em;
 	color: black;
 	background-color: {{ theme_bgcolor }};
+	font-size: 110%;
 }
 
 div.bodywrapper {
@@ -604,9 +605,10 @@ div.note p.admonition-title {
 
 
 .footnote td {
-    background-color: #eee;
+    background-color: #ffffff;
     text-align: left;
     padding: 0 5px;
+	font-style: italic;
 }
 
 /*

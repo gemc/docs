@@ -3,15 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
+
 GEant4 Monte-Carlo
 ==================
 
-
-
-`geant4 <https://geant4.cern.ch>`_  is a c++ framework to simulate the passage of
-particles through matter.
-
-GEMC grants all the powerful geant4 features w/o the need of c++ or geant4 knowledge. It provides:
+GEMC  is a c++ framework that uses `geant4 <https://geant4.cern.ch>`_  to simulate the passage of
+particles through matter. It provides:
 
 
  * application independent geometry description
@@ -130,9 +128,7 @@ gemc then collects the geant4 results and produce the output specified by the us
 
 Open source
 ===========
-gemc is free and open source.
-
-Please visit the :ref:`contributing to gemc <contributingToGemc>` page if you're interested in the code development.
+gemc is open source. Please visit the :ref:`contributing to gemc <contributingToGemc>` page if you're interested in the code development.
 
 If you have any bug/code optimization to report, new ideas, features request, 
 please `open a code issue / feature request <https://github.com/gemc/source/issues/new>`_ in github.

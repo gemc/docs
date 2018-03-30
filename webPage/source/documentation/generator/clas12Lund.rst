@@ -1,31 +1,10 @@
-.. _lund:
-
-The LUND format
----------------
-
-gemc can read the LUND format.
-
-It is a text format. Its header defines quantities such as the number N of generated particle
-for each event and other kinematic properties.
-
-Use in gemc with the option::
-
- -INPUT_GEN_FILE="LUND, input.dat"
-
-Or, in a gcard [#]_::
-
- <option name="INPUT_GEN_FILE" value="LUND, input.dat"/>
+:orphan:
 
 
 Description
 ^^^^^^^^^^^
-After the header there are N lines (one per particle) describing each particle
-property as described in the tables below.
 
-A **bold** indicates quantities used by GEMC. Quantities not used by GEMC
-are kept in the output stream (user defined meanings could be assigned to them).
-
-|
+The Jefferson Lab CLAS12 experiment sets the User defined variables as follows:
 
 .. container:: lmydiv
 
@@ -36,23 +15,23 @@ are kept in the output stream (user defined meanings could be assigned to them).
    +--------------+------------------------------------------------------+
    |      1       |       **Number of particles**                        |
    +--------------+------------------------------------------------------+
-   |      2       |   User defined                                       |
+   |      2       |   Number of target nucleons                          |
    +--------------+------------------------------------------------------+
-   |      3       |   User defined                                       |
+   |      3       |    Number of target protons                          |
    +--------------+------------------------------------------------------+
-   |      4       |    User defined                                      |
+   |      4       |       Target Polarization                            |
    +--------------+------------------------------------------------------+
    |      5       |      **Beam Polarization**                           |
    +--------------+------------------------------------------------------+
-   |      6       |   User defined                                       |
+   |      6       |       beam PID (electron=11, photon=22)              |
    +--------------+------------------------------------------------------+
-   |      7       |   User defined                                       |
+   |      7       |         beam energy                                  |
    +--------------+------------------------------------------------------+
-   |      8       |   User defined                                       |
+   |      8       |        target nucleon ID                             |
    +--------------+------------------------------------------------------+
-   |      9       |   User defined                                       |
+   |      9       |         process ID                                   |
    +--------------+------------------------------------------------------+
-   |      10      |   User defined                                       |
+   |      10      |        event weight/cross section                    |
    +--------------+------------------------------------------------------+
 
 
@@ -66,15 +45,15 @@ are kept in the output stream (user defined meanings could be assigned to them).
    +--------------+------------------------------------------------------+
    |      1       |       **index**                                      |
    +--------------+------------------------------------------------------+
-   |      2       |   User defined                                       |
+   |      2       |         lifetime                                     |
    +--------------+------------------------------------------------------+
    |      3       |    **type (1 is active)**                            |
    +--------------+------------------------------------------------------+
    |      4       |     **particle ID**                                  |
    +--------------+------------------------------------------------------+
-   |      5       |   User defined                                       |
+   |      5       |       parent index                                   |
    +--------------+------------------------------------------------------+
-   |      6       |   User defined                                       |
+   |      6       |   index of the first daughter                        |
    +--------------+------------------------------------------------------+
    |      7       |             **momentum x   [GeV]**                   |
    +--------------+------------------------------------------------------+
@@ -82,9 +61,9 @@ are kept in the output stream (user defined meanings could be assigned to them).
    +--------------+------------------------------------------------------+
    |      9       |             **momentum z   [GeV]**                   |
    +--------------+------------------------------------------------------+
-   |      10      |   User defined                                       |
+   |      10      |            E                                         |
    +--------------+------------------------------------------------------+
-   |      11      |   User defined                                       |
+   |      11      |          mass                                        |
    +--------------+------------------------------------------------------+
    |      12      |          **vertex x [cm]**                           |
    +--------------+------------------------------------------------------+
@@ -92,43 +71,6 @@ are kept in the output stream (user defined meanings could be assigned to them).
    +--------------+------------------------------------------------------+
    |      14      |          **vertex z [cm]**                           |
    +--------------+------------------------------------------------------+
-
-
-
-Examples
-^^^^^^^^
-
-2 DVCS events (ePγ)::
-
- 3  1.  1.  0 -1 0.209   0.336   6.373   1.448  -1.000
- 1 -1.  1   11  0  0    0.9636  -0.1675   7.2357   7.3015   0.0005   0.0000 0.0000 0.0000
- 2  1.  1 2212  0  0   -0.6536   0.0604   0.3367   1.1935   0.9383   0.0000 0.0000 0.0000
- 3  0.  1   22  0  0   -0.3100   0.1071   3.4276   3.4432   0.0000   0.0000 0.0000 0.0000
- 3  1.  1.  0 -1 0.259   0.214   4.148   1.143  -1.000
- 1 -1.  1   11  0  0   -0.0203   0.9464   8.5979   8.6498   0.0005   0.0000 0.0000 0.0000
- 2  1.  1 2212  0  0   -0.0388  -0.2442   0.2194   0.9948   0.9383   0.0000 0.0000 0.0000
-
-
-
-LUND User definitions
-^^^^^^^^^^^^^^^^^^^^^
-Some experiments sets the user defined to accommodate their standards:
-
-- :ref:`Jefferson Laboratory CLAS12 User Defined Variables <clas12lund>`
-
-
-
-.. rubric:: Footnotes
-
-.. [#] See also :ref:`gemcOption`.
-
-
-
-
-
-
-
-
 
 
 
