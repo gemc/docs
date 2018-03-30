@@ -35,7 +35,7 @@ Sync signal control
 -------------------
 
 The option **RFSETUP** is used to control the sync signal.
-For example, to set the accelerator radio frequency to 500MHz (0.5 GHz) and produce two RF signal,
+For example, to set the accelerator radio frequency to 500MHz (0.5 GHz) and produce two sets RF signals,
 30 bunches (60ns) away from each other, each producing a signal every 40 bunches (80 ns)::
 
   -RFSETUP="0.5, 40, 30"
