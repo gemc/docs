@@ -27,7 +27,7 @@ gemc requires several libraries and environment:
  * ccdb
 
 
-`Here are the step by step instructions on how to install gemc and all its dependencies <https://www.jlab.org/12gev_phys/packages/sources/ceInstall/2.0_install.html>`_.
+`Here are the step by step instructions on how to install gemc and all its dependencies <https://www.jlab.org/12gev_phys/packages/sources/ceInstall/2.2_install.html>`_.
 
 All the packages listed "go_gemc" are necessary in order to run gemc. The packages listed below
 "go_gemc" are not necessary to run gemc.
