@@ -83,7 +83,7 @@ List of all the current GEMC options
 .. raw:: html
 
    <div style="margin-top:10px;">
-   	<iframe width="99%" height="10000" src="allOptions.html" frameborder="0" ></iframe>
+   	<iframe width="140%" height="10000" src="allOptions.html" frameborder="0" ></iframe>
    </div>
 
 
