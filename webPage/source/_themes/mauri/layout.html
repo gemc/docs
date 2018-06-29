@@ -13,24 +13,29 @@ Adapted from Agogo style
 		<div class="headertitle"> {{_('GEMC') }} </div>
 		{%- endblock %}
 		<p class="logo">
-			<a href="{{ pathto(master_doc) }}">
-				<img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
-			</a>
+		<a href="{{ pathto(master_doc) }}">
+			<img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+		</a>
 		</p>
 		
 		<div class="rel" role="navigation" aria-label="related navigation">
 			{% block rootrellink %}
 			<a href="{{ pathto('index') }}">                       home</a>&nbsp;|
 			<a href="{{ pathto('examples/examples') }}">           examples</a>&nbsp;|
-			<a href="{{ pathto('downloads') }}">                   downloads</a>&nbsp;|
+			<a href="{{ pathto('docker') }}">                      use</a>&nbsp;|
+			{#
 			<a href="{{ pathto('gallery/gallery') }}">             gallery</a>&nbsp;|
-			<a href="{{ pathto('documentation/documentation') }}"> documentation</a>&nbsp;|
+			#}
+			
+			<a href="{{ pathto('documentation/documentation') }}"> documentation</a>&nbsp;
+			{#
 			<a href="{{ pathto('mlibrary/mlibrary') }}">           mlibrary</a>
+			#}
 			{% endblock %}
 		</div>
 		<div class="clearer"></div>
-
-
+		
+		
 	</div>
 </div>
 {% endblock %}
@@ -57,13 +62,13 @@ Adapted from Agogo style
 				{{ _('Search within the gemc website.') }}
 				</p>
 			</div>
-
+			
 			{%- endblock %}
 			<br>
 			
 			<br>
-		{%- block latestnews %}
-		{% if pagename == 'index' %}
+			{%- block latestnews %}
+			{% if pagename == 'index' %}
 			<h3>{{ _('In the News') }}<br></h3>
 			<object type="text/html" height="350" data="{{ pathto('latestNews') }}" border="0" ></object>
 			<br> <br> <br>
@@ -73,7 +78,7 @@ Adapted from Agogo style
 			<a href="downloads.html">Download gemc</a><br>
 			<a href="/examples/paddles.html">              Build a TOF detector</a> <br>
 			<br>
-
+			
 			<br>
 			<h3>{{ _('Software') }}<br></h3>
 			<a href="documentation/releases/roadmap.html">      Roadmap</a><br>
@@ -81,34 +86,34 @@ Adapted from Agogo style
 			<a href="documentation/releases/changelog.html">    Changelog</a><br>
 			<a href="https://github.com/gemc/source" target="_">GitHub Repo</a>
 			<br>
-
+			
 			<br>
 			<h3>{{ _('About') }}<br></h3>
 			<a href="https://groups.google.com/forum/#!forum/g_e_m_c">  Gemc: mailing list / forum</a><br>
 			<a href="">                                                 Gemc: the origin</a><br>
 			<a href="mailto:ungaro@jlab.org?subject=About%20gemc">      Email Mauri</a><br>
 			<a href="https://userweb.jlab.org/~ungaro/mauripage/html/index.html"> Mauri's Home Page</a>
-
-		{% endif %}
-		{% if pagename.startswith("documentation") %}
+			
+			{% endif %}
+			{% if pagename.startswith("documentation") %}
 			<h3>{{ _('Related') }}<br></h3>
 			<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
-		{% endif %}
-      {% if pagename.startswith("examples") %}
-      	<h3>{{ _('Related') }}<br></h3>
-      	<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
-      {% endif %}
-		
-		
-		
-		{% if pagename.startswith("contributing") %}
+			{% endif %}
+			{% if pagename.startswith("examples") %}
+			<h3>{{ _('Related') }}<br></h3>
+			<object type="text/html" height="450" data="{{ pathto('documentation/related') }}" border="0" ></object>
+			{% endif %}
+			
+			
+			
+			{% if pagename.startswith("contributing") %}
 			<h3>{{ _('Shortcuts') }}<br></h3>
 			<object type="text/html" height="450" data="{{ pathto('contr') }}" border="0" ></object>
-		{% endif %}
-		
+			{% endif %}
 			
-		{%- endblock %}
-			</div>
+			
+			{%- endblock %}
+		</div>
 		<div class="clearer"></div>
 	</div>
 </div>
