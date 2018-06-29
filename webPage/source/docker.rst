@@ -116,6 +116,19 @@ Some experiment require magnetic field maps. For example, clas12 field maps are 
  * `torus <http://http://clasweb.jlab.org/12gev/field_maps/TorusSymmetric.dat>`_
 
 
+Running CLAS12 simulations on the Jefferson Lab Interactive farm
+================================================================
+
+GEMC and the CLAS12 geometry is installed on /group/clas12/gemc. Once you source the environment::
+
+ source /group/clas12/gemc/environment.csh
+
+gemc is ready to use. For example, to use the official clas12 gcard::
+
+ gemc /group/clas12/gemc/4a.2.4/clas12.gcard -N=100 -USE_GUI=0
+
+|
+
 GEMC Release Notes
 ------------------
 For release notes and the complete changelog see :ref:`release notes <releaseNotes>`.
