@@ -18,7 +18,6 @@ Below are the instructions on how to run gemc on a container that contains the f
 .. note::
 
  - On the docker preferences try to make available as much memory as possible.
- - Running a container, for the first time only, will require the download of the container, typically a few GB.
 
 Running GEMC in batch mode
 --------------------------
@@ -52,9 +51,7 @@ You should launch gemc with USE_GUI=2 to optimize the opengl graphic::
 
  gemc clas12.gcard -USE_GUI=2
 
-|
-
-You can stop the docker container by CTRL-c the docker command
+|br| |br|
 
 .. note::
 
@@ -62,6 +59,10 @@ You can stop the docker container by CTRL-c the docker command
 
  - Scaling mode: remote
  - Share mode active (this will ensure if you open another browser session, it will show the same instance of the container)
+
+|br| |br|
+
+You can stop the docker container by CTRL-c the docker command
 
 |
 
@@ -88,7 +89,7 @@ to mount your local OS directories to be visible in docker. For example, to moun
 
  docker run -it --rm  -v /home/maximilian:/max jeffersonlab/clas12tags:4a.2.4 bash
 
-Now /max will point to maximilian home dir. You can save work here.
+/max now points to maximilian home dir. You can save work here.
 
 
 |
@@ -115,15 +116,18 @@ Some experiment require magnetic field maps. For example, clas12 field maps are 
  * `solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12SolenoidFieldMap.dat>`_
  * `torus <http://http://clasweb.jlab.org/12gev/field_maps/TorusSymmetric.dat>`_
 
+|
 
 Running CLAS12 simulations on the Jefferson Lab Interactive farm
 ================================================================
 
-GEMC and the CLAS12 geometry is installed on /group/clas12/gemc. Once you source the environment::
+GEMC and the CLAS12 geometry is installed on /group/clas12/gemc. To use, source the environment::
 
  source /group/clas12/gemc/environment.csh
 
-gemc is ready to use. For example, to use the official clas12 gcard::
+|br| |br|
+
+As an example, to run gemc using the official clas12 gcard::
 
  gemc /group/clas12/gemc/4a.2.4/clas12.gcard -N=100 -USE_GUI=0
 
@@ -133,7 +137,7 @@ GEMC Release Notes
 ------------------
 For release notes and the complete changelog see :ref:`release notes <releaseNotes>`.
 
-
+|br| |br|
 
 
 
