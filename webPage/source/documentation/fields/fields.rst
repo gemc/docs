@@ -138,14 +138,39 @@ Multipoles
 ----------
 
 
+.. _scalingField:
 
 Scaling a Field
 ---------------
 
+The option **SCALE_FIELD** can be used to scale an electro-magnetic field. For example::
 
+ -SCALE_FIELD="srr-solenoid, -0.5"
+
+will invert and scale the *srr-solenoid* field values by 0.5.
+
+
+.. _translatingAndRotatingField:
 
 Translating/Rotating a Field
 ----------------------------
+
+The options **DISPLACE_FIELDMAP** and **ROTATE_FIELDMAP** can be used to shift a field map origin and/or rotate a field map.
+
+For example::
+
+ -DISPLACE_FIELDMAP="srr-solenoid, 3.5*mm, 0*mm, 0*mm"
+
+will shift the map origin from (0, 0, 0)mm to (3.5, 0, 0)mm
+
+
+ -ROTATE_FIELDMAP="srr-solenoid, 15*deg, 0*deg, 0*deg"
+
+will rotate the map 15 degrees along the x-axis.
+
+
+
+
 
 
 
@@ -156,6 +181,7 @@ Getting the field value at one point
 1. Set the BEAM_V option at the point location you want to probe.
 2. Set FIELD_VERBOSITY to 99.
 3. Set N=1
+4. (optional) use batch mode: USE_GUI=0
 
 GEMC will generate a track at that location, print the field values, then exit.
 
