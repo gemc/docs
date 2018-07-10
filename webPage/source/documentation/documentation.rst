@@ -38,15 +38,6 @@ Physics Processes
 
 	physics
 
-
-GEMC Installation
-==================
-
-.. toctree::
-	:maxdepth: 2
-
-	installation
-
 FAQ
 ===
 
@@ -54,7 +45,6 @@ FAQ
 	:maxdepth: 2
 
 	FAQ
-
 
 
 Open source
