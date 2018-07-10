@@ -157,16 +157,17 @@ Translating/Rotating a Field
 
 The options **DISPLACE_FIELDMAP** and **ROTATE_FIELDMAP** can be used to shift a field map origin and/or rotate a field map.
 
-For example::
+Shift example::
 
  -DISPLACE_FIELDMAP="srr-solenoid, 3.5*mm, 0*mm, 0*mm"
 
-will shift the map origin from (0, 0, 0)mm to (3.5, 0, 0)mm
+this will shift the map origin from (0, 0, 0)mm to (3.5, 0, 0)mm
 
+Rotation example::
 
  -ROTATE_FIELDMAP="srr-solenoid, 15*deg, 0*deg, 0*deg"
 
-will rotate the map 15 degrees along the x-axis.
+this will rotate the map 15 degrees along the x-axis.
 
 
 
