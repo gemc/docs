@@ -10,8 +10,7 @@
 GEMC on Docker
 --------------
 
-GEMC is distributed using docker images. Here is how to install docker `for mac <https://docs.docker.com/docker-for-mac/install/>`_,
-`for windows <https://docs.docker.com/docker-for-windows/install/>`_, `for all platforms <https://docs.docker.com/install/>`_ (includes CentOS, Debian,Fedora, Ubuntu).
+GEMC distributed using `docker <https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
 Below are the instructions on how to run gemc on a container that contains the full CLAS12 geometry.
 
