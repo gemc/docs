@@ -12,7 +12,7 @@ GEMC on Docker
 
 GEMC distributed using `docker <https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
-Below are the instructions on how to run gemc on a container that contains the full CLAS12 geometry.
+Below are the instructions on how to install run gemc on a container that contains the CLAS12 geometry.
 
 .. note::
 
