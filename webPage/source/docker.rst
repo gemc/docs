@@ -12,11 +12,8 @@ GEMC on Docker
 
 GEMC distributed using `docker <https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
-Below are the instructions on how to install run gemc on a container that contains the CLAS12 geometry.
+Below are the instructions on how to run gemc on a container that contains the CLAS12 geometry.
 
-.. note::
-
- - On the docker preferences try to make available as much memory as possible.
 
 Running GEMC in batch mode
 --------------------------
@@ -25,7 +22,8 @@ Use the following command to open a bash session on the container. You can also 
 
  docker run -it --rm jeffersonlab/clas12tags:4a.2.4 bash
 
-This will open the session in the /jlab/workdir directory. |br| |br|
+This will open the session in the /jlab/workdir directory. When executed the first time these will also download the image on your computer.
+|br| |br|
 
 You can run gemc using the gcard in that directory in batch mode. For example, 1000 events::
 
@@ -58,6 +56,7 @@ You should launch gemc with USE_GUI=2 to optimize the opengl graphic::
 
  - Scaling mode: remote
  - Share mode active (this will ensure if you open another browser session, it will show the same instance of the container)
+ - On the docker preferences try to make available as much memory as possible.
 
 |br| |br|
 
