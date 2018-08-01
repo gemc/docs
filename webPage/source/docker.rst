@@ -89,9 +89,15 @@ to mount your local OS directories to be visible in docker. For example, to moun
 
 /max now points to maximilian home dir. You can save work here.
 
-
 |
 
+
+Troubleshooting
+---------------
+
+- `Solving Docker permission denied while trying to connect to the Docker daemon socket <https://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/>`_
+
+|
 
 
 
