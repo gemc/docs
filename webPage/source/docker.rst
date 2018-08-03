@@ -119,7 +119,7 @@ Some experiment require magnetic field maps. For example, clas12 field maps are 
 
  * `new clas12 solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12NewSolenoidFieldMap.dat>`_
  * `old clas12 solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12SolenoidFieldMap.dat>`_
- * `torus <http://http://clasweb.jlab.org/12gev/field_maps/TorusSymmetric.dat>`_
+ * `torus               <http://clasweb.jlab.org/12gev/field_maps/TorusSymmetric.dat>`_
 
 |
 
