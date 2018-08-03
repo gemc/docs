@@ -14,7 +14,7 @@ GEMC Roadmap
 
 
 GEMC 2.7 - Aug 2018
----------------------
+-------------------
 
 - Add physical volume constructor - active rotations
 - dipole map with reflection symmetry
@@ -72,7 +72,7 @@ GEMC 3.0.beta1 - Sept 2018. 3.0 April 2019
 
 
 GEMC 3.1 - October 2019
-----------------------
+-----------------------
 
 - **parallel worlds**
 
@@ -89,7 +89,7 @@ GEMC 3.1 - October 2019
 
 
 GEMC 3.2 - Jan 2020
-------------------------
+-------------------
 
 - **G4Analysis Tools**.
 
@@ -174,8 +174,7 @@ GEMC 2.5 - September 2016
 
 - **Custom V(t)**: ✅
 
-- A user-defined **chargeTime** routine produces charge and time information
-for each geant4 step ✅
+- A user-defined **chargeTime** routine produces charge and time information for each geant4 step ✅
 
 - A user-defined **voltage** function produces a voltage value for a given asked time ✅
 

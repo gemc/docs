@@ -100,7 +100,7 @@ Notice: BEAM_P still sets the particle momentum, and its type must be GenericIon
 - added optional argument (appended at the end) to BEAM_P: "KE" can specify that the momentum is kinematic energy instead.
   For example, to simulate a K=250 MeV proton::
 
--BEAM_P="proton, 250*MeV, 90*deg, 90*deg, KE"
+  -BEAM_P="proton, 250*MeV, 90*deg, 90*deg, KE"
 
 
 FADC Mode 1

@@ -10,7 +10,7 @@
 GEMC on Docker
 --------------
 
-GEMC distributed using `docker <https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
+GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
 Below are the instructions on how to run gemc on a container that contains the CLAS12 geometry.
 
@@ -117,7 +117,8 @@ Magnetic Fields
 ---------------
 Some experiment require magnetic field maps. For example, clas12 field maps are located here:
 
- * `solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12SolenoidFieldMap.dat>`_
+ * `new clas12 solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12NewSolenoidFieldMap.dat>`_
+ * `old clas12 solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12SolenoidFieldMap.dat>`_
  * `torus <http://http://clasweb.jlab.org/12gev/field_maps/TorusSymmetric.dat>`_
 
 |
