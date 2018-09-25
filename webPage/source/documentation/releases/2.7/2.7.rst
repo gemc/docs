@@ -1,0 +1,60 @@
+:orphan:
+
+.. _2.7:
+
+###########
+Release 2.7
+###########
+
+Libraries Version
+-----------------
+
+- geant4: 4.10.03.p02
+- qt: 5.10.1
+- clhep: 2.4.0.4
+
+MLibrary
+--------
+
+The mlibrary is a collection of highly optimized, specialized
+stand-alone c++ 11 libraries that fashion gemc into a object oriented framework.
+
+Some functionality of gemc 2.X is being replaced by these libraries. Others are being prepared
+for release 3.0.
+
+The documentation for the mlibrary can be found :ref:`here <mlibrary>`.
+
+
+Additional Options
+------------------
+- added FILTER_NULL_VARIABLES option. If set to one, do not write empty variables in the output.
+- added option RFSTART: Radio-frequency time model. Available options are:
+
+    - "eventVertex, 0, 0, 0" (default): the RF time is the event start time + the light time-distance of the first particle from the point (0,0,0)
+    - "eventTime".....................: the RF time is identical to the event start time
+
+- added DISPLACE_FIELDMAP and ROTATE_FIELDMAP options to displace and rotate a field map
+
+Various
+-------
+- fixed case where GEMC_DATA_DIR environment does not exist
+- reintroduced material name in the gui
+- fixed 10 and 20 cases for FASTMCMODE in physics list
+- addition of 3D field map in cartesian coordinates
+
+
+Physics
+-------
+- added PRODUCTIONCUTFORVOLUMES option. It is a list of volumes that will be assigned a production cut (in mm, last element of the list). Example:
+
+   - PRODUCTIONCUTFORVOLUMES="outerMount, taggerInnerShield, outerFlange, outerMount, nut1, main-cone, DSShieldFrontLead, 100" will set the production cut for those volumes to 10 cm.
+
+- detectors and cad factory can read the env variable "GEMC_DATA_DIR" as a base path in the gcard
+
+
+|
+
+For the complete list of all changes please visit the `changelog <../changelog.html>`_.
+
+
+
