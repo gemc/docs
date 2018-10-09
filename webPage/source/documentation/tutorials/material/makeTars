@@ -2,6 +2,9 @@
 
 rm -f *.tar
 
+
+
+
 foreach d (`\ls | grep -v makeTars`)
 	cd $d
 	tar cvf $d.tar *
