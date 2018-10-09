@@ -12,22 +12,22 @@ GEMC on Docker
 
 GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
-Below are the instructions on how to run gemc on a container that contains the CLAS12 geometry.
-
 
 Running GEMC in batch mode
 --------------------------
 
 Use the following command to open a bash session on the container. You can also replace bash with tcsh::
 
- docker run -it --rm jeffersonlab/clas12tags:4a.2.4 bash
+ docker run -it --rm jeffersonlab/gemcbatch:2.7 bash
 
-This will open the session in the /jlab/workdir directory. When executed the first time these will also download the image on your computer.
+This will open the session in the /jlab/work directory. When executed the first time these will also download the image on your computer.
 |br| |br|
 
-You can run gemc using the gcard in that directory in batch mode. For example, 1000 events::
+You can try the Jefferson Lab CLAS12 detector by specifying the clas12 gcard in batch mode (USE_GUI=0). For example, 1000 events::
 
- gemc clas12.gcard -USE_GUI=0 -N=1000 -PRINT_EVENT=10
+ gemc clas12.gcard -USE_GUI=0 -N=1000 -PRINT_EVENT=10 -NO_FIELD=all
+
+The field flag is present because the CLAS12 magnetic fields mapare not embedded
 
 |
 
