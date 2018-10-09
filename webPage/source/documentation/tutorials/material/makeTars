@@ -4,20 +4,14 @@ rm -f *.tar
 
 
 foreach d (atlas forFun humanBody)
-	cd $d
-	rm -rf *
+	rm -rf $d
 	cp -r /opt/projects/gemc/detectors/$d .
-	tar cvf $d.tar *
-	mv $d.tar ..
-	cd ..
+	tar cvf $d.tar $d
 end
 
 
 foreach d (exampleCTOFCAD exampleCentralTOF)
-	cd $d
-	tar cvf $d.tar *
-	mv $d.tar ..
-	cd ..
+	tar cvf $d.tar $d
 end
 
 scp *.tar ftp.jlab.org:/group/clas/www/gemc/html/gemc/html/documentation/tutorials/material/

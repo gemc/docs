@@ -18,7 +18,7 @@ Requirements
 ------------
 
 - gemc 2.5 or newer (september 2016)
-- `example tarball <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/examplehumanBody.tar>`_
+- `example tarball <https://gemc.jlab.org/gemc/html/documentation/tutorials/material/humanBody.tar>`_
 
 
 
