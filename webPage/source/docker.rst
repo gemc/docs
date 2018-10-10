@@ -13,42 +13,30 @@ GEMC on Docker
 GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
 
-Running GEMC in batch mode
---------------------------
-
-Use the following command to open a bash session on the container. You can also replace bash with tcsh::
-
- docker run -it --rm jeffersonlab/gemcbatch:2.7 bash
-
-This will open the session in the /jlab/work directory. When executed the first time these will also download the image on your computer.
-|br| |br|
-
-You can try the Jefferson Lab CLAS12 detector by specifying the clas12 gcard in batch mode (USE_GUI=0). For example, 1000 events::
-
- gemc clas12.gcard -USE_GUI=0 -N=1000 -PRINT_EVENT=10 -NO_FIELD=all
-
-The field flag is present because the CLAS12 magnetic fields mapare not embedded
-
-|
-
 Running GEMC in interactive mode (browser)
 ------------------------------------------
 
-Use the following command to pass the 6080 port to noVnc so the container can be opened on a brower::
+To use the geant4 opengl GUI use the following command::
 
- docker run -it --rm -p 6080:6080 jeffersonlab/clas12tags:4a.2.4
+ docker run -it --rm -p 6080:6080 jeffersonlab/gemcinteractive:2.7
 
 Using your web brower open the page::
 
  http://localhost:6080
 
-After clicking connect the linux desktop is shown with a running shell.|br| |br|
+After clicking connect the linux desktop is shown with a running shell.
 
-You should launch gemc with USE_GUI=2 to optimize the opengl graphic::
+You should launch gemc with USE_GUI=2 to optimize the opengl graphic. Try a few examples:
 
- gemc clas12.gcard -USE_GUI=2
+ 1. USS enterprise shooting against a dragon::
 
-|br| |br|
+     cd forFun: gemc fun.gcard -USE_GUI=2 -OUTPUT="txt, out.txt"
+
+ 2. Fire protons in the upper gastrointestinal tract::
+
+     cd humanBody: gemc hb.gcard -USE_GUI=2 -OUTPUT="txt, out.txt"
+
+|br|
 
 .. note::
 
@@ -58,22 +46,56 @@ You should launch gemc with USE_GUI=2 to optimize the opengl graphic::
  - Share mode active (this will ensure if you open another browser session, it will show the same instance of the container)
  - On the docker preferences try to make available as much memory as possible.
 
-|br| |br|
+|br|
 
-You can stop the docker container by CTRL-c the docker command
+You can stop the docker container using ctrl-c.
 
 |
 
 Running GEMC in interactive mode (vnc)
 --------------------------------------
 
-Use the following command to pass the 5901 and the 6080 ports necessary to open the container with a vnc client::
+Use the following command to pass so you can open the container with the browser or a vnc client::
 
- docker run -it --rm -p 5901:5901 -p 6080:6080  jeffersonlab/clas12tags:4a.2.4
+ docker run -it --rm -p 6080:6080 -p 5901:5901 jeffersonlab/gemcinteractive:2.7
 
-You can now open localhost:6080 with your vnc client.
+You can now open localhost:5901 with your vnc client.
 
 |
+
+
+
+Running GEMC in batch mode
+--------------------------
+
+Use the following command to open a bash session on the container. You can also replace bash with tcsh::
+
+ docker run -it --rm jeffersonlab/gemcbatch:2.7 bash
+
+This will open the session in the /jlab/work directory. When executed the first time these will also download the image on your computer.
+Use the gemc option USE_GUI=0 to run gemc in batch mode. Try the examples above.
+
+|br|
+
+
+Running the container in interactive mode (no opengl)
+-----------------------------------------------------
+
+On a mac, if you allow access from localhost with::
+
+  1. Activate the option ‘Allow connections from network clients’ in XQuartz settings
+     (Restart XQuartz (to activate the setting)
+  2. xhost +127.0.0.1
+
+Then you can run docker and use the local X server with::
+
+ docker run -it --rm -e DISPLAY=docker.for.mac.localhost:0 jeffersonlab/gemcbatch:2.7 bash
+
+You can run gemc in batch mode this way, but still enjoy the ability to open windows on the local host.
+
+
+|
+
 
 Mounting your directories to the container
 ------------------------------------------
