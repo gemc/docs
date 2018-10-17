@@ -79,8 +79,8 @@ You can now open localhost:5901 with your vnc client.
 
 
 
-Interactive mode (no opengl)
-----------------------------
+Native interactive mode (no opengl)
+-----------------------------------
 
 On a mac, if you allow access from localhost with::
 
@@ -94,8 +94,7 @@ Then you can run docker and use the local X server with::
 
 You can run gemc in batch mode this way, but still enjoy the ability to open windows on the local host.
 
-
-|
+|br|
 
 
 Mounting your directories to the container
@@ -112,15 +111,14 @@ to mount your local OS directories to be visible in docker. For example, to moun
 
 */jlab/work//max* will now point to maximilian home dir. You can save work here.
 
-|
-
+|br|
 
 Troubleshooting
 ---------------
 
 - `Solving Docker permission denied while trying to connect to the Docker daemon socket <https://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/>`_
 
-|
+|br|
 
 
 
@@ -131,7 +129,7 @@ Generator: LUND Events sample
 -----------------------------
 `10 Deep Inelastic Scattering events in LUND format <http://jlab.org/12gev_phys/packages/gcards/dis.dat>`_
 
-|
+|br|
 
 Experiments Specifics Downloads: CLAS12
 =======================================
@@ -144,7 +142,7 @@ Some experiment require magnetic field maps. For example, clas12 field maps are 
  * `old clas12 solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12SolenoidFieldMap.dat>`_
  * `torus               <http://clasweb.jlab.org/12gev/field_maps/TorusSymmetric.dat>`_
 
-|
+|br|
 
 Running CLAS12 simulations on the Jefferson Lab Interactive farm
 ================================================================
@@ -159,7 +157,7 @@ As an example, to run gemc using the official clas12 gcard::
 
  gemc /group/clas12/gemc/4a.2.4/clas12.gcard -N=100 -USE_GUI=0
 
-|
+|br|
 
 GEMC Release Notes
 ------------------
