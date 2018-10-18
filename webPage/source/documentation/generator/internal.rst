@@ -3,7 +3,7 @@ Internal Generator
 
 A primary particle 4-momentum and vertex ranges can be set with the gcard directives:
 
-.. code-block:: bash
+.. code-block:: guess
 
 	<option name="BEAM_P"   value="proton, 4.0*GeV, 20.0*deg, 10*deg"/>
 	<option name="SPREAD_P" value="1*GeV, 10*deg, 180*deg"/>
