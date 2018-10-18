@@ -21,6 +21,7 @@ GEMC Documentation
 	options
 	generator/generator
 	gdmlCadFactories.rst
+	gemcAndTgeo.rst
 	fields/fields
 	detectorDefinition
 	hitDefinition
