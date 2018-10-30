@@ -4,17 +4,6 @@ Python and Perl Tutorials
 =========================
 
 
-
-Python
-======
-
-.. toctree::
-	:maxdepth: 2
-
-	tutorials/python/simple1/simple1p1
-
-
-
 Perl
 ====
 
