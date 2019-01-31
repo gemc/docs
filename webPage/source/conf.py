@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'gemc'
-copyright = u'2018, Maurizio Ungaro'
+copyright = u'2019, Maurizio Ungaro'
 author = u'Maurizio Ungaro'
 
 # The version info for the project you're documenting, acts as replacement for

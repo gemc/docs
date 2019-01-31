@@ -11,11 +11,11 @@ Sourcing the environment
 
 The environment is necessary to load the libraries needed to run gemc. To load (csh)::
 
- source /site/12gev_phys/production.csh 2.0
+ source /site/12gev_phys/softenv.csh 2.3
 
-Bash users can source jlab.sh::
+ or for Bash users::
 
- source /site/12gev_phys/2.0/ce/jlab.sh
+ source /site/12gev_phys/softenv.csh 2.3
 
 
 
@@ -26,11 +26,12 @@ The clas12 detectors geometry and gcard are stored in the M drive (/group).
 
 To run 10 events using clas12 detectors::
 
- gemc /group/clas12/clas12.gcard -USE_GUI=0 -N=10
+ gemc /group/clas12/gemc/4.3.0/clas12.gcard -USE_GUI=0 -N=10
 
+
+where 4.3.0 represent one of the clas12 code and geometry tag release.
 
 The *USE_GUI=0* option tells gemc to run in batch mode. By default gemc would run with USE_GUI=1 (interactive mode).
-
 
 The output format (default: evio) is specified in the gcard:
 

@@ -18,8 +18,9 @@ GEMC Documentation
 .. toctree::
 	:maxdepth: 1
 
-	options
 	generator/generator
+	ancestry.rst
+	rerunEvents.rst
 	gdmlCadFactories.rst
 	gemcAndTgeo.rst
 	fields/fields
@@ -29,6 +30,7 @@ GEMC Documentation
 	fastMCMode
 	voltageTime
 	runningJLab
+	options
 
 
 Physics Processes
