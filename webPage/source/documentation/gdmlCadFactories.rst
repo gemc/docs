@@ -48,12 +48,14 @@ Attributes can be assigned when models are imported from a directory. This inclu
  - material
  - visualization attributes (color, surface style)
  - sensitivity
+ - shifts and tilts relative to volume
+ - mother volume
 
 Attributes are assigned by using an XML file "cad.gxml" inside the directory dedicated to the models.
 For example the following line in a cad.gxml inside the directory "beamline" will change
 the color, material of an imported volume named "vacuumLine" and assign flux sensitivity so that hits can be recorded::
 
- <volume name="vacuumLine" color="99ff00" material="G4_Pb" sensitivity="flux" identifiers="id manual 1"/>
+ <volume name="vacuumLine" mother="target" color="99ff00" material="G4_Pb"  position="0*mm 0*mm 1273.27*mm" sensitivity="flux" identifiers="id manual 1"/>
 
 
 
@@ -65,14 +67,14 @@ CAD vs GDML Attributes
   For example, to set the attributes of the target of the gcard above, a filename *"target.gxml"* can be used::
 
    <gxml>
- 	 <volume name="inner_target_vol" color="8899dd" material="lH2"/>
+		<volume name="inner_target_vol" color="8899dd" material="lH2"/>
    </gxml>
 
 - A CAD file contains only one volume. Many cad files can be imported and the attributes of all of them can
   be set by filename *"cad.gxml"*"::
 
    <gxml>
-	 <volume name="beamline" color="8899dd" material="G4_Al"/>
+		<volume name="beamline" color="8899dd" material="G4_Al"/>
    </gxml>
 
 
@@ -102,6 +104,26 @@ If that's not possible you can use Freecad [#]_ to convert step objects to stl f
 3. Click on Meshes > Create Mesh From Shape
 4. Select precision desired - click OK
 5. Click on the new meshed object and File > Export  to a STL file (or PLY or OBJ).
+
+|
+
+Notes on importing CAD volumes in GEMC
+--------------------------------------
+
+1. The tessellation process describe above preserves the volume placement coordinates. The coordinate specified in the GXML file are
+   shifts and tilts relative to volume. For example, if a volume in the model is placed at (0,0,10)mm, a GXML entry ```position="0*mm 0*mm 10*mm"```
+   will place the volume at (0,0,20)mm.
+2. It is generally a good idea to create a "mother volume" to place the STL file into, instead of the default value that is "root". This will
+   keep the hierarchy well organize. For example, the CLAS12 target is placed inside a polycone to encapsulate it completely, see figures below.
+
+.. image:: clas12Target.png
+	:width: 90%
+	:align: center
+
+.. image:: clas12TargetHier.png
+	:width: 90%
+	:align: center
+
 
 
 |
