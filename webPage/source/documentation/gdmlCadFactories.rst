@@ -55,8 +55,7 @@ Attributes are assigned by using an XML file "cad.gxml" inside the directory ded
 For example the following line in a cad.gxml inside the directory "beamline" will change
 the color, material of an imported volume named "vacuumLine" and assign flux sensitivity so that hits can be recorded::
 
- <volume name="vacuumLine" mother="target" color="99ff00" material="G4_Pb"  position="0*mm 0*mm 1273.27*mm" sensitivity="flux" identifiers="id manual 1"/>
-
+ <volume name="vacuumLine" mother="target" color="99ff00" material="G4_Pb"  position="0*mm 0*mm 1273.27*mm" sensitivity="flux" hitType="flux"  identifiers="id manual 1"/>
 
 
 
