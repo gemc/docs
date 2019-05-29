@@ -36,6 +36,8 @@ extensions = [
 # source_suffix = ['.rst', '.md']
 source_suffix = '.rst'
 
+default_show_title = 'true'
+
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
 

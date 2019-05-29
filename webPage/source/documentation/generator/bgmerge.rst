@@ -2,8 +2,8 @@
 .. _mergingBackground:
 
 
-Saving and merging background
------------------------------
+Saving and merging Geant4 background
+------------------------------------
 
 
 Saving background tracks

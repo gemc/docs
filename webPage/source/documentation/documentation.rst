@@ -22,6 +22,7 @@ GEMC Documentation
 	ancestry.rst
 	rerunEvents.rst
 	generator/bgmerge.rst
+	dataMerge.rst
 	gdmlCadFactories.rst
 	gemcAndTgeo.rst
 	fields/fields
