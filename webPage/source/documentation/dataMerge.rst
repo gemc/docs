@@ -1,6 +1,9 @@
 
 .. _mergingDataBackground:
 
+.. |br| raw:: html
+
+   <br>
 
 Saving and merging background from experimental data
 ----------------------------------------------------
@@ -39,16 +42,55 @@ The time evolution signals merging allows for a proper treatment of pile-ups:
 .. thumbnail:: dataMergingMechanism.png
    :width: 95%
    :group: mycenter
-   :title:
 
-	The red point represent a single hit from a user generated track. Hits information from background (black points)
-	can come from an integrated hit (top) or in the form of a signal as a function of time (bottom). The mechanism is the same in both cases.
+|br|
+
+Background Hits ASCII format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The columns needed in the asci file are:
+
+1. system name
+2. event number
+3. number of identifiers: for CLAS12 this number is 3, representing sector layer component
+4.  detector element identifiers
+5.  detector element identifiers
+6.  detector element identifiers
+7. time (from event start time)
+8. energy
+9. number of photoelectrons
 
 
+.. thumbnail:: dataMergeExample.png
+   :width: 95%
+   :group: mycenter
 
-The option MERGE_BGHITS can be used to merge hits from a file "filename"::
 
- -MERGE_BGHITS="filename"
+|br|
 
-The users can use the internal GEMC generator, cosmic model, or a separate LUND file to generate non-background events.
+How to use
+^^^^^^^^^^
+
+The option MERGE_BGHITS can be used in the command line or in the gcard to point at the asci file with background hits.
+
+Assuming “bg.txt” is the name of the file, the syntax for command line is::
+
+ -MERGE_BGHIT=bg.txt
+
+while the syntax in the gcard is::
+
+ <option name=”MERGE_BGHIT” value=”bg.txt”/>
+
+
+A sample of N background hits could represent a background database to be used for any reaction.
+At event number N+1 gemc will reset the background loop so it starts at the beginning of the file.
+
+
+Use the same data to simulate higher or lower intensity situations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The events in the data file with the same event number will be assigned to one geant4 event.
+
+One can double the intensity of the data background by assigning two consecutive events to the same event number.
+
 
