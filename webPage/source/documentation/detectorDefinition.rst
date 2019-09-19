@@ -24,16 +24,16 @@ Variable Name             type                                          Descript
 name                     string               Name. Cannot contain spaces.
 mother                   string               Name of the mother. Mother volume must exist.
 description              string               Description.
-type                     string               Geant4 solid type.
-dimensions               vector<double>       Geant4 solid dimensions.
 pos                      G4ThreeVector        Position in respect to the mother reference system.
 rot                      G4RotationMatrix     Rotation in respect to the mother reference system.
-VAtts                    G4VisAttributes      Visual attributes such as color, transparency.
+color                    rrggbb(t)            2 hexa numbers for each R, G, B color. Optional 7th number: transparency.
+type                     string               Geant4 solid type.
+dimensions               vector<double>       Geant4 solid dimensions (with units when necessary).
 material                 string               Material name.
-magfield                 string               Magnetic field name.
+magfield                 string               Field name. "no" if the field is absent or inherited from the mother volume.
 ncopy                    int                  copy number
-pMany                    bool
-exist                    int                  on/off switch
+pMany                    bool                 currently not used
+exist                    int                  on/off switch (0/1)
 visible                  int                  visibility of the detector: 0=invisible 1=visible
 style                    int                  style: 0=wireframe 1=solid
 sensitivity              string               name of the hit collection (define the output bank)
