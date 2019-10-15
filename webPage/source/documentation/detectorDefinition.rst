@@ -37,7 +37,7 @@ exist                    int                  on/off switch (0/1)
 visible                  int                  visibility of the detector: 0=invisible 1=visible
 style                    int                  style: 0=wireframe 1=solid
 sensitivity              string               name of the hit collection (define the output bank)
-hitType                  string               name of the hit process routine
+hit_type                 string               name of the hit process routine
 identity                 vector<identifier>   Example: superlayer manual 1 segment manual 3 strip manual 4
 =====================  ===================== ================================================================================================
 
