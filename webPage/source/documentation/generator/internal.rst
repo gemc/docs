@@ -24,6 +24,30 @@ Any gcard directive can be superseed by its corresponding command line. For exam
  -BEAM_P="proton, 4.0*GeV, 20.0*deg, 10*deg"
 
 
+Particles names
+---------------
+
+Here's the list of some relevant particle names:
+
+* e+
+* e-
+* eta
+* gamma
+* geantino
+* kaon+
+* kaon-
+* kaon0
+* kaon0L
+* kaon0S
+* mu+
+* mu-
+* neutron
+* pi+
+* pi-
+* pi0
+* proton
+
+
 List of all particles
 ---------------------
 
