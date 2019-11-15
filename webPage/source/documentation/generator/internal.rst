@@ -21,7 +21,8 @@ The above will generate a proton with:
 
 Any gcard directive can be superseed by its corresponding command line. For example::
 
- -BEAM_P="proton, 4.0*GeV, 20.0*deg, 10*deg"
+ -BEAM_P="e-, 6.0*GeV, 20.0*deg, 10*deg"
+ -SPREAD_P="1*GeV, 10*deg, 180*deg"
 
 
 Particles names
