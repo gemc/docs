@@ -1,5 +1,6 @@
-# All configuration values have a default; values that are commented out
-# serve to show the default.
+# This file does only contain a selection of the most common options. For a
+# full list see the documentation:
+# http://www.sphinx-doc.org/en/master/config
 
 import sys
 import os
@@ -10,17 +11,8 @@ from docutils.parsers.rst.directives.admonitions import BaseAdmonition
 from sphinx.util import compat
 compat.make_admonition = BaseAdmonition
 
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
-
 # -- General configuration ------------------------------------------------
 
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
 extensions = [
     'sphinx.ext.autodoc',
     'sphinxcontrib.images',
@@ -29,7 +21,6 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
 ]
-
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -44,9 +35,11 @@ default_show_title = 'true'
 # The master toctree document.
 master_doc = 'index'
 
+# -- Project information -----------------------------------------------------
+
 # General information about the project.
 project = u'gemc'
-copyright = u'2019, Maurizio Ungaro'
+copyright = u'2020, Maurizio Ungaro'
 author = u'Maurizio Ungaro'
 
 # The version info for the project you're documenting, acts as replacement for
