@@ -1,0 +1,24 @@
+
+# Good practices
+
+
+- in linux, a non zero value return means failure
+- the code should be comprehensible, because that's the first step on the way to maintainability
+
+- in doubt, use the {} var initializers double d { 2.3 }. If nothing else, it saves from conversions that lose information. In the class initializers as well.
+- use auto when there is not a specific reason to mention the type explicitely
+
+- use references in functions and loop to avoid copies when possible. Use const if we don't need to change the value.
+
+     for (auto& x: v) or sort(const vector<double>& a)
+
+- if a value or a function is evaluated at compile time, use constexpr
+
+- use digit separators to make liarge literals readable
+
+- use unsiged for bit manipulation only
+- use nullptr not 0 or NULL
+
+- element acccess:
+
+- verify: use subscript functions: double& operator[](int i) {return elem[i];}
