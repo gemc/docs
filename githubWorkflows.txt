@@ -1,0 +1,7 @@
+Action in general: https://help.github.com/en/actions
+
+Workflows:
+
+- https://help.github.com/en/actions
+- jana workflows: https://github.com/JeffersonLab/JANA2/tree/master/.github/workflows
+
