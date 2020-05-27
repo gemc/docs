@@ -2,7 +2,7 @@
 
 	<option name="geometry" value="1000x800"/>
 
-	<detector name="sphere" factory="GDML"/>
+	<detector name="ftof" factory="GDML"/>
 
 	<detector name="cad/" factory="CAD"/>
 
