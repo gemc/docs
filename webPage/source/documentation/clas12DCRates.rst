@@ -152,7 +152,7 @@ The bank definition is a dc__bank.txt file that can be found on any experiments/
 There are two important options when you're ready to collect the ROOT files.
 
 - root: this option will write the ROOT output for ALL the directories in the output path.
-- rootd: same as rootd, but it will also delete the directory once the conversion is done. This option is useful when running massive job, so the index does not get very big. This option guarantee to be run multiple times because it runs only on new directories only.
+- rootr: same as root, but it will also delete the directory once the conversion is done. This option is useful when running massive job, so the index does not get very big. This option guarantee to be run multiple times because it runs only on new directories only.
 
 
 |br|
