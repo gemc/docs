@@ -13,7 +13,7 @@ To add background coming from the beam the following quantities must be defined
 These quantities are defined with the *LUMI* options. For example the clas12 10\ :sup:`35` luminosity
 on a 5cm LH\ :sub:`2` target is achieved with:
 
-.. code-block:: guess
+.. code-block:: bash
 
 	<option name="LUMI_EVENT"     value="124000, 250*ns, 2*ns" />
 	<option name="LUMI_P"         value="e-, 11*GeV, 0*deg, 0*deg" />

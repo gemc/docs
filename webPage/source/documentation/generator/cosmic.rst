@@ -25,7 +25,7 @@ To use the default parameters the *COSMICRAYS* option can be used.
 For example, to generate cosmic with momentum ranging from 1 to 10 GeV:
 
 
-.. code-block:: guess
+.. code-block:: bash
 
 	<option name="COSMICRAYS"   value="default, 1, 10"/>
 

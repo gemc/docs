@@ -35,7 +35,7 @@ The *USE_GUI=0* option tells gemc to run in batch mode. By default gemc would ru
 
 The output format (default: evio) is specified in the gcard:
 
-.. code-block:: guess
+.. code-block:: bash
 
    <option name="OUTPUT" value="evio, out.ev"/>
 
@@ -60,7 +60,7 @@ For example, to set the primary beam particle type, momentum, theta and phi::
 
 The corresponding option in the gcard has a *name* / *value* syntax like this:
 
-.. code-block:: guess
+.. code-block:: bash
 
    <option name="BEAM_P" value="e-, 6*GeV, 15*deg, 20*deg"/>
 
@@ -77,7 +77,7 @@ A detector can be loaded with several variations (a variation could have a diffe
 
 To load a detector in the gcard:
 
-.. code-block:: guess
+.. code-block:: bash
 
    <detector name="<path>/bst" factory="TEXT" variation="original"/>
 
@@ -87,7 +87,7 @@ To remove a detector simply remove or comment its corresponding line.
 The true information output is disabled by default. To activate it for a given system use the *INTEGRATEDRAW* flag.
 For example, to save bst and dc detectors true information:
 
-.. code-block:: guess
+.. code-block:: bash
 
  <detector name="INTEGRATEDRAW" value="bst, dc"/>
 
@@ -99,7 +99,7 @@ Using the internal generator
 
 A primary particle 4-momentum and vertex ranges can be set with the directives:
 
-.. code-block:: guess
+.. code-block:: bash
 
  <option name="BEAM_P"   value="proton, 4.0*GeV, 20.0*deg, 10*deg"/>
  <option name="SPREAD_P" value="1*GeV, 10*deg, 180*deg"/>
@@ -141,7 +141,7 @@ To add background coming from the beam interactions with any materials the follo
 These quantities are defined with the *LUMI_EVENT* option.
 For example for clas12 :math:`10^{35}` luminosity on 5cm LH2 target:
 
-.. code-block:: guess
+.. code-block:: bash
 
  <option name="LUMI_EVENT"     value="124000, 250*ns, 2*ns" />
  <option name="LUMI_P"         value="e-, 11*GeV, 0*deg, 0*deg" />
@@ -160,7 +160,7 @@ There are two magnetic fields: torus (*clas12-torus-big*)  and solenoid (*clas12
 
 They both can be scaled with the *SCALE_FIELD* option. For example:
 
-.. code-block:: guess
+.. code-block:: bash
 
  <option name="SCALE_FIELD" value="clas12-torus-big, -0.8"/>
  <option name="SCALE_FIELD" value="clas12-solenoid, 0.5"/>
@@ -185,7 +185,7 @@ Command line help
 
 Typing gemc -help will show the help sub-categories:
 
-.. code-block:: guess
+.. code-block:: bash
 
  Help Options:
 

@@ -48,7 +48,7 @@ True Information
 The true information for any system *systemname* can be written in the output
 by using the *INTEGRATEDRAW* option. For example, to record true information for the system *dc*:
 
-.. code-block:: guess
+.. code-block:: bash
 
 	<option name="INTEGRATEDRAW" value="dc"/>
 

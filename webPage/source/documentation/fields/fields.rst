@@ -58,7 +58,7 @@ To define a constant field named "unifX" you can paste the xml code below in any
 If you point the above environment variables to its location, gemc will automatically read these definitions,
 and if any detector needs it, gemc will build the field and associate it to that detector.
 
-.. code-block:: guess
+.. code-block:: bash
 
 	<mfield>
 		<description name="unifX" factory="ASCII" comment="Uniform 10 T Field along x-axis"/>
@@ -76,7 +76,7 @@ so two columns defined the coordinates (*transverse* and *longitudinal*) and two
 field values. The header can define the column order as well:
 
 
-.. code-block:: guess
+.. code-block:: bash
 
 	<mfield>
 		<description name="solenoid" factory="ASCII" comment="superconducting solenoid"/>
@@ -140,7 +140,7 @@ Multipoles
 Multipoles can be defined using xlm files. For example, to create a simple dipole field and also rotate it by 0.02 radians along the y axis
 store the definition below in an ascii file with .dat extension:
 
-.. code-block:: guess
+.. code-block:: bash
 
 	<mfield>
 	 <description name="simple_dipole1" factory="ASCII" comment="simple dipole example"/>
