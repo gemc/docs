@@ -31,16 +31,20 @@ Typing gemc -help will show the help sub-categories::
 
  Help Options:
 
- >  -help-all:  all available options.
+  >  -help-all:  all available options.
+  >  -help-html:  write a formatted file options.html with the available gemc options.
 
- >  -help-control             control options.
- >  -help-general             general options.
- >  -help-generator           generator options.
- >  -help-luminosity          luminosity options.
- >  -help-mysql               mysql options.
- >  -help-output              output options.
- >  -help-physics             physics options.
- >  -help-verbosity           verbosity options.
+   >  -help-control             control options.
+   >  -help-fields              fields options.
+   >  -help-general             general options.
+   >  -help-generator           generator options.
+   >  -help-luminosity          luminosity options.
+   >  -help-materials           materials options.
+   >  -help-mysql               mysql options.
+   >  -help-output              output options.
+   >  -help-physics             physics options.
+   >  -help-transportation      transportation options.
+   >  -help-verbosity           verbosity options.
 
 You can access to a specific subcategory like this:
 
