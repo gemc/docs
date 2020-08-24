@@ -13,15 +13,16 @@ GEMC on Docker
 GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
 
-Batch mode
-----------
+Using Docker
+------------
 
 Use the following command to open a bash session on the container. You can also replace bash with tcsh::
 
- docker run -it --rm jeffersonlab/gemcbatch:2.7 bash
+ docker pukk jeffersonlab/gemc:2.8
+ docker run -it --rm jeffersonlab/gemc:2.8 bash
 
-This will open the session in the /jlab/work directory. When executed the first time these will also download the image on your computer.
-Use the gemc option USE_GUI=0 to run gemc in batch mode. Try the examples above.
+This will open the session in the /jlab/work directory.
+Use the gemc option USE_GUI=0 to run gemc in batch mode.
 
 |br|
 
@@ -31,7 +32,7 @@ Interactive mode (browser)
 
 To use the native geant4 opengl GUI use the following command::
 
- docker run -it --rm -p 6080:6080 jeffersonlab/gemcinteractive:2.7
+ docker run -it --rm -p 6080:6080 jeffersonlab/gemc:2.8
 
 Using your web brower open the page::
 
@@ -71,7 +72,7 @@ Interactive mode (vnc)
 
 Use the following command to pass so you can open the container with the browser or a vnc client::
 
- docker run -it --rm -p 6080:6080 -p 5901:5901 jeffersonlab/gemcinteractive:2.7
+ docker run -it --rm -p 6080:6080 -p 5901:5901 jeffersonlab/gemc:2.8
 
 You can now open localhost:5901 with your vnc client.
 
@@ -90,7 +91,7 @@ On a mac, if you allow access from localhost with::
 
 Then you can run docker and use the local X server with::
 
- docker run -it --rm -e DISPLAY=docker.for.mac.localhost:0 jeffersonlab/gemcbatch:2.7 bash
+ docker run -it --rm -e DISPLAY=docker.for.mac.localhost:0 jeffersonlab/gemc:2.8 bash
 
 You can run gemc in batch mode this way, but still enjoy the ability to open windows on the local host.
 
@@ -107,7 +108,7 @@ You can use the option::
 
 to mount your local OS directories to be visible in docker. For example, to mount the "maximilian" home directory in a /max dir in the container:
 
- docker run -it --rm  -v /home/maximilian:/jlab/work/max jeffersonlab/gemcbatch:2.7 bash
+ docker run -it --rm  -v /home/maximilian:/jlab/work/max jeffersonlab/gemc:2.8 bash
 
 */jlab/work//max* will now point to maximilian home dir. You can save work here.
 
@@ -131,33 +132,6 @@ Generator: LUND Events sample
 
 |br|
 
-Experiments Specifics Downloads: CLAS12
-=======================================
-
-Magnetic Fields
----------------
-Some experiment require magnetic field maps. For example, clas12 field maps are located here:
-
- * `new clas12 solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12NewSolenoidFieldMap.dat>`_
- * `old clas12 solenoid <http://clasweb.jlab.org/12gev/field_maps/clas12SolenoidFieldMap.dat>`_
- * `torus               <http://clasweb.jlab.org/12gev/field_maps/TorusSymmetric.dat>`_
-
-|br|
-
-Running CLAS12 simulations on the Jefferson Lab Interactive farm
-================================================================
-
-GEMC and the CLAS12 geometry is installed on /group/clas12/gemc. To use, source the environment::
-
- source /group/clas12/gemc/environment.csh
-
-|br| |br|
-
-As an example, to run gemc using the official clas12 gcard::
-
- gemc /group/clas12/gemc/4a.2.4/clas12.gcard -N=100 -USE_GUI=0
-
-|br|
 
 GEMC Release Notes
 ------------------
