@@ -1,7 +1,7 @@
 
-########
-GEMC Hit
-########
+########################
+GEMC Hit and Time Window
+########################
 
 .. _hitDefinition:
 
@@ -9,7 +9,8 @@ GEMC Hit
 Hit Definition
 --------------
 
-The definition of a hit is tied up to the detector electronics, in particular its Time Window (TW), defined by the user.
+The definition of a hit is tied up to the detector electronics, in particular its Time Window (TW), defined by the user
+(notice the TW is fixed and never changes during the simulation).
 
 All geant4 steps [#]_ in a detector element [#]_ within the TW constitute a hit.
 
