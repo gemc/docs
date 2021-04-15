@@ -18,7 +18,7 @@ Using Docker
 
 Use the following command to open a bash session on the container. You can also replace bash with tcsh::
 
- docker pukk jeffersonlab/gemc:2.8
+ docker pull jeffersonlab/gemc:2.8
  docker run -it --rm jeffersonlab/gemc:2.8 bash
 
 This will open the session in the /jlab/work directory.
@@ -32,7 +32,7 @@ Interactive mode (browser)
 
 To use the native geant4 opengl GUI use the following command::
 
- docker run -it --rm -p 6080:6080 jeffersonlab/gemc:2.8
+ docker run -it --rm  -p127.0.0.1:6080:6080 jeffersonlab/gemc:2.8
 
 Using your web brower open the page::
 
@@ -72,7 +72,7 @@ Interactive mode (vnc)
 
 Use the following command to pass so you can open the container with the browser or a vnc client::
 
- docker run -it --rm -p 6080:6080 -p 5901:5901 jeffersonlab/gemc:2.8
+ docker run -it --rm -p127.0.0.1:6080:6080 -p 5901:5901 jeffersonlab/gemc:2.8
 
 You can now open localhost:5901 with your vnc client.
 
