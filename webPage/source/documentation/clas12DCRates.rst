@@ -10,13 +10,18 @@ Study of DC Rates
 
 .. code-block:: bash
 
-	Please email ungaro@jlab.org to report inaccuracies or improvement to this page.
-	Feel free to do a PR with your suggested changes
+	Please email ungaro@jlab.org devita@jlab.org or mariangela.bondi@ct.infn.it to report inaccuracies or improvement to this page.
+	Feel free to do a PR with your suggested changes, the repository of this document is: https://github.com/gemc/docs.git inside webPage.
 
 |br|
 
 This page documents the code and steps necessary to simulate various CLAS12 geometry configurations
 on the JLAB farm and run the analysis code to check the effect on the drift chambers.
+
+We refer here to clas12tag 4.4.2. The environment can be loaded with::
+
+ module load clas12
+ module switch gemc/4.4.2
 
 |br|
 
@@ -31,10 +36,10 @@ To run the simulation on the farm the scripts are located in this subdir::
 
  farm/gemc
 
+The analysis root macros can be found at::
 
-The code to analyize the dc rate is in this subdir::
+ https://github.com/mariangela-bondi/clas12_simulation_rootMacro.git
 
- gemc/dc_rates
 
 
 The clas12tags repo is need to get the gcards::
@@ -54,7 +59,7 @@ Choosing the configurations
 The idea is to run one set of simulation for each gcard inside a directory.
 The directory could have just one gcard (one configuration only), or several gcards to study different situations
 
-You can find several such studies in *farm/gemc/studies*.
+You can find examples of such studies in *farm/gemc/studies*.
 
 The starting point for any CLAS12 study should be based on the gcards in clas12Tags. These contains the most updated
 settings to run CLAS12 geometry.
@@ -77,9 +82,8 @@ for things to complete, this is not a big gain and one may consider running with
 The important modifications to make are:
 
 - your configuration changes
-- adding INTEGRATEDRAW flag for dc
+- adding INTEGRATEDRAW option for dc
 - adding beam on target
-
 
 The INTEGRATEDRAW line adds the geant4 true info for the dc
 
@@ -131,22 +135,16 @@ Couple of notes:
 inquireSimulation
 -----------------
 
-inquireSimulation is a program to convert the EVIO outputs to ROOT.
+inquireSimulation is a program to convert the EVIO outputs to ROOT or check the status of your jobs.
 
-
-First, source the enviroment as you need ROOT and evio2root::
-
-	source /group/clas12/gemc/environment.csh 4.3.2
-
-You can run inquireSimulation to check the status of your jobs.
-inquireSimulation will not run if the bank definitions of the detector we're interested in is present.
+inquireSimulation will not run if the bank definitions file of the detector we're interested in is not present in the same dir as inquireSimulation is.
 In this case we need "dc", which is what should go on the line::
 
  set BANKSM  = "dc" # bank to be included in rootification
 
 The bank definition is a dc__bank.txt file that can be found on any experiments/clas12/dc dir. For example::
 
- /group/clas12/gemc/4.3.2/experiments/clas12/dc
+ /group/clas12/gemc/4.4.2/experiments/clas12/dc
 
 
 There are two important options when you're ready to collect the ROOT files.
@@ -157,14 +155,12 @@ There are two important options when you're ready to collect the ROOT files.
 
 |br|
 
-running the ROOT macro
+Using the ROOT macro to analyze events
 ----------------------
 
-In  gemc/dc_rates let's edit rates.C in 3 places:
+The root macros can be found at::
 
-- NCONF should match number of gcards in mystudy
-- sconf (array) should reflect the names of the gcards in mystudy
-- factor should be a the multiplier for each study (usually 1)
+ https://github.com/mariangela-bondi/clas12_simulation_rootMacro.git
 
+The README gives directions on how to run the macro.
 
-README will give directions on how to run the macro.
