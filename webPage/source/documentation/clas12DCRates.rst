@@ -144,7 +144,7 @@ In this case we need "dc", which is what should go on the line::
 
 The bank definition is a dc__bank.txt file that can be found on any experiments/clas12/dc dir. For example::
 
- mv /group/clas12/gemc/4.4.2/experiments/clas12/dc/dc__bank.txt .
+ cp /group/clas12/gemc/4.4.2/experiments/clas12/dc/dc__bank.txt .
 
 
 There are two important options when you're ready to collect the ROOT files.
