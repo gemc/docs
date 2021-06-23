@@ -154,7 +154,7 @@ There are two important options when you're ready to collect the ROOT files.
 
 Note: the command to use evio2root directly is::
 
- evio2root -INPUTF=inputfile -B=dc
+ evio2root -INPUTF=inputfile -B=dc -R=dc
 
 |br|
 
