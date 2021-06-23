@@ -144,7 +144,7 @@ In this case we need "dc", which is what should go on the line::
 
 The bank definition is a dc__bank.txt file that can be found on any experiments/clas12/dc dir. For example::
 
- /group/clas12/gemc/4.4.2/experiments/clas12/dc
+ mv /group/clas12/gemc/4.4.2/experiments/clas12/dc/dc__bank.txt .
 
 
 There are two important options when you're ready to collect the ROOT files.
@@ -152,11 +152,14 @@ There are two important options when you're ready to collect the ROOT files.
 - root: this option will write the ROOT output for ALL the directories in the output path.
 - rootr: same as root, but it will also delete the directory once the conversion is done. This option is useful when running massive job, so the index does not get very big. This option guarantee to be run multiple times because it runs only on new directories only.
 
+Note: the command to use evio2root directly is::
+
+ evio2root -INPUTF=inputfile -B=dc
 
 |br|
 
 Using the ROOT macro to analyze events
-----------------------
+--------------------------------------
 
 The root macros can be found at::
 
