@@ -73,8 +73,8 @@ sub build_paddles
 		$detector{"material"}   = "scintillator";
 		$detector{"visible"}     = 1;
 		$detector{"style"}       = 1;
-		$detector{"sensitivity"} = "ctof";
-		$detector{"hit_type"}    = "ctof";
+		$detector{"sensitivity"} = "flux";
+		$detector{"hit_type"}    = "flux";
 		$detector{"identifiers"} = "paddle manual $n";
 		
 		print_det(\%configuration, \%detector);
