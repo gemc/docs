@@ -18,8 +18,8 @@ Using Docker
 
 Use the following command to open a bash session on the container. You can also replace bash with tcsh::
 
- docker pull jeffersonlab/gemc:2.8
- docker run -it --rm jeffersonlab/gemc:2.8 bash
+ docker pull jeffersonlab/gemc:2.9
+ docker run -it --rm jeffersonlab/gemc:2.9 bash
 
 This will open the session in the /jlab/work directory.
 Use the gemc option USE_GUI=0 to run gemc in batch mode.
@@ -32,7 +32,7 @@ Interactive mode (browser)
 
 To use the native geant4 opengl GUI use the following command::
 
- docker run -it --rm  -p127.0.0.1:6080:6080 jeffersonlab/gemc:2.8
+ docker run -it --rm  -p127.0.0.1:6080:6080 jeffersonlab/gemc:2.9
 
 Using your web brower open the page::
 
@@ -72,7 +72,7 @@ Interactive mode (vnc)
 
 Use the following command to pass so you can open the container with the browser or a vnc client::
 
- docker run -it --rm -p127.0.0.1:6080:6080 -p 5901:5901 jeffersonlab/gemc:2.8
+ docker run -it --rm -p127.0.0.1:6080:6080 -p 5901:5901 jeffersonlab/gemc:2.9
 
 You can now open localhost:5901 with your vnc client.
 
@@ -91,7 +91,7 @@ On a mac, if you allow access from localhost with::
 
 Then you can run docker and use the local X server with::
 
- docker run -it --rm -e DISPLAY=docker.for.mac.localhost:0 jeffersonlab/gemc:2.8 bash
+ docker run -it --rm -e DISPLAY=docker.for.mac.localhost:0 jeffersonlab/gemc:2.9 bash
 
 You can run gemc in batch mode this way, but still enjoy the ability to open windows on the local host.
 
@@ -108,7 +108,7 @@ You can use the option::
 
 to mount your local OS directories to be visible in docker. For example, to mount the "maximilian" home directory in a /max dir in the container:
 
- docker run -it --rm  -v /home/maximilian:/jlab/work/max jeffersonlab/gemc:2.8 bash
+ docker run -it --rm  -v /home/maximilian:/jlab/work/max jeffersonlab/gemc:2.9 bash
 
 */jlab/work//max* will now point to maximilian home dir. You can save work here.
 

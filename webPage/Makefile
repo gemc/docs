@@ -53,7 +53,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
-	cp $(GEMC)/changeLog                    source/documentation/releases/changelog.rst
+	cp $(GEMC)/changeLog                  source/documentation/releases/changelog.rst
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	cp source/latestNews.html             $(BUILDDIR)/html
