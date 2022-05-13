@@ -5,16 +5,8 @@ Simple Example  - *2/2*
 =======================
 
 
-
 Producing the geometry
 ^^^^^^^^^^^^^^^^^^^^^^
-
-The location of the python api files should be added to the PYTHONPATH. If gemc was installed via the DMG,
-add the following path for gemc-2.6::
-
- export PYTHONPATH=$PYTHONPATH:/Applications/gemc-2.6.app/gemc.app/Contents/Resources/api/python
-
-If gemc was installed from source PYTHONPATH would be automatically set already.
 
 The geometry can be generated with the command::
 
