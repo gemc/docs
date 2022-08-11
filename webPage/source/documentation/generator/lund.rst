@@ -95,6 +95,17 @@ the UD variables are an example from the JLab CLAS12 conventions, but users can 
    +--------------+------------------------------------------------------+
 
 
+Vertex
+^^^^^^
+
+While the gcard could shift certain volumes, for example the target z location, GEMC does not reset the LUND
+vertex location based on those volumes. The option SHIFT_LUND_VERTEX can be used to apply a shift to
+the LUND location. For example::
+
+ -SHIFT_LUND_VERTEX="0, 0, -3 cm"
+
+
+
 
 Examples
 ^^^^^^^^
