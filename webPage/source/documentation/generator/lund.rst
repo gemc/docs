@@ -1,5 +1,9 @@
 .. _lund:
 
+.. |br| raw:: html
+
+   <br>
+
 The LUND format
 ---------------
 
@@ -17,6 +21,8 @@ Or, in a gcard [#]_::
  <option name="INPUT_GEN_FILE" value="LUND, input.dat"/>
 
 
+|br|
+
 Description
 ^^^^^^^^^^^
 After the header there are N lines (one per particle) describing each particle
@@ -26,7 +32,8 @@ A **bold** indicates quantities used by GEMC. The other variables are labelled U
 The UD variables are not used by GEMC but are kept in the output stream. In the table below
 the UD variables are an example from the JLab CLAS12 conventions, but users can assign any meaning to them.
 
-|
+|br|
+
 
 .. container:: lmydiv
 
@@ -105,6 +112,7 @@ the LUND location. For example::
  -SHIFT_LUND_VERTEX="0, 0, -3 cm"
 
 
+|br|
 
 
 Examples
@@ -117,6 +125,22 @@ Examples
  2   1.  1   2212   0    0   0.7333   0.1126  0.6391  1.3560  0.9380  0.0000 0.0000  -0.8072
  3   0.  1    111   0    0   0.2498  -0.2107  0.2808  0.4515  0.1349  0.0000 0.0000  -0.8072
  4   0.  1     22   0    0  -0.0001  -0.0000  0.0299  0.0299  0.0000  0.0000 0.0000  -0.8072
+
+|br|
+
+
+Lund to ROOT
+^^^^^^^^^^^^
+
+A convenience root conversion macro for lund format can be found `here <https://github.com/rafopar/clas12AnaTools/tree/master/LUND2Root>`_.
+
+
+
+|br|
+|br|
+
+
+
 
 
 
