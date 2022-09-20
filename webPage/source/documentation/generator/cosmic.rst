@@ -75,7 +75,7 @@ will target an area at (0, 0, 1m) with 5m of radius.
 
 
 
-.. thumbnail:: model.png
+.. thumbnail:: cosmicModel.png
    :width: 48%
    :group: mycenter
    :title:
@@ -83,7 +83,7 @@ will target an area at (0, 0, 1m) with 5m of radius.
     The momentum versus theta distribution of muons using the default model parameters.
 
 
-.. thumbnail:: example.png
+.. thumbnail:: cosmicExample.png
    :width: 48%
    :group: mycenter
    :title:
