@@ -141,7 +141,6 @@ In the pictures below the vertex was placed at -3cm and a beam spot was assigned
 
 	<option name="BEAM_SPOT"  value="0.2*cm, 0.3*cm, 0.05*cm, 0.1*cm, 20*deg"/>
 	<option name="RANDOMIZE_LUND_VZ"  value="-3*cm, 2.5*cm, reset"/>
-	<option name="HALL_MATERIAL"  value="G4_Galactic"/>
 
 .. thumbnail:: lundBeamSpot.png
    :width: 48%
