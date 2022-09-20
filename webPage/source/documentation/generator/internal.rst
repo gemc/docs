@@ -16,7 +16,7 @@ The above will generate a proton with:
 * momentum between 3 and 5 GeV.
 * θ between 10 and 30 degrees.
 * ϕ between 0 and 360 degrees.
-* vertex z between -5 and 5 cm.
+* vertex z between -10 and 0 cm.
 * vertex radius between 0 and 0.1 cm.
 
 Any gcard directive can be superseed by its corresponding command line. For example::
