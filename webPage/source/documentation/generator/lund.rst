@@ -106,15 +106,19 @@ Vertex
 ^^^^^^
 
 
-
-
-GEMC does not change the LUND vertex location based on the location or dimension of physical volumes (for example, a target).
+As reminder, GEMC does not change the LUND vertex location based on the location or dimension of physical volumes (for example, a target).
 
 The following options can be used to account for a beam spot or target dimensions:
 
-- BEAM_SPOT:
+|br|
 
- Randomizes the x, y generated partice vertexes in an ellipse defined by the x, y radii and sigmas. By default the randomization is relative to the LUND vertex values. An additional parameters defines the eliipse counterclockwise rotation along the z-axis. If the sixth and final argument "reset" is given, the vertexes are relative to (VX, VY) = (0, 0).
+- **BEAM_SPOT**:
+
+Randomizes the x, y generated partice vertexes in an ellipse defined by the x, y radii and sigmas.
+By default the randomization is relative to the LUND vertex values.
+An additional parameters defines the eliipse counterclockwise rotation along the z-axis.
+If the sixth and final argument "reset" is given, the vertexes are relative to (VX, VY) = (0, 0).
+
            - example 1: -BEAM_SPOT="2*cm, 3*cm, 0.2*cm, 0.1*cm, 22*deg"
              
              This randomizes the vertexes around the original LUND values, but shifted by (VX, VY) = (2, 3)cm
@@ -125,10 +129,13 @@ The following options can be used to account for a beam spot or target dimension
              This randomizes the vertexes around (VX, VY) = (2, 3)cm
              A gaussian with sigmas (SX, SY) = (0.2, 0.1)cm are used, rotated 22 degrees around z.
 
-- RANDOMIZE_LUND_VZ:
+- **RANDOMIZE_LUND_VZ**:
 
-Randomizes the z vertexes using, in order: Z shift, DZ sigma. By default the randomization is relative to the LUND vertex values. If the third argument "reset" is given, the vertexes are relative to VZ=0.
-           - example 1:  -RANDOMIZE_LUND_VZ="-3*cm, 2.5*cm" ";
+Randomizes the z vertexes using, in order: Z shift, DZ sigma.
+By default the randomization is relative to the LUND vertex values.
+If the third argument "reset" is given, the vertexes are relative to VZ=0.
+
+           - example 1:  -RANDOMIZE_LUND_VZ="-3*cm, 2.5*cm";
              
              This randomizes the z vertex by plus-minus 5cm around the original LUND values,
 	     and shift it by -3cm
@@ -136,6 +143,9 @@ Randomizes the z vertexes using, in order: Z shift, DZ sigma. By default the ran
            - example 2:  -RANDOMIZE_LUND_VZ="-3*cm, 2.5*cm, reset ";
              
              This randomizes the z vertex by plus-minus 5cm around VZ = -3cm
+
+|br|
+|br|
 
 In the pictures below the vertex was placed at -3cm and a beam spot was assigned with these options::
 
