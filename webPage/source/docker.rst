@@ -137,8 +137,8 @@ Generator: LUND Events sample
 Step-by-Step Installation
 =========================
 
-To run gemc / geant4 one can also download / install the libraries and gemc using these
-`Step-By-Step instructions <https://www.jlab.org/12gev_phys/packages/sources/ceInstall/2.3_install.html>`_.
+To run gemc / geant4 one can also download / install the libraries and gemc using
+`these instructions <https://github.com/JeffersonLab/ceInstall>`_.
 
 
 
