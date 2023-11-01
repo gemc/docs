@@ -118,10 +118,10 @@ The above will generate a proton with:
 Using a custom generator
 ------------------------
 
-gemc support the  :ref:`lund`.
+gemc support the  :ref:`lund`
 To generate events using a LUND file::
 
--INPUT_GEN_FILE="LUND, filename"
+    -INPUT_GEN_FILE="LUND, filename"
 
 
 See :ref:`generator` for more details.

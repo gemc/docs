@@ -23,10 +23,11 @@ pip install sphinxcontrib-images
 Sphinx version
 --------------
 
-Careful the very latest versions of sphinx (installed from github or pip) may not work.
+Careful the very latest versions of sphinx (installed with pip3) may not work.
 To install a previous version:
-1. get the releases: https://github.com/sphinx-doc/sphinx/releases
-2. untar, and type sudo pip install .
+
+ sudo  pip3 install "sphinx<6"
+
 
 
 Themes

@@ -77,7 +77,7 @@ Additional Options or features
 
     Provides and implements a new command line option::
 
-     -SAVE_SELECTED=“<id>, <pid>, <low limit>, <high limit>, <variable>, <directory>”
+        -SAVE_SELECTED="<id>, <pid>, <low limit>, <high limit>, <variable>, <directory>"
 
     This tells GEMC to save the RNG state in a file in directory for events in which there is a hit satisfying:
     Detector ID matches <id> in all digit positions where <id> does not contain ‘x’ AND
@@ -86,7 +86,7 @@ Additional Options or features
 
     For example::
 
-    SAVE_SELECTED="7xx10000, 11, 0.0MeV, 2000MeV, trackE, ./"
+        -SAVE_SELECTED="7xx10000, 11, 0.0MeV, 2000MeV, trackE, ./"
 
     saves RNG state in files in the current directory for events in which there was a hit in detectors 70010000, 70110000, 70210000, etc. by an electron with energy from 0 to 2 GeV.
 

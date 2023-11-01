@@ -69,7 +69,7 @@ html:
 
 publish:
 	make html
-	scp -r build/html ftp.jlab.org:/u/group/clas/www/gemc/html/gemc
+	scp -r build/html ifarm:/u/group/clas/www/gemc/html/gemc
 	cd source/documentation/tutorials/material ;  ./makeTars
 
 dirhtml:

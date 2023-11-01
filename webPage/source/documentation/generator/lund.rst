@@ -1,8 +1,10 @@
-.. _lund:
-
 .. |br| raw:: html
 
    <br>
+
+.. _lund:
+
+
 
 The LUND format
 ---------------
@@ -76,7 +78,7 @@ the UD variables are an example from the JLab CLAS12 conventions, but users can 
    +--------------+------------------------------------------------------+
    |      2       |  Lifetime [nanoseconds] (UD)                         |
    +--------------+------------------------------------------------------+
-   |      3       |    **type (1 is active)**                            |
+   |      3       |    **type (1 is propagated in geant4, 0 is not)**    |
    +--------------+------------------------------------------------------+
    |      4       |     **particle ID**                                  |
    +--------------+------------------------------------------------------+
@@ -148,8 +150,8 @@ By default the randomization is relative to the LUND vertex values. If the third
 
 In the pictures below the vertex was placed at -3cm and a beam spot was assigned with these options::
 
-	<option name="BEAM_SPOT"  value="0.2*cm, 0.3*cm, 0.05*cm, 0.1*cm, 20*deg"/>
-	<option name="RANDOMIZE_LUND_VZ"  value="-3*cm, 2.5*cm, reset"/>
+   <option name="BEAM_SPOT"  value="0.2*cm, 0.3*cm, 0.05*cm, 0.1*cm, 20*deg"/>
+   <option name="RANDOMIZE_LUND_VZ"  value="-3*cm, 2.5*cm, reset"/>
 
 .. thumbnail:: lundBeamSpot.png
    :width: 48%

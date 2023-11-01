@@ -611,12 +611,6 @@ div.note p.admonition-title {
 	font-style: italic;
 }
 
-/*
-  mobile options.
-  To test:
-  scp build/html/_static/mauri.css ftp.jlab.org:/u/group/clas/www/gemc/html/gemc/html/_static/mauri.css
-  and reload on the phone
-*/
 
 
 @media only screen and (max-device-width: 480px) {
