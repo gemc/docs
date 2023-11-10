@@ -19,6 +19,7 @@ GEMC Documentation
 	:maxdepth: 1
 
 	generator/generator
+	vertex
 	ancestry.rst
 	rerunEvents.rst
 	generator/bgmerge.rst
