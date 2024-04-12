@@ -7,10 +7,43 @@
 
    <br>
 
+Compiling from Source
+---------------------
+
+GEMC and the dependency libraries can be compiled using the repository 'ceInstall' :
+
+1. Choose an (existing) installation directory, for example /opt/sim and point SIM_HOME to it::
+
+	export SIM_HOME=/opt/sim
+
+2. Clone the latest tag of ceInstall repository inside $SIM_HOME and use its modules::
+
+	cd $SIM_HOME
+	git clone  --single-branch -b 1.0 https://github.com/JeffersonLab/ceInstall
+	module use "${SIM_HOME}"/ceInstall/modulefiles
+
+3. Run the installation script::
+
+	$SIM_HOME/ceInstall/scripts/install_gemc <version>
+
+<version> can be:
+
+- `4.4.2`: uses `geant4 10.6.2` and clas12Tags `4.4.2`
+- `5.7`: uses `geant4 10.6.2` and clas12Tags `5.7`
+- `5.8`: uses `geant4 10.7.4` and clas12Tags `5.8`
+- `2.12`: uses `geant4 10.7.4` and gemc `2.12`
+
+
+
+|br|
+
+
 GEMC on Docker
 --------------
 
 GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
+
+|br|
 
 
 Using Docker
@@ -131,14 +164,6 @@ Generator: LUND Events sample
 `10 Deep Inelastic Scattering events in LUND format <http://jlab.org/12gev_phys/packages/gcards/dis.dat>`_
 
 |br|
-
-
-
-Step-by-Step Installation
-=========================
-
-To run gemc / geant4 one can also download / install the libraries and gemc using
-`these instructions <https://github.com/JeffersonLab/ceInstall>`_.
 
 
 

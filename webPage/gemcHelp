@@ -3,5 +3,5 @@
 # copy and paste from
 # echo $DYLD_LIBRARY_PATH
 
-setenv DYLD_LIBRARY_PATH /opt/jlab_software/macosx13-clang15/sim/2.4/hipo/2.3/slib:/opt/jlab_software/macosx13-clang15/sim/2.4/hipo/2.3/lib:/opt/jlab_software/macosx13-clang15/sim/2.4/mlibrary/1.7/lib:/opt/jlab_software/macosx13-clang15/sim/2.4/evio/5.1/lib:/opt/jlab_software/macosx13-clang15/sim/2.4/ccdb/1.07.01/lib:/opt/jlab_software/macosx13-clang15/sim/2.4/geant4/10.6.2/lib:/opt/jlab_software/macosx13-clang15/sim/2.4/qt/system/clang_64/lib:/opt/jlab_software/macosx13-clang15/sim/2.4/xercesc/3.2.3/lib:/opt/jlab_software/macosx13-clang15/sim/2.4/clhep/2.4.1.3/lib
+setenv DYLD_LIBRARY_PATH /opt/jlab_software/1.1/macosx14-clang15/hipo/4.0.1/slib:/opt/jlab_software/1.1/macosx14-clang15/hipo/4.0.1/lib:/opt/jlab_software/1.1/macosx14-clang15/mlibrary/dev/lib:/opt/jlab_software/1.1/macosx14-clang15/evio/5.1/lib:/opt/jlab_software/1.1/macosx14-clang15/ccdb/1.99.0/lib:/opt/jlab_software/1.1/macosx14-clang15/geant4/10.7.4/lib:/opt/jlab_software/1.1/macosx14-clang15/qt/system/clang_64/lib:/opt/jlab_software/1.1/macosx14-clang15/xercesc/3.2.5/lib:/opt/jlab_software/1.1/macosx14-clang15/clhep/2.4.4.2/lib
 gemc -help-html ; mv options.html allOptions.html
