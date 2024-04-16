@@ -22,9 +22,11 @@ GEMC and the dependency libraries can be compiled using the repository 'ceInstal
 	git clone  --single-branch -b 1.0 https://github.com/JeffersonLab/ceInstall
 	module use "${SIM_HOME}"/ceInstall/modulefiles
 
-3. Run the installation script::
+3. Make sure the `requirements <https://github.com/JeffersonLab/ceInstall?tab=readme-ov-file#requirements>`_ are satisfied.
 
-	$SIM_HOME/ceInstall/scripts/install_gemc <version>
+4. Run the installation script::
+
+	$SIM_HOME/ceInstall/install/install_gemc <version>
 
 <version> can be:
 
