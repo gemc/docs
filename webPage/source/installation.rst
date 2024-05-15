@@ -10,19 +10,25 @@
 Compiling from Source
 ---------------------
 
+The following instructions works in **bash** or **zsh** shells.
+
 GEMC and the dependency libraries can be compiled using the repository 'ceInstall' :
 
-1. Choose an (existing) installation directory, for example /opt/sim and point SIM_HOME to it::
+|br|
+
+1. Make sure the ALL `requirements <https://github.com/JeffersonLab/ceInstall?tab=readme-ov-file#requirements>`_ are satisfied.
+**You may need root priviledges to install certain system packages**.
+
+2. Choose an (existing) installation directory, for example /opt/sim and point SIM_HOME to it::
 
 	export SIM_HOME=/opt/sim
 
-2. Clone the latest tag of ceInstall repository inside $SIM_HOME and use its modules::
+3. Clone the latest tag of ceInstall repository inside $SIM_HOME and use its modules::
 
 	cd $SIM_HOME
 	git clone  --single-branch -b 1.0 https://github.com/JeffersonLab/ceInstall
 	module use "${SIM_HOME}"/ceInstall/modulefiles
 
-3. Make sure the `requirements <https://github.com/JeffersonLab/ceInstall?tab=readme-ov-file#requirements>`_ are satisfied.
 
 4. Run the installation script::
 
@@ -31,8 +37,8 @@ GEMC and the dependency libraries can be compiled using the repository 'ceInstal
 <version> can be:
 
 - `4.4.2`: uses `geant4 10.6.2` and clas12Tags `4.4.2`
-- `5.7`: uses `geant4 10.6.2` and clas12Tags `5.7`
-- `5.8`: uses `geant4 10.7.4` and clas12Tags `5.8`
+- `5.9`: uses `geant4 10.6.2` and clas12Tags `5.9`
+- `5.10`: uses `geant4 10.7.4` and clas12Tags `5.10`
 - `2.12`: uses `geant4 10.7.4` and gemc `2.12`
 
 
