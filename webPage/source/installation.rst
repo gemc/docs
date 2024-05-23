@@ -19,14 +19,17 @@ GEMC and the dependency libraries can be compiled using the repository 'ceInstal
 1. Make sure the ALL `requirements <https://github.com/JeffersonLab/ceInstall?tab=readme-ov-file#requirements>`_ are satisfied.
 **You may need root priviledges to install certain system packages**.
 
-2. Choose an (existing) installation directory, for example /opt/sim and point SIM_HOME to it::
+2. Choose an (existing) installation directory, for example /opt/sim and point SIM_HOME to it.
+   Make sure the directory exists and you have write permissions to it::
+
 
 	export SIM_HOME=/opt/sim
+
 
 3. Clone the latest tag of ceInstall repository inside $SIM_HOME and use its modules::
 
 	cd $SIM_HOME
-	git clone  --single-branch -b 1.0 https://github.com/JeffersonLab/ceInstall
+	git clone https://github.com/JeffersonLab/ceInstall
 	module use "${SIM_HOME}"/ceInstall/modulefiles
 
 
