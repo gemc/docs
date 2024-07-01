@@ -40,7 +40,6 @@ GEMC and the dependency libraries can be compiled using the repository 'ceInstal
 <version> can be:
 
 - `4.4.2`: uses `geant4 10.6.2` and clas12Tags `4.4.2`
-- `5.9`: uses `geant4 10.6.2` and clas12Tags `5.9`
 - `5.10`: uses `geant4 10.7.4` and clas12Tags `5.10`
 - `2.12`: uses `geant4 10.7.4` and gemc `2.12`
 
@@ -62,8 +61,8 @@ Using Docker
 
 Use the following command to open a bash session on the container. You can also replace bash with tcsh::
 
- docker pull jeffersonlab/gemc:2.9
- docker run -it --rm jeffersonlab/gemc:2.9 bash
+ docker pull jeffersonlab/gemc:dev-fedora36
+ docker run -it --rm jeffersonlab/gemc:dev-fedora36 bash
 
 This will open the session in the /jlab/work directory.
 Use the gemc option USE_GUI=0 to run gemc in batch mode.
@@ -76,11 +75,11 @@ Interactive mode (browser)
 
 To use the native geant4 opengl GUI use the following command::
 
- docker run -it --rm  -p127.0.0.1:6080:6080 jeffersonlab/gemc:2.9
+ docker run -it --rm  -p127.0.0.1:6080:6080 jeffersonlab/gemc:dev-fedora36
 
 Using your web brower open the page::
 
- http://localhost:6080
+http://localhost:8080/vnc.html
 
 After clicking connect the linux desktop is shown with a running shell.
 
@@ -111,36 +110,6 @@ You can stop the docker container at any time using ctrl-c in the shell session 
 |br|
 
 
-Interactive mode (vnc)
-----------------------
-
-Use the following command to pass so you can open the container with the browser or a vnc client::
-
- docker run -it --rm -p127.0.0.1:6080:6080 -p 5901:5901 jeffersonlab/gemc:2.9
-
-You can now open localhost:5901 with your vnc client.
-
-|br|
-
-
-
-Native interactive mode (no opengl)
------------------------------------
-
-On a mac, if you allow access from localhost with::
-
-  1. Activate the option ‘Allow connections from network clients’ in XQuartz settings
-     (Restart XQuartz (to activate the setting)
-  2. xhost +127.0.0.1
-
-Then you can run docker and use the local X server with::
-
- docker run -it --rm -e DISPLAY=docker.for.mac.localhost:0 jeffersonlab/gemc:2.9 bash
-
-You can run gemc in batch mode this way, but still enjoy the ability to open windows on the local host.
-
-|br|
-
 
 Mounting your directories to the container
 ------------------------------------------
@@ -152,9 +121,9 @@ You can use the option::
 
 to mount your local OS directories to be visible in docker. For example, to mount the "maximilian" home directory in a /max dir in the container:
 
- docker run -it --rm  -v /home/maximilian:/jlab/work/max jeffersonlab/gemc:2.9 bash
+ docker run -it --rm  -v /home/maximilian:/jlab/work/max jeffersonlab/gemc:dev-fedora36 bash
 
-*/jlab/work//max* will now point to maximilian home dir. You can save work here.
+*/jlab/work/max* will now point to maximilian home dir. You can save work here.
 
 |br|
 
