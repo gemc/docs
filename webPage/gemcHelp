@@ -1,7 +1,11 @@
-#!/bin/tcsh -f
+#!/bin/zsh -i
 
 # copy and paste from
 # echo $DYLD_LIBRARY_PATH
+brewDir=$(brew --prefix)
+. "$brewDir/opt/modules/init/zsh"
 
-setenv DYLD_LIBRARY_PATH /opt/jlab_software/1.1/macosx14-clang15/mlibrary/1.8/lib:/opt/jlab_software/1.1/macosx14-clang15/evio/5.1/lib:/opt/jlab_software/1.1/macosx14-clang15/ccdb/1.99.2/lib:/opt/jlab_software/1.1/macosx14-clang15/geant4/10.7.4/lib:/opt/jlab_software/1.1/macosx14-clang15/qt/system/clang_64/lib:/opt/jlab_software/1.1/macosx14-clang15/xercesc/3.2.5/lib:/opt/jlab_software/1.1/macosx14-clang15/clhep/2.4.4.2/lib:/opt/jlab_software/1.1/macosx14-clang15/hipo/4.1.0/lib:/opt/jlab_software/1.1/macosx14-clang15/hipo/4.1.0/slib
+module load gemc/2.12
+which gemc
+
 gemc -help-html ; mv options.html allOptions.html

@@ -75,7 +75,7 @@ Interactive mode (browser)
 
 To use the native geant4 opengl GUI use the following command::
 
- docker run -it --rm  -p127.0.0.1:6080:6080 jeffersonlab/gemc:dev-fedora36
+ docker run  -it --rm  -p 8080:8080   jeffersonlab/gemc:dev-fedora36
 
 Using your web brower open the page::
 
