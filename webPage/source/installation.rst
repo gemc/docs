@@ -7,97 +7,74 @@
 
    <br>
 
-Compiling from Source
----------------------
+Installation
+------------
 
-The following instructions works in **bash** or **zsh** shells.
-
-GEMC and the dependency libraries can be compiled using the repository 'ceInstall' :
-
-|br|
-
-1. Make sure the ALL `requirements <https://github.com/JeffersonLab/ceInstall?tab=readme-ov-file#requirements>`_ are satisfied.
-**You may need root priviledges to install certain system packages**.
-
-2. Choose an (existing) installation directory, for example /opt/sim and point SIM_HOME to it.
-   Make sure the directory exists and you have write permissions to it::
-
-
-	export SIM_HOME=/opt/sim
-
-
-3. Clone the latest tag of ceInstall repository inside $SIM_HOME and use its modules::
-
-	cd $SIM_HOME
-	git clone https://github.com/JeffersonLab/ceInstall
-	module use "${SIM_HOME}"/ceInstall/modulefiles
-
-
-4. Run the installation script::
-
-	$SIM_HOME/ceInstall/install/install_gemc <version>
-
-<version> can be:
-
-- `4.4.2`: uses `geant4 10.6.2` and clas12Tags `4.4.2`
-- `5.10`: uses `geant4 10.7.4` and clas12Tags `5.10`
-- `2.12`: uses `geant4 10.7.4` and gemc `2.12`
+Refer to the `ceInstall <https://github.com/JeffersonLab/ceInstall>`_ page for the latest instructions on how to use gemc at Jefferson Lab,
+or through CVMFS, or by building it from source.
 
 
 
 |br|
 
-
-GEMC on Docker
---------------
-
-GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
-
-|br|
 
 
 Using Docker
 ------------
 
-Use the following command to open a bash session on the container. You can also replace bash with tcsh::
+GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
- docker pull jeffersonlab/gemc:dev-fedora36
- docker run -it --rm jeffersonlab/gemc:dev-fedora36 bash
+Use a Docker Container
+The following docker containers are available:
 
-This will open the session in the /jlab/work directory.
-Use the gemc option USE_GUI=0 to run gemc in batch mode.
+jeffersonlab/gemc:gemc-dev-fedora36
+jeffersonlab/gemc:gemc-dev--almalinux93
+jeffersonlab/gemc:gemc-dev--ubuntu24
+
+Use the following command to open a bash session on the container.
+
+Batch mode::
+
+ docker run --platform linux/amd64 -it --rm -v ~/mywork:/usr/local/mywork jeffersonlab/gemc:gemc-dev-fedora36 bash
+
+You need to use the option USE_GUI=0 to run gemc in batch mode.
 
 |br|
 
 
-Interactive mode (browser)
---------------------------
+Interactive mode (browser)::
 
-To use the native geant4 opengl GUI use the following command::
+ docker run --platform linux/amd64 -it --rm -v ~/mywork:/usr/local/mywork -p 8080:8080 jeffersonlab/gemc:gemc-dev-fedora36
 
- docker run  -it --rm  -p 8080:8080   jeffersonlab/gemc:dev-fedora36
+Using your web browser open the page::
 
-Using your web brower open the page::
-
-http://localhost:8080/vnc.html
+ http://localhost:8080/vnc.html
 
 After clicking connect the linux desktop is shown with a running shell.
 
-You should launch gemc with USE_GUI=2 to optimize the opengl graphic. Try a few examples:
+You should launch gemc with USE_GUI=2 to optimize the opengl graphic. A few examples are installed in gemc/dev.
+
+You can use the docker container without Rosetta (unfortunately it will be slower)/
 
  1. USS enterprise shooting against a dragon::
 
-     cd forFun: gemc fun.gcard -USE_GUI=2 -OUTPUT="txt, out.txt"
+     module switch gemc/dev
+     cd $GEMC_DATA_DIR/experiments/forFun
+     gemc fun.gcard -USE_GUI=2 -OUTPUT="txt, out.txt"
 
  2. Fire protons in the upper gastrointestinal tract::
 
-     cd humanBody: gemc hb.gcard -USE_GUI=2 -OUTPUT="txt, out.txt"
+     module switch gemc/dev
+     cd $GEMC_DATA_DIR/experiments/humanBody:
+     gemc hb.gcard -USE_GUI=2 -OUTPUT="txt, out.txt"
 
 |br|
 
 .. note::
 
- I suggest to set the noVNC settings as follows:
+ - As of 8/14/2024 interactivity won't work on Sonoma 14.5 if you activate Rosetta on docker. You need to disable it (unfortunately it will be slower).
+
+ Suggested noVNC settings:
 
  - Scaling mode: remote
  - Shared mode active (this will ensure if you open another browser session, it will show the same instance of the container)
@@ -107,23 +84,7 @@ You should launch gemc with USE_GUI=2 to optimize the opengl graphic. Try a few 
 
 You can stop the docker container at any time using ctrl-c in the shell session you started it from.
 
-|br|
 
-
-
-Mounting your directories to the container
-------------------------------------------
-
-The container will always start with the "pristine" image. In other words every work the the container filesystem will be lost when you exit docker.
-You can use the option::
-
- -v /host/directory:/container/directory
-
-to mount your local OS directories to be visible in docker. For example, to mount the "maximilian" home directory in a /max dir in the container:
-
- docker run -it --rm  -v /home/maximilian:/jlab/work/max jeffersonlab/gemc:dev-fedora36 bash
-
-*/jlab/work/max* will now point to maximilian home dir. You can save work here.
 
 |br|
 

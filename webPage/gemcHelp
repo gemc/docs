@@ -5,7 +5,8 @@
 brewDir=$(brew --prefix)
 . "$brewDir/opt/modules/init/zsh"
 
-module load gemc/2.12
+module unload gemc
+module load gemc/dev
 which gemc
 
 gemc -help-html ; mv options.html allOptions.html
