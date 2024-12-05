@@ -32,7 +32,7 @@ For example, to generate cosmic with momentum ranging from 1 to 10 GeV:
 
 The above will generate an equal amount of positive and negative muons.
 
-User can set the parameters as well. For example::
+User can set the a,b,c parameters. For example::
 
 	<option name="COSMICRAYS"   value="55, 2, 66, 3, 4"/>
 
@@ -94,11 +94,17 @@ will target an area at (0, 0, 1m) with 5m of radius.
 Source Area
 ------------
 Be default the particles are generated on a sphere with radius specified by the *COSMICAREA* option.
-The *COSMICAREA* can have an additional argument to generate the cosmics on a cylinder instead. For example::
+The *COSMICAREA* can have an additional argument to generate the cosmics on a vertical cylinder instead. The parameters are:
+
+* x0, y0, z0: center of the area
+* r: radius of the area
+* type: sphere || cyl
+
+For example::
 
  <option name="COSMICAREA"   value="0*cm, 0*cm, 1*m, 5*m, cyl"/>
 
-will generate cosmics on a cylinder with radius 5m and height 2.5m (half the radius).
+will generate cosmics targeting the area around (0, 0, 1)m, originating within a cylinder of radius 5m and height 2.5m (half the radius).
 
 |
 

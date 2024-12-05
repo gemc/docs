@@ -55,7 +55,7 @@ List of all particles
 The following line will print on screen the list of particles (name and ids) that can be used
 by gemc::
 
- -BEAM_P=show_all
+ gemc -BEAM_P=show_all
 
 
 
