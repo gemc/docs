@@ -36,6 +36,9 @@ the UD variables are an example from the JLab CLAS12 conventions, but users can 
 
 |br|
 
+Note: the particle **index** starts from 1.
+
+|br|
 
 .. container:: lmydiv
 
