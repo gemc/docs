@@ -27,6 +27,10 @@ Or, in a gcard [#]_::
 
 Description
 ^^^^^^^^^^^
+
+The header must contain at least 10 variables, listed below. Additional information can be
+added to the header, up to 100 variables. The header is separated from the data by a blank line.
+
 After the header there are N lines (one per particle) describing each particle
 property as described in the tables below.
 
@@ -67,7 +71,8 @@ Note: the particle **index** starts from 1.
    +--------------+---------------------------------------------------------+
    |      10      | Event weight (UD)                                       |
    +--------------+---------------------------------------------------------+
-
+   |      11-100  | Optional array: any int or double.                      |
+   +--------------+---------------------------------------------------------+
 
 .. container:: rmydiv
 
