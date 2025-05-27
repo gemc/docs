@@ -41,6 +41,8 @@ A **bold** indicates quantities used by GEMC. The other variables are labelled U
 The UD variables are not used by GEMC but are kept in the output stream. In the table below
 the UD variables are an example from the JLab CLAS12 conventions, but users can assign any meaning to them.
 
+Note:
+
 |br|
 
 Note: the particle **index** starts from 1.
@@ -62,7 +64,7 @@ Note: the particle **index** starts from 1.
    +--------------+---------------------------------------------------------+
    |      4       | Target polarization  (UD)                               |
    +--------------+---------------------------------------------------------+
-   |      5       |      **Beam Polarization**                              |
+   |      5       |      **First Particle Z component of spin**             |
    +--------------+---------------------------------------------------------+
    |      6       | Beam type, electron=11, photon=22" (UD)                 |
    +--------------+---------------------------------------------------------+
@@ -89,7 +91,7 @@ Note: the particle **index** starts from 1.
    +--------------+------------------------------------------------------+
    |      2       |  Lifetime [nanoseconds] (UD)                         |
    +--------------+------------------------------------------------------+
-   |      3       |    **type (1 is propagated in geant4, 0 is not)**    |
+   |      3       |    **type (only type 1 is propagated in geant4)**    |
    +--------------+------------------------------------------------------+
    |      4       |     **particle ID**                                  |
    +--------------+------------------------------------------------------+

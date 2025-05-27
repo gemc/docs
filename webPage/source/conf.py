@@ -72,8 +72,7 @@ html_theme_path = ['_themes']
 # A shorter title for the navigation bar.  Default is the same as html_title.
 html_title = 'GEMC'
 
-html_logo = 'logo.png'
-
+html_logo = "_static/logo.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

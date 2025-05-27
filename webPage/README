@@ -15,11 +15,18 @@ Also:
 
 All this can be changed in the file conf.py
 
-Packages to be installed:
 
-pip install sphinxcontrib-images
+## Fix sphinx build errors:
 
+cd docs                    # or your project root
+python3 -m venv .venv   # or python3.12 if you want fewer surprises
+source .venv/bin/activate
 
+pip install -U pip setuptools
+pip install sphinx sphinxcontrib-images
+sphinx-build -b html source build
+
+s
 Sphinx version
 --------------
 
