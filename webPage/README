@@ -22,6 +22,12 @@ cd docs                    # or your project root
 python3 -m venv .venv   # or python3.12 if you want fewer surprises
 source .venv/bin/activate
 
+to get out:
+
+deactivate
+
+Then install the requirements:
+
 pip install -U pip setuptools
 pip install sphinx sphinxcontrib-images
 sphinx-build -b html source build
