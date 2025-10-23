@@ -27,15 +27,15 @@ GEMC distributed using `<https://www.docker.com>`_. You can download docker for 
 Use a Docker Container
 The following docker containers are available:
 
-jeffersonlab/gemc:gemc-dev-fedora36
-jeffersonlab/gemc:gemc-dev--almalinux93
-jeffersonlab/gemc:gemc-dev--ubuntu24
+jeffersonlab/gemc:dev-fedora36
+jeffersonlab/gemc:dev--almalinux94
+jeffersonlab/gemc:dev--ubuntu24
 
 Use the following command to open a bash session on the container.
 
 Batch mode::
 
- docker run --platform linux/amd64 -it --rm -v ~/mywork:/usr/local/mywork jeffersonlab/gemc:gemc-dev-fedora36 bash
+ docker run --platform linux/amd64 -it --rm -v ~/mywork:/usr/local/mywork jeffersonlab/gemc:dev-almalinux94 bash
 
 You need to use the option USE_GUI=0 to run gemc in batch mode.
 
@@ -44,7 +44,7 @@ You need to use the option USE_GUI=0 to run gemc in batch mode.
 
 Interactive mode (browser)::
 
- docker run --platform linux/amd64 -it --rm -v ~/mywork:/usr/local/mywork -p 8080:8080 jeffersonlab/gemc:gemc-dev-fedora36
+ docker run --platform linux/amd64 -it --rm -v ~/mywork:/usr/local/mywork -p 8080:8080 jeffersonlab/gemc:dev-almalinux94
 
 Using your web browser open the page::
 
