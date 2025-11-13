@@ -1,4 +1,3 @@
-
 :orphan:
 
 .. _docker:
@@ -24,12 +23,11 @@ Using Docker
 
 GEMC distributed using `<https://www.docker.com>`_. You can download docker for free `here <https://www.docker.com/community-edition>`_.
 
-Use a Docker Container
 The following docker containers are available:
 
-jeffersonlab/gemc:dev-fedora36
-jeffersonlab/gemc:dev--almalinux94
-jeffersonlab/gemc:dev--ubuntu24
+- jeffersonlab/gemc:dev-fedora36
+- jeffersonlab/gemc:dev-almalinux94
+- jeffersonlab/gemc:dev-ubuntu24
 
 Use the following command to open a bash session on the container.
 
@@ -44,17 +42,27 @@ You need to use the option USE_GUI=0 to run gemc in batch mode.
 
 Interactive mode (browser)::
 
- docker run --platform linux/amd64 -it --rm -v ~/mywork:/usr/local/mywork -p 8080:8080 jeffersonlab/gemc:dev-almalinux94
+As of November 2025 this is not possible at the moment but in a couple of months it should be reinstaed
 
-Using your web browser open the page::
+|br|
 
- http://localhost:8080/vnc.html
+Using Apptainer
+---------------
 
-After clicking connect the linux desktop is shown with a running shell.
+Linux host have apptainer (formally singularity), that can be run similarly to docker.
+It uses a cache directory to store the images so I suggest to set that cache to a location with large disk capacity.
+In the following example /path/to/user/cache is used::
 
-You should launch gemc with USE_GUI=2 to optimize the opengl graphic. A few examples are installed in gemc/dev.
+	export sif_cache=/path/to/$USER/sif
 
-You can use the docker container without Rosetta (unfortunately it will be slower)/
+and then::
+
+	export APPTAINER_CACHEDIR=$sif_cache/apptainer-cache
+	export APPTAINER_TMPDIR=$sif_cache/apptainer-tmp
+	export TMPDIR=$sif_cache/apptainer-tmp
+	apptainer exec --cleanenv --bind ~/mywork:/usr/local/mywork <image> command
+
+
 
  1. USS enterprise shooting against a dragon::
 
