@@ -208,6 +208,9 @@ A convenience root conversion macro for lund format can be found `here <https://
 |br|
 
 
+Generator: LUND Events sample
+-----------------------------
+`10 Deep Inelastic Scattering events in LUND format <http://jlab.org/12gev_phys/packages/gcards/dis.dat>`_
 
 
 
