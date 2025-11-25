@@ -104,7 +104,7 @@ The container registry is `here <https://hub.docker.com/r/jeffersonlab/gemc/tags
 
 .. code-block:: text
 
- docker pull jeffersonlab/gemc:dev-almalinux94 bash
+ docker pull jeffersonlab/gemc:dev-almalinux94
 
 
 2. Open a bash session on the container to run gemc in batch mode:
